@@ -1,0 +1,11 @@
+{	
+	"CollisionLines": [
+		{ "Start": "-10.0 -24.14", "End": "10.0 -24.14" }
+	],
+	"SpindleTriggers": [
+		{
+			"Connection": "RightSpindle",
+			"X": -1.0, "Y": -24.14, "Width": 2.0, "Height": 2.0
+		}
+	]
+}

@@ -1,0 +1,15 @@
+[#manual/world-listener]
+
+## World Listener
+
+### Fields
+
+<<manual/world-listener-source.html,World Listener Source>> _Source_::
+
+string _Variable_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _Instructions_::
+
+ifdef::backend-multipage_html5[]
+link:reference/world-listener.html[Reference]
+endif::[]

@@ -1,0 +1,156 @@
+{
+	PlayerTypeSelect {
+		#Type = "Pargon::Gui::Menu"
+		#Category = "Menu"
+		FirstFoci [ "Player1Menu" ]
+		Overlay = true
+	}
+	PlayerSelectLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalLayoutMode = "LeftAndComputed"
+		VerticalLayoutMode = "BottomAndComputed"
+		Flow = "LeftToRight"
+		Left = 587
+		Bottom = 228
+	}
+	PlayerSelectItemLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		VerticalAlignment = "Middle"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "BottomAndToContent"
+		Padding = 28
+		Margin = 20
+	}
+	PlayerSelectItemStyle {
+		#Type = "Pargon::Gui::Style"
+		#Category = "Style"
+		BackgroundTexture = "Assets/Images/Gui/MainMenu/playerSelectCursor.png"
+	}
+	PlayerSelectMenu {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "PlayerSelectLayout"
+		Children [
+			{
+				#Type = "Pargon::Gui::ListMenu"
+				Name = "Player1Menu"
+				Visible = false
+				Layout = "PlayerSelectItemLayout"
+				Style = "PlayerSelectItemStyle"
+				RightFocusable = "Player2Menu"
+				OnActivate = "
+					local type = ::GameSettings.GetPlayerType(0);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player1Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnFocus = "this.Visible = true;"
+				OnBlur = "this.Visible = false;"
+				OnUp = "
+					::GameSettings.IncrementPlayerType(0, 1);
+					local type = ::GameSettings.GetPlayerType(0);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player1Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnDown = "
+					::GameSettings.IncrementPlayerType(0, -1);
+					local type = ::GameSettings.GetPlayerType(0);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player1Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnSelect = "::Gui.PopGui();"
+				OnBack = "::Gui.PopGui();"
+			}
+			{
+				#Type = "Pargon::Gui::ListMenu"
+				Name = "Player2Menu"
+				Visible = false
+				Layout = "PlayerSelectItemLayout"
+				Style = "PlayerSelectItemStyle"
+				LeftFocusable = "Player1Menu"
+				RightFocusable = "Player3Menu"
+				OnActivate = "
+					local type = ::GameSettings.GetPlayerType(1);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player2Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnFocus = "this.Visible = true;"
+				OnBlur = "this.Visible = false;"
+				OnUp = "
+					::GameSettings.IncrementPlayerType(1, 1);
+					local type = ::GameSettings.GetPlayerType(1);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player2Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnDown = "
+					::GameSettings.IncrementPlayerType(1, -1);
+					local type = ::GameSettings.GetPlayerType(1);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player2Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnSelect = "::Gui.PopGui();"
+				OnBack = "::Gui.PopGui();"
+			}
+			{
+				#Type = "Pargon::Gui::ListMenu"
+				Name = "Player3Menu"
+				Visible = false
+				Layout = "PlayerSelectItemLayout"
+				Style = "PlayerSelectItemStyle"
+				LeftFocusable = "Player2Menu"
+				RightFocusable = "Player4Menu"
+				OnActivate = "
+					local type = ::GameSettings.GetPlayerType(2);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player3Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnFocus = "this.Visible = true;"
+				OnBlur = "this.Visible = false;"
+				OnUp = "
+					::GameSettings.IncrementPlayerType(2, 1);
+					local type = ::GameSettings.GetPlayerType(2);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player3Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnDown = "
+					::GameSettings.IncrementPlayerType(2, -1);
+					local type = ::GameSettings.GetPlayerType(2);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player3Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnSelect = "::Gui.PopGui();"
+				OnBack = "::Gui.PopGui();"
+			}
+			{
+				#Type = "Pargon::Gui::ListMenu"
+				Name = "Player4Menu"
+				Visible = false
+				Layout = "PlayerSelectItemLayout"
+				Style = "PlayerSelectItemStyle"
+				LeftFocusable = "Player3Menu"
+				OnActivate = "
+					local type = ::GameSettings.GetPlayerType(3);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player4Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnFocus = "this.Visible = true;"
+				OnBlur = "this.Visible = false;"
+				OnUp = "
+					::GameSettings.IncrementPlayerType(3, 1);
+					local type = ::GameSettings.GetPlayerType(3);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player4Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnDown = "
+					::GameSettings.IncrementPlayerType(3, -1);
+					local type = ::GameSettings.GetPlayerType(3);
+					this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+					::Player4Display.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+				"
+				OnSelect = "::Gui.PopGui();"
+				OnBack = "::Gui.PopGui();"
+			}
+		]
+	}
+}

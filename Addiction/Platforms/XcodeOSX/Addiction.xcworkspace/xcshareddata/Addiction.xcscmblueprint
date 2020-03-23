@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "121BF5B6C23169F21F113DF7E5C61E85C4A7FD0A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D24CEA03F5DBC9C7E48BB6BC2E0F0C742B28BCE0" : 0,
+    "121BF5B6C23169F21F113DF7E5C61E85C4A7FD0A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C243A6B5-D3C7-4586-90FE-7B85CB9DD735",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D24CEA03F5DBC9C7E48BB6BC2E0F0C742B28BCE0" : "Pargon\/",
+    "121BF5B6C23169F21F113DF7E5C61E85C4A7FD0A" : "PargonGames\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Addiction",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Addiction\/Platforms\/XcodeOSX\/Addiction.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larsoad\/PargonGames.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "121BF5B6C23169F21F113DF7E5C61E85C4A7FD0A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larsoad\/Pargon.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D24CEA03F5DBC9C7E48BB6BC2E0F0C742B28BCE0"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+[#reference/building-accessory]
+
+## Accessory
+
+PiRhoSoft.MonsterRpgEngine.Accessory : <<reference/building-part.html,Part>>
+
+### Description
+
+### Constructors
+
+Accessory()::
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/AudioSource.html[AudioSource^] _Audio_::
+
+https://docs.unity3d.com/ScriptReference/Animator.html[Animator^] _Animator_::
+
+link:/projects/unity-utilities/documentation/#/v10/reference/simple-animation-player[SimpleAnimationPlayer^] _Animation_::

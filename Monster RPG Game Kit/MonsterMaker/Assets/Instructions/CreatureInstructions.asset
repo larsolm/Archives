@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af497cf6814f10648b388dfe84dbe07e, type: 3}
+  m_Name: CreatureInstructions
+  m_EditorClassIdentifier: 
+  Instructions:
+  - {fileID: 114778483603848784}
+  - {fileID: 114390388428287936}
+  - {fileID: 114855464834919592}
+  - {fileID: 114383154394320316}
+--- !u!114 &114383154394320316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324d236fdc03f0049ab4d3160434cfa8, type: 3}
+  m_Name: ExperienceChanged
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Statements: []
+--- !u!114 &114390388428287936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324d236fdc03f0049ab4d3160434cfa8, type: 3}
+  m_Name: DefaultStats
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Statements:
+  - _statement: Creature.Level = 1
+  - _statement: Creature.Experience = 0
+  - _statement: Creature.HP IV = Random(0, 32)
+  - _statement: Creature.Attack IV = Random(0, 32)
+  - _statement: Creature.Defense IV = Random(0, 32)
+  - _statement: Creature.Speed IV = Random(0, 32)
+--- !u!114 &114778483603848784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f9ea2aa4122414eb8e8562be13eb90, type: 3}
+  m_Name: CreatureGeneration
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Instructions:
+  - {fileID: 114390388428287936}
+  - {fileID: 114855464834919592}
+--- !u!114 &114855464834919592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324d236fdc03f0049ab4d3160434cfa8, type: 3}
+  m_Name: UpdateStats
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Statements:
+  - _statement: Creature.HP = Floor((Species.Base HP * 2 + Creature.HP IV) * Creature.Level
+      / 100 + 10 + Creature.Level)
+  - _statement: Creature.Attack = Floor((Species.Base Attack * 2 + Creature.Attack
+      IV) * Creature.Level / 100 + 5)
+  - _statement: Creature.Defense = Floor((Species.Base Defense * 2 + Creature.Defense
+      IV) * Creature.Level / 100 + 5)
+  - _statement: Creature.Speed = Floor((Species.Base Speed * 2 + Creature.Speed IV)
+      * Creature.Level / 100 + 5)

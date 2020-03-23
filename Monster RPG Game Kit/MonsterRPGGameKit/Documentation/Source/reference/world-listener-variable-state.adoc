@@ -1,0 +1,15 @@
+[#reference/world-listener-variable-state]
+
+## VariableState
+
+PiRhoSoft.MonsterRpgEngine.VariableState
+
+### Description
+
+### Values
+
+<<reference/world-listener-variable-state.html,VariableState>> _Awake_::
+
+<<reference/world-listener-variable-state.html,VariableState>> _Enabled_::
+
+<<reference/world-listener-variable-state.html,VariableState>> _Changed_::

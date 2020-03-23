@@ -1,0 +1,85 @@
+[#reference/creature]
+
+## Creature
+
+PiRhoSoft.MonsterRpgEngine.Creature : https://docs.unity3d.com/ScriptReference/ScriptableObject.html[ScriptableObject^], link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^], link:/projects/unity-composition/documentation/#/v10/reference/i-variable-listener[IVariableListener^]
+
+### Description
+
+### Static Methods
+
+<<reference/creature.html,Creature>> Create(<<reference/creature-save-data.html,CreatureSaveData>> _data_, <<reference/i-trainer.html,ITrainer>> _trainer_)::
+
+<<reference/creature-save-data.html,CreatureSaveData>> Save(<<reference/creature.html,Creature>> _creature_)::
+
+### Constructors
+
+Creature()::
+
+### Public Fields
+
+<<reference/species.html,Species>> _Species_::
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::
+
+<<reference/move-list.html,MoveList>> _Moves_::
+
+### Public Properties
+
+<<reference/i-trainer.html,ITrainer>> _Trainer_ _(read only)_::
+
+### Public Methods
+
+void Setup(<<reference/i-trainer.html,ITrainer>> _trainer_)::
+
+void Teardown()::
+
+<<reference/creature.html,Creature>> Clone(<<reference/i-trainer.html,ITrainer>> _trainer_)::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<int> TakePendingTraits()::
+
+void UpdatePendingTraits()::
+
+void UpdateTrait(int _index_)::
+
+void ResetTraits(string _availability_) _(virtual)_::
+
+void ResetTraits(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<string> _traits_) _(virtual)_::
+
+bool HasPendingSkill()::
+
+<<reference/skill.html,Skill>> TakePendingSkill()::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<int> TakePendingSkills()::
+
+void TeachPendingSkills()::
+
+void TeachSkill(int _index_)::
+
+bool CanLearnSkill(<<reference/skill.html,Skill>> _skill_)::
+
+void TeachSkill(<<reference/skill.html,Skill>> _skill_)::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] TeachSkill(<<reference/skill.html,Skill>> _skill_, link:/projects/unity-composition/documentation/#/v10/reference/instruction-context[InstructionContext^] _context_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] GetVariable(string _name_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/set-variable-result[SetVariableResult^] SetVariable(string _name_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1[IEnumerable^]<string> GetVariableNames() _(virtual)_::
+
+void VariableChanged(int _index_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+### Protected Methods
+
+void AddPropertiesToMap<CreatureType>(link:/projects/unity-composition/documentation/#/v10/reference/property-map-1[PropertyMap^]<CreatureType> _map_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/property-map[PropertyMap^] GetPropertyMap() _(virtual)_::
+
+void TraitChanged(int _index_) _(virtual)_::
+
+void Load(<<reference/creature-save-data.html,CreatureSaveData>> _data_) _(virtual)_::
+
+void Save(<<reference/creature-save-data.html,CreatureSaveData>> _data_) _(virtual)_::

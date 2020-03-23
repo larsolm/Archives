@@ -1,0 +1,194 @@
+{
+	Board {
+		#Type = "Bonkers::Board"
+		#Behavior = "Object"
+		NumberOfSpaces = 55
+		ScoreLocations [ 12, 24 ]
+		LoseLocations [ 31 ]
+		TileTemplate = "TileTemplate"
+		Shape {
+			Nodes [
+				{
+					Position = "-150 0"
+					Rotation = 45
+					Weight = 100
+				}
+				{
+					Position = "150 0"
+					Rotation = -45
+					Weight = 100
+				}
+				{
+					Position = "150 -220"
+					Rotation = -45
+					Weight = 100
+				}
+				{
+					Position = "500 -220"
+					Rotation = 45
+					Weight = 100
+				}
+				{
+					Position = "500 220"
+					Rotation = 135
+					Weight = 100
+				}
+				{
+					Position = "-500 220"
+					Rotation = -135
+					Weight = 100
+				}
+				{
+					Position = "-500 -220"
+					Rotation = -45
+					Weight = 100
+				}
+				{
+					Position = "-150 -220"
+					Rotation = 45
+					Weight = 100
+				}
+			]
+		}
+	}
+	BoardVisual {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Bonkers::BoardRenderable"
+				Renderer = "BoardRenderer"
+				Board = "Board"
+				Depth = 10
+				Tag = "Game"
+			}
+			{
+				#Type = "Pargon::Spatial2D" 
+				Position = "0 0" 
+				Size = "1 1" 
+				Offset = "0 0"
+			}
+		]
+	}
+	BoardMaterial {
+		#Type = "Pargon::MaterialObject"
+		#Behavior = "Object"
+		VertexFilename = "Materials/board.vsh"
+		FragmentFilename = "Materials/board.fsh"
+		VertexLayout [
+			{ Name = "position" Type = "Vector2" Usage = "Position" }
+			{ Name = "color" Type = "Color" Usage = "Color" }
+		]
+		VertexConstants [
+			{ Name = "Transform" Type = "Matrix4x4" }
+			{ Name = "BlendColor" Type = "Color" }
+			{ Name = "Depth" Type = "Float" }
+		]
+	}
+	BoardRenderer {
+		#Type = "Bonkers::BoardRenderer"
+		#Behavior = "Object"
+		Material = "BoardMaterial"
+		Blending = "StandardBlending"
+		DepthStencil = "StandardDepthTesting"
+		Rasterization = "StandardRasterization"
+	}
+	Deck {
+		#Type = "Bonkers::Deck"
+		#Behavior = "Object"
+		Tiles [
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 1 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 2 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 3 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 4 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 5 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 6 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 1 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 2 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 3 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 4 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 5 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 6 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 10 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 10 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 12 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveForwardTexture" Count = 12 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -1 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -2 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -3 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -4 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -5 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -6 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -1 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -2 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -3 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -4 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -5 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -6 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -10 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -10 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -12 }
+			{ #Type = "Bonkers::MoveTile" Icon = "MoveBackTexture" Count = -12 }
+			{ #Type = "Bonkers::GoToScoreTile" Icon = "ScoreTexture" }
+			{ #Type = "Bonkers::GoToScoreTile" Icon = "ScoreTexture" }
+			{ #Type = "Bonkers::GoToScoreTile" Icon = "ScoreTexture" }
+			{ #Type = "Bonkers::GoToScoreTile" Icon = "ScoreTexture" }
+			{ #Type = "Bonkers::GoToStartTile" Icon = "StartTexture" }
+			{ #Type = "Bonkers::GoToStartTile" Icon = "StartTexture" }
+			{ #Type = "Bonkers::RollAgainTile" Icon = "RollAgainTexture" }
+			{ #Type = "Bonkers::RollAgainTile" Icon = "RollAgainTexture" }
+		]
+	}
+	TileTemplate {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Template"
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Position = "0 -8"
+						Size = "-1 30"
+					}
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Tag = "Game"
+						Align = "Center"
+						VerticalAlign = "Center"
+						Depth = 1
+						FillColor = "#444444"
+						Font = "AndyBFont"
+					}
+				]
+			}
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Position = "0 8"
+						Size = "30 30"
+						Offset = "0.5 0.5"
+					}
+					{
+						#Type = "Pargon::Shapes::ShapeInstance"
+						Renderer = "ShapeRenderer"
+						Tag = "Game"
+						Shape = "Primitives"
+						Frame = "Rectangle"
+						Depth = 2
+						Texture = "MoveForwardTexture"
+						Color = "#444444"
+					}
+				]
+			}
+		]
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 0"
+				Offset = "0.5 0.5"
+			}
+		]
+	}
+}

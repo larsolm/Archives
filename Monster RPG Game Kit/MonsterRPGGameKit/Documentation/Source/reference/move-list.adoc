@@ -1,0 +1,19 @@
+[#reference/move-list]
+
+## MoveList
+
+PiRhoSoft.MonsterRpgEngine.MoveList : link:/projects/unity-composition/documentation/#/v10/reference/indexed-variable-store-1[IndexedVariableStore^]<<<reference/move.html,Move>>>
+
+### Description
+
+### Constructors
+
+MoveList()::
+
+### Public Methods
+
+void Setup(<<reference/creature.html,Creature>> _creature_)::
+
+void Reset(string _availability_)::
+
+void Reset(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<string> _traits_)::

@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd1a41adc0bdd94393af3894f4ac94b, type: 3}
+  m_Name: Path
+  m_EditorClassIdentifier: 
+  TileInfo:
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300010, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    - {fileID: 21300046, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    - {fileID: 21300048, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 1
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300012, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300014, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300030, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300032, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300034, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300050, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300052, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300054, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300038, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300036, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300018, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 21300016, guid: 2d449c64b2be39d4a9969c6dc8b6e109, type: 3}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 0}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1
+  - SpriteType: 0
+    Sprites:
+    - {fileID: 0}
+    FlippedHorizontally: 0
+    FlippedVertically: 0
+    Rotation: 0
+    NoiseScale: 0.75
+    AnimationSpeed: 1

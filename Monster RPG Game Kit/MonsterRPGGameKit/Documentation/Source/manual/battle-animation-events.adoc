@@ -1,0 +1,15 @@
+[#manual/battle-animation-events]
+
+## Battle Animation Events
+
+### Fields
+
+<<manual/battle-animation-clip-dictionary.html,Battle Animation Clip Dictionary>> _Clips_::
+
+<<manual/battle-animation-sound-dictionary.html,Battle Animation Sound Dictionary>> _Sounds_::
+
+<<manual/battle-animation-effect-dictionary.html,Battle Animation Effect Dictionary>> _Effects_::
+
+ifdef::backend-multipage_html5[]
+link:reference/battle-animation-events.html[Reference]
+endif::[]

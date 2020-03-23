@@ -1,0 +1,346 @@
+{	
+	BoardUi {
+		#Type = "Pargon::KeyboardMouseMenu"
+		#Behavior = "Object"
+		Elements = "Board"
+	}
+	Directions {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Align = "Center"
+				Depth = 1
+				FillColor = "Black"
+				Font = "AndyBFont"
+				Tag = "Ui"
+				Text = "Roll the dice!"
+			}
+			{
+				#Type = "Pargon::Spatial2D" 
+				Position = "0 200" 
+				Size = "-1 50"
+			}
+		]
+	}
+	ScoreTemplate {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Template"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Size = "200 50"
+				Offset = "0.5 0.5"
+				Position = "0 -300"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 2
+				Color = "Yellow"
+				Visible = false
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Camera = "UiCamera"
+				Location = "Top"
+				Offset = "0 -50"
+			}
+		]
+		Entities [
+			{
+				Components
+				[
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Align = "Left"
+						Depth = 1
+						FillColor = "Black"
+						Font = "AndyBFont"
+						Tag = "Ui"
+						Text = "{GameManager.GetScoreText(this.Pargon::IndexComponent.Index)}"
+					}
+					{
+						#Type = "Pargon::Spatial2D"
+						Size = "-1 30"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::IndexComponent"
+					}
+				]
+			}
+		]
+	}
+	DiceUi {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 0"
+				Size = "480 240"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 2
+				Color = "Blue"
+				Visible = false
+			}
+		]
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Size = "-1 50"
+						Position = "0 50"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Tag = "Ui"
+						Align = "Center"
+						Depth = 1
+						FillColor = "Black"
+						Font = "AndyBFont"
+						Text = "Roll the dice!"
+						Visible = false
+					}
+				]
+			}
+			{
+				Components [
+					{
+						#Type = "Pargon::Shapes::ShapeInstance"
+						Renderer = "ShapeRenderer"
+						Shape = "Primitives"
+						Frame = "Rectangle"
+						Texture = "Dice3Texture"
+						Tag = "Ui"
+						Depth = 1
+						Visible = false
+					}
+					{
+						#Type = "Pargon::Spatial2D" 
+						Position = "-50 -50" 
+						Size = "80 80" 
+						Offset = "0.5 0.5"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::KeyboardMouseButton"
+						Tag = "Board"
+						OnSelect = "GameManager.RollDice();"
+					}
+				]
+			}
+			{
+				Components [
+					{
+						#Type = "Pargon::Shapes::ShapeInstance"
+						Renderer = "ShapeRenderer"
+						Shape = "Primitives"
+						Frame = "Rectangle"
+						Texture = "Dice4Texture"
+						Tag = "Ui"
+						Depth = 1
+						Visible = false
+					}
+					{
+						#Type = "Pargon::Spatial2D" 
+						Position = "50 -50" 
+						Size = "80 80" 
+						Offset = "0.5 0.5"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::KeyboardMouseButton"
+						Tag = "Board"
+						OnSelect = "GameManager.RollDice();"
+					}
+				]
+			}
+		]
+	}
+	HandBackground	{
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 -40"
+				Size = "1040 520"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 3
+				Color = "0 0 0 150"
+				Visible = false
+			}
+		]
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Position = "0 220"
+						Size = "-1 50"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Tag = "Ui"
+						Align = "Center"
+						VerticalAlign = "Center"
+						Depth = 2
+						FillColor = "Black"
+						Font = "AndyBFont"
+						Text = "Pick a tile."
+						Visible = false
+					}
+				]
+			}
+		]
+	}
+	HandTileTemplate {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Template"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "-187.5 0"
+				Size = "160 160"
+				Offset = "0 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 2
+				Color = "#F0F0F0"
+				Visible = false
+			}
+			{
+				#Type = "Pargon::IndexComponent"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "Board"
+				OnSelect = "GameManager.TileClicked(this.Pargon::IndexComponent.Index);"
+			}
+		]
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Position = "0.5 -0.15"
+						Size = "-1 0.5"
+					}
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Tag = "Ui"
+						Align = "Center"
+						VerticalAlign = "Center"
+						Depth = 1
+						FillColor = "#444444"
+						Font = "AndyBFont"
+						Visible = false
+					}
+				]
+			}
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Position = "0.5 0.15"
+						Size = "0.5 0.5"
+						Offset = "0.5 0.5"
+					}
+					{
+						#Type = "Pargon::Shapes::ShapeInstance"
+						Renderer = "ShapeRenderer"
+						Tag = "Ui"
+						Shape = "Primitives"
+						Frame = "Rectangle"
+						Depth = 1
+						Color = "#444444"
+						Visible = false
+					}
+				]
+			}
+		]
+	}
+	ConfirmButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 0"
+				Size = "480 240"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 2
+				Color = "Green"
+				Visible = false
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "Board"
+				OnSelect = "GameManager.Continue();"
+			}
+		]
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Size = "-1 100"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Tag = "Ui"
+						Align = "Center"
+						VerticalAlign = "Center"
+						Depth = 1
+						FillColor = "Black"
+						Font = "AndyBFont"
+						Text = "OK"
+						Visible = false
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+[#manual/building]
+
+## Building
+
+### Fields
+
+<<manual/collision-layer.html,Collision Layer>> _Collision Layer_::
+
+https://docs.unity3d.com/ScriptReference/Rect.html[Rect^] _Bounds_::
+
+float _Sort Point_::
+
+int _Roof Height_::
+
+<<manual/building-part.html,Part>> _Roof_::
+
+<<manual/building-part.html,Part>> _Facade_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<manual/building-door-part.html,Door Part>>> _Doors_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<manual/building-accessory.html,Accessory>>> _Accessories_::
+
+ifdef::backend-multipage_html5[]
+link:reference/building.html[Reference]
+endif::[]

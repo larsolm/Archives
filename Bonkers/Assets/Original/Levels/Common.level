@@ -1,0 +1,37 @@
+{
+	GameCamera {
+		#Type = "Pargon::Camera2D"
+		#Behavior = "Object"
+		Position = "0 0"
+		MinimumSize = "1280 720"
+		Viewport = "0 0 1 1"
+		Blending = "StandardBlending"
+		Rasterization = "StandardRasterization"
+		Material = "CopyPostProcessMaterial"
+		Geometry = "CopyPostProcessGeometry"
+		Order = 1
+		Renderables [ "Game" ]
+	}
+	AndyBFont {
+		#Type = "Pargon::Text::Font"
+		#Behavior = "Object"
+		Filename = "Fonts/AndyB.ttf"
+	}
+	GameManager {
+		#Type = "Bonkers::GameManager" 
+		#Behavior = "Object"
+		PointsToWin = 20
+		GameSpeed = 1.0
+		PlayerSpeed = 0.25
+		NumberOfPlayers = 2
+		HandSize = 4
+	}
+	PropertyAnimator {
+		#Type = "Pargon::Animation::PropertyAnimator"
+		#Behavior = "Object"
+	}
+	Scheduler {
+		#Type = "Pargon::Scheduler"
+		#Behavior = "Object"
+	}
+}

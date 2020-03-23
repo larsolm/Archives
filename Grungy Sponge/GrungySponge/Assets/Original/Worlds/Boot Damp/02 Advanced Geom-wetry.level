@@ -1,0 +1,717 @@
+{
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "50 50"
+				Size = "50 600"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 650"
+				Rotation = -90
+				Size = "50 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 100"
+				Rotation = -90
+				Size = "50 550"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "600 100"
+				Size = "50 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "314.644653320313 635.355346679688"
+				Rotation = -45
+				Size = "50 350"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "600 350"
+				Rotation = -45
+				Size = "50 350"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1700 50"
+				Rotation = 90
+				Size = "50 600"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1100 100"
+				Size = "50 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1114.64465332031 314.644653320313"
+				Rotation = 45
+				Size = "50 350"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "847.487365722656 597.487365722656"
+				Rotation = -90
+				Size = "50 55"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1650 100"
+				Size = "50 550"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1650 600"
+				Rotation = 90
+				Size = "50 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1400 600"
+				Rotation = 45
+				Size = "50 350"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "50 1100"
+				Size = "50 600"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 1150"
+				Rotation = -90
+				Size = "50 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "350 1150"
+				Rotation = -135
+				Size = "50 350"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "547.487365722656 847.487365722656"
+				Rotation = -7.629395E-06
+				Size = "50 55.0252532958984"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 1700"
+				Rotation = -90
+				Size = "50 550"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "650 1650"
+				Rotation = -180
+				Size = "50 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "635.355346679688 1435.35534667969"
+				Rotation = -135
+				Size = "50 350"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1700 1650"
+				Rotation = 90
+				Size = "50 600"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1150 1650"
+				Rotation = -180
+				Size = "50 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1650 1100"
+				Size = "50 550"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1650 1100"
+				Rotation = 90
+				Size = "50 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1150 1400"
+				Rotation = -225
+				Size = "50 350"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1435.35534667969 1114.64465332031"
+				Rotation = -225
+				Size = "50 350"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "847.487365722656 1202.51257324219"
+				Rotation = -90
+				Size = "50 55"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1152.51257324219 847.487365722656"
+				Rotation = -7.629395E-06
+				Size = "50 55.0252532958984"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "50 50"
+				Size = "1650 1650"
+			}
+			{
+				#Type = "Pargon::Renderable"
+				Tag = "Game"
+				Renderer = "DirtRenderer"
+			}
+			{
+				#Type = "GrungySponge::ClearField"
+				Tag = "Dirt"
+				MaskFilename = "Levels/Worlds/Boot Damp/02 Advanced Geom-wetry.png"
+			}
+		]
+	}
+}

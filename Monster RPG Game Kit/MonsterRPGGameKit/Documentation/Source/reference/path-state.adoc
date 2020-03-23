@@ -1,0 +1,25 @@
+[#reference/path-state]
+
+## PathState
+
+PiRhoSoft.MonsterRpgEngine.PathState
+
+### Description
+
+### Constructors
+
+PathState()::
+
+### Public Properties
+
+bool _Running_ _(read only)_::
+
+### Public Methods
+
+void Start(<<reference/path.html,Path>> _path_, <<reference/mover.html,Mover>> _mover_, <<reference/controller.html,Controller>> _controller_)::
+
+void Stop()::
+
+void Load(string _saveData_)::
+
+string Save()::

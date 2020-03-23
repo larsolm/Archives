@@ -1,0 +1,17 @@
+[#reference/spinner-controller]
+
+## SpinnerController
+
+PiRhoSoft.MonsterRpgEngine.SpinnerController : <<reference/controller.html,Controller>>
+
+### Description
+
+### Constructors
+
+SpinnerController()::
+
+### Public Fields
+
+<<reference/spinner-controller-spin-type.html,SpinType>> _Type_::
+
+float _SpinDelay_::

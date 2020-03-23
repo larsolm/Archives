@@ -1,0 +1,9 @@
+[#manual/toss-item]
+
+## Toss Item
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/toss-item.html[Reference]
+endif::[]

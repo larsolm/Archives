@@ -1,0 +1,29 @@
+[#reference/controller]
+
+## Controller
+
+PiRhoSoft.MonsterRpgEngine.Controller : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Public Properties
+
+<<reference/mover.html,Mover>> _Mover_ _(read only)_::
+
+bool _IsFrozen_ _(read only)_::
+
+### Public Methods
+
+void Freeze()::
+
+void Thaw()::
+
+### Protected Constructors
+
+Controller()::
+
+### Protected Methods
+
+void Awake() _(virtual)_::
+
+void UpdateMover(float _horizontal_, float _vertical_)::

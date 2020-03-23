@@ -1,0 +1,11 @@
+[#manual/world-manager]
+
+## World Manager
+
+### Fields
+
+<<manual/world.html,World>> _World_::
+
+ifdef::backend-multipage_html5[]
+link:reference/world-manager.html[Reference]
+endif::[]

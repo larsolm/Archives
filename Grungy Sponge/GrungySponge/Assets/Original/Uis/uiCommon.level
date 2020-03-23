@@ -1,0 +1,35 @@
+{
+	UiCamera {
+		#Type = "Pargon::Camera2D"
+        #Behavior = "Object"
+		Position = "0 0"
+		MinimumSize = "1280 720"
+		Viewport = "0 0 1 1"
+		Blending = "StandardBlending"
+		Rasterization = "StandardRasterization"
+		Material = "CopyPostProcessMaterial"
+		Geometry = "CopyPostProcessGeometry"
+		Order = 100
+		Renderables [ "Ui" ]
+		
+	}
+	AndyBFont {
+		#Type = "Pargon::Text::Font"
+		#Behavior = "Object"
+		Filename = "Fonts/AndyB.ttf"
+	}
+	UiStack {
+        #Type = "Pargon::UiStack"
+        #Behavior = "Object"
+    }
+	AnchorAnimator {
+		#Type = "Pargon::AnchorAnimator"
+		#Behavior = "Object"
+	}
+	UiShapes {
+		#Type = "Pargon::Shapes::Shape"
+		#Behavior = "Object"
+		Filename = "Shapes/uis.fla"
+		SymbolSize = "500 500"
+	}
+}

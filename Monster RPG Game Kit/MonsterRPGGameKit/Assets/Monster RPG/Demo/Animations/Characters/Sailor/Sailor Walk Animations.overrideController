@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sailor Walk Animations
+  m_Controller: {fileID: 9100000, guid: 0d064a1a8de9b154bab4c590e3dbbb76, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 9d3c52c89c7e24c429134ca73deda05f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 81a4778c2d4d0c84ea9b0df15dda311f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3759aca597ee20c43b4613b18948bcef, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6aa22c54d643c2b4d9d4df78a7b69e8f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f8b09cfb1ef69d54fb9eeb89a1948c11, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d5df8f8278da57b46a04bc6dae80d19f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1f4ef783651d8554691e7d37347a0e9c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 965716198c7afa64b8a180e7feac8356, type: 2}

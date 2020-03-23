@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3584fab496a17e44f888eaced47f3640, type: 3}
+  m_Name: Ogre
+  m_EditorClassIdentifier: 
+  _path: Species/Ogre
+  Ecosystem: {fileID: 11400000, guid: bc1c2433ddb2b0c43ba53e4fbc1b8560, type: 2}
+  Name: Ogre
+  Icon: {fileID: 21300000, guid: 8aabfcd95757c0147b6e60c6a216b607, type: 3}
+  Animations: {fileID: 22100000, guid: c420214772d0be04c87ec03731d922e5, type: 2}
+  Traits:
+    _data:
+    - Name: HP
+      Type: 2
+      Data: 100
+      Object: {fileID: 0}
+    - Name: Attack
+      Type: 2
+      Data: 100
+      Object: {fileID: 0}
+    - Name: Defense
+      Type: 2
+      Data: 100
+      Object: {fileID: 0}
+    - Name: Speed
+      Type: 2
+      Data: 100
+      Object: {fileID: 0}
+    _version: 241
+  Skills:
+    _items: []
+  MountPoints:
+    _keys:
+    - Hit
+    _values:
+    - X: 0.75
+      Y: 0.75
+      Rotation: 0

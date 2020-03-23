@@ -1,0 +1,9 @@
+[#manual/battle-ai]
+
+## Battle Ai
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/battle-ai.html[Reference]
+endif::[]

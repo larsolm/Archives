@@ -1,0 +1,21 @@
+[#reference/interaction-direction]
+
+## InteractionDirection
+
+PiRhoSoft.MonsterRpgEngine.InteractionDirection
+
+### Description
+
+### Values
+
+<<reference/interaction-direction.html,InteractionDirection>> _Any_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _Left_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _Right_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _Down_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _Up_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _This_::

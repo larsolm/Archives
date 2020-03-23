@@ -1,0 +1,29 @@
+[#reference/building]
+
+## Building
+
+PiRhoSoft.MonsterRpgEngine.Building : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+Building()::
+
+### Public Fields
+
+<<reference/collision-layer.html,CollisionLayer>> _CollisionLayer_::
+
+https://docs.unity3d.com/ScriptReference/Rect.html[Rect^] _Bounds_::
+
+float _SortPoint_::
+
+int _RoofHeight_::
+
+<<reference/building-part.html,Part>> _Roof_::
+
+<<reference/building-part.html,Part>> _Facade_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/building-door-part.html,DoorPart>>> _Doors_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/building-accessory.html,Accessory>>> _Accessories_::

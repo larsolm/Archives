@@ -1,0 +1,4604 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &620422884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620422885}
+  - component: {fileID: 620422886}
+  m_Layer: 0
+  m_Name: HousePlant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &620422885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620422884}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 47.5, y: 67.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &620422886
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620422884}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: e6d85d54e0be8744bb617e00d2c07fb0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &632521664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 632521665}
+  - component: {fileID: 632521667}
+  - component: {fileID: 632521666}
+  m_Layer: 0
+  m_Name: Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &632521665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632521664}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!483693784 &632521666
+TilemapRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632521664}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -842961849
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_ChunkSize: {x: 32, y: 32, z: 32}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_MaxChunkCount: 16
+  m_MaxFrameAge: 16
+  m_SortOrder: 0
+  m_Mode: 0
+  m_DetectChunkCullingBounds: 0
+  m_MaskInteraction: 0
+--- !u!1839735485 &632521667
+Tilemap:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632521664}
+  m_Enabled: 1
+  m_Tiles:
+  - first: {x: 47, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 48, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 49, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 50, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 51, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 52, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 53, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 54, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 55, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 56, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 57, y: 62, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 47, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 48, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 49, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 50, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 51, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 52, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 53, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 54, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 55, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 56, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 57, y: 63, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 47, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 48, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 49, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 50, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 51, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 52, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 53, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 54, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 55, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 56, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 57, y: 64, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 47, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 48, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 49, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 50, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 51, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 52, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 53, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 54, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 55, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 56, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 57, y: 65, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 47, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 48, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 49, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 50, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 51, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 52, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 53, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 54, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 55, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 56, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 57, y: 66, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 47, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 48, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 49, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 50, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 51, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 52, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 53, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 54, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 55, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 56, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 57, y: 67, z: 0}
+    second:
+      m_TileIndex: 0
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 47, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 48, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 49, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 50, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 51, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 52, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 53, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 54, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 55, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 56, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 57, y: 68, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 47, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 48, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 49, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 50, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 51, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 52, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 53, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 54, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 55, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 56, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  - first: {x: 57, y: 69, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 2
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 0
+      m_ColliderType: 0
+  m_AnimatedTiles: {}
+  m_TileAssetArray:
+  - m_RefCount: 66
+    m_Data: {fileID: 11400000, guid: e72b2db2bc0fa3a42b6315b8dcbd8daa, type: 2}
+  - m_RefCount: 22
+    m_Data: {fileID: 11400000, guid: 0ae57bf106acd744e9dd3036ffa2ef25, type: 2}
+  m_TileSpriteArray:
+  - m_RefCount: 33
+    m_Data: {fileID: 21300002, guid: ef553430cd974174098539871a53dcb0, type: 3}
+  - m_RefCount: 33
+    m_Data: {fileID: 21300000, guid: ef553430cd974174098539871a53dcb0, type: 3}
+  - m_RefCount: 11
+    m_Data: {fileID: 21300000, guid: 43861a6c4ad9f4c47971d6558f908a38, type: 3}
+  - m_RefCount: 11
+    m_Data: {fileID: 21300002, guid: 43861a6c4ad9f4c47971d6558f908a38, type: 3}
+  m_TileMatrixArray:
+  - m_RefCount: 88
+    m_Data:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_TileColorArray:
+  - m_RefCount: 88
+    m_Data: {r: 1, g: 1, b: 1, a: 1}
+  m_AnimationFrameRate: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Origin: {x: 47, y: 62, z: 0}
+  m_Size: {x: 11, y: 8, z: 1}
+  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_TileOrientation: 0
+  m_TileOrientationMatrix:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+--- !u!1 &710292113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 710292114}
+  - component: {fileID: 710292115}
+  m_Layer: 0
+  m_Name: TrashCan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &710292114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710292113}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 57.5, y: 66.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &710292115
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710292113}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 45eb0bf3c9c30ba479b94149c7dc499f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1001 &834586064
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1622983686197120045, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_Name
+      value: Guard
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 52.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 67.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120047, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120044, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ee662d8179220474996b844db6dcedd0,
+        type: 3}
+    - target: {fileID: 1622983686197120051, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 268bf7bd7615ae841ad234b86360bdc2,
+        type: 2}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0].Reference._variable.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._outputs.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0].Reference._lookups.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._outputs.Array.data[0].Reference._variable.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._outputs.Array.data[0].Reference._lookups.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._instruction
+      value: 
+      objectReference: {fileID: 11400000, guid: 6fad31b774505b34c884019186830fdc,
+        type: 2}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0].Definition._name
+      value: ValueToSet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0].Definition._type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0].Definition._typeConstraint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0]._value.Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0]._value.Object
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._outputs.Array.data[0].Definition._name
+      value: Flag
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._inputs.Array.data[0].Reference._variable.Array.data[0]
+      value: true
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._outputs.Array.data[0].Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622983686197120046, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Instructions._outputs.Array.data[0].Reference._variable.Array.data[0]
+      value: Moved
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909987168617251975, guid: 62d5edf5f509c37498cfa794f3abae9d,
+        type: 3}
+      propertyPath: Name
+      value: Guard
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62d5edf5f509c37498cfa794f3abae9d, type: 3}
+--- !u!1 &834586065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1622983686197120045, guid: 62d5edf5f509c37498cfa794f3abae9d,
+    type: 3}
+  m_PrefabInstance: {fileID: 834586064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &834586066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834586065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99370a5487e1c6647aff94c059e5824a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BeginOnAwake: 0
+  Path:
+    Type: 0
+    RepeatCount: 0
+    UseAbsolutePositioning: 0
+    UsePathfinding: 0
+    FindAlternateRoutes: 0
+    Nodes:
+    - Position: {x: 0, y: 0}
+      Direction: 3
+      Delay: 0
+    - Position: {x: -1, y: 0}
+      Direction: 3
+      Delay: 0
+--- !u!114 &834586067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834586065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b097376fda3094192bda64ebf9dd03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Source: 0
+  Variable: 
+  AwakeInstructions:
+    _instruction: {fileID: 11400000, guid: 2d1937014a8a2fb499700b8ac469441a, type: 2}
+    _inputs: []
+    _outputs: []
+  EnabledSameAsAwake: 1
+  EnabledInstructions:
+    _instruction: {fileID: 0}
+    _inputs: []
+    _outputs: []
+  ChangedSameAsAwake: 0
+  ChangedInstructions:
+    _instruction: {fileID: 0}
+    _inputs: []
+    _outputs: []
+--- !u!1 &1203674555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1203674556}
+  - component: {fileID: 1203674557}
+  m_Layer: 0
+  m_Name: Rug4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1203674556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203674555}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.5, y: 67.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1203674557
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203674555}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -842961849
+  m_SortingLayer: -1
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 9fe55623765ba134bb4f8885d0c25916, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1257845774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1257845775}
+  - component: {fileID: 1257845776}
+  m_Layer: 0
+  m_Name: WallOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1257845775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257845774}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.5, y: 69.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1257845776
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257845774}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -203467731
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 43861a6c4ad9f4c47971d6558f908a38, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1471210764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1471210765}
+  - component: {fileID: 1471210766}
+  m_Layer: 0
+  m_Name: HousePlant
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1471210765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471210764}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 57.5, y: 67.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1471210766
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471210764}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -842961849
+  m_SortingLayer: -1
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: e6d85d54e0be8744bb617e00d2c07fb0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1548446355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548446358}
+  - component: {fileID: 1548446357}
+  - component: {fileID: 1548446356}
+  m_Layer: 0
+  m_Name: Map
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!114 &1548446356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548446355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95477c062af338f4fb7563395547202b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ClampLeftBounds: 1
+  ClampRightBounds: 1
+  ClampBottomBounds: 1
+  ClampTopBounds: 1
+  LeftBounds: 46
+  RightBounds: 59
+  BottomBounds: 61
+  TopBounds: 71
+  _tiles:
+    _keys:
+    - {x: 52, y: 61}
+    - {x: 53, y: 61}
+    - {x: 54, y: 61}
+    - {x: 55, y: 61}
+    - {x: 56, y: 61}
+    - {x: 57, y: 61}
+    - {x: 58, y: 62}
+    - {x: 58, y: 63}
+    - {x: 58, y: 64}
+    - {x: 58, y: 65}
+    - {x: 58, y: 66}
+    - {x: 58, y: 67}
+    - {x: 53, y: 68}
+    - {x: 54, y: 68}
+    - {x: 55, y: 68}
+    - {x: 56, y: 68}
+    - {x: 57, y: 68}
+    - {x: 47, y: 68}
+    - {x: 48, y: 68}
+    - {x: 49, y: 68}
+    - {x: 50, y: 68}
+    - {x: 51, y: 68}
+    - {x: 46, y: 62}
+    - {x: 46, y: 63}
+    - {x: 46, y: 64}
+    - {x: 46, y: 65}
+    - {x: 46, y: 66}
+    - {x: 46, y: 67}
+    - {x: 47, y: 61}
+    - {x: 48, y: 61}
+    - {x: 49, y: 61}
+    - {x: 50, y: 61}
+    - {x: 51, y: 61}
+    - {x: 52, y: 68}
+    - {x: 57, y: 66}
+    - {x: 57, y: 67}
+    - {x: 47, y: 67}
+    - {x: 56, y: 67}
+    - {x: 60, y: 67}
+    - {x: 60, y: 64}
+    - {x: 61, y: 65}
+    - {x: 60, y: 65}
+    - {x: 59, y: 66}
+    - {x: 63, y: 64}
+    - {x: 62, y: 64}
+    _values:
+    - Position: {x: 52, y: 61}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 1
+      SpawnPoint:
+        Position: {x: 52, y: 61}
+        Name: South Door
+        Transition: {fileID: 0}
+        Direction: 4
+        Layer: 1
+        Move: 1
+      HasZoneTrigger: 1
+      Zone:
+        TargetZone: {fileID: 11400000, guid: 073273186410fae4a8a44956d0081ab7, type: 2}
+        TargetSpawn: Door
+        HasTransition: 1
+        Transition: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6, type: 2}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 53, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 54, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 55, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 56, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 57, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 58, y: 62}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 58, y: 63}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 58, y: 64}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 58, y: 65}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 58, y: 66}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 58, y: 67}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 53, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 54, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 55, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 56, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 57, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 47, y: 68}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 48, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 49, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 50, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 51, y: 68}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 46, y: 62}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 46, y: 63}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 46, y: 64}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 46, y: 65}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 46, y: 66}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 46, y: 67}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 47, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 48, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 49, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 50, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 51, y: 61}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 52, y: 68}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 1
+      SpawnPoint:
+        Position: {x: 52, y: 68}
+        Name: North Door
+        Transition: {fileID: 0}
+        Direction: 3
+        Layer: 1
+        Move: 1
+      HasZoneTrigger: 1
+      Zone:
+        TargetZone: {fileID: 11400000, guid: d3dca0d9326d7234c9c0a2487d6bb9bd, type: 2}
+        TargetSpawn: Checkpoint
+        HasTransition: 1
+        Transition: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6, type: 2}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 1
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs:
+          - Type: 1
+            Definition:
+              _name: AnimationPlayer
+              _type: 5
+              _availability: 
+              _initializer:
+                _statement: 
+              _useRangeConstraint: 0
+              _minimumConstraint: 0
+              _maximumConstraint: 0
+              _typeConstraint: PiRhoSoft.MonsterRpgEngine.AnimationPlayer, Assembly-CSharp,
+                Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+            Reference:
+              _variable: []
+              _lookups: []
+            _value:
+              Name: 
+              Type: 5
+              Data: 
+              Object: {fileID: 0}
+          - Type: 1
+            Definition:
+              _name: Animation
+              _type: 5
+              _availability: 
+              _initializer:
+                _statement: 
+              _useRangeConstraint: 0
+              _minimumConstraint: 0
+              _maximumConstraint: 0
+              _typeConstraint: UnityEngine.AnimationClip, UnityEngine.AnimationModule,
+                Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+            Reference:
+              _variable: []
+              _lookups: []
+            _value:
+              Name: 
+              Type: 5
+              Data: 
+              Object: {fileID: 7400000, guid: 0231026953ffbda4ab67fa90829644ba, type: 2}
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs:
+          - Type: 1
+            Definition:
+              _name: AnimationPlayer
+              _type: 5
+              _availability: 
+              _initializer:
+                _statement: 
+              _useRangeConstraint: 0
+              _minimumConstraint: 0
+              _maximumConstraint: 0
+              _typeConstraint: PiRhoSoft.MonsterRpgEngine.AnimationPlayer, Assembly-CSharp,
+                Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+            Reference:
+              _variable: []
+              _lookups: []
+            _value:
+              Name: 
+              Type: 5
+              Data: 
+              Object: {fileID: 0}
+          - Type: 1
+            Definition:
+              _name: Animation
+              _type: 5
+              _availability: 
+              _initializer:
+                _statement: 
+              _useRangeConstraint: 0
+              _minimumConstraint: 0
+              _maximumConstraint: 0
+              _typeConstraint: UnityEngine.AnimationClip, UnityEngine.AnimationModule,
+                Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+            Reference:
+              _variable: []
+              _lookups: []
+            _value:
+              Name: 
+              Type: 5
+              Data: 
+              Object: {fileID: 7400000, guid: 6d67598f54ed9c14e8166ea18f376a3d, type: 2}
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 57, y: 66}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 57, y: 67}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 47, y: 67}
+      CollisionLayer: 1
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 56, y: 67}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 60, y: 67}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 60, y: 67}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 4
+        Layer: 1
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 60, y: 64}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 60, y: 64}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 4
+        Layer: 1
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 61, y: 65}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 61, y: 65}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 4
+        Layer: 1
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 60, y: 65}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 59, y: 66}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 63, y: 64}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+    - Position: {x: 62, y: 64}
+      CollisionLayer: 0
+      LayerChange: 0
+      HasSpawnPoint: 0
+      SpawnPoint:
+        Position: {x: 0, y: 0}
+        Name: 
+        Transition: {fileID: 0}
+        Direction: 0
+        Layer: 0
+        Move: 0
+      HasZoneTrigger: 0
+      Zone:
+        TargetZone: {fileID: 0}
+        TargetSpawn: 
+        HasTransition: 0
+        Transition: {fileID: 0}
+      HasEncounter: 0
+      Encounter: {fileID: 0}
+      HasInstructions: 0
+      Instructions:
+        InteractionDirections: 0
+        EnteringDirections: 0
+        EnterDirections: 0
+        ExitingDirections: 0
+        ExitDirections: 0
+        InteractionInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnteringInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        EnterInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitingInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+        ExitInstructions:
+          _instruction: {fileID: 0}
+          _inputs: []
+          _outputs: []
+      HasStairs: 0
+      Slope: 0
+      HasOffset: 0
+      Offset: {x: 0, y: 0}
+      HasEdge: 0
+      EdgeDirection: 3
+--- !u!156049354 &1548446357
+Grid:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548446355}
+  m_Enabled: 1
+  m_CellSize: {x: 1, y: 1, z: 1}
+  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellLayout: 0
+  m_CellSwizzle: 0
+--- !u!4 &1548446358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548446355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 632521665}
+  - {fileID: 2020821294}
+  - {fileID: 1203674556}
+  - {fileID: 1624391589}
+  - {fileID: 1257845775}
+  - {fileID: 710292114}
+  - {fileID: 620422885}
+  - {fileID: 1471210765}
+  - {fileID: 1829660189}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1624391587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1624391589}
+  - component: {fileID: 1624391588}
+  - component: {fileID: 1624391590}
+  - component: {fileID: 1624391591}
+  - component: {fileID: 1624391593}
+  - component: {fileID: 1624391592}
+  m_Layer: 0
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1624391588
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624391587}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 25ebb9e74d4378547856ace94414377c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 1
+--- !u!4 &1624391589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624391587}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.5, y: 68.4375, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1624391590
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624391587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 4a02d77adeeff534bbcd9f008519f6cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1624391591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624391587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe75bb26dd326a4a85453a493f23502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Layer: 1
+  ForceToBottom: 0
+--- !u!114 &1624391592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624391587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253efa90602c2f84dbc4087dfda926eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OpenAnimation: {fileID: 7400000, guid: 0231026953ffbda4ab67fa90829644ba, type: 2}
+  CloseAnimation: {fileID: 7400000, guid: 6d67598f54ed9c14e8166ea18f376a3d, type: 2}
+--- !u!82 &1624391593
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624391587}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &1829660188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1829660189}
+  - component: {fileID: 1829660190}
+  m_Layer: 0
+  m_Name: Shadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1829660189
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829660188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.5, y: 67.5, z: 0}
+  m_LocalScale: {x: 11, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1829660190
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829660188}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -842961849
+  m_SortingLayer: -1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 7499da59f27cf394d84c93a83843f337, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &2020821293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020821294}
+  - component: {fileID: 2020821295}
+  m_Layer: 0
+  m_Name: Rug3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2020821294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020821293}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.5, y: 62, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1548446358}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2020821295
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020821293}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -842961849
+  m_SortingLayer: -1
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 012058b2d73543b4d9dbc798abd20d5f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0

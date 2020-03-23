@@ -1,0 +1,163 @@
+onClipEvent (load) {
+	w = 35;
+	h = 37;
+	this._width = w;
+	this._height = h;
+	this._rotation = 0;
+	this.base._rotation = 180;
+	this.turret._rotation = 180;
+	maxBullets = 5;
+	numberOfBullets = 0;
+	fireTimer = 9;
+	fireDelay = 10;
+	acceleration = .75;
+	maxSpeed = 5;
+	minSpeed = -4;
+	speed = 0;
+	brake = .5;
+	reverse = 0;
+	maneuverability = 6;
+	leftDistance = 0;
+	rightDistance = 700;
+	groundDistance = 700;
+	roofDistance = 0;
+	currentWeapon = 1;
+	life = 100;
+	score = 0;
+	kills = 0;
+	deaths = 0;
+	hasFlag = false;
+	function AngleToObject(x, y) {
+		angle = -Math.atan((x - this._x) / (y - this._y));
+		//Find the inverse tangent of the difference in x positions divided by the difference in y positions
+		angle *= 180 / Math.PI;
+		if (y > this._y) {
+			angle += 180;
+		}
+		if (angle > 180) {
+			angle -= 360;
+		} else if (angle < -180) {
+			angle += 360;
+		}
+		if (this.base._rotation - angle > 180) {
+			angle += 360;
+		}
+		if (angle - this.base._rotation > 180) {
+			angle -= 360;
+		}
+		return angle;
+	}
+}
+onClipEvent (enterFrame) {
+	leftDistance = 0;
+	for (i = 0; i < _root.wallX.length; i++) {
+		if ((this._x > _root.wallX[i]) and (this._y + (h / 2) > _root.wallUpper[i]) and (this._y - (h / 2) < _root.wallLower[i]) and (_root.wallX[i] > leftDistance)) {
+			leftDistance = _root.wallX[i];
+		}
+	}
+	rightDistance = 700;
+	for (i = 0; i < _root.wallX.length; i++) {
+		if ((this._x < _root.wallX[i]) and (this._y + (h / 2) > _root.wallUpper[i]) and (this._y - (h / 2) < _root.wallLower[i]) and (_root.wallX[i] < rightDistance)) {
+			rightDistance = _root.wallX[i];
+		}
+	}
+	groundDistance = 700;
+	for (i = 0; i < _root.groundY.length; i++) {
+		if ((this._y < _root.groundY[i]) and (this._x + (w / 2) > _root.groundLeft[i]) and (this._x - (w / 2) < _root.groundRight[i]) and (_root.groundY[i] < groundDistance)) {
+			groundDistance = _root.groundY[i];
+		}
+	}
+	roofDistance = 0;
+	for (i = 0; i < _root.groundY.length; i++) {
+		if ((this._y > _root.groundY[i]) and (this._x + (w / 2) > _root.groundLeft[i]) and (this._x - (w / 2) < _root.groundRight[i]) and (_root.groundY[i] > roofDistance)) {
+			roofDistance = _root.groundY[i];
+		}
+	}
+	//if (Key.isDown(Key.UP)) {
+	if (speed < maxSpeed) {
+		speed += acceleration;
+	}
+	//}
+	//if (Key.isDown(Key.DOWN)) {
+	//if (reverse>minSpeed) {
+	//	reverse -= brake;
+	//}
+	//}
+	angleToEnemy = AngleToObject(_root.playerOne._x, _root.playerOne._y);
+	fireTimer++;
+	if (wallSide != "none") {
+		if (this.base._rotation < stick) {
+			this.base._rotation += maneuverability;
+		}
+		if (this.base._rotation >= stick) {
+			this.base._rotation -= maneuverability;
+		}
+	}
+	if (wallSide == "none") {
+		if (this.base._rotation < angleToEnemy) {
+			this.base._rotation += maneuverability;
+		}
+		if (this.base._rotation > angleToEnemy) {
+			this.base._rotation -= maneuverability;
+		}
+	}
+	if (this.turret._rotation < angleToEnemy - 5) {
+		this.turret._rotation += maneuverability;
+	} else if (this.turret._rotation > angleToEnemy + 5) {
+		this.turret._rotation -= maneuverability;
+	} else {
+		if (fireTimer >= fireDelay) {
+			_root.depth++;
+			if (fireTimer >= fireDelay) {
+				fireTimer = 0;
+			}
+			if (numberOfBullets < maxBullets) {
+				duplicateMovieClip(_root["twoWeapon" + currentWeapon], "bullet" add _root.depth, _root.depth);
+				numberOfBullets++;
+			}
+		}
+	}
+	if (life <= 0) {
+		this.gotoAndPlay(2);
+		life = 100;
+	}
+	if (this._currentframe == 19) {
+		this.gotoAndStop(1);
+		this._x = _root.playerTwoXStart;
+		this._y = _root.playerTwoYStart;
+		this.base._rotation = 180;
+		this.turret._rotation = 180;
+		this._rotation = 0;
+	}
+	if (speed > 0) {
+		speed -= _root.friction;
+	}
+	if (reverse < 0) {
+		reverse += _root.friction;
+	}
+	if ((this._y > groundDistance - speed - (h / 2))) {
+		wallSide = "down";
+		stick = angleToEnemy;
+	} else if ((this._x < leftDistance + speed + (w / 2))) {
+		wallSide = "left";
+		stick = angleToEnemy;
+	} else if ((this._x > rightDistance - speed - (w / 2))) {
+		wallSide = "right";
+		stick = angleToEnemy;
+	} else if ((this._y < roofDistance + speed + (h / 2))) {
+		wallSide = "up";
+		stick = angleToEnemy;
+	} else {
+		wallSide = "none";
+	}
+	if ((this._y < groundDistance - speed - (h / 2)) and (this._x > leftDistance + speed + (w / 2)) and (this._x < rightDistance - speed - (w / 2)) and (this._y > roofDistance + speed + (h / 2)) or (wallSide == "down") and (this.base._rotation >= -90) and (this.base._rotation <= 90) or (wallSide == "left") and (this.base._rotation >= 0) and (this.base._rotation <= 180) or (wallSide == "up") and (this.base._rotation >= 90) or (wallSide == "up") and (this.base._rotation <= -90) or (wallSide == "right") and (this.base._rotation >= -180) and (this.base._rotation <= 0)) {
+		this._x -= speed * Math.sin((this.base._rotation * -1) * (Math.PI / 180));
+		this._y -= speed * Math.cos((this.base._rotation * -1) * (Math.PI / 180));
+	} else {
+		speed = 0;
+	}
+	if ((this._y < groundDistance - speed - (h / 2)) and (this._x > leftDistance + speed + (w / 2)) and (this._x < rightDistance - speed - (w / 2)) and (this._y > roofDistance + speed + (h / 2)) or (wallSide == "down") and (this.base._rotation <= -90) or (wallSide == "down") and (this.base._rotation >= 90) or (wallSide == "left") and (this.base._rotation <= 0) and (this.base._rotation >= -180) or (wallSide == "up") and (this.base._rotation <= 90) and (this.base._rotation >= -90) or (wallSide == "right") and (this.base._rotation <= 180) and (this.base._rotation >= 0)) {
+		this._x -= reverse * Math.sin((this.base._rotation * -1) * (Math.PI / 180));
+		this._y -= reverse * Math.cos((this.base._rotation * -1) * (Math.PI / 180));
+	}
+}

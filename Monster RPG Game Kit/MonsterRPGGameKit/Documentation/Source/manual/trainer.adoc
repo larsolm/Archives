@@ -1,0 +1,17 @@
+[#manual/trainer]
+
+## Trainer
+
+### Fields
+
+<<manual/ecosystem.html,Ecosystem>> _Ecosystem_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::
+
+<<manual/inventory.html,Inventory>> _Inventory_::
+
+<<manual/roster.html,Roster>> __roster_::
+
+ifdef::backend-multipage_html5[]
+link:reference/trainer.html[Reference]
+endif::[]

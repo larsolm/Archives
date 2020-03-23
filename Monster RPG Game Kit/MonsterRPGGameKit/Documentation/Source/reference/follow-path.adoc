@@ -1,0 +1,19 @@
+[#reference/follow-path]
+
+## FollowPath
+
+PiRhoSoft.MonsterRpgEngine.FollowPath : <<reference/path-node.html,PathNode>>
+
+### Description
+
+### Constructors
+
+FollowPath()::
+
+### Public Fields
+
+<<reference/path.html,Path>> _Path_::
+
+### Protected Methods
+
+<<reference/path.html,Path>> GetPath(<<reference/mover.html,Mover>> _mover_) _(virtual)_::

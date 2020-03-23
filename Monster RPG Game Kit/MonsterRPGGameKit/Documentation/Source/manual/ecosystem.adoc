@@ -1,0 +1,19 @@
+[#manual/ecosystem]
+
+## Ecosystem
+
+### Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Trainer Schema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Species Schema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Creature Schema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Ability Schema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Move Schema_::
+
+ifdef::backend-multipage_html5[]
+link:reference/ecosystem.html[Reference]
+endif::[]

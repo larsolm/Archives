@@ -1,0 +1,48 @@
+{
+	RedLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "TopAndAbsolute"
+		Left = 50
+		Top = 50
+		Height = 100
+	}
+	GreenLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalLayoutMode = "RightAndToContent"
+		VerticalLayoutMode = "TopAndAbsolute"
+		Right = 50
+		Top = 50
+		Height = 100
+	}
+	RedStyle {
+		#Type = "Pargon::Gui::Style"
+		#Category = "Style"
+		Font = "Assets/AndyB.ttf"
+		TextColor = "Red"
+	}
+	GreenStyle {
+		#Type = "Pargon::Gui::Style"
+		#Category = "Style"
+		Font = "Assets/AndyB.ttf"
+		TextColor = "Green"
+	}
+	RedScore {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Name = "RedScore"
+		Layout = "RedLayout"
+		Style = "RedStyle"
+		Text = "{return ::GameManager.Score(0);}"
+	}
+	GreenScore {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Name = "GreenScore"
+		Layout = "GreenLayout"
+		Style = "GreenStyle"
+		Text = "{return ::GameManager.Score(1);}"
+	}
+}

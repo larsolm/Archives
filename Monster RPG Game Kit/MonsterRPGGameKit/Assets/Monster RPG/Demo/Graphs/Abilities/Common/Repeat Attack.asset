@@ -1,0 +1,478 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864204cda72169a4a8d5e021c47bc66f, type: 3}
+  m_Name: Repeat Attack
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114451046092513844}
+    - {fileID: 114363681223344366}
+    - {fileID: 114502926945806084}
+    - {fileID: 114373313916867120}
+    - {fileID: 114703648791156668}
+    - {fileID: 114709165825781772}
+    - {fileID: 114511293597712584}
+    - {fileID: 114096715351620124}
+    - {fileID: 114105051132986354}
+    - {fileID: 114238416796836532}
+    - {fileID: 114249205507104420}
+    - {fileID: 114005490489434778}
+    - {fileID: 114606821664619544}
+    - {fileID: 114972877696420714}
+    - {fileID: 114092528306754788}
+    - {fileID: 114931097732702648}
+    - {fileID: 114355647165744996}
+  StartPosition: {x: 0, y: 0}
+  Process: {fileID: 114709165825781772}
+--- !u!114 &114005490489434778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30486005d150e474796e78730fa8712c, type: 3}
+  m_Name: Hit Sequence
+  m_EditorClassIdentifier: 
+  Name: Hit Sequence
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 947.2, y: -51.2}
+  IsBreakpoint: 0
+  Sequence:
+    _items:
+    - {fileID: 114511293597712584}
+    - {fileID: 114972877696420714}
+--- !u!114 &114092528306754788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Hit Message
+  m_EditorClassIdentifier: 
+  Name: Hit Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1600, y: 153.6}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Hit {local.HitCount} {local.HitText}!
+--- !u!114 &114096715351620124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Attack Count
+  m_EditorClassIdentifier: 
+  Name: Set Attack Count
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 640, y: -0}
+  IsBreakpoint: 0
+  Next: {fileID: 114005490489434778}
+  Expression:
+    _statement: 'local.AttackCount = Random(input.MinAttacks, input.MaxAttacks);
+
+      local.AttackIteration = 0;
+
+      local.HitCount = 0;'
+--- !u!114 &114105051132986354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Increment Count
+  m_EditorClassIdentifier: 
+  Name: Increment Count
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1280, y: 0}
+  IsBreakpoint: 0
+  Next: {fileID: 114451046092513844}
+  Expression:
+    _statement: local.AttackIteration += 1
+--- !u!114 &114238416796836532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Dead
+  m_EditorClassIdentifier: 
+  Name: Is Dead
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3148.8, y: -25.6}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114249205507104420}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.TargetCreature.CurrentHP <= 0
+--- !u!114 &114249205507104420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbf36d44c8307646ae6b4c67ca8b89d, type: 3}
+  m_Name: Break
+  m_EditorClassIdentifier: 
+  Name: Break
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3212.8, y: 102.4}
+  IsBreakpoint: 0
+--- !u!114 &114355647165744996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e22a1cb544f534ab3d5863df979746, type: 3}
+  m_Name: Random Damage
+  m_EditorClassIdentifier: 
+  Name: Random Damage
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2406.4001, y: -217.6}
+  IsBreakpoint: 0
+  Instruction:
+    _instruction: {fileID: 11400000, guid: 4d4b134423c8feb4ea19949663c0d61f, type: 2}
+    _inputs: []
+    _outputs: []
+  Next: {fileID: 114703648791156668}
+  WaitForCompletion: 1
+--- !u!114 &114363681223344366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Missed
+  m_EditorClassIdentifier: 
+  Name: Missed
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1920, y: 64}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Missed!
+--- !u!114 &114373313916867120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860f5b4b64c3d9a40a0a5c67a2b618af, type: 3}
+  m_Name: Update Creature
+  m_EditorClassIdentifier: 
+  Name: Update Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2828.8, y: -25.6}
+  IsBreakpoint: 0
+  Next: {fileID: 114238416796836532}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - TargetCreature
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+    - 
+  Group: 
+  WaitForCompletion: 1
+--- !u!114 &114451046092513844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Check Accuracy
+  m_EditorClassIdentifier: 
+  Name: Check Accuracy
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1600, y: 0}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114606821664619544}
+  OnFalse: {fileID: 114363681223344366}
+  Condition:
+    _statement: CheckAccuracy(this.Ability.Accuracy)
+--- !u!114 &114502926945806084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e22a1cb544f534ab3d5863df979746, type: 3}
+  m_Name: Deal Damage
+  m_EditorClassIdentifier: 
+  Name: Deal Damage
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2188.8, y: -51.2}
+  IsBreakpoint: 0
+  Instruction:
+    _instruction: {fileID: 11400000, guid: f33831509b301a140ad7d8cd041eb14d, type: 2}
+    _inputs: []
+    _outputs: []
+  Next: {fileID: 114703648791156668}
+  WaitForCompletion: 1
+--- !u!114 &114511293597712584
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2641b6832ae40b46afef24dadde8072, type: 3}
+  m_Name: Attack Loop
+  m_EditorClassIdentifier: 
+  Name: Attack Loop
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1267.2001, y: -115.200005}
+  IsBreakpoint: 0
+  Condition:
+    _statement: local.AttackIteration < local.AttackCount
+  Loop: {fileID: 114105051132986354}
+--- !u!114 &114606821664619544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Increment Hits
+  m_EditorClassIdentifier: 
+  Name: Increment Hits
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1740.8, y: -166.40001}
+  IsBreakpoint: 0
+  Next: {fileID: 114931097732702648}
+  Expression:
+    _statement: local.HitCount += 1
+--- !u!114 &114703648791156668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c308a521b3df54d8a0872dfbb74d20, type: 3}
+  m_Name: Play Attack Animation
+  m_EditorClassIdentifier: 
+  Name: Play Attack Animation
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2508.8, y: -89.6}
+  IsBreakpoint: 0
+  Next: {fileID: 114373313916867120}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Creature
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+    - 
+  Clip:
+    WaitForCompletion: 1
+    AnimationTarget: 1
+    AnimationSource: 0
+    Animation: 
+    Parameter: Attack
+--- !u!114 &114709165825781772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e22a1cb544f534ab3d5863df979746, type: 3}
+  m_Name: Use Ability Message
+  m_EditorClassIdentifier: 
+  Name: Use Ability Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: 0}
+  IsBreakpoint: 0
+  Instruction:
+    _instruction: {fileID: 11400000, guid: b0b1150a4056c8d4c8b4097ca529d084, type: 2}
+    _inputs: []
+    _outputs: []
+  Next: {fileID: 114096715351620124}
+  WaitForCompletion: 1
+--- !u!114 &114931097732702648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Random
+  m_EditorClassIdentifier: 
+  Name: Is Random
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2060.8, y: -192}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114355647165744996}
+  OnFalse: {fileID: 114502926945806084}
+  Condition:
+    _statement: input.RandomPower
+--- !u!114 &114972877696420714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Hit Text
+  m_EditorClassIdentifier: 
+  Name: Set Hit Text
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1280, y: 115.200005}
+  IsBreakpoint: 0
+  Next: {fileID: 114092528306754788}
+  Expression:
+    _statement: 'local.HitText = local.HitCount > 1 ? "times" : "time";'

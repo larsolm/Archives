@@ -1,0 +1,86 @@
+{
+	FirstLevel = "MainMenu"
+	ClearColor = "0 0 255 255"
+	Levels {
+		MainMenu {
+			Sections [
+				"Common"
+				"MainMenu"
+				"UiBackground"
+			]
+		}
+		WorldList {
+			Sections [
+				"Common"
+				"UiBackground"
+				"WorldList"
+			]
+		}
+		LevelList {
+			Sections [
+				"Common"
+				"UiBackground"
+				"LevelList"
+			]
+		}
+		GameScreen {
+			Sections [
+				"Common"
+				"GameScreen"
+			]
+		}
+	}
+	Sections {
+		Common {
+			Files [
+				"Graphics.level"
+				"Text.level"
+				"Shapes.level"
+				"Levels/common.level"
+				"Levels/sponge.level"
+				"Levels/dirt.level"
+				"Uis/uiCommon.level"
+			]
+		}
+		UiBackground {
+			Files [
+				"Uis/uiBackground.level"
+			]
+		}
+		MainMenu {
+			Files [
+				"Uis/mainMenu.level"
+			]
+		}
+		WorldList {
+			Files [
+				"Uis/worldList.level"
+			]
+		}
+		LevelList {
+			Files [
+				"Uis/levelList.level"
+			]
+		}
+		LevelOverview {
+			Files [
+				"Uis/levelOverview.level"
+			]
+		}
+		PauseMenu {
+			Files [
+				"Uis/pauseMenu.level"
+			]
+		}
+		PostGame {
+			Files [
+				"Uis/postGame.level"
+			]
+		}
+		GameScreen {
+			Files [
+				"Uis/gameScreen.level"
+			]
+		}
+	}
+}

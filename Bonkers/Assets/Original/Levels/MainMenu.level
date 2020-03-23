@@ -1,0 +1,302 @@
+{
+	MainMenu {
+		#Type = "Bonkers::MainMenu"
+		#Behavior = "Object"
+		Elements = "MainMenu"
+	}	
+	Title {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Align = "Center"
+				Depth = 3
+				FillColor = "Black"
+				Font = "AndyBFont"
+				Tag = "Ui"
+				Text = "This game is Bonkers!"
+			}
+			{
+				#Type = "Pargon::Spatial2D" 
+				Position = "0 200" 
+				Size = "-1 100"
+			}
+		]
+	}
+	NumberOfPlayers {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Align = "Left"
+				Depth = 3
+				FillColor = "Black"
+				Font = "AndyBFont"
+				Tag = "Ui"
+				Text = "Number of Players: {MainMenu.NumberOfPlayers}"
+			}
+			{
+				#Type = "Pargon::Spatial2D" 
+				Position = "-150 50" 
+				Size = "-1 50"
+			}
+		]
+	}
+	PointsToWin
+	{
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Align = "Left"
+				Depth = 3
+				FillColor = "Black"
+				Font = "AndyBFont"
+				Tag = "Ui"
+				Text = "Points to Win: {MainMenu.PointsToWin}"
+			}
+			{
+				#Type = "Pargon::Spatial2D" 
+				Position = "-150 0" 
+				Size = "-1 50"
+			}
+		]
+	}
+	HandSize {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Align = "Left"
+				Depth = 3
+				FillColor = "Black"
+				Font = "AndyBFont"
+				Tag = "Ui"
+				Text = "Hand Size {MainMenu.HandSize}"
+			}
+			{
+				#Type = "Pargon::Spatial2D" 
+				Position = "-150 -50" 
+				Size = "-1 50"
+			}
+		]
+	}
+	AddPlayerButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "300 50"
+				Size = "50 50"
+				Rotation = 90
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Triangle"
+				Depth = 3
+				Color = "Black"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "MainMenu"
+				OnSelect = "MainMenu.ModifyPlayers(1);"
+			}
+		]
+	}
+	SubtractPlayerButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "-200 50"
+				Size = "50 50"
+				Rotation = -90
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Triangle"
+				Depth = 3
+				Color = "Black"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "MainMenu"
+				OnSelect = "MainMenu.ModifyPlayers(-1);"
+			}
+		]
+	}
+	AddPointButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "300 0"
+				Size = "50 50"
+				Rotation = 90
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Triangle"
+				Depth = 3
+				Color = "Black"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "MainMenu"
+				OnSelect = "MainMenu.ModifyScore(1);"
+			}
+		]
+	}
+	SubtractPointButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "-200 0"
+				Size = "50 50"
+				Rotation = -90
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Triangle"
+				Depth = 3
+				Color = "Black"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "MainMenu"
+				OnSelect = "MainMenu.ModifyScore(-1);"
+			}
+		]
+	}
+	AddHandButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "300 -50"
+				Size = "50 50"
+				Rotation = 90
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Triangle"
+				Depth = 3
+				Color = "Black"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "MainMenu"
+				OnSelect = "MainMenu.ModifyHandSize(1);"
+			}
+		]
+	}
+	SubtractHandButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "-200 -50"
+				Size = "50 50"
+				Rotation = -90
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Triangle"
+				Depth = 3
+				Color = "Black"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "MainMenu"
+				OnSelect = "MainMenu.ModifyHandSize(-1);"
+			}
+		]
+	}
+	PlayButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 -200"
+				Size = "400 200"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 4
+				Color = "Green"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "MainMenu"
+				OnSelect = "MainMenu.CreatePlayers();"
+			}
+		]
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Size = "-1 100"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Tag = "Ui"
+						Align = "Center"
+						VerticalAlign = "Center"
+						Depth = 3
+						FillColor = "Black"
+						Font = "AndyBFont"
+						Text = "Play!"
+					}
+				]
+			}
+		]
+	}
+}

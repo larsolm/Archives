@@ -1,0 +1,125 @@
+[
+	{
+		Name = "Intromucktion"
+		Description = "Tilt your screen to slide around and clean up the filthy dirt."
+		Filename = "01 Intromucktion.level"
+		CameraBounds = "75 75 1280 720"
+		StartingPosition = "715 435"
+		GoldTime = 40;
+		SilverTime = 60;
+		BronzeTime = 90;
+		PercentageToClear = 90
+		RedDirt = "Dirt"
+	}
+	{
+		Name = "Advanced Geom-wetry"
+		Description = "Clean up the dirt again, k?"
+		Filename = "02 Advanced Geom-wetry.level"
+		CameraBounds = "50 50 1650 1650"
+		StartingPosition = "875 875"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		PercentageToClear = 80
+		RedDirt = "Dirt"
+	}
+	{
+		Name = "Spot Cleaning"
+		Description = "The dirt is more spread out, so plan out an efficient path."
+		Filename = "03 Spot Cleaning.level"
+		CameraBounds = "0 0 2100 2100"
+		StartingPosition = "1050 300"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		PercentageToClear = 80
+		DirtCapacity = 25
+		RedDirt = "Dirt"
+	}
+	{
+		Name = "That's A-maze-wring!"
+		Description = "Find the hidden dirt in the maze."
+		Filename = "04 That's A-maze-wring.level"
+		CameraBounds = "0 0 5558 3724"
+		StartingPosition = "270 2400"
+		GoldTime = 45;
+		SilverTime = 60;
+		BronzeTime = 100;
+		Laps = 3
+	}
+	{
+		Name = "Basic Draining"
+		Description = "So much dirt! Watch the Dirtometer - if your sponge gets to dirty it will no longer be able to clean stuff. Go to the bucket to rinse the dirt out."
+		Filename = "05 Basic Draining.level"
+		CameraBounds = "0 0 4040 4040"
+		StartingPosition = "2000 2000"
+		GoldTime = 15;
+		SilverTime = 60;
+		BronzeTime = 100;
+	}
+	{
+		Name = "Splash Down"
+		Description = "The dirt is pretty spread out here, so remember where your bucket is!"
+		Filename = "06 Splash Down.level"
+		CameraBounds = "50 50 2148 2148"
+		StartingPosition = "1124 1124"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		PercentageToClear = 75
+		SpongeType = "Jumping"
+		RedDirt = "Dirt"
+	}
+	{
+		Name = "H2O 101"
+		Description = "Two buckets for extra rinsability."
+		Filename = "02 H2O 101.level"
+		CameraBounds = "50 50 2148 2148"
+		StartingPosition = "1124 1124"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		PercentageToClear = 75
+		RedDirt = "Dirt"
+		GreenDirt = "Dust"
+	}
+	{
+		Name = "Spill Sergeant"
+		Description = "Keep track of the location of your 2 rinse buckets in this maze-like level."
+		Filename = "02 Spill Sergeant.level"
+		CameraBounds = "50 50 2148 2148"
+		StartingPosition = "1124 1124"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		PercentageToClear = 75
+		RedDirt = "Dirt"
+		GreenDirt = "Dust"
+	}
+	{
+		Name = "Ready for Grime Time"
+		Description = "Besides dirt, you now have to clean grime! Grime is tough to clean, so it slows you down a bit."
+		Filename = "02 Ready for Grime Time.level"
+		CameraBounds = "50 50 2148 2148"
+		StartingPosition = "1124 1124"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		PercentageToClear = 75
+		RedDirt = "Dirt"
+		GreenDirt = "Dust"
+	}
+	{
+		Name = "Dismissed!"
+		Description = "Grime doesn’t just slow you down, it adds more filth to your Dirtometer. You’re going to need that bucket to complete Boot Damp."
+		Filename = "02 Dismissed.level"
+		CameraBounds = "50 50 2148 2148"
+		StartingPosition = "1124 1124"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		PercentageToClear = 75
+		RedDirt = "Dirt"
+		GreenDirt = "Dust"
+	}
+]

@@ -1,0 +1,9 @@
+[#manual/set-creature]
+
+## Set Creature
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/set-creature.html[Reference]
+endif::[]

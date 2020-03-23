@@ -1,0 +1,15 @@
+[#reference/skill-list]
+
+## SkillList
+
+PiRhoSoft.MonsterRpgEngine.SkillList : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-list-1[SerializedList^]<<<reference/skill.html,Skill>>>
+
+### Description
+
+### Constructors
+
+SkillList()::
+
+### Public Methods
+
+<<reference/skill.html,Skill>> Find(string _name_)::

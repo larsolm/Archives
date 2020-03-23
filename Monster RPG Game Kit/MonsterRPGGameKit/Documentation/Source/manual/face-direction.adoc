@@ -1,0 +1,11 @@
+[#manual/face-direction]
+
+## Face Direction
+
+### Fields
+
+<<manual/movement-direction.html,Movement Direction>> _Direction_::
+
+ifdef::backend-multipage_html5[]
+link:reference/face-direction.html[Reference]
+endif::[]

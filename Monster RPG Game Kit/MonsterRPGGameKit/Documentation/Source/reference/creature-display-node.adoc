@@ -1,0 +1,23 @@
+[#reference/creature-display-node]
+
+## CreatureDisplayNode
+
+PiRhoSoft.MonsterRpgEngine.CreatureDisplayNode : link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^]
+
+### Description
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Next_::
+
+string _InterfaceName_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-reference[VariableReference^] _IndexVariable_::
+
+### Protected Constructors
+
+CreatureDisplayNode()::
+
+### Protected Methods
+
+<<reference/creature-display.html,CreatureDisplay>> GetDisplay(link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^] _variables_)::

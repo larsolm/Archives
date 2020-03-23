@@ -1,0 +1,35 @@
+[#reference/load-information]
+
+## LoadInformation
+
+PiRhoSoft.MonsterRpgEngine.LoadInformation
+
+### Description
+
+### Constructors
+
+LoadInformation()::
+
+### Public Fields
+
+Action _OnComplete_::
+
+Action<<<reference/load-state.html,LoadState>>, <<reference/load-state.html,LoadState>>> _OnProgress_::
+
+Action<string> _OnError_::
+
+### Public Properties
+
+<<reference/load-state.html,LoadState>> _State_ _(read only)_::
+
+float _Progress_ _(read only)_::
+
+string _Message_ _(read only)_::
+
+### Public Methods
+
+void UpdateProgress(<<reference/load-state.html,LoadState>> _state_, float _progress_)::
+
+void SetError(string _message_)::
+
+void SetComplete()::

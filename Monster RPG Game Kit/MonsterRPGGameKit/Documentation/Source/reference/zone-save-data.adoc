@@ -1,0 +1,19 @@
+[#reference/zone-save-data]
+
+## ZoneSaveData
+
+PiRhoSoft.MonsterRpgEngine.ZoneSaveData
+
+### Description
+
+### Constructors
+
+ZoneSaveData()::
+
+### Public Fields
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _PersistentVariables_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/npc-save-data.html,NpcSaveData>>> _Npcs_::

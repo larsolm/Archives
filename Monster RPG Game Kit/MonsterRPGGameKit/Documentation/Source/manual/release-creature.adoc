@@ -1,0 +1,9 @@
+[#manual/release-creature]
+
+## Release Creature
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/release-creature.html[Reference]
+endif::[]

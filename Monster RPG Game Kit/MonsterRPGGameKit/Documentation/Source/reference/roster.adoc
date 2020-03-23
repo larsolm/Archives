@@ -1,0 +1,41 @@
+[#reference/roster]
+
+## Roster
+
+PiRhoSoft.MonsterRpgEngine.Roster : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-list-1[SerializedList^]<<<reference/creature-reference.html,CreatureReference>>>, link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^], link:/projects/unity-composition/documentation/#/v10/reference/i-indexed-variable-store[IIndexedVariableStore^]
+
+### Description
+
+### Constructors
+
+Roster()::
+
+### Public Properties
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/creature.html,Creature>>> _Creatures_ _(read only)_::
+
+### Public Methods
+
+void Setup()::
+
+void CreateCreatures(<<reference/i-trainer.html,ITrainer>> _trainer_)::
+
+void DestroyCreatures()::
+
+void ResetTraits(string _availability_)::
+
+void ResetTraits(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<string> _traits_)::
+
+void AddCreature(<<reference/creature.html,Creature>> _creature_)::
+
+void RemoveCreature(<<reference/creature.html,Creature>> _creature_)::
+
+void TakeCreature(<<reference/creature.html,Creature>> _creature_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^] GetItem(int _index_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] GetVariable(string _name_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/set-variable-result[SetVariableResult^] SetVariable(string _name_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1[IEnumerable^]<string> GetVariableNames() _(virtual)_::

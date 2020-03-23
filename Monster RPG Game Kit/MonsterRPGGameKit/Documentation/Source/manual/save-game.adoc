@@ -1,0 +1,11 @@
+[#manual/save-game]
+
+## Save Game
+
+### Fields
+
+https://docs.unity3d.com/ScriptReference/GameObject.html[GameObject^] _Saving Indicator_::
+
+ifdef::backend-multipage_html5[]
+link:reference/save-game.html[Reference]
+endif::[]

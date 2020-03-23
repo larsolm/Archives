@@ -1,0 +1,47 @@
+[#reference/creature-display]
+
+## CreatureDisplay
+
+PiRhoSoft.MonsterRpgEngine.CreatureDisplay : link:/projects/unity-composition/documentation/#/v10/reference/interface-control[InterfaceControl^]
+
+### Description
+
+### Constructors
+
+CreatureDisplay()::
+
+### Public Fields
+
+link:/projects/unity-utilities/documentation/#/v10/reference/animation-player[AnimationPlayer^] _BattlerPlayer_::
+
+link:/projects/unity-utilities/documentation/#/v10/reference/audio-player[AudioPlayer^] _BattlerAudio_::
+
+https://docs.unity3d.com/ScriptReference/Animator.html[Animator^] _CreatureAnimator_::
+
+<<reference/animation-clip-dictionary.html,AnimationClipDictionary>> _Animations_::
+
+<<reference/audio-clip-dictionary.html,AudioClipDictionary>> _Sounds_::
+
+<<reference/game-object-dictionary.html,GameObjectDictionary>> _Effects_::
+
+### Public Properties
+
+<<reference/creature-context.html,CreatureContext>> _Creature_ _(read only)_::
+
+### Public Methods
+
+void SetCreature(<<reference/creature-context.html,CreatureContext>> _creature_)::
+
+void UpdateCreature(string _group_, link:/projects/unity-composition/documentation/#/v10/reference/binding-animation-status[BindingAnimationStatus^] _status_)::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] PlayAndWait(<<reference/battle-animation-clip.html,BattleAnimationClip>> _animation_, link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^] _variables_)::
+
+void Play(<<reference/battle-animation-clip.html,BattleAnimationClip>> _animation_, link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^] _variables_)::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] PlayAndWait(<<reference/battle-animation-sound.html,BattleAnimationSound>> _animation_, link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^] _variables_)::
+
+void Play(<<reference/battle-animation-sound.html,BattleAnimationSound>> _animation_, link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^] _variables_)::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] PlayAndWait(<<reference/battle-animation-effect.html,BattleAnimationEffect>> _animation_, link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^] _variables_)::
+
+void Play(<<reference/battle-animation-effect.html,BattleAnimationEffect>> _animation_, link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^] _variables_)::

@@ -1,0 +1,23 @@
+[#manual/ability]
+
+## Ability
+
+### Fields
+
+<<manual/ecosystem.html,Ecosystem>> _Ecosystem_::
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Use In World Condition_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _Use In World Instruction_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Use In Battle Condition_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _Use In Battle Instruction_::
+
+ifdef::backend-multipage_html5[]
+link:reference/ability.html[Reference]
+endif::[]

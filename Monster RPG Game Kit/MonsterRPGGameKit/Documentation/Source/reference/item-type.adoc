@@ -1,0 +1,15 @@
+[#reference/item-type]
+
+## ItemType
+
+PiRhoSoft.MonsterRpgEngine.ItemType
+
+### Description
+
+### Values
+
+<<reference/item-type.html,ItemType>> _Durable_::
+
+<<reference/item-type.html,ItemType>> _Consumable_::
+
+<<reference/item-type.html,ItemType>> _Key_::

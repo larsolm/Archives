@@ -1,0 +1,27 @@
+[#manual/map-properties]
+
+## Map Properties
+
+### Fields
+
+bool _Clamp Left Bounds_::
+
+bool _Clamp Right Bounds_::
+
+bool _Clamp Bottom Bounds_::
+
+bool _Clamp Top Bounds_::
+
+float _Left Bounds_::
+
+float _Right Bounds_::
+
+float _Bottom Bounds_::
+
+float _Top Bounds_::
+
+<<manual/tile-dictionary.html,Tile Dictionary>> __tiles_::
+
+ifdef::backend-multipage_html5[]
+link:reference/map-properties.html[Reference]
+endif::[]

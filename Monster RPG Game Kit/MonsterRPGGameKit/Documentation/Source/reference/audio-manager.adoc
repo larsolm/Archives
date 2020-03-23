@@ -1,0 +1,21 @@
+[#reference/audio-manager]
+
+## AudioManager
+
+PiRhoSoft.MonsterRpgEngine.AudioManager : link:/projects/unity-utilities/documentation/#/v10/reference/singleton-behaviour-1[SingletonBehaviour^]<<<reference/audio-manager.html,AudioManager>>>
+
+### Description
+
+### Constructors
+
+AudioManager()::
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/AudioMixerGroup.html[AudioMixerGroup^] _MasterMixer_::
+
+### Public Methods
+
+void Push(https://docs.unity3d.com/ScriptReference/AudioClip.html[AudioClip^] _clip_, float _fadeOut_, float _fadeIn_, float _crossFade_)::
+
+void Pop(float _fadeOut_, float _fadeIn_, float _crossFade_)::

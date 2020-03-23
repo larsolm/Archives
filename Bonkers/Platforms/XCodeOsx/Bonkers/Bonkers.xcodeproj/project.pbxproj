@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		687BDB2D1B951A4D00B2144A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687BDB2B1B951A4D00B2144A /* Images.xcassets */; };
+		687BDB561B951E5D00B2144A /* Board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB321B951E5D00B2144A /* Board.cpp */; };
+		687BDB571B951E5D00B2144A /* BoardRenderable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB341B951E5D00B2144A /* BoardRenderable.cpp */; };
+		687BDB581B951E5D00B2144A /* BoardRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB361B951E5D00B2144A /* BoardRenderer.cpp */; };
+		687BDB591B951E5D00B2144A /* Bonkers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB381B951E5D00B2144A /* Bonkers.cpp */; };
+		687BDB5A1B951E5D00B2144A /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB3A1B951E5D00B2144A /* Deck.cpp */; };
+		687BDB5B1B951E5D00B2144A /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB3C1B951E5D00B2144A /* GameManager.cpp */; };
+		687BDB5C1B951E5D00B2144A /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB3E1B951E5D00B2144A /* Hand.cpp */; };
+		687BDB5D1B951E5D00B2144A /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB401B951E5D00B2144A /* Include.cpp */; };
+		687BDB5E1B951E5D00B2144A /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB411B951E5D00B2144A /* MainMenu.cpp */; };
+		687BDB5F1B951E5D00B2144A /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB431B951E5D00B2144A /* Player.cpp */; };
+		687BDB601B951E5D00B2144A /* PlayerSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB451B951E5D00B2144A /* PlayerSelect.cpp */; };
+		687BDB611B951E5D00B2144A /* Space.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB471B951E5D00B2144A /* Space.cpp */; };
+		687BDB621B951E5D00B2144A /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB491B951E5D00B2144A /* Tile.cpp */; };
+		687BDB631B951E5D00B2144A /* GoToScoreTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB4C1B951E5D00B2144A /* GoToScoreTile.cpp */; };
+		687BDB641B951E5D00B2144A /* GoToStartTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB4E1B951E5D00B2144A /* GoToStartTile.cpp */; };
+		687BDB651B951E5D00B2144A /* MoveTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB501B951E5D00B2144A /* MoveTile.cpp */; };
+		687BDB661B951E5D00B2144A /* RollAgainTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB521B951E5D00B2144A /* RollAgainTile.cpp */; };
+		687BDB6C1B951EF500B2144A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB691B951EF500B2144A /* AppDelegate.mm */; };
+		687BDB6D1B951EF500B2144A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 687BDB6A1B951EF500B2144A /* main.mm */; };
+		687BDB6E1B951EF500B2144A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687BDB6B1B951EF500B2144A /* Main.storyboard */; };
+		687BDB701B951F2500B2144A /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 687BDB6F1B951F2500B2144A /* Assets */; };
+		687BDB851B95F53600B2144A /* libAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB731B95F53600B2144A /* libAnimation.a */; };
+		687BDB861B95F53600B2144A /* libApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB741B95F53600B2144A /* libApplication.a */; };
+		687BDB871B95F53600B2144A /* libAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB751B95F53600B2144A /* libAudio.a */; };
+		687BDB881B95F53600B2144A /* libData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB761B95F53600B2144A /* libData.a */; };
+		687BDB891B95F53600B2144A /* libDebugging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB771B95F53600B2144A /* libDebugging.a */; };
+		687BDB8A1B95F53600B2144A /* libFileSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB781B95F53600B2144A /* libFileSystem.a */; };
+		687BDB8B1B95F53600B2144A /* libGame2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB791B95F53600B2144A /* libGame2d.a */; };
+		687BDB8C1B95F53600B2144A /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB7A1B95F53600B2144A /* libGameCore.a */; };
+		687BDB8D1B95F53600B2144A /* libGameUi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB7B1B95F53600B2144A /* libGameUi.a */; };
+		687BDB8E1B95F53600B2144A /* libGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB7C1B95F53600B2144A /* libGraphics.a */; };
+		687BDB8F1B95F53600B2144A /* libInput.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB7D1B95F53600B2144A /* libInput.a */; };
+		687BDB901B95F53600B2144A /* libMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB7E1B95F53600B2144A /* libMath.a */; };
+		687BDB911B95F53600B2144A /* libReflection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB7F1B95F53600B2144A /* libReflection.a */; };
+		687BDB921B95F53600B2144A /* libScripting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB801B95F53600B2144A /* libScripting.a */; };
+		687BDB931B95F53600B2144A /* libSerialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB811B95F53600B2144A /* libSerialization.a */; };
+		687BDB941B95F53600B2144A /* libShapes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB821B95F53600B2144A /* libShapes.a */; };
+		687BDB951B95F53600B2144A /* libText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB831B95F53600B2144A /* libText.a */; };
+		687BDB961B95F53600B2144A /* libTypes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB841B95F53600B2144A /* libTypes.a */; };
+		687BDB9C1B95F56E00B2144A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB971B95F56E00B2144A /* AppKit.framework */; };
+		687BDB9D1B95F56E00B2144A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB981B95F56E00B2144A /* Cocoa.framework */; };
+		687BDB9E1B95F56E00B2144A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB991B95F56E00B2144A /* CoreFoundation.framework */; };
+		687BDB9F1B95F56E00B2144A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB9A1B95F56E00B2144A /* OpenAL.framework */; };
+		687BDBA01B95F56E00B2144A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687BDB9B1B95F56E00B2144A /* OpenGL.framework */; };
+		68CB64E91B96BE73001E1AA0 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB64E61B96BE73001E1AA0 /* libfreetype.a */; };
+		68CB64EA1B96BE73001E1AA0 /* libstbimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB64E71B96BE73001E1AA0 /* libstbimage.a */; };
+		68CB64EB1B96BE73001E1AA0 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CB64E81B96BE73001E1AA0 /* libzlib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		687BDB051B9519D600B2144A /* Bonkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bonkers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		687BDB2B1B951A4D00B2144A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Bonkers/Images.xcassets; sourceTree = "<group>"; };
+		687BDB2C1B951A4D00B2144A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Bonkers/Info.plist; sourceTree = "<group>"; };
+		687BDB321B951E5D00B2144A /* Board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Board.cpp; path = ../../../Bonkers/Board.cpp; sourceTree = "<group>"; };
+		687BDB331B951E5D00B2144A /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Board.h; path = ../../../Bonkers/Board.h; sourceTree = "<group>"; };
+		687BDB341B951E5D00B2144A /* BoardRenderable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardRenderable.cpp; path = ../../../Bonkers/BoardRenderable.cpp; sourceTree = "<group>"; };
+		687BDB351B951E5D00B2144A /* BoardRenderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardRenderable.h; path = ../../../Bonkers/BoardRenderable.h; sourceTree = "<group>"; };
+		687BDB361B951E5D00B2144A /* BoardRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BoardRenderer.cpp; path = ../../../Bonkers/BoardRenderer.cpp; sourceTree = "<group>"; };
+		687BDB371B951E5D00B2144A /* BoardRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoardRenderer.h; path = ../../../Bonkers/BoardRenderer.h; sourceTree = "<group>"; };
+		687BDB381B951E5D00B2144A /* Bonkers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Bonkers.cpp; path = ../../../Bonkers/Bonkers.cpp; sourceTree = "<group>"; };
+		687BDB391B951E5D00B2144A /* Bonkers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bonkers.h; path = ../../../Bonkers/Bonkers.h; sourceTree = "<group>"; };
+		687BDB3A1B951E5D00B2144A /* Deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Deck.cpp; path = ../../../Bonkers/Deck.cpp; sourceTree = "<group>"; };
+		687BDB3B1B951E5D00B2144A /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = ../../../Bonkers/Deck.h; sourceTree = "<group>"; };
+		687BDB3C1B951E5D00B2144A /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameManager.cpp; path = ../../../Bonkers/GameManager.cpp; sourceTree = "<group>"; };
+		687BDB3D1B951E5D00B2144A /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameManager.h; path = ../../../Bonkers/GameManager.h; sourceTree = "<group>"; };
+		687BDB3E1B951E5D00B2144A /* Hand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Hand.cpp; path = ../../../Bonkers/Hand.cpp; sourceTree = "<group>"; };
+		687BDB3F1B951E5D00B2144A /* Hand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hand.h; path = ../../../Bonkers/Hand.h; sourceTree = "<group>"; };
+		687BDB401B951E5D00B2144A /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Include.cpp; path = ../../../Bonkers/Include.cpp; sourceTree = "<group>"; };
+		687BDB411B951E5D00B2144A /* MainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainMenu.cpp; path = ../../../Bonkers/MainMenu.cpp; sourceTree = "<group>"; };
+		687BDB421B951E5D00B2144A /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenu.h; path = ../../../Bonkers/MainMenu.h; sourceTree = "<group>"; };
+		687BDB431B951E5D00B2144A /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../../../Bonkers/Player.cpp; sourceTree = "<group>"; };
+		687BDB441B951E5D00B2144A /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../../../Bonkers/Player.h; sourceTree = "<group>"; };
+		687BDB451B951E5D00B2144A /* PlayerSelect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PlayerSelect.cpp; path = ../../../Bonkers/PlayerSelect.cpp; sourceTree = "<group>"; };
+		687BDB461B951E5D00B2144A /* PlayerSelect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerSelect.h; path = ../../../Bonkers/PlayerSelect.h; sourceTree = "<group>"; };
+		687BDB471B951E5D00B2144A /* Space.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Space.cpp; path = ../../../Bonkers/Space.cpp; sourceTree = "<group>"; };
+		687BDB481B951E5D00B2144A /* Space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Space.h; path = ../../../Bonkers/Space.h; sourceTree = "<group>"; };
+		687BDB491B951E5D00B2144A /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tile.cpp; path = ../../../Bonkers/Tile.cpp; sourceTree = "<group>"; };
+		687BDB4A1B951E5D00B2144A /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tile.h; path = ../../../Bonkers/Tile.h; sourceTree = "<group>"; };
+		687BDB4C1B951E5D00B2144A /* GoToScoreTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoToScoreTile.cpp; sourceTree = "<group>"; };
+		687BDB4D1B951E5D00B2144A /* GoToScoreTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToScoreTile.h; sourceTree = "<group>"; };
+		687BDB4E1B951E5D00B2144A /* GoToStartTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoToStartTile.cpp; sourceTree = "<group>"; };
+		687BDB4F1B951E5D00B2144A /* GoToStartTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoToStartTile.h; sourceTree = "<group>"; };
+		687BDB501B951E5D00B2144A /* MoveTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MoveTile.cpp; sourceTree = "<group>"; };
+		687BDB511B951E5D00B2144A /* MoveTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveTile.h; sourceTree = "<group>"; };
+		687BDB521B951E5D00B2144A /* RollAgainTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RollAgainTile.cpp; sourceTree = "<group>"; };
+		687BDB531B951E5D00B2144A /* RollAgainTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RollAgainTile.h; sourceTree = "<group>"; };
+		687BDB541B951E5D00B2144A /* Tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiles.h; sourceTree = "<group>"; };
+		687BDB681B951EF500B2144A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Osx/AppDelegate.h; sourceTree = "<group>"; };
+		687BDB691B951EF500B2144A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Osx/AppDelegate.mm; sourceTree = "<group>"; };
+		687BDB6A1B951EF500B2144A /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = Osx/main.mm; sourceTree = "<group>"; };
+		687BDB6B1B951EF500B2144A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Osx/Main.storyboard; sourceTree = "<group>"; };
+		687BDB6F1B951F2500B2144A /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../../../Assets; sourceTree = "<group>"; };
+		687BDB731B95F53600B2144A /* libAnimation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAnimation.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Animation/build/Debug/libAnimation.a; sourceTree = "<group>"; };
+		687BDB741B95F53600B2144A /* libApplication.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libApplication.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Application/build/Debug/libApplication.a; sourceTree = "<group>"; };
+		687BDB751B95F53600B2144A /* libAudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAudio.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Audio/build/Debug/libAudio.a; sourceTree = "<group>"; };
+		687BDB761B95F53600B2144A /* libData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libData.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Data/build/Debug/libData.a; sourceTree = "<group>"; };
+		687BDB771B95F53600B2144A /* libDebugging.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDebugging.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Debugging/build/Debug/libDebugging.a; sourceTree = "<group>"; };
+		687BDB781B95F53600B2144A /* libFileSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFileSystem.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/FileSystem/build/Debug/libFileSystem.a; sourceTree = "<group>"; };
+		687BDB791B95F53600B2144A /* libGame2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGame2d.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Game2d/build/Debug/libGame2d.a; sourceTree = "<group>"; };
+		687BDB7A1B95F53600B2144A /* libGameCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameCore.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/GameCore/build/Debug/libGameCore.a; sourceTree = "<group>"; };
+		687BDB7B1B95F53600B2144A /* libGameUi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameUi.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/GameUi/build/Debug/libGameUi.a; sourceTree = "<group>"; };
+		687BDB7C1B95F53600B2144A /* libGraphics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGraphics.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Graphics/build/Debug/libGraphics.a; sourceTree = "<group>"; };
+		687BDB7D1B95F53600B2144A /* libInput.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInput.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Input/build/Debug/libInput.a; sourceTree = "<group>"; };
+		687BDB7E1B95F53600B2144A /* libMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMath.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Math/build/Debug/libMath.a; sourceTree = "<group>"; };
+		687BDB7F1B95F53600B2144A /* libReflection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReflection.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Reflection/build/Debug/libReflection.a; sourceTree = "<group>"; };
+		687BDB801B95F53600B2144A /* libScripting.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libScripting.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Scripting/build/Debug/libScripting.a; sourceTree = "<group>"; };
+		687BDB811B95F53600B2144A /* libSerialization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSerialization.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Serialization/build/Debug/libSerialization.a; sourceTree = "<group>"; };
+		687BDB821B95F53600B2144A /* libShapes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libShapes.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Shapes/build/Debug/libShapes.a; sourceTree = "<group>"; };
+		687BDB831B95F53600B2144A /* libText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libText.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Text/build/Debug/libText.a; sourceTree = "<group>"; };
+		687BDB841B95F53600B2144A /* libTypes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTypes.a; path = ../../../../../Pargon/Platforms/XcodeOSX/Pargon/Types/build/Debug/libTypes.a; sourceTree = "<group>"; };
+		687BDB971B95F56E00B2144A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		687BDB981B95F56E00B2144A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		687BDB991B95F56E00B2144A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		687BDB9A1B95F56E00B2144A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		687BDB9B1B95F56E00B2144A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		68CB64E61B96BE73001E1AA0 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/Bonkers-ewhncgzzidarzwdbrapntnaqdepq/Build/Products/Debug/libfreetype.a"; sourceTree = "<group>"; };
+		68CB64E71B96BE73001E1AA0 /* libstbimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstbimage.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/Bonkers-ewhncgzzidarzwdbrapntnaqdepq/Build/Products/Debug/libstbimage.a"; sourceTree = "<group>"; };
+		68CB64E81B96BE73001E1AA0 /* libzlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzlib.a; path = "../../../../../../Library/Developer/Xcode/DerivedData/Bonkers-ewhncgzzidarzwdbrapntnaqdepq/Build/Products/Debug/libzlib.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		687BDB021B9519D600B2144A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CB64E91B96BE73001E1AA0 /* libfreetype.a in Frameworks */,
+				68CB64EA1B96BE73001E1AA0 /* libstbimage.a in Frameworks */,
+				68CB64EB1B96BE73001E1AA0 /* libzlib.a in Frameworks */,
+				687BDB9C1B95F56E00B2144A /* AppKit.framework in Frameworks */,
+				687BDB9D1B95F56E00B2144A /* Cocoa.framework in Frameworks */,
+				687BDB9E1B95F56E00B2144A /* CoreFoundation.framework in Frameworks */,
+				687BDB9F1B95F56E00B2144A /* OpenAL.framework in Frameworks */,
+				687BDBA01B95F56E00B2144A /* OpenGL.framework in Frameworks */,
+				687BDB851B95F53600B2144A /* libAnimation.a in Frameworks */,
+				687BDB861B95F53600B2144A /* libApplication.a in Frameworks */,
+				687BDB871B95F53600B2144A /* libAudio.a in Frameworks */,
+				687BDB881B95F53600B2144A /* libData.a in Frameworks */,
+				687BDB891B95F53600B2144A /* libDebugging.a in Frameworks */,
+				687BDB8A1B95F53600B2144A /* libFileSystem.a in Frameworks */,
+				687BDB8B1B95F53600B2144A /* libGame2d.a in Frameworks */,
+				687BDB8C1B95F53600B2144A /* libGameCore.a in Frameworks */,
+				687BDB8D1B95F53600B2144A /* libGameUi.a in Frameworks */,
+				687BDB8E1B95F53600B2144A /* libGraphics.a in Frameworks */,
+				687BDB8F1B95F53600B2144A /* libInput.a in Frameworks */,
+				687BDB901B95F53600B2144A /* libMath.a in Frameworks */,
+				687BDB911B95F53600B2144A /* libReflection.a in Frameworks */,
+				687BDB921B95F53600B2144A /* libScripting.a in Frameworks */,
+				687BDB931B95F53600B2144A /* libSerialization.a in Frameworks */,
+				687BDB941B95F53600B2144A /* libShapes.a in Frameworks */,
+				687BDB951B95F53600B2144A /* libText.a in Frameworks */,
+				687BDB961B95F53600B2144A /* libTypes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		687BDAFC1B9519D600B2144A = {
+			isa = PBXGroup;
+			children = (
+				687BDB6F1B951F2500B2144A /* Assets */,
+				687BDB2B1B951A4D00B2144A /* Images.xcassets */,
+				687BDB2C1B951A4D00B2144A /* Info.plist */,
+				687BDB391B951E5D00B2144A /* Bonkers.h */,
+				687BDB381B951E5D00B2144A /* Bonkers.cpp */,
+				687BDB2F1B951E5D00B2144A /* Apis */,
+				687BDB321B951E5D00B2144A /* Board.cpp */,
+				687BDB331B951E5D00B2144A /* Board.h */,
+				687BDB341B951E5D00B2144A /* BoardRenderable.cpp */,
+				687BDB351B951E5D00B2144A /* BoardRenderable.h */,
+				687BDB361B951E5D00B2144A /* BoardRenderer.cpp */,
+				687BDB371B951E5D00B2144A /* BoardRenderer.h */,
+				687BDB3A1B951E5D00B2144A /* Deck.cpp */,
+				687BDB3B1B951E5D00B2144A /* Deck.h */,
+				687BDB3C1B951E5D00B2144A /* GameManager.cpp */,
+				687BDB3D1B951E5D00B2144A /* GameManager.h */,
+				687BDB3E1B951E5D00B2144A /* Hand.cpp */,
+				687BDB3F1B951E5D00B2144A /* Hand.h */,
+				687BDB401B951E5D00B2144A /* Include.cpp */,
+				687BDB411B951E5D00B2144A /* MainMenu.cpp */,
+				687BDB421B951E5D00B2144A /* MainMenu.h */,
+				687BDB431B951E5D00B2144A /* Player.cpp */,
+				687BDB441B951E5D00B2144A /* Player.h */,
+				687BDB451B951E5D00B2144A /* PlayerSelect.cpp */,
+				687BDB461B951E5D00B2144A /* PlayerSelect.h */,
+				687BDB471B951E5D00B2144A /* Space.cpp */,
+				687BDB481B951E5D00B2144A /* Space.h */,
+				687BDB491B951E5D00B2144A /* Tile.cpp */,
+				687BDB4A1B951E5D00B2144A /* Tile.h */,
+				687BDB4B1B951E5D00B2144A /* Tiles */,
+				687BDB711B95203D00B2144A /* Frameworks */,
+				687BDB721B95204400B2144A /* Libraries */,
+				687BDB061B9519D600B2144A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		687BDB061B9519D600B2144A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				687BDB051B9519D600B2144A /* Bonkers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		687BDB2F1B951E5D00B2144A /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				687BDB671B951E6E00B2144A /* Osx */,
+			);
+			name = Apis;
+			path = ../../../Bonkers/Apis;
+			sourceTree = "<group>";
+		};
+		687BDB4B1B951E5D00B2144A /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				687BDB4C1B951E5D00B2144A /* GoToScoreTile.cpp */,
+				687BDB4D1B951E5D00B2144A /* GoToScoreTile.h */,
+				687BDB4E1B951E5D00B2144A /* GoToStartTile.cpp */,
+				687BDB4F1B951E5D00B2144A /* GoToStartTile.h */,
+				687BDB501B951E5D00B2144A /* MoveTile.cpp */,
+				687BDB511B951E5D00B2144A /* MoveTile.h */,
+				687BDB521B951E5D00B2144A /* RollAgainTile.cpp */,
+				687BDB531B951E5D00B2144A /* RollAgainTile.h */,
+				687BDB541B951E5D00B2144A /* Tiles.h */,
+			);
+			name = Tiles;
+			path = ../../../Bonkers/Tiles;
+			sourceTree = "<group>";
+		};
+		687BDB671B951E6E00B2144A /* Osx */ = {
+			isa = PBXGroup;
+			children = (
+				687BDB681B951EF500B2144A /* AppDelegate.h */,
+				687BDB691B951EF500B2144A /* AppDelegate.mm */,
+				687BDB6A1B951EF500B2144A /* main.mm */,
+				687BDB6B1B951EF500B2144A /* Main.storyboard */,
+			);
+			name = Osx;
+			sourceTree = "<group>";
+		};
+		687BDB711B95203D00B2144A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				687BDB971B95F56E00B2144A /* AppKit.framework */,
+				687BDB981B95F56E00B2144A /* Cocoa.framework */,
+				687BDB991B95F56E00B2144A /* CoreFoundation.framework */,
+				687BDB9A1B95F56E00B2144A /* OpenAL.framework */,
+				687BDB9B1B95F56E00B2144A /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		687BDB721B95204400B2144A /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				68CB64E61B96BE73001E1AA0 /* libfreetype.a */,
+				68CB64E71B96BE73001E1AA0 /* libstbimage.a */,
+				68CB64E81B96BE73001E1AA0 /* libzlib.a */,
+				687BDB731B95F53600B2144A /* libAnimation.a */,
+				687BDB741B95F53600B2144A /* libApplication.a */,
+				687BDB751B95F53600B2144A /* libAudio.a */,
+				687BDB761B95F53600B2144A /* libData.a */,
+				687BDB771B95F53600B2144A /* libDebugging.a */,
+				687BDB781B95F53600B2144A /* libFileSystem.a */,
+				687BDB791B95F53600B2144A /* libGame2d.a */,
+				687BDB7A1B95F53600B2144A /* libGameCore.a */,
+				687BDB7B1B95F53600B2144A /* libGameUi.a */,
+				687BDB7C1B95F53600B2144A /* libGraphics.a */,
+				687BDB7D1B95F53600B2144A /* libInput.a */,
+				687BDB7E1B95F53600B2144A /* libMath.a */,
+				687BDB7F1B95F53600B2144A /* libReflection.a */,
+				687BDB801B95F53600B2144A /* libScripting.a */,
+				687BDB811B95F53600B2144A /* libSerialization.a */,
+				687BDB821B95F53600B2144A /* libShapes.a */,
+				687BDB831B95F53600B2144A /* libText.a */,
+				687BDB841B95F53600B2144A /* libTypes.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		687BDB041B9519D600B2144A /* Bonkers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687BDB251B9519D600B2144A /* Build configuration list for PBXNativeTarget "Bonkers" */;
+			buildPhases = (
+				687BDB011B9519D600B2144A /* Sources */,
+				687BDB021B9519D600B2144A /* Frameworks */,
+				687BDB031B9519D600B2144A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bonkers;
+			productName = Bonkers;
+			productReference = 687BDB051B9519D600B2144A /* Bonkers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		687BDAFD1B9519D600B2144A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = PiRhoSoft;
+				TargetAttributes = {
+					687BDB041B9519D600B2144A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 687BDB001B9519D600B2144A /* Build configuration list for PBXProject "Bonkers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 687BDAFC1B9519D600B2144A;
+			productRefGroup = 687BDB061B9519D600B2144A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				687BDB041B9519D600B2144A /* Bonkers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		687BDB031B9519D600B2144A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687BDB6E1B951EF500B2144A /* Main.storyboard in Resources */,
+				687BDB701B951F2500B2144A /* Assets in Resources */,
+				687BDB2D1B951A4D00B2144A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		687BDB011B9519D600B2144A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				687BDB5B1B951E5D00B2144A /* GameManager.cpp in Sources */,
+				687BDB651B951E5D00B2144A /* MoveTile.cpp in Sources */,
+				687BDB5A1B951E5D00B2144A /* Deck.cpp in Sources */,
+				687BDB631B951E5D00B2144A /* GoToScoreTile.cpp in Sources */,
+				687BDB6C1B951EF500B2144A /* AppDelegate.mm in Sources */,
+				687BDB611B951E5D00B2144A /* Space.cpp in Sources */,
+				687BDB561B951E5D00B2144A /* Board.cpp in Sources */,
+				687BDB581B951E5D00B2144A /* BoardRenderer.cpp in Sources */,
+				687BDB661B951E5D00B2144A /* RollAgainTile.cpp in Sources */,
+				687BDB5C1B951E5D00B2144A /* Hand.cpp in Sources */,
+				687BDB641B951E5D00B2144A /* GoToStartTile.cpp in Sources */,
+				687BDB5F1B951E5D00B2144A /* Player.cpp in Sources */,
+				687BDB601B951E5D00B2144A /* PlayerSelect.cpp in Sources */,
+				687BDB5D1B951E5D00B2144A /* Include.cpp in Sources */,
+				687BDB571B951E5D00B2144A /* BoardRenderable.cpp in Sources */,
+				687BDB591B951E5D00B2144A /* Bonkers.cpp in Sources */,
+				687BDB5E1B951E5D00B2144A /* MainMenu.cpp in Sources */,
+				687BDB621B951E5D00B2144A /* Tile.cpp in Sources */,
+				687BDB6D1B951EF500B2144A /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		687BDB231B9519D600B2144A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../Bonkers/Bonkers.cpp;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../ $(PROJECT_DIR)/../../../../../Pargon";
+				USE_HEADER_MAP = NO;
+			};
+			name = Debug;
+		};
+		687BDB241B9519D600B2144A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../Bonkers/Bonkers.cpp;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../ $(PROJECT_DIR)/../../../../../Pargon";
+				USE_HEADER_MAP = NO;
+			};
+			name = Release;
+		};
+		687BDB261B9519D600B2144A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Bonkers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Animation/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Application/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Audio/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Data/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Debugging/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/FileSystem/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Game2d/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/GameCore/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/GameUi/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Graphics/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Input/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Math/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Reflection/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Scripting/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Serialization/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Shapes/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Text/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Types/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Libraries/freetype/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Libraries/stbimage/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Libraries/zlib/build/Debug,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Bonkers-ewhncgzzidarzwdbrapntnaqdepq/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		687BDB271B9519D600B2144A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Bonkers/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Animation/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Application/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Audio/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Data/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Debugging/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/FileSystem/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Game2d/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/GameCore/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/GameUi/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Graphics/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Input/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Math/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Reflection/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Scripting/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Serialization/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Shapes/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Text/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Types/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Libraries/freetype/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Libraries/stbimage/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Libraries/zlib/build/Debug,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Bonkers-ewhncgzzidarzwdbrapntnaqdepq/Build/Products/Debug",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		687BDB001B9519D600B2144A /* Build configuration list for PBXProject "Bonkers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687BDB231B9519D600B2144A /* Debug */,
+				687BDB241B9519D600B2144A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687BDB251B9519D600B2144A /* Build configuration list for PBXNativeTarget "Bonkers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				687BDB261B9519D600B2144A /* Debug */,
+				687BDB271B9519D600B2144A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 687BDAFD1B9519D600B2144A /* Project object */;
+}

@@ -1,0 +1,9 @@
+[#manual/reset-move-availability]
+
+## Reset Move Availability
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/reset-move-availability.html[Reference]
+endif::[]

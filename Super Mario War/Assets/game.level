@@ -1,0 +1,36 @@
+{
+	Camera {
+		#Type = "Pargon::Game::X2d::OrthographicCamera"
+		#Behavior = "Object"
+		MinimumSize = "1280 720"
+		Renderables [ "Game" ]
+		Material = "CopyMaterial"
+		Geometry = "QuadGeometry"
+		Order = 0
+	}
+	JumpSound {
+		#Type = "Pargon::Game::Core::SoundObject"
+		#Behavior = "Object"
+		Filename = "Assets/Sounds/jump.wav"
+	}
+	BonkSound {
+		#Type = "Pargon::Game::Core::SoundObject"
+		#Behavior = "Object"
+		Filename = "Assets/Sounds/bump.wav"
+	}
+	DeathSound {
+		#Type = "Pargon::Game::Core::SoundObject"
+		#Behavior = "Object"
+		Filename = "Assets/Sounds/death.wav"
+	}
+	SkidSound {
+		#Type = "Pargon::Game::Core::SoundObject"
+		#Behavior = "Object"
+		Filename = "Assets/Sounds/skid.wav"
+	}
+	StompSound {
+		#Type = "Pargon::Game::Core::SoundObject"
+		#Behavior = "Object"
+		Filename = "Assets/Sounds/stomp.wav"
+	}
+}

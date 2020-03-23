@@ -1,0 +1,18 @@
+{
+	"DataType": "Upgrade",
+	"Attributes":
+	{
+		"Bases": {
+			"Shield": 50.0,
+			"ShieldRegen": 1.0
+		},
+		"Increments": {
+			"Shield": 25.0,
+			"ShieldRegen": 1.0
+		},
+		"Maximums": {
+			"Shield": 5,
+			"ShieldRegen": 5
+		}
+	}
+}

@@ -1,0 +1,19 @@
+{
+	GameManager {
+		#Type = "GrungySponge::GameManager"
+		#Behavior = "Object"
+	}
+	ClearFieldManager {
+		#Type = "GrungySponge::ClearFieldManager"
+		#Behavior = "Object"
+	}
+	UncoverableRenderer {
+		#Type = "Pargon::Shapes::ShapeRenderer"
+		#Behavior = "Object"
+		Depth = 10
+		Material = "ShapeMaterial"
+		Blending = "DisabledBlending"
+		DepthStencil = "StandardDepthTesting"
+		Rasterization = "StandardRasterization"
+	}
+}

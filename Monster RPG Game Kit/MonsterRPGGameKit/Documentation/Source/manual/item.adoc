@@ -1,0 +1,27 @@
+[#manual/item]
+
+## Item
+
+### Fields
+
+string _Name_::
+
+string _Description_::
+
+<<manual/item-type.html,Item Type>> _Type_::
+
+int _Purchase Cost_::
+
+int _Sell Cost_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Use In World Condition_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _Use In World Instruction_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Use In Battle Condition_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _Use In Battle Instruction_::
+
+ifdef::backend-multipage_html5[]
+link:reference/item.html[Reference]
+endif::[]

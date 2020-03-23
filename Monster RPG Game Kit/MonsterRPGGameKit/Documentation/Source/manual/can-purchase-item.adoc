@@ -1,0 +1,9 @@
+[#manual/can-purchase-item]
+
+## Can Purchase Item
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/can-purchase-item.html[Reference]
+endif::[]

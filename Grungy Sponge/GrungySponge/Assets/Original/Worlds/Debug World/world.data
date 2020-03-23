@@ -1,0 +1,74 @@
+[
+	{
+		Name = "Movement Test"
+		Description = "Learn to Handle Your Sponge"
+		Filename = "01 Movement Test.level"
+		CameraBounds = "-40 -40 1280 1280"
+		StartingPosition = "600 600"
+		GoldTime = 40;
+		SilverTime = 60;
+		BronzeTime = 90;
+		PercentageToClear = 90
+		RedDirt = "Dirt"
+		GreenDirt = "Dust"
+		BlueDirt = "Mold"
+	}
+	{
+		Name = "Collectable Test"
+		Description = "Collect the objects"
+		Filename = "02 Collectables Test.level"
+		CameraBounds = "50 50 2100 2100"
+		StartingPosition = "1100 1100"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		RedDirt = "Dirt"
+	}
+	{
+		Name = "Bucket Test"
+		Description = "Rinse the Sponge in the Bucket"
+		Filename = "03 Bucket Test.level"
+		CameraBounds = "50 50 2100 2100"
+		StartingPosition = "1100 1100"
+		GoldTime = 50;
+		SilverTime = 75;
+		BronzeTime = 100;
+		PercentageToClear = 90
+		DirtCapacity = 10
+		RedDirt = "Dirt"
+	}
+	{
+		Name = "Race Test"
+		Description = "3 Laps as Fast as you Can"
+		Filename = "04 Race Test.level"
+		CameraBounds = "0 0 3740 2500"
+		StartingPosition = "240 1300"
+		GoldTime = 45;
+		SilverTime = 60;
+		BronzeTime = 100;
+		Laps = 3
+	}
+	{
+		Name = "Uncoverable Test"
+		Description = "Find the Hidden Treasure!"
+		Filename = "05 Uncoverable Test.level"
+		CameraBounds = "50 50 2100 2100"
+		StartingPosition = "1100 1100"
+		GoldTime = 15;
+		SilverTime = 60;
+		BronzeTime = 100;
+		RedDirt = "Dirt"
+	}
+	{
+		Name = "Pit Test"
+		Description = "Jump over the pits!"
+		Filename = "06 Pit Test.level"
+		CameraBounds = "100 100 3600 800"
+		StartingPosition = "500 500"
+		GoldTime = 15;
+		SilverTime = 60;
+		BronzeTime = 100;
+		RedDirt = "Dirt"
+		SpongeType = "Jumping"
+	}
+]

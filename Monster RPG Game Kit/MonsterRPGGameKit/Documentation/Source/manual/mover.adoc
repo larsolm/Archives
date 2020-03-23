@@ -1,0 +1,19 @@
+[#manual/mover]
+
+## Mover
+
+### Fields
+
+<<manual/collision-layer.html,Collision Layer>> _Movement Layer_::
+
+int _Direction Delay Frames_::
+
+float _Move Speed_::
+
+https://docs.unity3d.com/ScriptReference/Renderer.html[Renderer^] _Shadow_::
+
+<<manual/movement-direction.html,Movement Direction>> __direction_::
+
+ifdef::backend-multipage_html5[]
+link:reference/mover.html[Reference]
+endif::[]

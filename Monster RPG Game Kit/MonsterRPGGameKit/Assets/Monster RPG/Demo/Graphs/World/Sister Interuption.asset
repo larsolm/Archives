@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864204cda72169a4a8d5e021c47bc66f, type: 3}
+  m_Name: Sister Interuption
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114015243257407996}
+    - {fileID: 114157613829427904}
+    - {fileID: 114227654648863664}
+    - {fileID: 114785426258446692}
+    - {fileID: 114437959077525420}
+    - {fileID: 114370263944948404}
+    - {fileID: 114994188937289784}
+    - {fileID: 114015624594658832}
+    - {fileID: 114514552347473018}
+  StartPosition: {x: 0, y: -0}
+  Process: {fileID: 114514552347473018}
+--- !u!114 &114015243257407996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132614e6593af784cb60d06a151290ed, type: 3}
+  m_Name: Freeze Player
+  m_EditorClassIdentifier: 
+  Name: Freeze Player
+  This:
+    _variable:
+    - Player
+    _lookups:
+    - Controller
+  GraphPosition: {x: 512, y: 64}
+  IsBreakpoint: 0
+  Next: {fileID: 114227654648863664}
+--- !u!114 &114015624594658832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e22a1cb544f534ab3d5863df979746, type: 3}
+  m_Name: Sister Interact
+  m_EditorClassIdentifier: 
+  Name: Sister Interact
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1344, y: 128}
+  IsBreakpoint: 0
+  Instruction:
+    _instruction: {fileID: 11400000, guid: f5af469902f22af41b6074c6e20fded9, type: 2}
+    _inputs: []
+    _outputs: []
+  Next: {fileID: 114157613829427904}
+  WaitForCompletion: 1
+--- !u!114 &114157613829427904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1acfd94b978e9df45bb4cedb5adc848b, type: 3}
+  m_Name: Thaw Player
+  m_EditorClassIdentifier: 
+  Name: Thaw Player
+  This:
+    _variable:
+    - Player
+    _lookups:
+    - Controller
+  GraphPosition: {x: 1676.8, y: 204.8}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+--- !u!114 &114227654648863664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd36ba06a52fe140b79c7a1d0217802, type: 3}
+  m_Name: Alert
+  m_EditorClassIdentifier: 
+  Name: Alert
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: -0}
+  IsBreakpoint: 0
+  Next: {fileID: 114785426258446692}
+  Prefab: {fileID: 8036604598547600700, guid: efc6bd04a4bc1f94593d367e4aebb080, type: 3}
+  ObjectName: Alert
+  Position: {x: -0.5, y: 1.25}
+  Parent:
+    _variable:
+    - scene
+    - Sister
+    _lookups:
+    - 
+    - 
+--- !u!114 &114370263944948404
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Wait Message
+  m_EditorClassIdentifier: 
+  Name: Wait Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: 192}
+  IsBreakpoint: 0
+  Next: {fileID: 114994188937289784}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{Player.Name}, wait!'
+--- !u!114 &114437959077525420
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6e5303f5a52b74bb7856ce4274293d, type: 3}
+  m_Name: Destroy Alert
+  m_EditorClassIdentifier: 
+  Name: Destroy Alert
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: 128}
+  IsBreakpoint: 0
+  Next: {fileID: 114370263944948404}
+--- !u!114 &114514552347473018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a701a243963188543bb492e5e8c21c96, type: 3}
+  m_Name: Has Item
+  m_EditorClassIdentifier: 
+  Name: Has Item
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: -102.4}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 0}
+  OnFalse: {fileID: 114015243257407996}
+  Item:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: 5b0e90ffd3fc0ac48bef44d7b9b6148e, type: 2}
+  Amount:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: 1
+--- !u!114 &114785426258446692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2858c7af4d722bf49a2fc1993f96ed16, type: 3}
+  m_Name: Wait
+  m_EditorClassIdentifier: 
+  Name: Wait
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: 64}
+  IsBreakpoint: 0
+  Next: {fileID: 114437959077525420}
+  Time: 0.5
+--- !u!114 &114994188937289784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64fb971c2723c9b4b90de6a2fe2ada3d, type: 3}
+  m_Name: Approach Player
+  m_EditorClassIdentifier: 
+  Name: Approach Player
+  This:
+    _variable:
+    - scene
+    - Sister
+    _lookups:
+    - 
+    - Mover
+  GraphPosition: {x: 1344, y: -0}
+  IsBreakpoint: 0
+  Next: {fileID: 114015624594658832}
+  WaitForCompletion: 1
+  UsePathfinding: 1
+  Target:
+    _variable:
+    - Player
+    _lookups:
+    - Mover

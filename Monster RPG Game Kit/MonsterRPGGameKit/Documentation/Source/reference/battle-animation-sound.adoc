@@ -1,0 +1,19 @@
+[#reference/battle-animation-sound]
+
+## BattleAnimationSound
+
+PiRhoSoft.MonsterRpgEngine.BattleAnimationSound
+
+### Description
+
+### Constructors
+
+BattleAnimationSound()::
+
+### Public Fields
+
+bool _WaitForCompletion_::
+
+<<reference/battle-animation-source.html,BattleAnimationSource>> _SoundSource_::
+
+string _Sound_::

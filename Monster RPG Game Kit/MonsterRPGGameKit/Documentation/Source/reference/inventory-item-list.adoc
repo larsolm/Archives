@@ -1,0 +1,11 @@
+[#reference/inventory-item-list]
+
+## InventoryItemList
+
+PiRhoSoft.MonsterRpgEngine.InventoryItemList : link:/projects/unity-composition/documentation/#/v10/reference/indexed-variable-store-1[IndexedVariableStore^]<<<reference/inventory-item.html,InventoryItem>>>
+
+### Description
+
+### Constructors
+
+InventoryItemList()::

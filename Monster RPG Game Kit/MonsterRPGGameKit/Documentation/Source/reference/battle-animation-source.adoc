@@ -1,0 +1,13 @@
+[#reference/battle-animation-source]
+
+## BattleAnimationSource
+
+PiRhoSoft.MonsterRpgEngine.BattleAnimationSource
+
+### Description
+
+### Values
+
+<<reference/battle-animation-source.html,BattleAnimationSource>> _Display_::
+
+<<reference/battle-animation-source.html,BattleAnimationSource>> _Variables_::

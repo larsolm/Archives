@@ -1,0 +1,9 @@
+[#manual/approach-position]
+
+## Approach Position
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/approach-position.html[Reference]
+endif::[]

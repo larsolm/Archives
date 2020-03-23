@@ -1,0 +1,11 @@
+[#reference/sort-condition-list]
+
+## SortConditionList
+
+PiRhoSoft.MonsterRpgEngine.SortConditionList : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-list-1[SerializedList^]<link:/projects/unity-composition/documentation/#/v10/reference/variable-reference[VariableReference^]>
+
+### Description
+
+### Constructors
+
+SortConditionList()::

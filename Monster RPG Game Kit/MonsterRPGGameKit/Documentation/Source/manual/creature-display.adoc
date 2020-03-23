@@ -1,0 +1,21 @@
+[#manual/creature-display]
+
+## Creature Display
+
+### Fields
+
+link:/projects/unity-utilities/documentation/#/v10/reference/animation-player[AnimationPlayer^] _Battler Player_::
+
+link:/projects/unity-utilities/documentation/#/v10/reference/audio-player[AudioPlayer^] _Battler Audio_::
+
+https://docs.unity3d.com/ScriptReference/Animator.html[Animator^] _Creature Animator_::
+
+<<manual/animation-clip-dictionary.html,Animation Clip Dictionary>> _Animations_::
+
+<<manual/audio-clip-dictionary.html,Audio Clip Dictionary>> _Sounds_::
+
+<<manual/game-object-dictionary.html,Game Object Dictionary>> _Effects_::
+
+ifdef::backend-multipage_html5[]
+link:reference/creature-display.html[Reference]
+endif::[]

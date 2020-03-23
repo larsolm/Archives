@@ -1,0 +1,50 @@
+{
+	MarioTexture {
+		#Type = "Pargon::Game::Core::TextureObject"
+		#Behavior = "Object"
+		Filename = "Assets/Images/mario.png"
+		GenerateMipmaps = false
+		Rows = 1
+		Columns = 6
+	}
+	Player {
+		#Type = "Pargon::Game::Core::Entity"
+		#Behavior = "Template"
+		Components [
+			{
+				#Type = "Pargon::Game::X2d::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Geometry = "ShapeGeometry"
+				Texture = "MarioTexture"
+				Frame = 1
+				Depth = 1
+				Tag = "Game"
+			}
+			{
+				#Type = "Pargon::Game::X2d::Spatial"
+				Position = "0 0"
+				Size = "35 35"
+				Offset = "0.5 0"
+			}
+			{
+				#Type = "SuperMarioWar::Player"
+				TurboSpeed = 500
+				WalkSpeed = 360
+				Agility = 40
+				Gravity = 40
+				TerminalVelocity = 1000
+				AirResistance = 0.95f
+				AirControl = 30
+				HangTime = 35
+				JumpImpulse = 550
+				Traction = 1
+				AnimationSpeed = 100
+				JumpSound = "JumpSound"
+				BonkSound = "BonkSound"
+				DeathSound = "DeathSound"
+				SkidSound = "SkidSound"
+				StompSound = "StompSound"
+			}
+		]
+	}
+}

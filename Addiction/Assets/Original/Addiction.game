@@ -1,0 +1,28 @@
+{
+	FirstLevel = "Addiction"
+	ClearColor = "51 51 51 255"
+	Levels {
+		Addiction {
+			Sections [
+				"Common"
+				"Addiction"
+			]
+		}
+	}
+	Sections {
+		Common {
+			Files [
+				"Graphics.level"
+				"Text.level"
+				"Shapes.level"
+				"Levels/common.level"
+			]
+		}
+		Addiction {
+			Files [
+				"Levels/textures.level"
+				"Levels/addiction.level"
+			]
+		}
+	}
+}

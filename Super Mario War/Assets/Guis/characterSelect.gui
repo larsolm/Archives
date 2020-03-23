@@ -1,0 +1,187 @@
+{
+	CharacterSelectMenu
+	{
+		#Type = "SuperMarioWar::CharacterSelectMenu"
+		#Category = "Menu"
+		FirstFoci [ "Player1Character" "Player2Character" ]
+	}
+	CharacterSelectBackground {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "BackgroundLayout"
+		ForegroundTexture = "Assets/Images/Gui/Background.png"
+	}
+	HeaderLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "TopAndToContent"
+	}
+	HeaderTextLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		VerticalAlignment = "Middle"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		Height = 30
+	}
+	HeaderTextStyle {
+		#Type = "Pargon::Gui::Style"
+		#Category = "Style"
+		Font = "Assets/AndyB.ttf"
+		TextColor = "Yellow"
+		StrokeColor = "Red"
+		StrokeWidth = 0.5
+	}
+	CharacterSelectHeader {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "HeaderLayout"
+		ForegroundTexture = "Assets/Images/Gui/MenuTitleFrame.png"
+		Children [
+			{
+				Layout = "HeaderTextLayout"
+				Style = "HeaderTextStyle"
+				Text = "Team and Character Selection"
+			}
+		]
+	}
+	RowOneLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		Flow = "LeftToRight"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndComputed"
+		VerticalLayoutMode = "TopAndComputed"
+		Top = 300
+	}
+	RowTwoLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		Flow = "LeftToRight"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndComputed"
+		VerticalLayoutMode = "BottomAndComputed"
+		Bottom = 100
+	}
+	CharacterSelectFrameLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "BottomAndToContent"
+		Margin = 20
+	}
+	CharacterTextLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		Top = 10
+		Height = 20
+	}
+	PlayerTeamIconLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "TopAndToContent"
+		Top = 10
+		Left = 10
+	}
+	PlayerCharacterLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalAlignment = "Center"
+		VerticalAlignment = "Middle"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "BottomAndToContent"
+		Bottom = 10
+	}
+	PlayerReadyLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalLayoutMode = "RightAndToContent"
+		VerticalLayoutMode = "BottomAndToContent"
+		Right = 10
+		Bottom = 10
+	}
+	RowOne {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "RowOneLayout"
+		Children [
+			{
+				#Type = "Pargon::Gui::ListMenu"
+				Name = "Player1Frame"
+				Layout = "CharacterSelectFrameLayout"
+				ForegroundTexture = "Assets/Images/Gui/CharacterSelect/CharacterSelectFrame.png"
+				OnActivate = "
+					local type = ::GameSettings.GetPlayerType(0);
+					if (type == \"Inactive\")
+						this.Visible = false;
+				"
+				OnBack = "::Gui.PopGui();"
+				Children [
+					{
+						Name = "Player1Icon"
+						Layout = "PlayerTeamIconLayout"
+						ForegroundTexture = "Assets/Images/Gui/menuTeamNumber.png"
+					}
+					{
+						Name = "Player1Text"
+						Layout = "CharacterTextLayout"
+						Style = "HeaderTextStyle"
+						Text = "Mario"
+					}
+					{
+						#Type = "Pargon::Gui::ListMenu"
+						Name = "Player1Character"
+						Layout = "PlayerCharacterLayout"
+						ForegroundTexture = "Assets/Images/Characters/Mario.png"
+					}
+					{
+						Name = "Player1Ready"
+						Layout = "PlayerReadyLayout"
+						ForegroundTexture = "Assets/Images/Gui/CharacterSelect/NotReady.png"
+					}
+				]
+			}
+			{
+				#Type = "Pargon::Gui::ListMenu"
+				Name = "Player2Frame"
+				Layout = "CharacterSelectFrameLayout"
+				ForegroundTexture = "Assets/Images/Gui/CharacterSelect/CharacterSelectFrame.png"
+				OnActivate = "
+					local type = ::GameSettings.GetPlayerType(1);
+					if (type == \"Inactive\")
+						this.Visible = false;
+				"
+				OnBack = "::Gui.PopGui();"
+				Children [
+					{
+						Name = "Player2Icon"
+						Layout = "PlayerTeamIconLayout"
+						ForegroundTexture = "Assets/Images/Gui/menuTeamNumber.png"
+					}
+					{
+						Name = "Player2Text"
+						Layout = "CharacterTextLayout"
+						Style = "HeaderTextStyle"
+						Text = "Mario"
+					}
+					{
+						#Type = "Pargon::Gui::ListMenu"
+						Name = "Player2Character"
+						Layout = "PlayerCharacterLayout"
+						ForegroundTexture = "Assets/Images/Characters/Mario.png"
+					}
+					{
+						Name = "Player2Ready"
+						Layout = "PlayerReadyLayout"
+						ForegroundTexture = "Assets/Images/Gui/CharacterSelect/NotReady.png"
+					}
+				]
+			}
+		]
+	}
+}

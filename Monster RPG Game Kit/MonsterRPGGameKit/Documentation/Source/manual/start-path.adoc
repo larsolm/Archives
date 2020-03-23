@@ -1,0 +1,9 @@
+[#manual/start-path]
+
+## Start Path
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/start-path.html[Reference]
+endif::[]

@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864204cda72169a4a8d5e021c47bc66f, type: 3}
+  m_Name: Rest
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114129793065488514}
+    - {fileID: 114982927100239388}
+    - {fileID: 114306085064632726}
+    - {fileID: 114695362579281258}
+  StartPosition: {x: -0, y: 0}
+  Process: {fileID: 114129793065488514}
+--- !u!114 &114129793065488514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e22a1cb544f534ab3d5863df979746, type: 3}
+  m_Name: Use Ability Message
+  m_EditorClassIdentifier: 
+  Name: Use Ability Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: 0}
+  IsBreakpoint: 0
+  Instruction:
+    _instruction: {fileID: 11400000, guid: b0b1150a4056c8d4c8b4097ca529d084, type: 2}
+    _inputs: []
+    _outputs: []
+  Next: {fileID: 114982927100239388}
+  WaitForCompletion: 1
+--- !u!114 &114306085064632726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4f3e3ac3f44e34d88fa92c53a895c8, type: 3}
+  m_Name: Play Heal Effect
+  m_EditorClassIdentifier: 
+  Name: Play Heal Effect
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: 0}
+  IsBreakpoint: 0
+  Next: {fileID: 114695362579281258}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Creature
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+    - 
+  Effect:
+    WaitForCompletion: 1
+    EffectSource: 0
+    Effect: Heal
+    MountPoint: 
+    EffectTarget: 0
+    FollowParent: 0
+--- !u!114 &114695362579281258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860f5b4b64c3d9a40a0a5c67a2b618af, type: 3}
+  m_Name: Update Creature
+  m_EditorClassIdentifier: 
+  Name: Update Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1280, y: 0}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Creature
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+    - 
+  Group: 
+  WaitForCompletion: 1
+--- !u!114 &114982927100239388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Heal
+  m_EditorClassIdentifier: 
+  Name: Heal
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 640, y: 0}
+  IsBreakpoint: 0
+  Next: {fileID: 114306085064632726}
+  Expression:
+    _statement: 'this.Creature.CurrentHP += Floor(this.Creature.HP * 0.25);
+
+      this.Creature.CurrentHP = Min(this.Creature.Current HP, this.Creature.HP);'

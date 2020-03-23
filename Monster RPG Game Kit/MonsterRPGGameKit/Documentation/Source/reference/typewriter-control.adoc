@@ -1,0 +1,21 @@
+[#reference/typewriter-control]
+
+## TypewriterControl
+
+PiRhoSoft.MonsterRpgEngine.TypewriterControl : link:/projects/unity-composition/documentation/#/v10/reference/message-control[MessageControl^]
+
+### Description
+
+### Constructors
+
+TypewriterControl()::
+
+### Public Fields
+
+float _CharactersPerSecond_::
+
+### Protected Methods
+
+void Setup() _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Run(string _text_, link:/projects/unity-composition/documentation/#/v10/reference/message-interaction-type[MessageInteractionType^] _interaction_, bool _isLast_) _(virtual)_::

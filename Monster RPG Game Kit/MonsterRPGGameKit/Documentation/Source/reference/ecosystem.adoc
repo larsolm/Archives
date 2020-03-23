@@ -1,0 +1,41 @@
+[#reference/ecosystem]
+
+## Ecosystem
+
+PiRhoSoft.MonsterRpgEngine.Ecosystem : https://docs.unity3d.com/ScriptReference/ScriptableObject.html[ScriptableObject^]
+
+### Description
+
+### Static Fields
+
+string _InBattle_::
+
+string _ActiveInBattle_::
+
+### Constructors
+
+Ecosystem()::
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _TrainerSchema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _SpeciesSchema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _CreatureSchema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _AbilitySchema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _MoveSchema_::
+
+### Public Methods
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-map[VariableMap^] GetTrainerMap(link:/projects/unity-composition/documentation/#/v10/reference/property-map[PropertyMap^] _propertyMap_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-map[VariableMap^] GetSpeciesMap(link:/projects/unity-composition/documentation/#/v10/reference/property-map[PropertyMap^] _propertyMap_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-map[VariableMap^] GetCreatureMap(link:/projects/unity-composition/documentation/#/v10/reference/property-map[PropertyMap^] _propertyMap_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-map[VariableMap^] GetAbilityMap(link:/projects/unity-composition/documentation/#/v10/reference/property-map[PropertyMap^] _propertyMap_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-map[VariableMap^] GetMoveMap(link:/projects/unity-composition/documentation/#/v10/reference/property-map[PropertyMap^] _propertyMap_)::

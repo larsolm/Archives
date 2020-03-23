@@ -1,0 +1,15 @@
+[#reference/path-node-data]
+
+## NodeData
+
+PiRhoSoft.MonsterRpgEngine.NodeData : ValueType
+
+### Description
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _Position_::
+
+<<reference/movement-direction.html,MovementDirection>> _Direction_::
+
+float _Delay_::

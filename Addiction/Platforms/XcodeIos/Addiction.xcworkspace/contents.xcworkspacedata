@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Libraries">
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Libraries/zlib/zlib.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Libraries/stbimage/stbimage.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Libraries/freetype/freetype.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Pargon">
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Animation/Animation.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Application/Application.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Audio/Audio.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Data/Data.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Debugging/Debugging.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/FileSystem/FileSystem.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Game2d/Game2d.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/GameCore/GameCore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/GameUi/GameUi.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Graphics/Graphics.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Input/Input.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Math/Math.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Reflection/Reflection.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Scripting/Scripting.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Serialization/Serialization.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Shapes/Shapes.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Text/Text.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../../../Pargon/Platforms/XcodeIOS/Pargon/Types/Types.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Addiction/Addiction.xcodeproj">
+   </FileRef>
+</Workspace>

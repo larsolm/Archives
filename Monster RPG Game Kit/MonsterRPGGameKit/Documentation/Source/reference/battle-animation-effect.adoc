@@ -1,0 +1,25 @@
+[#reference/battle-animation-effect]
+
+## BattleAnimationEffect
+
+PiRhoSoft.MonsterRpgEngine.BattleAnimationEffect
+
+### Description
+
+### Constructors
+
+BattleAnimationEffect()::
+
+### Public Fields
+
+bool _WaitForCompletion_::
+
+<<reference/battle-animation-source.html,BattleAnimationSource>> _EffectSource_::
+
+string _Effect_::
+
+string _MountPoint_::
+
+<<reference/creature-display-target.html,CreatureDisplayTarget>> _EffectTarget_::
+
+bool _FollowParent_::

@@ -1,0 +1,11 @@
+[#manual/audio-manager]
+
+## Audio Manager
+
+### Fields
+
+https://docs.unity3d.com/ScriptReference/AudioMixerGroup.html[AudioMixerGroup^] _Master Mixer_::
+
+ifdef::backend-multipage_html5[]
+link:reference/audio-manager.html[Reference]
+endif::[]

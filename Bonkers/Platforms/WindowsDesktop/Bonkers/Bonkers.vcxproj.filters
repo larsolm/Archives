@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Bonkers\Bonkers.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\Include.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\Apis\Win32\Main.Win32.cpp">
+      <Filter>Apis\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bonkers\GameManager.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\Player.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\Hand.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\BoardRenderer.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\BoardRenderable.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\Tiles\MoveTile.cpp">
+      <Filter>Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bonkers\Tiles\GoToScoreTile.cpp">
+      <Filter>Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bonkers\Tiles\GoToStartTile.cpp">
+      <Filter>Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bonkers\Tiles\RollAgainTile.cpp">
+      <Filter>Tiles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bonkers\MainMenu.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\PlayerSelect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bonkers\Bonkers.h" />
+    <ClInclude Include="..\..\..\Bonkers\GameManager.h" />
+    <ClInclude Include="..\..\..\Bonkers\Player.h" />
+    <ClInclude Include="..\..\..\Bonkers\Hand.h" />
+    <ClCompile Include="..\..\..\Bonkers\Board.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\Tile.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\Space.cpp" />
+    <ClCompile Include="..\..\..\Bonkers\Deck.cpp" />
+    <ClInclude Include="..\..\..\Bonkers\BoardRenderer.h" />
+    <ClInclude Include="..\..\..\Bonkers\BoardRenderable.h" />
+    <ClInclude Include="..\..\..\Bonkers\Tiles\Tiles.h">
+      <Filter>Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bonkers\Tiles\MoveTile.h">
+      <Filter>Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bonkers\Tiles\GoToScoreTile.h">
+      <Filter>Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bonkers\Tiles\GoToStartTile.h">
+      <Filter>Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bonkers\Tiles\RollAgainTile.h">
+      <Filter>Tiles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bonkers\MainMenu.h" />
+    <ClInclude Include="..\..\..\Bonkers\PlayerSelect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Bonkers\Bonkers.h" />
+    <ClInclude Include="..\..\..\Bonkers\Board.h" />
+    <ClInclude Include="..\..\..\Bonkers\Tile.h" />
+    <ClInclude Include="..\..\..\Bonkers\Space.h" />
+    <ClInclude Include="..\..\..\Bonkers\Deck.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Apis">
+      <UniqueIdentifier>{23caf0cc-a7a3-48b8-9532-c8bf6ee6d58d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Apis\Win32">
+      <UniqueIdentifier>{4f2a7c2f-1131-4b61-b334-48e2f7ac28af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tiles">
+      <UniqueIdentifier>{cfef4546-e055-475a-bfbe-f679f0a4ad0c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

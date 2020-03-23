@@ -1,0 +1,19 @@
+[#reference/save-data]
+
+## SaveData
+
+PiRhoSoft.MonsterRpgEngine.SaveData
+
+### Description
+
+### Constructors
+
+SaveData()::
+
+### Public Fields
+
+<<reference/game-save-data.html,GameSaveData>> _Game_::
+
+<<reference/world-save-data.html,WorldSaveData>> _World_::
+
+<<reference/player-save-data.html,PlayerSaveData>> _Player_::

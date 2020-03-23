@@ -1,0 +1,623 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847bc6b77a88dcc40b42539ad4f85e07, type: 3}
+  m_Name: Shop
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114442717498778022}
+    - {fileID: 114535839065772884}
+    - {fileID: 114962214842707004}
+    - {fileID: 114556744960183538}
+    - {fileID: 114362217200572560}
+    - {fileID: 114432568622564546}
+    - {fileID: 114495533051458950}
+    - {fileID: 114393892616209006}
+    - {fileID: 114588793633640452}
+    - {fileID: 114239132581640972}
+    - {fileID: 114252717593376740}
+    - {fileID: 114278036451153836}
+    - {fileID: 114851261231393204}
+    - {fileID: 114037011058339472}
+    - {fileID: 114237404226618624}
+    - {fileID: 114281285350810560}
+    - {fileID: 114728263175352890}
+    - {fileID: 114812680741108520}
+    - {fileID: 114507909216446954}
+  StartPosition: {x: 0, y: 0}
+  Enter: {fileID: 114962214842707004}
+  Process: {fileID: 114442717498778022}
+  Exit: {fileID: 114495533051458950}
+--- !u!114 &114037011058339472
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Can't Purchase
+  m_EditorClassIdentifier: 
+  Name: Can't Purchase
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1702.4, y: -448}
+  Next: {fileID: 114393892616209006}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message
+  Interaction: 0
+  IsLast: 0
+  Message:
+    Text: You don't have enough money!
+--- !u!114 &114237404226618624
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Confirmation Message
+  m_EditorClassIdentifier: 
+  Name: Confirmation Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 998.4, y: -537.60004}
+  Next: {fileID: 114281285350810560}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message
+  Interaction: 2
+  IsLast: 0
+  Message:
+    Text: '{this.Count} {displayName}. That will cost ${this.PurchaseCost}. Are you
+      sure?'
+--- !u!114 &114239132581640972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Sell Message
+  m_EditorClassIdentifier: 
+  Name: Sell Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1305.6, y: 128}
+  Next: {fileID: 114252717593376740}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message
+  Interaction: 2
+  IsLast: 0
+  Message:
+    Text: What would you like to sell?
+--- !u!114 &114252717593376740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Sell
+  m_EditorClassIdentifier: 
+  Name: Sell
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 972.8, y: 230.40001}
+  OnCanceled: {fileID: 114442717498778022}
+  Control:
+    InterfaceName: Shop
+    ControlName: Items
+  IsSelectionRequired: 0
+  Items:
+    _items:
+    - Label: Items
+      Item:
+        _variable:
+        - Player
+        - Inventory
+        - Items
+        _lookups:
+        - 
+        - 
+        - 
+      Source: 1
+      Template: {fileID: 2918529282542760049, guid: a6c92c838f46bb14e92da16ad1dd95d9,
+        type: 3}
+      Expand: 1
+      OnSelected: {fileID: 0}
+    - Label: Back
+      Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Expand: 0
+      OnSelected: {fileID: 114442717498778022}
+--- !u!114 &114278036451153836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09dd1a866ef51fe4d9cdf511c8e0ec9b, type: 3}
+  m_Name: Update Money
+  m_EditorClassIdentifier: 
+  Name: Update Money
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 998.4, y: -38.4}
+  Next: {fileID: 114393892616209006}
+  Control:
+    InterfaceName: Shop
+    ControlName: Money
+  Group: 
+--- !u!114 &114281285350810560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Confirmation
+  m_EditorClassIdentifier: 
+  Name: Confirmation
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1318.4, y: -524.8}
+  OnCanceled: {fileID: 114393892616209006}
+  Control:
+    InterfaceName: Shop
+    ControlName: Selection
+  IsSelectionRequired: 0
+  Items:
+    _items:
+    - Label: Yes
+      Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Expand: 0
+      OnSelected: {fileID: 114728263175352890}
+    - Label: No
+      Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Expand: 0
+      OnSelected: {fileID: 114393892616209006}
+--- !u!114 &114362217200572560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620c304c909d25644bbd55063dfe3ba6, type: 3}
+  m_Name: Show Money
+  m_EditorClassIdentifier: 
+  Name: Show Money
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 614.4, y: -192}
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Shop
+    ControlName: Money
+--- !u!114 &114393892616209006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Buy Message
+  m_EditorClassIdentifier: 
+  Name: Buy Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1344, y: -89.6}
+  Next: {fileID: 114588793633640452}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message
+  Interaction: 2
+  IsLast: 0
+  Message:
+    Text: What would you like to buy?
+--- !u!114 &114432568622564546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408dd5d67693c3545bbddb6cfc900c4a, type: 3}
+  m_Name: Hide Money
+  m_EditorClassIdentifier: 
+  Name: Hide Money
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 729.60004, y: 384}
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Shop
+    ControlName: Money
+--- !u!114 &114442717498778022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Greeting
+  m_EditorClassIdentifier: 
+  Name: Greeting
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 332.80002, y: -0}
+  Next: {fileID: 114535839065772884}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message
+  Interaction: 2
+  IsLast: 0
+  Message:
+    Text: What can I do for you today?
+--- !u!114 &114495533051458950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Goodbye
+  m_EditorClassIdentifier: 
+  Name: Goodbye
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: 192}
+  Next: {fileID: 114556744960183538}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Come back again!
+--- !u!114 &114507909216446954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Get Name
+  m_EditorClassIdentifier: 
+  Name: Get Name
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 844.8, y: -396.80002}
+  Next: {fileID: 114237404226618624}
+  Expression:
+    _statement: 'displayName = (this.Count > 1) ? (this.Name + "s") : this.Name'
+--- !u!114 &114535839065772884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Store Selection
+  m_EditorClassIdentifier: 
+  Name: Store Selection
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 652.8, y: -25.6}
+  OnCanceled: {fileID: 0}
+  Control:
+    InterfaceName: Shop
+    ControlName: Selection
+  IsSelectionRequired: 0
+  Items:
+    _items:
+    - Label: Buy
+      Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Expand: 0
+      OnSelected: {fileID: 114278036451153836}
+    - Label: Sell
+      Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Expand: 0
+      OnSelected: {fileID: 114851261231393204}
+    - Label: Exit
+      Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Expand: 0
+      OnSelected: {fileID: 0}
+--- !u!114 &114556744960183538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408dd5d67693c3545bbddb6cfc900c4a, type: 3}
+  m_Name: Hide Message
+  m_EditorClassIdentifier: 
+  Name: Hide Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 512, y: 281.6}
+  Next: {fileID: 114432568622564546}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message
+--- !u!114 &114588793633640452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Buy
+  m_EditorClassIdentifier: 
+  Name: Buy
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 947.2, y: -256}
+  OnCanceled: {fileID: 114442717498778022}
+  Control:
+    InterfaceName: Shop
+    ControlName: Items
+  IsSelectionRequired: 0
+  Items:
+    _items:
+    - Label: Items
+      Item:
+        _variable:
+        - Player
+        - Interaction
+        - Items
+        _lookups:
+        - 
+        - Shop
+        - 
+      Source: 1
+      Template: {fileID: 2918529282542760049, guid: a6c92c838f46bb14e92da16ad1dd95d9,
+        type: 3}
+      Expand: 1
+      OnSelected: {fileID: 114507909216446954}
+    - Label: Back
+      Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Expand: 0
+      OnSelected: {fileID: 114442717498778022}
+--- !u!114 &114728263175352890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c640b54b9e3b143b9281e7d47b73b8, type: 3}
+  m_Name: Purchase
+  m_EditorClassIdentifier: 
+  Name: Purchase
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1664, y: -576}
+  OnPurchase: {fileID: 114812680741108520}
+  OnCantPurchase: {fileID: 114037011058339472}
+--- !u!114 &114812680741108520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Purchased
+  m_EditorClassIdentifier: 
+  Name: Purchased
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2060.8, y: -473.6}
+  Next: {fileID: 114278036451153836}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Pleasure doing business.
+--- !u!114 &114851261231393204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09dd1a866ef51fe4d9cdf511c8e0ec9b, type: 3}
+  m_Name: Update Money
+  m_EditorClassIdentifier: 
+  Name: Update Money
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 985.60004, y: 76.8}
+  Next: {fileID: 114239132581640972}
+  Control:
+    InterfaceName: Shop
+    ControlName: Money
+  Group: 
+--- !u!114 &114962214842707004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620c304c909d25644bbd55063dfe3ba6, type: 3}
+  m_Name: Show Message
+  m_EditorClassIdentifier: 
+  Name: Show Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 294.4, y: -140.8}
+  Next: {fileID: 114362217200572560}
+  Control:
+    InterfaceName: Shop
+    ControlName: Message

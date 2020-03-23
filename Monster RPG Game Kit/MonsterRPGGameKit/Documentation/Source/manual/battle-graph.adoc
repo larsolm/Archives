@@ -1,0 +1,13 @@
+[#manual/battle-graph]
+
+## Battle Graph
+
+### Fields
+
+link:/projects/unity-utilities/documentation/#/v10/reference/scene-reference[SceneReference^] _Ui Scene_::
+
+<<manual/trainer-reference-list.html,Trainer Reference List>> _Trainers_::
+
+ifdef::backend-multipage_html5[]
+link:reference/battle-graph.html[Reference]
+endif::[]

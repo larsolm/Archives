@@ -1,0 +1,218 @@
+{
+	PlayerSelect {
+		#Type = "Bonkers::PlayerSelect"
+		#Behavior = "Object"
+		Elements = "PlayerSelect"
+		Context = "PlayerSelect"
+	}
+	Title {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Align = "Center"
+				Depth = 2
+				FillColor = "Black"
+				Font = "AndyBFont"
+				Tag = "Ui"
+				Text = "Select your player!"
+			}
+			{
+				#Type = "Pargon::Spatial2D" 
+				Position = "0 200" 
+				Size = "-1 100"
+			}
+		]
+	}
+	Background {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 0"
+				Size = "800 600"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 2.5
+				Color = "White"
+			}
+		]
+	}
+	PlayerName {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Align = "Right"
+				Depth = 2
+				FillColor = "Black"
+				Font = "AndyBFont"
+				Tag = "Ui"
+				Text = "Name:"
+			}
+			{
+				#Type = "Pargon::Spatial2D" 
+				Position = "-200 50"
+				Size = "-1 50"
+			}
+		]
+	}
+	PlayerTextbox {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 50"
+				Size = "300 50"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 2
+				Color = "Black"
+			}
+		]
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Align = "Center"
+						Depth = 1
+						FillColor = "White"
+						Font = "AndyBFont"
+						Tag = "Ui"
+						Text = "{ this.Pargon::KeyboardMouseTextInput.Text }"
+					}
+					{
+						#Type = "Pargon::KeyboardMouseTextInput"
+						Text = ""
+						Binding = "Name"
+						Tag = "PlayerSelect"
+					}
+					{
+						#Type = "Pargon::Spatial2D"
+						Size = "300 50"
+						FollowOnly = true
+					}
+				]
+			}
+		]
+	}
+	SelectButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "200 -200"
+				Size = "300 200"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 2
+				Color = "Green"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "PlayerSelect"
+				OnSelect = "MainMenu.AddPlayer(PlayerSelect.Name, PlayerSelect.Color);
+							UiStack.Pop();
+							MainMenu.CreatePlayers();"
+			}
+		]
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Size = "-1 100"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Tag = "Ui"
+						Align = "Center"
+						VerticalAlign = "Center"
+						Depth = 1
+						FillColor = "Black"
+						Font = "AndyBFont"
+						Text = "Done"
+					}
+				]
+			}
+		]
+	}
+	BackButton {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "-200 -200"
+				Size = "400 200"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Tag = "Ui"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 2
+				Color = "Green"
+			}
+			{
+				#Type = "Pargon::KeyboardMouseButton"
+				Tag = "PlayerSelect"
+				OnSelect = "MainMenu.RemovePlayer();
+							UiStack.Pop();"
+			}
+		]
+		Entities [
+			{
+				Components [
+					{
+						#Type = "Pargon::Spatial2D"
+						Size = "-1 100"
+						FollowOnly = true
+					}
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Tag = "Ui"
+						Align = "Center"
+						VerticalAlign = "Center"
+						Depth = 1
+						FillColor = "Black"
+						Font = "AndyBFont"
+						Text = "Back"
+					}
+				]
+			}
+		]
+	}
+}

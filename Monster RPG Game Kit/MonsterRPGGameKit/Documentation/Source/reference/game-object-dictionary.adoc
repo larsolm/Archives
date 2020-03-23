@@ -1,0 +1,11 @@
+[#reference/game-object-dictionary]
+
+## GameObjectDictionary
+
+PiRhoSoft.MonsterRpgEngine.GameObjectDictionary : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-dictionary-2[SerializedDictionary^]<string, string>
+
+### Description
+
+### Constructors
+
+GameObjectDictionary()::

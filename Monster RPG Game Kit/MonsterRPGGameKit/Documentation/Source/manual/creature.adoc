@@ -1,0 +1,17 @@
+[#manual/creature]
+
+## Creature
+
+### Fields
+
+<<manual/species.html,Species>> _Species_::
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::
+
+<<manual/move-list.html,Move List>> _Moves_::
+
+ifdef::backend-multipage_html5[]
+link:reference/creature.html[Reference]
+endif::[]

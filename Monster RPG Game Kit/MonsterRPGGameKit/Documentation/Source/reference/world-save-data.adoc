@@ -1,0 +1,17 @@
+[#reference/world-save-data]
+
+## WorldSaveData
+
+PiRhoSoft.MonsterRpgEngine.WorldSaveData
+
+### Description
+
+### Constructors
+
+WorldSaveData()::
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _PersistentVariables_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/zone-save-data.html,ZoneSaveData>>> _Zones_::

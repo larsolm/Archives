@@ -1,0 +1,126 @@
+{
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Renderable"
+				Renderer = "DirtRenderer"
+				Tag = "Game"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 100"
+				Size = "1000 1000"
+			}
+			{
+				#Type = "GrungySponge::ClearField"
+				MaskFilename = "Worlds/Debug World/01 Movement Test_1.png"
+				Tag = "Dirt"
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "25 25"
+				Size = "50 1100"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1175 25"
+				Rotation = 90
+				Size = "50 1100"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "25 1175"
+				Rotation = -90
+				Size = "50 1150"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1175 1125"
+				Rotation = -180
+				Size = "50 1050"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+}

@@ -1,0 +1,23 @@
+[#reference/random-tile]
+
+## RandomTile
+
+PiRhoSoft.MonsterRpgEngine.RandomTile : https://docs.unity3d.com/ScriptReference/TileBase.html[TileBase^]
+
+### Description
+
+### Constructors
+
+RandomTile()::
+
+### Public Fields
+
+float _NoiseScale_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/tile-transform-info.html,TileTransformInfo>>> _Tiles_::
+
+### Public Methods
+
+void GetTileData(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _position_, https://docs.unity3d.com/ScriptReference/ITilemap.html[ITilemap^] _tilemap_, https://docs.unity3d.com/ScriptReference/TileData.html[TileData^] _tileData_ _(ref)_) _(virtual)_::
+
+int GetIndex(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _position_, int _length_)::

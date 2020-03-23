@@ -1,0 +1,105 @@
+new GuiFadeInBitmapCtrl(IntroGUI1) {
+   profile = "GuiInputProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   bitmap = "./intro1";
+   useVariable = "0";
+   fadeinTime = "500";
+   waitTime = "10500";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "680 425";
+      extent = "96 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "LoadGame();";
+      text = "Skip";
+      groupNum = "-1";
+      buttonType = "PushButton";
+         helpTag = "0";
+   };
+};
+
+new GuiFadeInBitmapCtrl(IntroGUI2) {
+   profile = "GuiInputProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   bitmap = "./intro2";
+   useVariable = "0";
+   fadeinTime = "500";
+   waitTime = "6500";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "680 425";
+      extent = "96 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "LoadGame();";
+      text = "Skip";
+      groupNum = "-1";
+      buttonType = "PushButton";
+         helpTag = "0";
+   };
+};
+
+new GuiFadeInBitmapCtrl(IntroGUI3) {
+   profile = "GuiInputProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   bitmap = "./intro3";
+   useVariable = "0";
+   fadeinTime = "500";
+   waitTime = "12500";
+   tile = "0";
+
+   new GuiButtonCtrl() {
+      profile = "GuiButtonProfile";
+      horizSizing = "right";
+      vertSizing = "top";
+      position = "680 425";
+      extent = "96 20";
+      minExtent = "8 8";
+      visible = "1";
+      command = "LoadGame();";
+      text = "Skip";
+      groupNum = "-1";
+      buttonType = "PushButton";
+         helpTag = "0";
+   };
+};
+
+new GuiBitmapCtrl(IntroGUI4) {
+   profile = "GuiContentProfile";
+   horizSizing = "width";
+   vertSizing = "height";
+   position = "0 0";
+   extent = "640 480";
+   minExtent = "8 8";
+   visible = "1";
+   bitmap = "./intro4";
+   useVariable = "0";
+   fadeinTime = "500";
+   waitTime = "12500";
+   tile = "0";
+   noCursor = "1";
+};

@@ -1,0 +1,13 @@
+[#manual/update-creature]
+
+## Update Creature
+
+### Fields
+
+string _Group_::
+
+bool _Wait For Completion_::
+
+ifdef::backend-multipage_html5[]
+link:reference/update-creature.html[Reference]
+endif::[]

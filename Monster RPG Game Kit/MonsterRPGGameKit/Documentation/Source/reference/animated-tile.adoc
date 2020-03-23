@@ -1,0 +1,29 @@
+[#reference/animated-tile]
+
+## AnimatedTile
+
+PiRhoSoft.MonsterRpgEngine.AnimatedTile : https://docs.unity3d.com/ScriptReference/TileBase.html[TileBase^]
+
+### Description
+
+### Constructors
+
+AnimatedTile()::
+
+### Public Fields
+
+bool _RandomizeStart_::
+
+float _AnimationStartTime_::
+
+float _AnimationSpeed_::
+
+float _AnimationSpeedMaximum_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/tile-transform-info.html,TileTransformInfo>>> _Tiles_::
+
+### Public Methods
+
+void GetTileData(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _location_, https://docs.unity3d.com/ScriptReference/ITilemap.html[ITilemap^] _tileMap_, https://docs.unity3d.com/ScriptReference/TileData.html[TileData^] _tileData_ _(ref)_) _(virtual)_::
+
+bool GetTileAnimationData(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _location_, https://docs.unity3d.com/ScriptReference/ITilemap.html[ITilemap^] _tileMap_, https://docs.unity3d.com/ScriptReference/TileAnimationData.html[TileAnimationData^] _tileAnimationData_ _(ref)_) _(virtual)_::

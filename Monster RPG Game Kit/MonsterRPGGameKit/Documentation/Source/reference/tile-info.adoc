@@ -1,0 +1,73 @@
+[#reference/tile-info]
+
+## TileInfo
+
+PiRhoSoft.MonsterRpgEngine.TileInfo
+
+### Description
+
+### Constructors
+
+TileInfo()::
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _Position_::
+
+<<reference/collision-layer.html,CollisionLayer>> _CollisionLayer_::
+
+<<reference/collision-layer.html,CollisionLayer>> _LayerChange_::
+
+bool _HasSpawnPoint_::
+
+<<reference/spawn-point.html,SpawnPoint>> _SpawnPoint_::
+
+bool _HasZoneTrigger_::
+
+<<reference/zone-trigger.html,ZoneTrigger>> _Zone_::
+
+bool _HasEncounter_::
+
+<<reference/encounter.html,Encounter>> _Encounter_::
+
+bool _HasInstructions_::
+
+<<reference/instruction-trigger.html,InstructionTrigger>> _Instructions_::
+
+bool _HasStairs_::
+
+int _Slope_::
+
+bool _HasOffset_::
+
+https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _Offset_::
+
+bool _HasEdge_::
+
+<<reference/movement-direction.html,MovementDirection>> _EdgeDirection_::
+
+### Public Methods
+
+bool HasCollision(<<reference/collision-layer.html,CollisionLayer>> _layer_)::
+
+bool IsEdge(<<reference/movement-direction.html,MovementDirection>> _direction_)::
+
+bool IsJumpable(<<reference/movement-direction.html,MovementDirection>> _direction_)::
+
+bool IsEmpty()::
+
+bool IsSameCollisionLayer(<<reference/tile-info.html,TileInfo>> _other_)::
+
+bool IsSameCollisionLayerIncrement(<<reference/tile-info.html,TileInfo>> _other_)::
+
+bool IsSameZoneAs(<<reference/tile-info.html,TileInfo>> _other_)::
+
+bool IsSameEncounterAs(<<reference/tile-info.html,TileInfo>> _other_)::
+
+bool IsSameInstructionAs(<<reference/tile-info.html,TileInfo>> _other_)::
+
+bool IsSameStairsAs(<<reference/tile-info.html,TileInfo>> _other_)::
+
+bool IsSameOffsetAs(<<reference/tile-info.html,TileInfo>> _other_)::
+
+bool IsSameEdgeAs(<<reference/tile-info.html,TileInfo>> _other_)::

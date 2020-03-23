@@ -1,0 +1,45 @@
+{
+	TilesTexture {
+		#Type = "Pargon::Game::Core::TextureObject"
+		#Behavior = "Object"
+		Filename = "Assets/Images/tiles.png"
+		GenerateMipmaps = false
+		Rows = 32
+		Columns = 32
+	}
+	TestMap {
+		#Type = "SuperMarioWar::Map"
+		#Behavior = "Object"
+		SpawnPoints [
+			{ Column = 22, Row = 18 }
+			{ Column = 5, Row = 20 }
+		]
+		TilemapName = "TestTilemap"
+	}
+	TestTilemap {
+		#Type = "SuperMarioWar::TilemapObject"
+		#Behavior = "Object"
+		Filename = "Assets/Tilemaps/Test.ptm"
+	}
+	TilemapTemplate {
+		#Type = "Pargon::Game::Core::Entity"
+		#Behavior = "Template"
+		Components [
+			{
+				#Type = "SuperMarioWar::TilemapInstance"
+				Renderer = "TilemapRenderer"
+				Texture = "TilesTexture"
+				TextureFiltering = "Nearest"
+				TextureAddressing = "Clamp"
+				Depth = 2
+				Tag = "Game"
+			}
+			{
+				#Type = "Pargon::Game::X2d::Spatial"
+				Position = "0 0"
+				Size = "1280 720"
+				Offset = "0.5 0.5"
+			}
+		]
+	}
+}

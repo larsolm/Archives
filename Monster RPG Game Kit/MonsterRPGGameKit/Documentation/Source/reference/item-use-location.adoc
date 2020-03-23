@@ -1,0 +1,13 @@
+[#reference/item-use-location]
+
+## ItemUseLocation
+
+PiRhoSoft.MonsterRpgEngine.ItemUseLocation
+
+### Description
+
+### Values
+
+<<reference/item-use-location.html,ItemUseLocation>> _World_::
+
+<<reference/item-use-location.html,ItemUseLocation>> _Battle_::

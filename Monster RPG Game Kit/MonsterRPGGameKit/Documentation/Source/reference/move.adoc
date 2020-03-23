@@ -1,0 +1,53 @@
+[#reference/move]
+
+## Move
+
+PiRhoSoft.MonsterRpgEngine.Move : https://docs.unity3d.com/ScriptReference/ScriptableObject.html[ScriptableObject^], link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^]
+
+### Description
+
+### Static Methods
+
+<<reference/move.html,Move>> Create(<<reference/creature.html,Creature>> _creature_, <<reference/move-save-data.html,MoveSaveData>> _data_)::
+
+<<reference/move-save-data.html,MoveSaveData>> Save(<<reference/move.html,Move>> _move_)::
+
+### Constructors
+
+Move()::
+
+### Public Fields
+
+<<reference/ability.html,Ability>> _Ability_::
+
+<<reference/creature.html,Creature>> _Creature_::
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::
+
+### Public Methods
+
+void Setup(<<reference/creature.html,Creature>> _creature_)::
+
+<<reference/move.html,Move>> Clone(<<reference/creature.html,Creature>> _creature_)::
+
+void ResetTraits(string _availability_) _(virtual)_::
+
+void ResetTraits(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<string> _traits_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] GetVariable(string _name_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/set-variable-result[SetVariableResult^] SetVariable(string _name_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1[IEnumerable^]<string> GetVariableNames() _(virtual)_::
+
+### Protected Methods
+
+void AddPropertiesToMap<MoveType>(link:/projects/unity-composition/documentation/#/v10/reference/property-map-1[PropertyMap^]<MoveType> _map_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/property-map[PropertyMap^] GetPropertyMap() _(virtual)_::
+
+void Load(<<reference/move-save-data.html,MoveSaveData>> _data_) _(virtual)_::
+
+void Save(<<reference/move-save-data.html,MoveSaveData>> _data_) _(virtual)_::

@@ -1,0 +1,15 @@
+[#manual/rule-override-tile]
+
+## Rule Override Tile
+
+### Fields
+
+<<manual/rule-tile.html,Rule Tile>> _Override Tile_::
+
+<<manual/rule-override-tile-rule.html,Rule>> _Default Rule_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<manual/rule-override-tile-rule.html,Rule>>> _Rules_::
+
+ifdef::backend-multipage_html5[]
+link:reference/rule-override-tile.html[Reference]
+endif::[]

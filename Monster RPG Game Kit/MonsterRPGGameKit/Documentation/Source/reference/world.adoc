@@ -1,0 +1,39 @@
+[#reference/world]
+
+## World
+
+PiRhoSoft.MonsterRpgEngine.World : https://docs.unity3d.com/ScriptReference/ScriptableObject.html[ScriptableObject^]
+
+### Description
+
+### Constructors
+
+World()::
+
+### Public Fields
+
+link:/projects/unity-utilities/documentation/#/v10/reference/scene-reference[SceneReference^] _MainScene_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<link:/projects/unity-utilities/documentation/#/v10/reference/scene-reference[SceneReference^]> _UiScenes_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/transition[Transition^] _DefaultZoneTransition_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/transition[Transition^] _DefaultSpawnTransition_::
+
+https://docs.unity3d.com/ScriptReference/AudioClip.html[AudioClip^] _BackgroundMusic_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _WorldSchema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _PlayerSchema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _NpcSchema_::
+
+<<reference/map-layer-list.html,MapLayerList>> _MapLayers_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/zone.html,Zone>>> _Zones_::
+
+### Public Methods
+
+<<reference/zone.html,Zone>> GetZoneByName(string _name_)::
+
+<<reference/zone.html,Zone>> GetZoneBySceneIndex(int _index_)::

@@ -1,0 +1,27 @@
+[#reference/battle-interface]
+
+## BattleInterface
+
+PiRhoSoft.MonsterRpgEngine.BattleInterface : link:/projects/unity-composition/documentation/#/v10/reference/interface[Interface^]
+
+### Description
+
+### Constructors
+
+BattleInterface()::
+
+### Public Fields
+
+bool _HideWorld_::
+
+<<reference/creature-display-list.html,CreatureDisplayList>> _CreatureDisplays_::
+
+### Public Methods
+
+<<reference/creature-display.html,CreatureDisplay>> GetCreatureDisplay(int _index_)::
+
+### Protected Methods
+
+void Setup() _(virtual)_::
+
+void Teardown() _(virtual)_::

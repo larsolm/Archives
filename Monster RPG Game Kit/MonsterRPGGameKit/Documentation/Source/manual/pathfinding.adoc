@@ -1,0 +1,11 @@
+[#manual/pathfinding]
+
+## Pathfinding
+
+### Fields
+
+<<manual/pathfinding-node.html,Node>>[] __nodes_::
+
+ifdef::backend-multipage_html5[]
+link:reference/pathfinding.html[Reference]
+endif::[]

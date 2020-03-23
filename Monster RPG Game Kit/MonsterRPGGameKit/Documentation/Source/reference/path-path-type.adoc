@@ -1,0 +1,13 @@
+[#reference/path-path-type]
+
+## PathType
+
+PiRhoSoft.MonsterRpgEngine.PathType
+
+### Description
+
+### Values
+
+<<reference/path-path-type.html,PathType>> _Loop_::
+
+<<reference/path-path-type.html,PathType>> _BackAndForth_::

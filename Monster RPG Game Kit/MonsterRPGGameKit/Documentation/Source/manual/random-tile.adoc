@@ -1,0 +1,13 @@
+[#manual/random-tile]
+
+## Random Tile
+
+### Fields
+
+float _Noise Scale_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<manual/tile-transform-info.html,Tile Transform Info>>> _Tiles_::
+
+ifdef::backend-multipage_html5[]
+link:reference/random-tile.html[Reference]
+endif::[]

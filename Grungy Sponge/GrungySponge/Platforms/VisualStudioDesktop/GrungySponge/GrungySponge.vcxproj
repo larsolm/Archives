@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29761472-FD3C-496D-8B85-CB3342578359}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GrungySponge</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Pargon;$(ProjectDir)..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4503;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>GrungySponge/GrungySponge.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\..\..\Pargon;$(ProjectDir)..\..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4503;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>GrungySponge/GrungySponge.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\GrungySponge\Apis\Win32\Main.Win32.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Game\DirtManager.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Game\GameManager.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Game\GameInclude.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Game\LevelDescription.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Game\WorldDescription.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\GrungySponge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Include.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Sponge\SpongeInclude.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Sponge\SpongeCamera.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Sponge\SpongeData.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Sponge\SpongeMover.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Ui\GameScreen.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Ui\UiInclude.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Ui\IndexComponent.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Ui\LevelList.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Ui\ScrollContainer.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Ui\Timer.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Ui\UiBackground.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Ui\WorldList.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\World\ClearField.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\World\ClearFieldManager.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\World\DirtRenderer.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\World\FinishLine.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\World\WorldInclude.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\World\Pit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\GrungySponge\Game\DirtManager.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Game\Game.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Game\GameManager.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Game\LevelDescription.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Game\WorldDescription.h" />
+    <ClInclude Include="..\..\..\GrungySponge\GrungySponge.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Sponge\Sponge.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Sponge\SpongeCamera.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Sponge\SpongeData.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Sponge\SpongeMover.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Ui\GameScreen.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Ui\IndexComponent.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Ui\LevelList.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Ui\ScrollContainer.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Ui\Timer.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Ui\Ui.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Ui\UiBackground.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Ui\WorldList.h" />
+    <ClInclude Include="..\..\..\GrungySponge\World\ClearField.h" />
+    <ClInclude Include="..\..\..\GrungySponge\World\ClearFieldManager.h" />
+    <ClInclude Include="..\..\..\GrungySponge\World\DirtRenderer.h" />
+    <ClInclude Include="..\..\..\GrungySponge\World\FinishLine.h" />
+    <ClInclude Include="..\..\..\GrungySponge\World\Pit.h" />
+    <ClInclude Include="..\..\..\GrungySponge\World\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Libraries\freetype\freetype.vcxproj">
+      <Project>{f9472013-4506-4e1a-80a9-5241674617ee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Libraries\glew\glew.vcxproj">
+      <Project>{7a21be39-7cac-4263-88aa-fd59951f94a1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Libraries\stbimage\stbimage.vcxproj">
+      <Project>{3ea47966-c9df-43bc-b251-2238e7fccb04}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Libraries\zlib\zlib.vcxproj">
+      <Project>{0c9525d9-e810-4a03-8755-83caf6697066}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Application\Application.vcxproj">
+      <Project>{36c28ac9-a1d6-4dfb-95c2-95ef8cfe9962}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Audio\Audio.vcxproj">
+      <Project>{173668fe-2d29-4285-a964-ed1089da1ade}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Data\Data.vcxproj">
+      <Project>{4dbb4ceb-b7e7-450c-864f-f53bc2ae2731}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Debugging\Debugging.vcxproj">
+      <Project>{d8404832-d95e-487a-bbec-a1c4b34ad634}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\FileSystem\FileSystem.vcxproj">
+      <Project>{f9f7b3f8-8672-4a52-ac52-cfbe5f9ed2a9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Game2d\Game2d.vcxproj">
+      <Project>{915d2d5d-d808-4a3c-bd75-e5ac49c281b3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\GameCore\GameCore.vcxproj">
+      <Project>{a79d52d3-19e5-4247-9b2e-99d8b80b9cc5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\GameTools\GameTools.vcxproj">
+      <Project>{ff9af289-7b4e-4e37-8bb8-ea5b36558890}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\GameUi\GameUi.vcxproj">
+      <Project>{a7d176a8-3496-4b86-88b2-065ac42fbd20}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Graphics\Graphics.vcxproj">
+      <Project>{10fcd17c-52fc-41e6-8310-04e7e8d81cb0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Input\Input.vcxproj">
+      <Project>{98413abb-9a05-450d-8b33-2f0d010d499f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Math\Math.vcxproj">
+      <Project>{fc362d47-ce2d-4484-af30-2e10e149e0cc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Networking\Networking.vcxproj">
+      <Project>{9e912dbc-1a5d-4602-92b0-4729d51d3640}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Reflection\Reflection.vcxproj">
+      <Project>{cd50d822-9c00-4443-9396-65619f47355d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Scripting\Scripting.vcxproj">
+      <Project>{41c44c62-04c5-47fc-aaca-eca51c2fdc7f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Serialization\Serialization.vcxproj">
+      <Project>{95a112e0-0614-4879-b25a-68c5057994e3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Shapes\Shapes.vcxproj">
+      <Project>{a0aeff23-9be5-4717-8c24-28398bd2a067}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Text\Text.vcxproj">
+      <Project>{150a0d34-8a04-45ce-b3b6-3a64a6db1d4f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Pargon\Platforms\VisualStudioDesktop\Pargon\Types\Types.vcxproj">
+      <Project>{6affa467-3b77-4b03-917f-d2dba3bad8a0}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

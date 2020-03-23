@@ -1,0 +1,15 @@
+[#reference/reset-creature-availability]
+
+## ResetCreatureAvailability
+
+PiRhoSoft.MonsterRpgEngine.ResetCreatureAvailability : <<reference/reset-traits-availability.html,ResetTraitsAvailability>>
+
+### Description
+
+### Constructors
+
+ResetCreatureAvailability()::
+
+### Protected Methods
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Run_(link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph[InstructionGraph^] _graph_, link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_, int _iteration_) _(virtual)_::

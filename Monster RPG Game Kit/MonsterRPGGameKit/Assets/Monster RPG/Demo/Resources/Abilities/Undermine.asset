@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ec1d3c02617c14ca9ffc0283d1aac0, type: 3}
+  m_Name: Undermine
+  m_EditorClassIdentifier: 
+  _path: Abilities/Undermine
+  Ecosystem: {fileID: 11400000, guid: bc1c2433ddb2b0c43ba53e4fbc1b8560, type: 2}
+  Name: Undermine
+  Traits:
+    _data:
+    - Name: Power
+      Type: 2
+      Data: 100
+      Object: {fileID: 0}
+    - Name: Accuracy
+      Type: 3
+      Data: 1
+      Object: {fileID: 0}
+    - Name: Uses
+      Type: 2
+      Data: 25
+      Object: {fileID: 0}
+    - Name: Priority
+      Type: 2
+      Data: 50
+      Object: {fileID: 0}
+    _version: 54
+  UseInWorldCondition:
+    _statement: false
+  UseInWorldInstruction:
+    _instruction: {fileID: 0}
+    _inputs: []
+    _outputs: []
+  UseInBattleCondition:
+    _statement: this.CurrentUses > 0
+  UseInBattleInstruction:
+    _instruction: {fileID: 0}
+    _inputs: []
+    _outputs: []

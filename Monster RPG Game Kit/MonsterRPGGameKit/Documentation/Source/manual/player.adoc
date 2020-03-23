@@ -1,0 +1,11 @@
+[#manual/player]
+
+## Player
+
+### Fields
+
+string _Name_::
+
+ifdef::backend-multipage_html5[]
+link:reference/player.html[Reference]
+endif::[]

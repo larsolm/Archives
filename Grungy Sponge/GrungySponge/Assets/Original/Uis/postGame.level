@@ -1,0 +1,135 @@
+{
+	PostGameHeader {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Font = "AndyBFont"
+				StrokeWidth = 5
+				Depth = 5
+				Tag = "Ui"
+				Align = "Center"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 150"
+				Size = "-1 100"
+			}
+		]
+	}
+	RestartButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "PostGame"
+				OnSelect = "
+					UiStack.Pop();
+					GameManager.RestartLevel();
+					UiStack.Push('LevelOverview', true);
+				"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "-300 0"
+				Offset = "0.5 0.5"
+				Size = "125 125"
+			}
+		]
+	}
+	NextLevelButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "PostGame"
+				OnSelect = "
+					UiStack.Pop();
+					UiStack.Pop();
+					LevelList.NextLevel();
+				"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 -200"
+				Offset = "0.5 0.5"
+				Size = "125 125"
+			}
+		]
+	}
+	LevelsListButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "PostGame"
+				OnSelect = "
+					UiStack.Pop();
+					GameManager.UnloadLevel();
+					UiStack.Pop();
+				"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "300 0"
+				Offset = "0.5 0.5"
+				Size = "125 125"
+			}
+		]
+	}
+	PostGame {
+		#Type = "Pargon::TouchMenu"
+		#Behavior = "Object"
+		Buttons = "PostGame"
+		OnActivate = "
+			if (GameManager.IsGold == true)
+			{
+				PostGameHeader.Pargon::Text::TextObject.Text = 'Gold!';
+			}
+			else if (GameManager.IsSilver == true)
+			{
+				PostGameHeader.Pargon::Text::TextObject.Text = 'Silver!';
+			}
+			else if (GameManager.IsBronze == true)
+			{
+				PostGameHeader.Pargon::Text::TextObject.Text = 'Bronze!';
+			}
+			else
+			{
+				PostGameHeader.Pargon::Text::TextObject.Text = 'Try again!';
+			}
+		"
+	}
+}

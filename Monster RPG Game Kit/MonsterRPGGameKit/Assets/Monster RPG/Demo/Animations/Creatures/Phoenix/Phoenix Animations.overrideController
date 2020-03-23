@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Phoenix Animations
+  m_Controller: {fileID: 9100000, guid: 3ee60830570a4f646bc78d75cd197ddb, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6d4f1943ef7ff3a46bbe69b8c2c6d4cb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b359bb7723937094bb24bde08c0dc443, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 08eca0a2e38b498468845cdc910c4f43, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: db83ab8a72bccea4b8951f4fe6121f0e, type: 2}

@@ -1,0 +1,9 @@
+[#manual/reset-trainer-availability]
+
+## Reset Trainer Availability
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/reset-trainer-availability.html[Reference]
+endif::[]

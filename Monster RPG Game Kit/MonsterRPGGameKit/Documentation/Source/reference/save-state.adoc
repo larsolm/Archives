@@ -1,0 +1,17 @@
+[#reference/save-state]
+
+## SaveState
+
+PiRhoSoft.MonsterRpgEngine.SaveState
+
+### Description
+
+### Values
+
+<<reference/save-state.html,SaveState>> _SavingWorld_::
+
+<<reference/save-state.html,SaveState>> _WritingData_::
+
+<<reference/save-state.html,SaveState>> _Error_::
+
+<<reference/save-state.html,SaveState>> _Complete_::

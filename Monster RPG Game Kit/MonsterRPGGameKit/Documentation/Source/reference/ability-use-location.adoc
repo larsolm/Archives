@@ -1,0 +1,13 @@
+[#reference/ability-use-location]
+
+## AbilityUseLocation
+
+PiRhoSoft.MonsterRpgEngine.AbilityUseLocation
+
+### Description
+
+### Values
+
+<<reference/ability-use-location.html,AbilityUseLocation>> _World_::
+
+<<reference/ability-use-location.html,AbilityUseLocation>> _Battle_::

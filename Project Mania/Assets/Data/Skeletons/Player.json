@@ -1,0 +1,99 @@
+{
+	"DataType": "Player",
+	"Bones":
+	{
+		"Name": "Root",
+		"Position": "0.0 0.0 0.0",
+		"Size": "0.5 1.0 0.5",
+		"Offset": "0.5 0.0 0.5",
+		"Children": [
+			{
+				"Name": "Core",
+				"AttachmentType": "Equipment",
+				"Position": "0.5 1.0 0.5",
+				"Size": "0.25 0.25 0.25",
+				"Offset": "0.5 0.0 0.5"
+			},
+			{
+				"Name": "Arm",
+				"AttachmentType": "Weapon",
+				"Position": "0.5 0.5 0.5",
+				"Size": "1.0 0.25 0.25",
+				"Offset": "0.0 0.5 0.5",
+				"Children":
+				[
+					{
+						"Name": "Hand",
+						"Position": "1.0 0.5 0.5",
+						"Size": "0.5 0.5 0.5",
+						"Offset": "0.5 0.5 0.5"
+					}
+				]
+			},
+			{
+				"Name": "LeftUpperLeg",
+				"Position": "0.5 0.0 1.0",
+				"Size": "0.25 0.5 0.25",
+				"Offset": "0.5 1.0 0.5",
+				"Constraints": {
+					"AllowYaw": false,
+					"AllowPitch": false
+				},
+				"Children":	[
+					{					
+						"Name": "LeftLowerLeg",
+						"Position": "0.5 0.0 0.5",
+						"Size": "0.25 0.5 0.25",
+						"Offset": "0.5 1.0 0.5",
+						"Constraints": {
+							"AllowYaw": false,
+							"AllowPitch": false,
+							"MinimumRoll": "200_degrees",
+							"MaximumRoll": "350_degrees"
+						},
+						"Children":	[
+							{		
+								"Name": "LeftFoot",
+								"Position": "0.5 0.0 0.5",
+								"Size": "0.5 0.25 0.5",
+								"Offset": "0.25 1.0 0.5"
+							}
+						]
+					}
+				]
+			},
+			{
+				"Name": "RightUpperLeg",
+				"Position": "0.5 0.0 0.0",
+				"Size": "0.25 0.5 0.25",
+				"Offset": "0.5 1.0 0.5",
+				"Constraints": {
+					"AllowYaw": false,
+					"AllowPitch": false
+				},
+				"Children":	[
+					{
+						"Name": "RightLowerLeg",
+						"Position": "0.5 0.0 0.5",
+						"Size": "0.25 0.5 0.25",
+						"Offset": "0.5 1.0 0.5",
+						"Constraints": {
+							"AllowYaw": false,
+							"AllowPitch": false,
+							"MinimumRoll": "200_degrees",
+							"MaximumRoll": "350_degrees"
+						},
+						"Children":	[
+							{
+								"Name": "RightFoot",
+								"Position": "0.5 0.0 0.5",
+								"Size": "0.5 0.25 0.5",
+								"Offset": "0.25 1.0 0.5"
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

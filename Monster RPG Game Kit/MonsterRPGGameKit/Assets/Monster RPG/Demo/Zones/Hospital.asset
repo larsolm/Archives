@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05a05209b0dc5e4581acbfadeb4f5ff, type: 3}
+  m_Name: Hospital
+  m_EditorClassIdentifier: 
+  World: {fileID: 11400000, guid: 7dcf4ee8b80ab094890125bdcb6bc2ca, type: 2}
+  Name: Hospital
+  Scene:
+    Path: Assets/Monster RPG/Demo/Scenes/Zones/Hospital.unity
+  MapLayer: First Floor
+  BackgroundMusic: {fileID: 0}
+  Schema:
+    _definitions: []
+    _version: 0
+  EnterInstructions:
+    _instruction: {fileID: 0}
+    _inputs: []
+    _outputs: []
+  ExitInstructions:
+    _instruction: {fileID: 0}
+    _inputs: []
+    _outputs: []

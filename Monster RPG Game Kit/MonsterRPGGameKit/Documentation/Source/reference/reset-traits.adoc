@@ -1,0 +1,21 @@
+[#reference/reset-traits]
+
+## ResetTraits
+
+PiRhoSoft.MonsterRpgEngine.ResetTraits : link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^]
+
+### Description
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Next_::
+
+<<reference/reset-trait-list.html,ResetTraitList>> _Traits_::
+
+### Public Properties
+
+https://docs.unity3d.com/ScriptReference/Color.html[Color^] _NodeColor_ _(read only)_ _(virtual)_::
+
+### Protected Constructors
+
+ResetTraits()::

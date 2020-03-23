@@ -1,0 +1,25 @@
+[#reference/npc-save-data]
+
+## NpcSaveData
+
+PiRhoSoft.MonsterRpgEngine.NpcSaveData
+
+### Description
+
+### Constructors
+
+NpcSaveData()::
+
+### Public Fields
+
+string _Id_::
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _Position_::
+
+<<reference/movement-direction.html,MovementDirection>> _Direction_::
+
+string _ControllerData_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _NpcTraits_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _TrainerTraits_::

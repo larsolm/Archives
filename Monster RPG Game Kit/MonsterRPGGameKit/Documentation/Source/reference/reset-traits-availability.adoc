@@ -1,0 +1,21 @@
+[#reference/reset-traits-availability]
+
+## ResetTraitsAvailability
+
+PiRhoSoft.MonsterRpgEngine.ResetTraitsAvailability : link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^]
+
+### Description
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Next_::
+
+string _Availability_::
+
+### Public Properties
+
+https://docs.unity3d.com/ScriptReference/Color.html[Color^] _NodeColor_ _(read only)_ _(virtual)_::
+
+### Protected Constructors
+
+ResetTraitsAvailability()::

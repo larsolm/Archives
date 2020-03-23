@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		682BC8571A93C07E00566AC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682BC8561A93C07E00566AC7 /* Images.xcassets */; };
+		682BC89E1A93D1D500566AC7 /* DirtManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8711A93D1D500566AC7 /* DirtManager.cpp */; };
+		682BC89F1A93D1D500566AC7 /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8731A93D1D500566AC7 /* GameManager.cpp */; };
+		682BC8A01A93D1D500566AC7 /* LevelDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8751A93D1D500566AC7 /* LevelDescription.cpp */; };
+		682BC8A11A93D1D500566AC7 /* WorldDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8771A93D1D500566AC7 /* WorldDescription.cpp */; };
+		682BC8A21A93D1D500566AC7 /* GrungySponge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8791A93D1D500566AC7 /* GrungySponge.cpp */; };
+		682BC8A31A93D1D500566AC7 /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC87B1A93D1D500566AC7 /* Include.cpp */; };
+		682BC8A41A93D1D500566AC7 /* SpongeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC87E1A93D1D500566AC7 /* SpongeData.cpp */; };
+		682BC8A51A93D1D500566AC7 /* SpongeCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8801A93D1D500566AC7 /* SpongeCamera.cpp */; };
+		682BC8A61A93D1D500566AC7 /* SpongeMover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8821A93D1D500566AC7 /* SpongeMover.cpp */; };
+		682BC8A71A93D1D500566AC7 /* GameScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8851A93D1D500566AC7 /* GameScreen.cpp */; };
+		682BC8A81A93D1D500566AC7 /* UiBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8871A93D1D500566AC7 /* UiBackground.cpp */; };
+		682BC8A91A93D1D500566AC7 /* IndexComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8891A93D1D500566AC7 /* IndexComponent.cpp */; };
+		682BC8AA1A93D1D500566AC7 /* LevelList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC88B1A93D1D500566AC7 /* LevelList.cpp */; };
+		682BC8AB1A93D1D500566AC7 /* ScrollContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC88D1A93D1D500566AC7 /* ScrollContainer.cpp */; };
+		682BC8AC1A93D1D500566AC7 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC88F1A93D1D500566AC7 /* Timer.cpp */; };
+		682BC8AD1A93D1D500566AC7 /* WorldList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8911A93D1D500566AC7 /* WorldList.cpp */; };
+		682BC8AE1A93D1D500566AC7 /* ClearField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8941A93D1D500566AC7 /* ClearField.cpp */; };
+		682BC8AF1A93D1D500566AC7 /* ClearFieldManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8961A93D1D500566AC7 /* ClearFieldManager.cpp */; };
+		682BC8B01A93D1D500566AC7 /* DirtRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC8981A93D1D500566AC7 /* DirtRenderer.cpp */; };
+		682BC8B11A93D1D500566AC7 /* FinishLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC89A1A93D1D500566AC7 /* FinishLine.cpp */; };
+		682BC8B21A93D1D500566AC7 /* Pit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 682BC89C1A93D1D500566AC7 /* Pit.cpp */; };
+		682BC8D21A93DB4700566AC7 /* libAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8BF1A93DB4700566AC7 /* libAudio.a */; };
+		682BC8D31A93DB4700566AC7 /* libData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C01A93DB4700566AC7 /* libData.a */; };
+		682BC8D41A93DB4700566AC7 /* libDebugging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C11A93DB4700566AC7 /* libDebugging.a */; };
+		682BC8D51A93DB4700566AC7 /* libFileSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C21A93DB4700566AC7 /* libFileSystem.a */; };
+		682BC8D61A93DB4700566AC7 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C31A93DB4700566AC7 /* libfreetype.a */; };
+		682BC8D71A93DB4700566AC7 /* libGame2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C41A93DB4700566AC7 /* libGame2d.a */; };
+		682BC8D81A93DB4700566AC7 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C51A93DB4700566AC7 /* libGameCore.a */; };
+		682BC8D91A93DB4700566AC7 /* libGameUi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C61A93DB4700566AC7 /* libGameUi.a */; };
+		682BC8DA1A93DB4700566AC7 /* libGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C71A93DB4700566AC7 /* libGraphics.a */; };
+		682BC8DB1A93DB4700566AC7 /* libInput.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C81A93DB4700566AC7 /* libInput.a */; };
+		682BC8DC1A93DB4700566AC7 /* libMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8C91A93DB4700566AC7 /* libMath.a */; };
+		682BC8DD1A93DB4700566AC7 /* libReflection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8CA1A93DB4700566AC7 /* libReflection.a */; };
+		682BC8DE1A93DB4700566AC7 /* libScripting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8CB1A93DB4700566AC7 /* libScripting.a */; };
+		682BC8DF1A93DB4700566AC7 /* libSerialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8CC1A93DB4700566AC7 /* libSerialization.a */; };
+		682BC8E01A93DB4700566AC7 /* libShapes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8CD1A93DB4700566AC7 /* libShapes.a */; };
+		682BC8E11A93DB4700566AC7 /* libstbimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8CE1A93DB4700566AC7 /* libstbimage.a */; };
+		682BC8E21A93DB4700566AC7 /* libText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8CF1A93DB4700566AC7 /* libText.a */; };
+		682BC8E31A93DB4700566AC7 /* libTypes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8D01A93DB4700566AC7 /* libTypes.a */; };
+		682BC8E41A93DB4700566AC7 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8D11A93DB4700566AC7 /* libzlib.a */; };
+		682BC8E91A93DFAC00566AC7 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8E71A93DFAC00566AC7 /* OpenAL.framework */; };
+		682BC8ED1A93E05E00566AC7 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC8E81A93DFAC00566AC7 /* OpenGLES.framework */; };
+		682BC93E1A94062B00566AC7 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC93D1A94062B00566AC7 /* GLKit.framework */; };
+		682BC9401A9406C700566AC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 682BC93F1A9406C700566AC7 /* UIKit.framework */; };
+		682BC94C1A94072600566AC7 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 682BC9421A94072600566AC7 /* AppDelegate.mm */; };
+		682BC94D1A94072600566AC7 /* GLESView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 682BC9441A94072600566AC7 /* GLESView.mm */; };
+		682BC9501A94072600566AC7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 682BC9491A94072600566AC7 /* LaunchScreen.xib */; };
+		682BC9511A94072600566AC7 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 682BC94A1A94072600566AC7 /* main.mm */; };
+		682BC9521A94072600566AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 682BC94B1A94072600566AC7 /* Main.storyboard */; };
+		687CB8D71A94363B008F4107 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 687CB8D61A94363B008F4107 /* Assets */; };
+		68932C851AB10DC500AE6805 /* libApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68932C841AB10DC500AE6805 /* libApplication.a */; };
+		68932CAC1AB23B0F00AE6805 /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68932CAB1AB23B0F00AE6805 /* Include.cpp */; };
+		68932CAE1AB23B9200AE6805 /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68932CAD1AB23B9200AE6805 /* Include.cpp */; };
+		68932CB11AB23B9E00AE6805 /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68932CAF1AB23B9E00AE6805 /* Include.cpp */; };
+		68932CB31AB23BB800AE6805 /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68932CB21AB23BB800AE6805 /* Include.cpp */; };
+		68E39BC41A97AA9B00870E68 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E39BC31A97AA9B00870E68 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		682BC8461A93C07E00566AC7 /* GrungySponge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrungySponge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		682BC84A1A93C07E00566AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GrungySponge/Info.plist; sourceTree = "<group>"; };
+		682BC8561A93C07E00566AC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GrungySponge/Images.xcassets; sourceTree = "<group>"; };
+		682BC8711A93D1D500566AC7 /* DirtManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirtManager.cpp; sourceTree = "<group>"; };
+		682BC8721A93D1D500566AC7 /* DirtManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirtManager.h; sourceTree = "<group>"; };
+		682BC8731A93D1D500566AC7 /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
+		682BC8741A93D1D500566AC7 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		682BC8751A93D1D500566AC7 /* LevelDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelDescription.cpp; sourceTree = "<group>"; };
+		682BC8761A93D1D500566AC7 /* LevelDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelDescription.h; sourceTree = "<group>"; };
+		682BC8771A93D1D500566AC7 /* WorldDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldDescription.cpp; sourceTree = "<group>"; };
+		682BC8781A93D1D500566AC7 /* WorldDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldDescription.h; sourceTree = "<group>"; };
+		682BC8791A93D1D500566AC7 /* GrungySponge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GrungySponge.cpp; path = ../../../GrungySponge/GrungySponge.cpp; sourceTree = "<group>"; };
+		682BC87A1A93D1D500566AC7 /* GrungySponge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrungySponge.h; path = ../../../GrungySponge/GrungySponge.h; sourceTree = "<group>"; };
+		682BC87B1A93D1D500566AC7 /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Include.cpp; path = ../../../GrungySponge/Include.cpp; sourceTree = "<group>"; };
+		682BC87E1A93D1D500566AC7 /* SpongeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpongeData.cpp; sourceTree = "<group>"; };
+		682BC87F1A93D1D500566AC7 /* SpongeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpongeData.h; sourceTree = "<group>"; };
+		682BC8801A93D1D500566AC7 /* SpongeCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpongeCamera.cpp; sourceTree = "<group>"; };
+		682BC8811A93D1D500566AC7 /* SpongeCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpongeCamera.h; sourceTree = "<group>"; };
+		682BC8821A93D1D500566AC7 /* SpongeMover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpongeMover.cpp; sourceTree = "<group>"; };
+		682BC8831A93D1D500566AC7 /* SpongeMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpongeMover.h; sourceTree = "<group>"; };
+		682BC8851A93D1D500566AC7 /* GameScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScreen.cpp; sourceTree = "<group>"; };
+		682BC8861A93D1D500566AC7 /* GameScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScreen.h; sourceTree = "<group>"; };
+		682BC8871A93D1D500566AC7 /* UiBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UiBackground.cpp; sourceTree = "<group>"; };
+		682BC8881A93D1D500566AC7 /* UiBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiBackground.h; sourceTree = "<group>"; };
+		682BC8891A93D1D500566AC7 /* IndexComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IndexComponent.cpp; sourceTree = "<group>"; };
+		682BC88A1A93D1D500566AC7 /* IndexComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexComponent.h; sourceTree = "<group>"; };
+		682BC88B1A93D1D500566AC7 /* LevelList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelList.cpp; sourceTree = "<group>"; };
+		682BC88C1A93D1D500566AC7 /* LevelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelList.h; sourceTree = "<group>"; };
+		682BC88D1A93D1D500566AC7 /* ScrollContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollContainer.cpp; sourceTree = "<group>"; };
+		682BC88E1A93D1D500566AC7 /* ScrollContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollContainer.h; sourceTree = "<group>"; };
+		682BC88F1A93D1D500566AC7 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		682BC8901A93D1D500566AC7 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		682BC8911A93D1D500566AC7 /* WorldList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldList.cpp; sourceTree = "<group>"; };
+		682BC8921A93D1D500566AC7 /* WorldList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldList.h; sourceTree = "<group>"; };
+		682BC8941A93D1D500566AC7 /* ClearField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClearField.cpp; sourceTree = "<group>"; };
+		682BC8951A93D1D500566AC7 /* ClearField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearField.h; sourceTree = "<group>"; };
+		682BC8961A93D1D500566AC7 /* ClearFieldManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClearFieldManager.cpp; sourceTree = "<group>"; };
+		682BC8971A93D1D500566AC7 /* ClearFieldManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearFieldManager.h; sourceTree = "<group>"; };
+		682BC8981A93D1D500566AC7 /* DirtRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirtRenderer.cpp; sourceTree = "<group>"; };
+		682BC8991A93D1D500566AC7 /* DirtRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirtRenderer.h; sourceTree = "<group>"; };
+		682BC89A1A93D1D500566AC7 /* FinishLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FinishLine.cpp; sourceTree = "<group>"; };
+		682BC89B1A93D1D500566AC7 /* FinishLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishLine.h; sourceTree = "<group>"; };
+		682BC89C1A93D1D500566AC7 /* Pit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pit.cpp; sourceTree = "<group>"; };
+		682BC89D1A93D1D500566AC7 /* Pit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pit.h; sourceTree = "<group>"; };
+		682BC8BF1A93DB4700566AC7 /* libAudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAudio.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libAudio.a"; sourceTree = "<group>"; };
+		682BC8C01A93DB4700566AC7 /* libData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libData.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libData.a"; sourceTree = "<group>"; };
+		682BC8C11A93DB4700566AC7 /* libDebugging.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDebugging.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libDebugging.a"; sourceTree = "<group>"; };
+		682BC8C21A93DB4700566AC7 /* libFileSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFileSystem.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libFileSystem.a"; sourceTree = "<group>"; };
+		682BC8C31A93DB4700566AC7 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = "../../../../Pargon/Platforms/XcodeIOS/Libraries/freetype/build/Debug-iphoneos/libfreetype.a"; sourceTree = "<group>"; };
+		682BC8C41A93DB4700566AC7 /* libGame2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGame2d.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libGame2d.a"; sourceTree = "<group>"; };
+		682BC8C51A93DB4700566AC7 /* libGameCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameCore.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libGameCore.a"; sourceTree = "<group>"; };
+		682BC8C61A93DB4700566AC7 /* libGameUi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameUi.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libGameUi.a"; sourceTree = "<group>"; };
+		682BC8C71A93DB4700566AC7 /* libGraphics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGraphics.a; path = "../../../../Pargon/Platforms/XcodeIOS/Pargon/Graphics/build/Debug-iphoneos/libGraphics.a"; sourceTree = "<group>"; };
+		682BC8C81A93DB4700566AC7 /* libInput.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInput.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libInput.a"; sourceTree = "<group>"; };
+		682BC8C91A93DB4700566AC7 /* libMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMath.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libMath.a"; sourceTree = "<group>"; };
+		682BC8CA1A93DB4700566AC7 /* libReflection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReflection.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libReflection.a"; sourceTree = "<group>"; };
+		682BC8CB1A93DB4700566AC7 /* libScripting.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libScripting.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libScripting.a"; sourceTree = "<group>"; };
+		682BC8CC1A93DB4700566AC7 /* libSerialization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSerialization.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libSerialization.a"; sourceTree = "<group>"; };
+		682BC8CD1A93DB4700566AC7 /* libShapes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libShapes.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libShapes.a"; sourceTree = "<group>"; };
+		682BC8CE1A93DB4700566AC7 /* libstbimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstbimage.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libstbimage.a"; sourceTree = "<group>"; };
+		682BC8CF1A93DB4700566AC7 /* libText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libText.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libText.a"; sourceTree = "<group>"; };
+		682BC8D01A93DB4700566AC7 /* libTypes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTypes.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libTypes.a"; sourceTree = "<group>"; };
+		682BC8D11A93DB4700566AC7 /* libzlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzlib.a; path = "../../../../../Library/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos/libzlib.a"; sourceTree = "<group>"; };
+		682BC8E71A93DFAC00566AC7 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		682BC8E81A93DFAC00566AC7 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		682BC93D1A94062B00566AC7 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		682BC93F1A9406C700566AC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		682BC9411A94072600566AC7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		682BC9421A94072600566AC7 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		682BC9431A94072600566AC7 /* GLESView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESView.h; sourceTree = "<group>"; };
+		682BC9441A94072600566AC7 /* GLESView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLESView.mm; sourceTree = "<group>"; };
+		682BC9491A94072600566AC7 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		682BC94A1A94072600566AC7 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		682BC94B1A94072600566AC7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		687CB8D61A94363B008F4107 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../../../Assets; sourceTree = "<group>"; };
+		68932C841AB10DC500AE6805 /* libApplication.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libApplication.a; path = "../../../../Pargon/Platforms/XcodeIOS/Pargon/Application/build/Debug-iphoneos/libApplication.a"; sourceTree = "<group>"; };
+		68932CA71AB2381100AE6805 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		68932CA81AB23A2D00AE6805 /* Sponge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sponge.h; sourceTree = "<group>"; };
+		68932CA91AB23A3400AE6805 /* Ui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ui.h; sourceTree = "<group>"; };
+		68932CAA1AB23A4100AE6805 /* World.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+		68932CAB1AB23B0F00AE6805 /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Include.cpp; sourceTree = "<group>"; };
+		68932CAD1AB23B9200AE6805 /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Include.cpp; sourceTree = "<group>"; };
+		68932CAF1AB23B9E00AE6805 /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Include.cpp; sourceTree = "<group>"; };
+		68932CB21AB23BB800AE6805 /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Include.cpp; sourceTree = "<group>"; };
+		68E39BC31A97AA9B00870E68 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		682BC8431A93C07E00566AC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68932C851AB10DC500AE6805 /* libApplication.a in Frameworks */,
+				68E39BC41A97AA9B00870E68 /* CoreMotion.framework in Frameworks */,
+				682BC9401A9406C700566AC7 /* UIKit.framework in Frameworks */,
+				682BC93E1A94062B00566AC7 /* GLKit.framework in Frameworks */,
+				682BC8ED1A93E05E00566AC7 /* OpenGLES.framework in Frameworks */,
+				682BC8E91A93DFAC00566AC7 /* OpenAL.framework in Frameworks */,
+				682BC8D21A93DB4700566AC7 /* libAudio.a in Frameworks */,
+				682BC8D31A93DB4700566AC7 /* libData.a in Frameworks */,
+				682BC8D41A93DB4700566AC7 /* libDebugging.a in Frameworks */,
+				682BC8D51A93DB4700566AC7 /* libFileSystem.a in Frameworks */,
+				682BC8D61A93DB4700566AC7 /* libfreetype.a in Frameworks */,
+				682BC8D71A93DB4700566AC7 /* libGame2d.a in Frameworks */,
+				682BC8D81A93DB4700566AC7 /* libGameCore.a in Frameworks */,
+				682BC8D91A93DB4700566AC7 /* libGameUi.a in Frameworks */,
+				682BC8DA1A93DB4700566AC7 /* libGraphics.a in Frameworks */,
+				682BC8DB1A93DB4700566AC7 /* libInput.a in Frameworks */,
+				682BC8DC1A93DB4700566AC7 /* libMath.a in Frameworks */,
+				682BC8DD1A93DB4700566AC7 /* libReflection.a in Frameworks */,
+				682BC8DE1A93DB4700566AC7 /* libScripting.a in Frameworks */,
+				682BC8DF1A93DB4700566AC7 /* libSerialization.a in Frameworks */,
+				682BC8E01A93DB4700566AC7 /* libShapes.a in Frameworks */,
+				682BC8E11A93DB4700566AC7 /* libstbimage.a in Frameworks */,
+				682BC8E21A93DB4700566AC7 /* libText.a in Frameworks */,
+				682BC8E31A93DB4700566AC7 /* libTypes.a in Frameworks */,
+				682BC8E41A93DB4700566AC7 /* libzlib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		682BC83D1A93C07E00566AC7 = {
+			isa = PBXGroup;
+			children = (
+				687CB8D61A94363B008F4107 /* Assets */,
+				682BC8561A93C07E00566AC7 /* Images.xcassets */,
+				682BC84A1A93C07E00566AC7 /* Info.plist */,
+				682BC8701A93D1D500566AC7 /* Game */,
+				682BC8791A93D1D500566AC7 /* GrungySponge.cpp */,
+				682BC87A1A93D1D500566AC7 /* GrungySponge.h */,
+				682BC87B1A93D1D500566AC7 /* Include.cpp */,
+				682BC87D1A93D1D500566AC7 /* Sponge */,
+				682BC8841A93D1D500566AC7 /* Ui */,
+				682BC8931A93D1D500566AC7 /* World */,
+				682BC87C1A93D1D500566AC7 /* IOS */,
+				682BC8E61A93DF6B00566AC7 /* Frameworks */,
+				682BC8E51A93DF1800566AC7 /* Libraries */,
+				682BC8471A93C07E00566AC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		682BC8471A93C07E00566AC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				682BC8461A93C07E00566AC7 /* GrungySponge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		682BC8701A93D1D500566AC7 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				682BC8711A93D1D500566AC7 /* DirtManager.cpp */,
+				682BC8721A93D1D500566AC7 /* DirtManager.h */,
+				682BC8731A93D1D500566AC7 /* GameManager.cpp */,
+				682BC8741A93D1D500566AC7 /* GameManager.h */,
+				682BC8751A93D1D500566AC7 /* LevelDescription.cpp */,
+				682BC8761A93D1D500566AC7 /* LevelDescription.h */,
+				682BC8771A93D1D500566AC7 /* WorldDescription.cpp */,
+				682BC8781A93D1D500566AC7 /* WorldDescription.h */,
+				68932CA71AB2381100AE6805 /* Game.h */,
+				68932CAB1AB23B0F00AE6805 /* Include.cpp */,
+			);
+			name = Game;
+			path = ../../../GrungySponge/Game;
+			sourceTree = "<group>";
+		};
+		682BC87C1A93D1D500566AC7 /* IOS */ = {
+			isa = PBXGroup;
+			children = (
+				682BC9411A94072600566AC7 /* AppDelegate.h */,
+				682BC9421A94072600566AC7 /* AppDelegate.mm */,
+				682BC9431A94072600566AC7 /* GLESView.h */,
+				682BC9441A94072600566AC7 /* GLESView.mm */,
+				682BC9491A94072600566AC7 /* LaunchScreen.xib */,
+				682BC94A1A94072600566AC7 /* main.mm */,
+				682BC94B1A94072600566AC7 /* Main.storyboard */,
+			);
+			name = IOS;
+			path = ../../../GrungySponge/IOS;
+			sourceTree = "<group>";
+		};
+		682BC87D1A93D1D500566AC7 /* Sponge */ = {
+			isa = PBXGroup;
+			children = (
+				682BC87E1A93D1D500566AC7 /* SpongeData.cpp */,
+				682BC87F1A93D1D500566AC7 /* SpongeData.h */,
+				682BC8801A93D1D500566AC7 /* SpongeCamera.cpp */,
+				682BC8811A93D1D500566AC7 /* SpongeCamera.h */,
+				682BC8821A93D1D500566AC7 /* SpongeMover.cpp */,
+				682BC8831A93D1D500566AC7 /* SpongeMover.h */,
+				68932CA81AB23A2D00AE6805 /* Sponge.h */,
+				68932CAD1AB23B9200AE6805 /* Include.cpp */,
+			);
+			name = Sponge;
+			path = ../../../GrungySponge/Sponge;
+			sourceTree = "<group>";
+		};
+		682BC8841A93D1D500566AC7 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				682BC8851A93D1D500566AC7 /* GameScreen.cpp */,
+				682BC8861A93D1D500566AC7 /* GameScreen.h */,
+				682BC8871A93D1D500566AC7 /* UiBackground.cpp */,
+				682BC8881A93D1D500566AC7 /* UiBackground.h */,
+				682BC8891A93D1D500566AC7 /* IndexComponent.cpp */,
+				682BC88A1A93D1D500566AC7 /* IndexComponent.h */,
+				682BC88B1A93D1D500566AC7 /* LevelList.cpp */,
+				682BC88C1A93D1D500566AC7 /* LevelList.h */,
+				682BC88D1A93D1D500566AC7 /* ScrollContainer.cpp */,
+				682BC88E1A93D1D500566AC7 /* ScrollContainer.h */,
+				682BC88F1A93D1D500566AC7 /* Timer.cpp */,
+				682BC8901A93D1D500566AC7 /* Timer.h */,
+				682BC8911A93D1D500566AC7 /* WorldList.cpp */,
+				682BC8921A93D1D500566AC7 /* WorldList.h */,
+				68932CA91AB23A3400AE6805 /* Ui.h */,
+				68932CAF1AB23B9E00AE6805 /* Include.cpp */,
+			);
+			name = Ui;
+			path = ../../../GrungySponge/Ui;
+			sourceTree = "<group>";
+		};
+		682BC8931A93D1D500566AC7 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				682BC8941A93D1D500566AC7 /* ClearField.cpp */,
+				682BC8951A93D1D500566AC7 /* ClearField.h */,
+				682BC8961A93D1D500566AC7 /* ClearFieldManager.cpp */,
+				682BC8971A93D1D500566AC7 /* ClearFieldManager.h */,
+				682BC8981A93D1D500566AC7 /* DirtRenderer.cpp */,
+				682BC8991A93D1D500566AC7 /* DirtRenderer.h */,
+				682BC89A1A93D1D500566AC7 /* FinishLine.cpp */,
+				682BC89B1A93D1D500566AC7 /* FinishLine.h */,
+				682BC89C1A93D1D500566AC7 /* Pit.cpp */,
+				682BC89D1A93D1D500566AC7 /* Pit.h */,
+				68932CAA1AB23A4100AE6805 /* World.h */,
+				68932CB21AB23BB800AE6805 /* Include.cpp */,
+			);
+			name = World;
+			path = ../../../GrungySponge/World;
+			sourceTree = "<group>";
+		};
+		682BC8E51A93DF1800566AC7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				682BC8BF1A93DB4700566AC7 /* libAudio.a */,
+				682BC8C01A93DB4700566AC7 /* libData.a */,
+				682BC8C11A93DB4700566AC7 /* libDebugging.a */,
+				682BC8C21A93DB4700566AC7 /* libFileSystem.a */,
+				682BC8C31A93DB4700566AC7 /* libfreetype.a */,
+				682BC8C41A93DB4700566AC7 /* libGame2d.a */,
+				682BC8C51A93DB4700566AC7 /* libGameCore.a */,
+				682BC8C61A93DB4700566AC7 /* libGameUi.a */,
+				682BC8C71A93DB4700566AC7 /* libGraphics.a */,
+				682BC8C81A93DB4700566AC7 /* libInput.a */,
+				682BC8C91A93DB4700566AC7 /* libMath.a */,
+				682BC8CA1A93DB4700566AC7 /* libReflection.a */,
+				682BC8CB1A93DB4700566AC7 /* libScripting.a */,
+				682BC8CC1A93DB4700566AC7 /* libSerialization.a */,
+				682BC8CD1A93DB4700566AC7 /* libShapes.a */,
+				682BC8CE1A93DB4700566AC7 /* libstbimage.a */,
+				682BC8CF1A93DB4700566AC7 /* libText.a */,
+				682BC8D01A93DB4700566AC7 /* libTypes.a */,
+				682BC8D11A93DB4700566AC7 /* libzlib.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		682BC8E61A93DF6B00566AC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68932C841AB10DC500AE6805 /* libApplication.a */,
+				68E39BC31A97AA9B00870E68 /* CoreMotion.framework */,
+				682BC93F1A9406C700566AC7 /* UIKit.framework */,
+				682BC93D1A94062B00566AC7 /* GLKit.framework */,
+				682BC8E71A93DFAC00566AC7 /* OpenAL.framework */,
+				682BC8E81A93DFAC00566AC7 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		682BC8451A93C07E00566AC7 /* GrungySponge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682BC8691A93C07E00566AC7 /* Build configuration list for PBXNativeTarget "GrungySponge" */;
+			buildPhases = (
+				682BC8421A93C07E00566AC7 /* Sources */,
+				682BC8431A93C07E00566AC7 /* Frameworks */,
+				682BC8441A93C07E00566AC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrungySponge;
+			productName = GrungySponge;
+			productReference = 682BC8461A93C07E00566AC7 /* GrungySponge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		682BC83E1A93C07E00566AC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = PiRhoSoft;
+				TargetAttributes = {
+					682BC8451A93C07E00566AC7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 682BC8411A93C07E00566AC7 /* Build configuration list for PBXProject "GrungySponge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 682BC83D1A93C07E00566AC7;
+			productRefGroup = 682BC8471A93C07E00566AC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				682BC8451A93C07E00566AC7 /* GrungySponge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		682BC8441A93C07E00566AC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682BC9521A94072600566AC7 /* Main.storyboard in Resources */,
+				687CB8D71A94363B008F4107 /* Assets in Resources */,
+				682BC9501A94072600566AC7 /* LaunchScreen.xib in Resources */,
+				682BC8571A93C07E00566AC7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		682BC8421A93C07E00566AC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682BC9511A94072600566AC7 /* main.mm in Sources */,
+				682BC8A71A93D1D500566AC7 /* GameScreen.cpp in Sources */,
+				682BC8AA1A93D1D500566AC7 /* LevelList.cpp in Sources */,
+				682BC8A91A93D1D500566AC7 /* IndexComponent.cpp in Sources */,
+				682BC8A21A93D1D500566AC7 /* GrungySponge.cpp in Sources */,
+				68932CAC1AB23B0F00AE6805 /* Include.cpp in Sources */,
+				682BC8A01A93D1D500566AC7 /* LevelDescription.cpp in Sources */,
+				682BC89F1A93D1D500566AC7 /* GameManager.cpp in Sources */,
+				682BC8A11A93D1D500566AC7 /* WorldDescription.cpp in Sources */,
+				682BC8AB1A93D1D500566AC7 /* ScrollContainer.cpp in Sources */,
+				682BC8A61A93D1D500566AC7 /* SpongeMover.cpp in Sources */,
+				682BC8B11A93D1D500566AC7 /* FinishLine.cpp in Sources */,
+				682BC8A31A93D1D500566AC7 /* Include.cpp in Sources */,
+				682BC8A41A93D1D500566AC7 /* SpongeData.cpp in Sources */,
+				682BC89E1A93D1D500566AC7 /* DirtManager.cpp in Sources */,
+				68932CB11AB23B9E00AE6805 /* Include.cpp in Sources */,
+				68932CB31AB23BB800AE6805 /* Include.cpp in Sources */,
+				682BC8AE1A93D1D500566AC7 /* ClearField.cpp in Sources */,
+				682BC94D1A94072600566AC7 /* GLESView.mm in Sources */,
+				682BC8AF1A93D1D500566AC7 /* ClearFieldManager.cpp in Sources */,
+				68932CAE1AB23B9200AE6805 /* Include.cpp in Sources */,
+				682BC8A51A93D1D500566AC7 /* SpongeCamera.cpp in Sources */,
+				682BC8B01A93D1D500566AC7 /* DirtRenderer.cpp in Sources */,
+				682BC8AD1A93D1D500566AC7 /* WorldList.cpp in Sources */,
+				682BC94C1A94072600566AC7 /* AppDelegate.mm in Sources */,
+				682BC8AC1A93D1D500566AC7 /* Timer.cpp in Sources */,
+				682BC8B21A93D1D500566AC7 /* Pit.cpp in Sources */,
+				682BC8A81A93D1D500566AC7 /* UiBackground.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		682BC8671A93C07E00566AC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../GrungySponge/GrungySponge.cpp;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../../Pargon $(PROJECT_DIR)/../../..";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		682BC8681A93C07E00566AC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../GrungySponge/GrungySponge.cpp;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../../Pargon $(PROJECT_DIR)/../../..";
+				USE_HEADERMAP = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		682BC86A1A93C07E00566AC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GrungySponge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos",
+					"/Users/lukelarson/Projects/Pargon/Platforms/XcodeIOS/Libraries/freetype/build/Debug-iphoneos",
+					"/Users/lukelarson/Projects/Pargon/Platforms/XcodeIOS/Pargon/Graphics/build/Debug-iphoneos",
+					"/Users/lukelarson/Projects/Pargon/Platforms/XcodeIOS/Pargon/Application/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		682BC86B1A93C07E00566AC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GrungySponge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GrungySponge-cigowtmgwqyktpccxbigerzxntan/Build/Products/Debug-iphoneos",
+					"/Users/lukelarson/Projects/Pargon/Platforms/XcodeIOS/Libraries/freetype/build/Debug-iphoneos",
+					"/Users/lukelarson/Projects/Pargon/Platforms/XcodeIOS/Pargon/Graphics/build/Debug-iphoneos",
+					"/Users/lukelarson/Projects/Pargon/Platforms/XcodeIOS/Pargon/Application/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		682BC8411A93C07E00566AC7 /* Build configuration list for PBXProject "GrungySponge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682BC8671A93C07E00566AC7 /* Debug */,
+				682BC8681A93C07E00566AC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682BC8691A93C07E00566AC7 /* Build configuration list for PBXNativeTarget "GrungySponge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682BC86A1A93C07E00566AC7 /* Debug */,
+				682BC86B1A93C07E00566AC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 682BC83E1A93C07E00566AC7 /* Project object */;
+}

@@ -1,0 +1,23 @@
+[#reference/area-controller]
+
+## AreaController
+
+PiRhoSoft.MonsterRpgEngine.AreaController : <<reference/controller.html,Controller>>
+
+### Description
+
+### Constructors
+
+AreaController()::
+
+### Public Fields
+
+int _LeftDistance_::
+
+int _RightDistance_::
+
+int _UpDistance_::
+
+int _DownDistance_::
+
+float _MovementDelay_::

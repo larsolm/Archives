@@ -1,0 +1,19 @@
+[#reference/ai-selection-item]
+
+## AiSelectionItem
+
+PiRhoSoft.MonsterRpgEngine.AiSelectionItem
+
+### Description
+
+### Constructors
+
+AiSelectionItem()::
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _OnSelected_::
+
+string _Label_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-reference[VariableReference^] _Variables_::

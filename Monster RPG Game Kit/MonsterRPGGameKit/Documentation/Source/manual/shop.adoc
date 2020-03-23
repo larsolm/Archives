@@ -1,0 +1,11 @@
+[#manual/shop]
+
+## Shop
+
+### Fields
+
+<<manual/shop-item-list.html,Shop Item List>> _Items_::
+
+ifdef::backend-multipage_html5[]
+link:reference/shop.html[Reference]
+endif::[]

@@ -1,0 +1,11 @@
+[#manual/play-battle-clip]
+
+## Play Battle Clip
+
+### Fields
+
+<<manual/battle-animation-clip.html,Battle Animation Clip>> _Clip_::
+
+ifdef::backend-multipage_html5[]
+link:reference/play-battle-clip.html[Reference]
+endif::[]

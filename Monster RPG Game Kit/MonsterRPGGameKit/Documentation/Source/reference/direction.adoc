@@ -1,0 +1,21 @@
+[#reference/direction]
+
+## Direction
+
+PiRhoSoft.MonsterRpgEngine.Direction
+
+### Description
+
+### Static Methods
+
+bool Contains(<<reference/interaction-direction.html,InteractionDirection>> _interactionDirection_, <<reference/movement-direction.html,MovementDirection>> _movementDirection_)::
+
+<<reference/movement-direction.html,MovementDirection>> Opposite(<<reference/movement-direction.html,MovementDirection>> _direction_)::
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] GetVector(<<reference/movement-direction.html,MovementDirection>> _direction_)::
+
+<<reference/movement-direction.html,MovementDirection>> GetDirection(float _horizontal_, float _vertical_)::
+
+<<reference/movement-direction.html,MovementDirection>> GetDirection(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _direction_)::
+
+void GetMovement(<<reference/movement-direction.html,MovementDirection>> _direction_, float _horizontal_ _(out)_, float _vertical_ _(out)_)::

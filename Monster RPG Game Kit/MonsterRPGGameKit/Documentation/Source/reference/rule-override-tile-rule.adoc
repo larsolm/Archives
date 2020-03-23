@@ -1,0 +1,19 @@
+[#reference/rule-override-tile-rule]
+
+## Rule
+
+PiRhoSoft.MonsterRpgEngine.Rule
+
+### Description
+
+### Constructors
+
+Rule()::
+
+### Public Fields
+
+<<reference/tile-transform-info.html,TileTransformInfo>> _Tile_::
+
+bool _UseReference_::
+
+https://docs.unity3d.com/ScriptReference/TileBase.html[TileBase^] _Reference_::

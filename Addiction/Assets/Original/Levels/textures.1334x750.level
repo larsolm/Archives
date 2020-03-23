@@ -1,0 +1,82 @@
+{
+	BackgroundTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/table.1334x750.png"
+	}
+	CardTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/card.1334x750.png"
+	}
+    HighlightTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/highlight.1334x750.png"
+	}
+    OutlineTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/outline.1334x750.png"
+	}
+	SpadesTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/spades.png"
+	}
+	DiamondsTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/diamonds.png"
+	}
+	ClubsTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/clubs.png"
+	}
+	HeartsTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/hearts.png"
+	}
+	NewTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+        Filename = "Images/new.1334x750.png"
+	}
+    NewDownTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/newDown.1334x750.png"
+	}
+    ShuffleTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/shuffle.1334x750.png"
+	}
+    ShuffleDownTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/shuffleDown.1334x750.png"
+	}
+    UndoTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/undo.1334x750.png"
+	}
+    UndoDownTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/undoDown.1334x750.png"
+	}
+    SoundTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/sound.1334x750.png"
+	}
+    SoundDownTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/soundDown.1334x750.png"
+	}
+}

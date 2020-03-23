@@ -1,0 +1,378 @@
+new GuiControl(LevelEditorGUI) {
+   profile = "GuiContentProfile";
+   horizSizing = width;
+   vertSizing = height;
+   position = "0 0";
+   extent = "640 480";
+   visible = "1";
+
+   new fxSceneWindow2D(EditorSceneWindow) {
+      profile = "GuiDefaultProfile";
+      horizSizing = "width";
+      vertSizing = "height";
+      position = "0 0";
+      extent = "640 480";
+      minExtent = "8 8";
+      visible = "1";
+      lockMouse = "1";
+         
+      new LevelEditor(EditorGUI) {
+         profile = "GuiDefaultProfile";
+         position = "0 0";
+         extent = "640 480";
+         horizSizing = "width";
+         vertSizing = "height";
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "750 550";
+            text = "_|";
+            extent = "32 32";
+            command = "ScrollDownRight();";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "750 284";
+            text = ">";
+            extent = "32 32";
+            command = "ScrollRight();";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "750 18";
+            text = "7";
+            extent = "32 32";
+            command = "ScrollUpRight();";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "384 18";
+            text = "^";
+            extent = "32 32";
+            command = "ScrollUp();";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "18 18";
+            text = "|-";
+            extent = "32 32";
+            command = "ScrollUpLeft();";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "18 284";
+            text = "<";
+            extent = "32 32";
+            command = "ScrollLeft();";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "18 550";
+            text = "L";
+            extent = "32 32";
+            command = "ScrollDownLeft();";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "384 550";
+            text = "v";
+            extent = "32 32";
+            command = "ScrollDown();";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "100 550";
+            text = "New Boundary";
+            extent = "96 16";
+            command = "Canvas.pushDialog(NewBoundaryGUI);";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "604 550";
+            text = "Save";
+            extent = "96 16";
+            command = "Canvas.pushDialog(SaveLevelGUI);";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "604 575";
+            text = "Quit";
+            extent = "96 16";
+            command = "quit();";
+         };
+         
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "225 550";
+            text = "New Trigger";
+            extent = "96 16";
+            command = "Canvas.pushDialog(NewTriggerGUI);";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "225 575";
+            text = "New Enemy";
+            extent = "96 16";
+            command = "Canvas.pushDialog(NewEnemyGUI);";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "100 575";
+            text = "New Image";
+            extent = "96 16";
+            command = "Canvas.pushDialog(NewImageGUI);";
+         };
+
+         new GuiButtonCtrl() {
+            profile = "GuiButtonProfile";
+            position = "479 550";
+            text = "Delete";
+            extent = "96 16";
+            command = "DeleteObject();";
+         };
+      };
+   };
+};
+
+new GuiControl(SaveLevelGUI) {
+   profile = "GuiDefaultProfile";
+   extent = "800 600";
+   position = "0 0";
+
+   new GuiWindowCtrl() {
+      profile = "GuiWindowProfile";
+      position = "250 200";
+      extent = "300 200";
+      closeCommand = "Canvas.popDialog(SaveLevelGUI);";
+
+      new GuiTextEditCtrl(SaveTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 50";
+         extent = "100 20";
+      };
+      
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "50 150";
+         extent = "50 16";
+         text = "Cancel";
+         command = "Canvas.popDialog(SaveLevelGUI);";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "200 150";
+         extent = "50 16";
+         text = "Save";
+         command = "SaveLevel(SaveTextGUI.getValue()); Canvas.popDialog(SaveLevelGUI);";
+      };
+   };
+};
+
+new GuiControl(LevelSelectGUI) {
+   profile = "GuiDefaultProfile";
+   extent = "800 600";
+   position = "0 0";
+
+   new GuiWindowCtrl() {
+      profile = "GuiWindowProfile";
+      position = "350 250";
+      extent = "200 100";
+      
+      new GuiTextEditCtrl(LevelTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "50 30";
+         extent = "100 20";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "75 60";
+         extent = "50 20";
+         text = "OK";
+         command = "LoadLevel(LevelTextGUI.getValue()); Canvas.popDialog(LevelSelectGUI);";
+      };
+   };
+};
+
+new GuiControl(NewBoundaryGUI) {
+   profile = "GuiDefaultProfile";
+   extent = "800 600";
+   position = "0 0";
+
+   new GuiWindowCtrl() {
+      profile = "GuiWindowProfile";
+      position = "250 200";
+      extent = "300 200";
+      closeCommand = "Canvas.popDialog(NewBoundaryGUI);";
+
+      new GuiTextEditCtrl(NewTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 50";
+         extent = "100 20";
+      };
+      
+      new GuiTextEditCtrl(SizeTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 80";
+         extent = "100 20";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "50 150";
+         extent = "50 16";
+         text = "Cancel";
+         command = "Canvas.popDialog(NewBoundaryGUI);";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "200 150";
+         extent = "50 16";
+         text = "Create";
+         command = "CreateBoundary(NewTextGUI.getValue(), SizeTextGUI.getValue());";
+      };
+   };
+};
+
+new GuiControl(NewEnemyGUI) {
+   profile = "GuiDefaultProfile";
+   extent = "800 600";
+   position = "0 0";
+
+   new GuiWindowCtrl() {
+      profile = "GuiWindowProfile";
+      position = "250 200";
+      extent = "300 200";
+      closeCommand = "Canvas.popDialog(NewEnemyGUI);";
+
+      new GuiTextEditCtrl(NewEnemyTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 50";
+         extent = "100 20";
+      };
+      
+      new GuiTextEditCtrl(SpeedTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 75";
+         extent = "100 20";
+      };
+
+      new GuiTextEditCtrl(LifeTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 100";
+         extent = "100 20";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "50 150";
+         extent = "50 16";
+         text = "Cancel";
+         command = "Canvas.popDialog(NewEnemyGUI);";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "200 150";
+         extent = "50 16";
+         text = "Create";
+         command = "CreateEnemySpawn(NewEnemyTextGUI.getValue(), SpeedTextGUI.getValue(), LifeTextGUI.getValue());";
+      };
+   };
+};
+
+new GuiControl(NewTriggerGUI) {
+   profile = "GuiDefaultProfile";
+   extent = "800 600";
+   position = "0 0";
+
+   new GuiWindowCtrl() {
+      profile = "GuiWindowProfile";
+      position = "250 200";
+      extent = "300 200";
+      closeCommand = "Canvas.popDialog(NewTriggerGUI);";
+
+      new GuiTextEditCtrl(FunctionTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 50";
+         extent = "100 20";
+      };
+      
+      new GuiTextEditCtrl(TriggerSizeTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 80";
+         extent = "100 20";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "50 150";
+         extent = "50 16";
+         text = "Cancel";
+         command = "Canvas.popDialog(NewTriggerGUI);";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "200 150";
+         extent = "50 16";
+         text = "Create";
+         command = "CreateTrigger(FunctionTextGUI.getValue(), \"400 300\", TriggerSizeTextGUI.getValue());";
+      };
+   };
+};
+
+new GuiControl(NewImageGUI) {
+   profile = "GuiDefaultProfile";
+   extent = "800 600";
+   position = "0 0";
+
+   new GuiWindowCtrl() {
+      profile = "GuiWindowProfile";
+      position = "250 200";
+      extent = "300 200";
+      closeCommand = "Canvas.popDialog(NewImageGUI);";
+
+      new GuiTextEditCtrl(NewImageTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 50";
+         extent = "100 20";
+      };
+      
+      new GuiTextEditCtrl(ImageSizeTextGUI) {
+         profile = "GuiTextEditProfile";
+         position = "100 80";
+         extent = "100 20";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "50 150";
+         extent = "50 16";
+         text = "Cancel";
+         command = "Canvas.popDialog(NewImageGUI);";
+      };
+
+      new GuiButtonCtrl() {
+         profile = "GuiButtonProfile";
+         position = "200 150";
+         extent = "50 16";
+         text = "Create";
+         command = "CreateImage(NewImageTextGUI.getValue(), ImageSizeTextGUI.getValue());";
+      };
+   };
+};

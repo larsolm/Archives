@@ -1,0 +1,9 @@
+[#manual/thaw-controller]
+
+## Thaw Controller
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/thaw-controller.html[Reference]
+endif::[]

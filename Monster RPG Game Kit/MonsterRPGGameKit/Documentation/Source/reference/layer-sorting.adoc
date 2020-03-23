@@ -1,0 +1,25 @@
+[#reference/layer-sorting]
+
+## LayerSorting
+
+PiRhoSoft.MonsterRpgEngine.LayerSorting : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Static Fields
+
+int _LayerCount_::
+
+### Static Methods
+
+int GetSortingOrder(<<reference/collision-layer.html,CollisionLayer>> _layer_)::
+
+### Constructors
+
+LayerSorting()::
+
+### Public Fields
+
+<<reference/collision-layer.html,CollisionLayer>> _Layer_::
+
+bool _ForceToBottom_::

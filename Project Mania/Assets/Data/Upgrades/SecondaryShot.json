@@ -1,0 +1,9 @@
+{
+	"DataType": "WeaponUpgrade",
+	"Secondary": true,
+	"Attributes":
+	{
+		"Maximums": {
+		}
+	}
+}

@@ -1,0 +1,9 @@
+[#manual/world-loader]
+
+## World Loader
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/world-loader.html[Reference]
+endif::[]

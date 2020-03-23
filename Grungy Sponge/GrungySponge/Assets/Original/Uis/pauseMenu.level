@@ -1,0 +1,151 @@
+{
+	PauseMenuHeader {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Font = "AndyBFont"
+				StrokeWidth = 5
+				Depth = 75
+				Tag = "Ui"
+				Align = "Center"
+				Text = "Game Paused"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 150"
+				Size = "-1 100"
+			}
+		]
+	}	
+	UnpauseButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "PauseMenu"
+				OnSelect = "UiStack.Pop();"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0 1"
+				Size = "125 125"
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Anchor = "TopLeft"
+				Offset = "15 -15"
+				Camera = "UiCamera"
+			}
+		]
+	}
+	RestartButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "PauseMenu"
+				OnSelect = "
+					UiStack.Pop();
+					GameManager.RestartLevel()
+					UiStack.Push('LevelOverview', true);
+				"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "-300 0"
+				Offset = "0.5 0.5"
+				Size = "125 125"
+			}
+		]
+	}
+	CalibrateButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "PauseMenu"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0.5 0"
+				Size = "400 60"
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Anchor = "Bottom"
+				Offset = "0 35"
+				Camera = "UiCamera"
+			}
+		]
+	}
+	LevelsListButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "PauseMenu"
+				OnSelect = "
+					UiStack.Pop();
+					GameManager.UnloadLevel();
+					UiStack.Pop();
+				"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "300 0"
+				Offset = "0.5 0.5"
+				Size = "125 125"
+			}
+		]
+	}
+	PauseMenu {
+		#Type = "Pargon::TouchMenu"
+		#Behavior = "Object"
+		Buttons = "PauseMenu"
+		OnActivate = "GameManager.Paused = true;"
+		OnDeactivate = "GameManager.Paused = false;"
+	}
+}

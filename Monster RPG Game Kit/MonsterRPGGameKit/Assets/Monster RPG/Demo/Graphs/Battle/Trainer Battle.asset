@@ -1,0 +1,2974 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6424df3e9a1bfa04f8b609c6b3380da1, type: 3}
+  m_Name: Trainer Battle
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114766944311336990}
+    - {fileID: 114152013092834836}
+    - {fileID: 114955217654272724}
+    - {fileID: 114227593515166252}
+    - {fileID: 114368817735813694}
+    - {fileID: 114855611879727088}
+    - {fileID: 114190534155404912}
+    - {fileID: 114413438468858644}
+    - {fileID: 114813833192916090}
+    - {fileID: 114944163688463656}
+    - {fileID: 114145621320918958}
+    - {fileID: 114446586300419562}
+    - {fileID: 114057163971679230}
+    - {fileID: 114364824265910958}
+    - {fileID: 114497168722623880}
+    - {fileID: 114911522552775344}
+    - {fileID: 114265206259836712}
+    - {fileID: 114342738731921276}
+    - {fileID: 114657957548524438}
+    - {fileID: 114020282360659910}
+    - {fileID: 114714928714538476}
+    - {fileID: 114571632491473142}
+    - {fileID: 114941383718499058}
+    - {fileID: 114017811618418664}
+    - {fileID: 114432247932950022}
+    - {fileID: 114328173893739776}
+    - {fileID: 114101768194408686}
+    - {fileID: 114896199634944468}
+    - {fileID: 114426256137665952}
+    - {fileID: 114019027102165310}
+    - {fileID: 114115391845310132}
+    - {fileID: 114867879160778242}
+    - {fileID: 114349698342421466}
+    - {fileID: 114804824513282096}
+    - {fileID: 114364290117948424}
+    - {fileID: 114974330824695642}
+    - {fileID: 114359103501963788}
+    - {fileID: 114798355389123012}
+    - {fileID: 114770257384528820}
+    - {fileID: 114090442983601976}
+    - {fileID: 114282125030319800}
+    - {fileID: 114029300197256742}
+    - {fileID: 114892667621305320}
+    - {fileID: 114061131837997028}
+    - {fileID: 114251516087072408}
+    - {fileID: 114888313183601060}
+    - {fileID: 114674506966240668}
+    - {fileID: 114800159223136148}
+    - {fileID: 114556026736307550}
+    - {fileID: 114460609759761384}
+    - {fileID: 114016556308747488}
+    - {fileID: 114466569424512506}
+    - {fileID: 114686251454546148}
+    - {fileID: 114170033280612434}
+    - {fileID: 114320989745271018}
+    - {fileID: 114852811739278050}
+    - {fileID: 114256724410828538}
+    - {fileID: 114279324891371970}
+    - {fileID: 114221316721942038}
+    - {fileID: 114244479572887880}
+    - {fileID: 114098141274069448}
+    - {fileID: 114039527191875642}
+    - {fileID: 114019001479794796}
+    - {fileID: 114927974655149798}
+    - {fileID: 114033170290391912}
+    - {fileID: 114399092297083836}
+    - {fileID: 114699381813970178}
+    - {fileID: 114104095802003182}
+    - {fileID: 114689199625444514}
+    - {fileID: 114713356923117662}
+    - {fileID: 114831856860073960}
+    - {fileID: 114580774864418208}
+    - {fileID: 114610821386791520}
+    - {fileID: 114965613325835804}
+    - {fileID: 114585158703605784}
+    - {fileID: 114004857520323216}
+    - {fileID: 114541372834672068}
+    - {fileID: 114304143743756886}
+    - {fileID: 114683573031152492}
+    - {fileID: 114267882388666668}
+    - {fileID: 114495696626262136}
+    - {fileID: 114142074886537698}
+    - {fileID: 114751560591817996}
+    - {fileID: 114280756573236716}
+    - {fileID: 114392012324236266}
+    - {fileID: 114945587425034752}
+    - {fileID: 114515016083941532}
+    - {fileID: 114125526465850700}
+    - {fileID: 114740344042374378}
+    - {fileID: 114599033948630140}
+    - {fileID: 114912184840711462}
+    - {fileID: 114156563521623474}
+    - {fileID: 114124426919397118}
+    - {fileID: 114137357830261022}
+    - {fileID: 114653070379350966}
+    - {fileID: 114981942771267468}
+    - {fileID: 114266365245006682}
+    - {fileID: 114442395115021704}
+    - {fileID: 114568556898975128}
+    - {fileID: 114848692793746698}
+    - {fileID: 114848640186191646}
+    - {fileID: 114023823275721658}
+  StartPosition: {x: 0, y: 0}
+  Enter: {fileID: 114152013092834836}
+  Start: {fileID: 114019001479794796}
+  Process: {fileID: 114282125030319800}
+  Finish: {fileID: 114955217654272724}
+  Exit: {fileID: 114227593515166252}
+  UiScene:
+    Path: Assets/Monster RPG/Demo/Scenes/Ui/Battle Ui.unity
+  Trainers:
+    _items:
+    - _variable:
+      - Player
+      _lookups:
+      - Trainer
+    - _variable:
+      - this
+      _lookups:
+      - Trainer
+--- !u!114 &114004857520323216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c308a521b3df54d8a0872dfbb74d20, type: 3}
+  m_Name: Send Out Creature
+  m_EditorClassIdentifier: 
+  Name: Send Out Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4992, y: 486.4}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+  Clip:
+    WaitForCompletion: 1
+    AnimationTarget: 0
+    AnimationSource: 0
+    Animation: Send Out
+    Parameter: 
+--- !u!114 &114016556308747488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Select Action Message
+  m_EditorClassIdentifier: 
+  Name: Select Action Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2892.8, y: -358.4}
+  IsBreakpoint: 0
+  Next: {fileID: 114364824265910958}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 3
+  IsLast: 0
+  Message:
+    Text: 'What will
+
+      {this.ActiveCreature.Name} do?'
+--- !u!114 &114017811618418664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Execute Actions
+  m_EditorClassIdentifier: 
+  Name: Execute Actions
+  This:
+    _variable:
+    - this
+    - ActiveTrainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 1792, y: 64}
+  IsBreakpoint: 0
+  Loop: {fileID: 114599033948630140}
+--- !u!114 &114019001479794796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 620c304c909d25644bbd55063dfe3ba6, type: 3}
+  m_Name: Show Control
+  m_EditorClassIdentifier: 
+  Name: Show Control
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: -51.2, y: -230.40001}
+  IsBreakpoint: 0
+  Next: {fileID: 114766944311336990}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+--- !u!114 &114019027102165310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Check Creatures
+  m_EditorClassIdentifier: 
+  Name: Check Creatures
+  This:
+    _variable:
+    - this
+    - Creatures
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 2688, y: 768}
+  IsBreakpoint: 0
+  Loop: {fileID: 114124426919397118}
+--- !u!114 &114020282360659910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Change Creature
+  m_EditorClassIdentifier: 
+  Name: Change Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4992, y: -947.2}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Expression:
+    _statement: 'local.CurrentTrainer.ActionPrority = 2;
+
+      local.CurrentTrainer.CurrentAction = "Change";
+
+      local.CurrentTrainer.NextCreature = this;'
+--- !u!114 &114023823275721658
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is User Dead
+  m_EditorClassIdentifier: 
+  Name: Is User Dead
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3699.2, y: 179.2}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 0}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.Creature.CurrentHP <= 0
+--- !u!114 &114029300197256742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Find Winner
+  m_EditorClassIdentifier: 
+  Name: Find Winner
+  This:
+    _variable:
+    - this
+    - Trainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 832, y: 128}
+  IsBreakpoint: 0
+  Loop: {fileID: 114892667621305320}
+--- !u!114 &114033170290391912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c665a7e80adf643a7f0ae3633389af, type: 3}
+  m_Name: Execute Move
+  m_EditorClassIdentifier: 
+  Name: Execute Move
+  This:
+    _variable:
+    - this
+    - CurrentMove
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 3072, y: 64}
+  IsBreakpoint: 0
+  Location: 1
+  Next: {fileID: 114848640186191646}
+--- !u!114 &114039527191875642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Can't Use Item
+  m_EditorClassIdentifier: 
+  Name: Can't Use Item
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3814.4001, y: -307.2}
+  IsBreakpoint: 0
+  Next: {fileID: 114852811739278050}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: You can't use that right now.
+--- !u!114 &114057163971679230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30486005d150e474796e78730fa8712c, type: 3}
+  m_Name: Turn Sequence
+  m_EditorClassIdentifier: 
+  Name: Turn Sequence
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1344, y: 0}
+  IsBreakpoint: 0
+  Sequence:
+    _items:
+    - {fileID: 114798355389123012}
+    - {fileID: 114145621320918958}
+    - {fileID: 114359103501963788}
+    - {fileID: 114017811618418664}
+    - {fileID: 114328173893739776}
+--- !u!114 &114061131837997028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Player
+  m_EditorClassIdentifier: 
+  Name: Is Player
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2112, y: -832}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114251516087072408}
+  OnFalse: {fileID: 114888313183601060}
+  Condition:
+    _statement: this.Trainer[Player] != null
+--- !u!114 &114090442983601976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Initialize Variables
+  m_EditorClassIdentifier: 
+  Name: Initialize Variables
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 640, y: -192}
+  IsBreakpoint: 0
+  Next: {fileID: 114368817735813694}
+  Expression:
+    _statement: local.TrainerCount = 0;
+--- !u!114 &114098141274069448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a78ce3cc210e8c448b6f5dc92c269c3, type: 3}
+  m_Name: Can Use Item
+  m_EditorClassIdentifier: 
+  Name: Can Use Item
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4249.6, y: -448}
+  IsBreakpoint: 0
+  Location: 1
+  OnTrue: {fileID: 114571632491473142}
+  OnFalse: {fileID: 114039527191875642}
+--- !u!114 &114101768194408686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Needs New Creature
+  m_EditorClassIdentifier: 
+  Name: Needs New Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1728, y: 640}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114156563521623474}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.ActiveCreature == null;
+--- !u!114 &114104095802003182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Active Creature
+  m_EditorClassIdentifier: 
+  Name: Set Active Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4864, y: 358.4}
+  IsBreakpoint: 0
+  Next: {fileID: 114580774864418208}
+  Expression:
+    _statement: 'this.ActiveCreature = this.NextCreature;
+
+      this.NextCreature = null;'
+--- !u!114 &114115391845310132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Available
+  m_EditorClassIdentifier: 
+  Name: Is Available
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3328, y: 985.60004}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114349698342421466}
+  OnFalse: {fileID: 114867879160778242}
+  Condition:
+    _statement: this.CurrentHP > 0
+--- !u!114 &114124426919397118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Creature Available
+  m_EditorClassIdentifier: 
+  Name: Set Creature Available
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3008, y: 768}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Expression:
+    _statement: this.Trainer.HasAvailableCreature = this.Trainer.HasAvailableCreature
+      || this.Current HP > 0;
+--- !u!114 &114125526465850700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Already Fighting
+  m_EditorClassIdentifier: 
+  Name: Already Fighting
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 5056, y: -1254.4}
+  IsBreakpoint: 0
+  Next: {fileID: 114320989745271018}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{this.Name} is already fighting!'
+--- !u!114 &114137357830261022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Trainer Defeated
+  m_EditorClassIdentifier: 
+  Name: Trainer Defeated
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2444.8, y: 1139.2001}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Expression:
+    _statement: local.TrainerCount -= 1
+--- !u!114 &114142074886537698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Target Dead
+  m_EditorClassIdentifier: 
+  Name: Is Target Dead
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3699.2, y: 89.6}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114848692793746698}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.TargetCreature.CurrentHP <= 0
+--- !u!114 &114145621320918958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Select Actions
+  m_EditorClassIdentifier: 
+  Name: Select Actions
+  This:
+    _variable:
+    - this
+    - Trainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 1792, y: -256}
+  IsBreakpoint: 0
+  Loop: {fileID: 114446586300419562}
+--- !u!114 &114152013092834836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fb0c34c465c8146aac0b30f629636c, type: 3}
+  m_Name: Fade Out
+  m_EditorClassIdentifier: 
+  Name: Fade Out
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: -128, y: -128}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Transition:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6, type: 2}
+  Phase: 0
+  AutoFinish: 0
+--- !u!114 &114156563521623474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30486005d150e474796e78730fa8712c, type: 3}
+  m_Name: Creature Available Sequence
+  m_EditorClassIdentifier: 
+  Name: Creature Available Sequence
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2048, y: 704}
+  IsBreakpoint: 0
+  Sequence:
+    _items:
+    - {fileID: 114912184840711462}
+    - {fileID: 114804824513282096}
+--- !u!114 &114170033280612434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Can't Use Move
+  m_EditorClassIdentifier: 
+  Name: Can't Use Move
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3968, y: -1510.4}
+  IsBreakpoint: 0
+  Next: {fileID: 114686251454546148}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: This move has no more uses!
+--- !u!114 &114190534155404912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Creature Is Alive
+  m_EditorClassIdentifier: 
+  Name: Creature Is Alive
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: -384}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114413438468858644}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.CurrentHP > 0
+--- !u!114 &114221316721942038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Outro Message
+  m_EditorClassIdentifier: 
+  Name: Outro Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: 192}
+  IsBreakpoint: 0
+  Next: {fileID: 114653070379350966}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{local.Winner.Name} won!'
+--- !u!114 &114227593515166252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fb0c34c465c8146aac0b30f629636c, type: 3}
+  m_Name: Fade In
+  m_EditorClassIdentifier: 
+  Name: Fade In
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 25.6, y: 332.80002}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Transition:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6, type: 2}
+  Phase: 2
+  AutoFinish: 1
+--- !u!114 &114244479572887880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db02fb161f29d174c9c42024cbbe70ce, type: 3}
+  m_Name: Can Use Move
+  m_EditorClassIdentifier: 
+  Name: Can Use Move
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3968, y: -1600}
+  IsBreakpoint: 0
+  Location: 1
+  OnTrue: {fileID: 114941383718499058}
+  OnFalse: {fileID: 114170033280612434}
+--- !u!114 &114251516087072408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Go Creature!
+  m_EditorClassIdentifier: 
+  Name: Go Creature!
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2432, y: -896}
+  IsBreakpoint: 0
+  Next: {fileID: 114674506966240668}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Go, {this.NextCreature.Name}!
+--- !u!114 &114256724410828538
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbf36d44c8307646ae6b4c67ca8b89d, type: 3}
+  m_Name: Break
+  m_EditorClassIdentifier: 
+  Name: Break
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1011.2, y: 422.4}
+  IsBreakpoint: 0
+--- !u!114 &114265206259836712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Select Creature
+  m_EditorClassIdentifier: 
+  Name: Select Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4160, y: -1024}
+  IsBreakpoint: 0
+  OnCanceled: {fileID: 114016556308747488}
+  Control:
+    InterfaceName: Battle
+    ControlName: Creatures
+  IsSelectionRequired: 0
+  Items:
+    _items:
+    - Variables:
+        _variable:
+        - this
+        - Creatures
+        _lookups:
+        - 
+        - 
+      Source: 1
+      Name: 
+      Template: {fileID: 5146735245182501811, guid: 07e535467b1903a4d885d135e50c0470,
+        type: 3}
+      Label: Creatures
+      Expand: 1
+      OnSelected: {fileID: 114515016083941532}
+    - Variables:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Name: 
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Label: Back
+      Expand: 0
+      OnSelected: {fileID: 114016556308747488}
+--- !u!114 &114266365245006682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81db09edfc25024b94b5b1d2295f584, type: 3}
+  m_Name: Reset Trainers
+  m_EditorClassIdentifier: 
+  Name: Reset Trainers
+  This:
+    _variable:
+    - this
+    - Trainer
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 601.60004, y: 384}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Availability: In Battle
+--- !u!114 &114267882388666668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Target
+  m_EditorClassIdentifier: 
+  Name: Set Target
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3712, y: -64}
+  IsBreakpoint: 0
+  Next: {fileID: 114740344042374378}
+  Expression:
+    _statement: local.CurrentTrainer.CurrentMove.TargetCreature = this.ActiveCreature;
+--- !u!114 &114279324891371970
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Winner
+  m_EditorClassIdentifier: 
+  Name: Set Winner
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: 320}
+  IsBreakpoint: 0
+  Next: {fileID: 114256724410828538}
+  Expression:
+    _statement: local.Winner = this
+--- !u!114 &114280756573236716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c308a521b3df54d8a0872dfbb74d20, type: 3}
+  m_Name: Creature Died
+  m_EditorClassIdentifier: 
+  Name: Creature Died
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4620.8003, y: -102.4}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - TargetCreature
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+    - 
+  Clip:
+    WaitForCompletion: 1
+    AnimationTarget: 0
+    AnimationSource: 0
+    Animation: Creature Died
+    Parameter: 
+--- !u!114 &114282125030319800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30486005d150e474796e78730fa8712c, type: 3}
+  m_Name: Battle Sequence
+  m_EditorClassIdentifier: 
+  Name: Battle Sequence
+  This:
+    _variable:
+    - Battle
+    _lookups:
+    - 
+  GraphPosition: {x: 422.4, y: 0}
+  IsBreakpoint: 0
+  Sequence:
+    _items:
+    - {fileID: 114466569424512506}
+    - {fileID: 114090442983601976}
+    - {fileID: 114944163688463656}
+    - {fileID: 114029300197256742}
+    - {fileID: 114221316721942038}
+--- !u!114 &114304143743756886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Target
+  m_EditorClassIdentifier: 
+  Name: Is Target
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3392, y: -64}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114267882388666668}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: local.CurrentTrainer != this
+--- !u!114 &114320989745271018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Select Creature Message
+  m_EditorClassIdentifier: 
+  Name: Select Creature Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3840, y: -1024}
+  IsBreakpoint: 0
+  Next: {fileID: 114265206259836712}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 3
+  IsLast: 1
+  Message:
+    Text: Select a creature to fight.
+--- !u!114 &114328173893739776
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: End Turn
+  m_EditorClassIdentifier: 
+  Name: End Turn
+  This:
+    _variable:
+    - this
+    - ActiveTrainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 1408, y: 588.8}
+  IsBreakpoint: 0
+  Loop: {fileID: 114101768194408686}
+--- !u!114 &114342738731921276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Select Item
+  m_EditorClassIdentifier: 
+  Name: Select Item
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3929.6, y: -537.60004}
+  IsBreakpoint: 0
+  OnCanceled: {fileID: 114016556308747488}
+  Control:
+    InterfaceName: Battle
+    ControlName: Items
+  IsSelectionRequired: 0
+  Items:
+    _items:
+    - Variables:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Name: 
+      Template: {fileID: 2918529282542760049, guid: a6c92c838f46bb14e92da16ad1dd95d9,
+        type: 3}
+      Label: Items
+      Expand: 1
+      OnSelected: {fileID: 114098141274069448}
+    - Variables:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Name: 
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Label: Back
+      Expand: 0
+      OnSelected: {fileID: 114016556308747488}
+--- !u!114 &114349698342421466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Change Creature
+  m_EditorClassIdentifier: 
+  Name: Change Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3328, y: 908.8}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Expression:
+    _statement: this.Trainer.NextCreature = this
+--- !u!114 &114359103501963788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 326c1cb73044dee48a2d2df6c7f31ed4, type: 3}
+  m_Name: Order Trainers
+  m_EditorClassIdentifier: 
+  Name: Order Trainers
+  This:
+    _variable:
+    - this
+    - ActiveTrainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 1792, y: -64}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  SortConditions:
+    _items:
+    - _variable:
+      - ActionPriority
+      _lookups:
+      - 
+    - _variable:
+      - CreaturePriority
+      _lookups:
+      - 
+    - _variable:
+      - TrainerPriority
+      _lookups:
+      - 
+--- !u!114 &114364290117948424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f760e6b2ec3db4478ffb115593842cd, type: 3}
+  m_Name: AI Selection
+  m_EditorClassIdentifier: 
+  Name: AI Selection
+  This:
+    _variable:
+    - this
+    - Trainer
+    _lookups:
+    - 
+    - BattleAi
+  GraphPosition: {x: 2432, y: -512}
+  IsBreakpoint: 0
+  Tag: Action
+  Items:
+    _items:
+    - OnSelected: {fileID: 114941383718499058}
+      Label: Fight
+      Variables:
+        _variable:
+        - local
+        - CurrentTrainer
+        - ActiveCreature
+        - Moves
+        _lookups:
+        - 
+        - 
+        - 
+        - 
+    - OnSelected: {fileID: 114020282360659910}
+      Label: Creatures
+      Variables:
+        _variable:
+        - local
+        - CurrentTrainer
+        - Creatures
+        _lookups:
+        - 
+        - 
+        - 
+    - OnSelected: {fileID: 114571632491473142}
+      Label: Items
+      Variables:
+        _variable:
+        - local
+        - CurrentTrainer
+        - Inventory
+        - Items
+        _lookups:
+        - 
+        - 
+        - 
+        - 
+--- !u!114 &114364824265910958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Selection
+  m_EditorClassIdentifier: 
+  Name: Selection
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3225.6, y: -294.4}
+  IsBreakpoint: 0
+  OnCanceled: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Actions
+  IsSelectionRequired: 1
+  Items:
+    _items:
+    - Variables:
+        _variable:
+        - local
+        - CurrentTrainer
+        - ActiveCreature
+        - Moves
+        _lookups:
+        - 
+        - 
+        - 
+        - 
+      Source: 0
+      Name: Fight
+      Template: {fileID: 0}
+      Label: Fight
+      Expand: 0
+      OnSelected: {fileID: 114686251454546148}
+    - Variables:
+        _variable:
+        - local
+        - CurrentTrainer
+        - Creatures
+        _lookups:
+        - 
+        - 
+        - 
+      Source: 0
+      Name: Roster
+      Template: {fileID: 0}
+      Label: Creatures
+      Expand: 0
+      OnSelected: {fileID: 114320989745271018}
+    - Variables:
+        _variable:
+        - local
+        - CurrentTrainer
+        - Inventory
+        - Items
+        _lookups:
+        - 
+        - 
+        - 
+        - 
+      Source: 0
+      Name: Items
+      Template: {fileID: 0}
+      Label: Items
+      Expand: 0
+      OnSelected: {fileID: 114852811739278050}
+    - Variables:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 0
+      Name: Run
+      Template: {fileID: 0}
+      Label: Run
+      Expand: 0
+      OnSelected: {fileID: 114497168722623880}
+--- !u!114 &114368817735813694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Iterate Trainers
+  m_EditorClassIdentifier: 
+  Name: Iterate Trainers
+  This:
+    _variable:
+    - this
+    - Trainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 512, y: -640}
+  IsBreakpoint: 0
+  Loop: {fileID: 114556026736307550}
+--- !u!114 &114392012324236266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4238dfdb59c60404a84af819381016ca, type: 3}
+  m_Name: Do Experience Stuff
+  m_EditorClassIdentifier: 
+  Name: Do Experience Stuff
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 5376, y: -38.4}
+  IsBreakpoint: 0
+  Connections:
+    _items:
+    - Name: Is Player
+      Node: {fileID: 0}
+  DisplayColor: {r: 0.35, g: 0.35, b: 0.35, a: 1}
+--- !u!114 &114399092297083836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674f6b8ab35784846b92d51208ad3fc0, type: 3}
+  m_Name: Use Item
+  m_EditorClassIdentifier: 
+  Name: Use Item
+  This:
+    _variable:
+    - this
+    - CurrentItem
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 2816, y: 486.4}
+  IsBreakpoint: 0
+  Location: 1
+  Next: {fileID: 0}
+--- !u!114 &114413438468858644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Starting Creature
+  m_EditorClassIdentifier: 
+  Name: Set Starting Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1024, y: -256}
+  IsBreakpoint: 0
+  Next: {fileID: 114813833192916090}
+  Expression:
+    _statement: this.Trainer.NextCreature = this
+--- !u!114 &114426256137665952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Select Creature
+  m_EditorClassIdentifier: 
+  Name: Select Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3008, y: 985.60004}
+  IsBreakpoint: 0
+  OnCanceled: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Creatures
+  IsSelectionRequired: 1
+  Items:
+    _items:
+    - Variables:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 0
+      Name: 
+      Template: {fileID: 0}
+      Label: Creatures
+      Expand: 1
+      OnSelected: {fileID: 114115391845310132}
+--- !u!114 &114432247932950022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3299c4f4ec492e74ebc48ccf20f59272, type: 3}
+  m_Name: Branch
+  m_EditorClassIdentifier: 
+  Name: Branch
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2432, y: 192}
+  IsBreakpoint: 0
+  Switch:
+    _statement: this.CurrentAction
+  Outputs:
+    _keys:
+    - Fight
+    - Change
+    - Item
+    _values:
+    - {fileID: 114495696626262136}
+    - {fileID: 114689199625444514}
+    - {fileID: 114399092297083836}
+  Default: {fileID: 0}
+--- !u!114 &114442395115021704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81db09edfc25024b94b5b1d2295f584, type: 3}
+  m_Name: Reset Active In Battle
+  m_EditorClassIdentifier: 
+  Name: Reset Active In Battle
+  This:
+    _variable:
+    - this
+    - ActiveCreature
+    - Creature
+    _lookups:
+    - 
+    - 
+    - 
+  GraphPosition: {x: 4160, y: 281.6}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Availability: Active In Battle
+--- !u!114 &114446586300419562
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is AI
+  m_EditorClassIdentifier: 
+  Name: Is AI
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2112, y: -384}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114364290117948424}
+  OnFalse: {fileID: 114016556308747488}
+  Condition:
+    _statement: 'local.CurrentTrainer = this;
+
+      local.CurrentTrainer.TrainerPriority = Random(0, 100);
+
+      local.CurrentTrainer[BattleAi] != null;'
+--- !u!114 &114460609759761384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6682f60d51f8b45b76fdd6a0d90247, type: 3}
+  m_Name: Set Creature
+  m_EditorClassIdentifier: 
+  Name: Set Creature
+  This:
+    _variable:
+    - this
+    - ActiveCreature
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 2816, y: -883.2}
+  IsBreakpoint: 0
+  Next: {fileID: 114800159223136148}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+--- !u!114 &114466569424512506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Intro Message
+  m_EditorClassIdentifier: 
+  Name: Intro Message
+  This:
+    _variable:
+    - Battle
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: -115.200005}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{this.Trainers.Item1.Name} wants to fight!'
+--- !u!114 &114495696626262136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30486005d150e474796e78730fa8712c, type: 3}
+  m_Name: Use Move
+  m_EditorClassIdentifier: 
+  Name: Use Move
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2752, y: 0}
+  IsBreakpoint: 0
+  Sequence:
+    _items:
+    - {fileID: 114541372834672068}
+    - {fileID: 114033170290391912}
+--- !u!114 &114497168722623880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Run Message
+  m_EditorClassIdentifier: 
+  Name: Run Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2892.8, y: -166.40001}
+  IsBreakpoint: 0
+  Next: {fileID: 114016556308747488}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: You can't run from a trainer battle!
+--- !u!114 &114515016083941532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Active
+  m_EditorClassIdentifier: 
+  Name: Is Active
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4608, y: -1254.4}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114125526465850700}
+  OnFalse: {fileID: 114657957548524438}
+  Condition:
+    _statement: this == local.CurrentTrainer.ActiveCreature
+--- !u!114 &114541372834672068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Find Target
+  m_EditorClassIdentifier: 
+  Name: Find Target
+  This:
+    _variable:
+    - Battle
+    - Trainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 3072, y: -64}
+  IsBreakpoint: 0
+  Loop: {fileID: 114304143743756886}
+--- !u!114 &114556026736307550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Trainer Index
+  m_EditorClassIdentifier: 
+  Name: Set Trainer Index
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 832, y: -640}
+  IsBreakpoint: 0
+  Next: {fileID: 114855611879727088}
+  Expression:
+    _statement: 'this.Index = local.TrainerCount;
+
+      local.TrainerCount += 1;'
+--- !u!114 &114568556898975128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81db09edfc25024b94b5b1d2295f584, type: 3}
+  m_Name: Reset Active In Battle
+  m_EditorClassIdentifier: 
+  Name: Reset Active In Battle
+  This:
+    _variable:
+    - this
+    - TargetCreature
+    - Creature
+    _lookups:
+    - 
+    - 
+    - 
+  GraphPosition: {x: 4710.4, y: -25.6}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Availability: Active In Battle
+--- !u!114 &114571632491473142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Use Item
+  m_EditorClassIdentifier: 
+  Name: Use Item
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4672, y: -640}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Expression:
+    _statement: 'this.CurrentTrainer.ActionPriority = 3;
+
+      this.CurrentTrainer.CurrentAction = "Item";
+
+      this.CurrentTrainer.CurrentItem = this;'
+--- !u!114 &114580774864418208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6682f60d51f8b45b76fdd6a0d90247, type: 3}
+  m_Name: Set Creature
+  m_EditorClassIdentifier: 
+  Name: Set Creature
+  This:
+    _variable:
+    - this
+    - ActiveCreature
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 4928, y: 422.4}
+  IsBreakpoint: 0
+  Next: {fileID: 114004857520323216}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+--- !u!114 &114585158703605784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Enemy Sent Out
+  m_EditorClassIdentifier: 
+  Name: Enemy Sent Out
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4492.8003, y: 448}
+  IsBreakpoint: 0
+  Next: {fileID: 114104095802003182}
+  Control:
+    InterfaceName: InterfaceName
+    ControlName: ControlName
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Enemy {this.Name} sent out {this.NextCreature.Name}.
+--- !u!114 &114599033948630140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Still Alive
+  m_EditorClassIdentifier: 
+  Name: Is Still Alive
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2112, y: 64}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114683573031152492}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.ActiveCreature != null
+--- !u!114 &114610821386791520
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Enemy Withdraw
+  m_EditorClassIdentifier: 
+  Name: Enemy Withdraw
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3200, y: 384}
+  IsBreakpoint: 0
+  Next: {fileID: 114699381813970178}
+  Control:
+    InterfaceName: InterfaceName
+    ControlName: ControlName
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Enemy {this.Name} withdrew {this.ActiveCreature.Name).
+--- !u!114 &114653070379350966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Loop Trainers
+  m_EditorClassIdentifier: 
+  Name: Loop Trainers
+  This:
+    _variable:
+    - this
+    - Trainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 448, y: 294.4}
+  IsBreakpoint: 0
+  Loop: {fileID: 114266365245006682}
+--- !u!114 &114657957548524438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Can Battle
+  m_EditorClassIdentifier: 
+  Name: Can Battle
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4608, y: -1152}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114020282360659910}
+  OnFalse: {fileID: 114714928714538476}
+  Condition:
+    _statement: this.CurrentHP > 0
+--- !u!114 &114674506966240668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Active Creature
+  m_EditorClassIdentifier: 
+  Name: Set Active Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2752, y: -947.2}
+  IsBreakpoint: 0
+  Next: {fileID: 114460609759761384}
+  Expression:
+    _statement: 'this.ActiveCreature = this.NextCreature;
+
+      this.NextCreature = null;'
+--- !u!114 &114683573031152492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Current Trainer
+  m_EditorClassIdentifier: 
+  Name: Set Current Trainer
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2112, y: 192}
+  IsBreakpoint: 0
+  Next: {fileID: 114432247932950022}
+  Expression:
+    _statement: local.CurrentTrainer = this
+--- !u!114 &114686251454546148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Select Move Message
+  m_EditorClassIdentifier: 
+  Name: Select Move Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3456, y: -1344}
+  IsBreakpoint: 0
+  Next: {fileID: 114911522552775344}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 3
+  IsLast: 0
+  Message:
+    Text: Select a move.
+--- !u!114 &114689199625444514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Player
+  m_EditorClassIdentifier: 
+  Name: Is Player
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2816, y: 320}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114831856860073960}
+  OnFalse: {fileID: 114610821386791520}
+  Condition:
+    _statement: this[Player] != null
+--- !u!114 &114699381813970178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c308a521b3df54d8a0872dfbb74d20, type: 3}
+  m_Name: Withdraw Creature
+  m_EditorClassIdentifier: 
+  Name: Withdraw Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3520, y: 320}
+  IsBreakpoint: 0
+  Next: {fileID: 114981942771267468}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Index
+    _lookups:
+    - 
+    - 
+  Clip:
+    WaitForCompletion: 1
+    AnimationTarget: 0
+    AnimationSource: 0
+    Animation: Withdraw
+    Parameter: 
+--- !u!114 &114713356923117662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Player Send Out
+  m_EditorClassIdentifier: 
+  Name: Player Send Out
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4492.8003, y: 332.80002}
+  IsBreakpoint: 0
+  Next: {fileID: 114104095802003182}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Go, {this.NextCreature.Name}!
+--- !u!114 &114714928714538476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Unable to Fight
+  m_EditorClassIdentifier: 
+  Name: Unable to Fight
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 5056, y: -1139.2001}
+  IsBreakpoint: 0
+  Next: {fileID: 114320989745271018}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{this.Name} is unable to fight!'
+--- !u!114 &114740344042374378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbf36d44c8307646ae6b4c67ca8b89d, type: 3}
+  m_Name: Break
+  m_EditorClassIdentifier: 
+  Name: Break
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4032, y: -64}
+  IsBreakpoint: 0
+--- !u!114 &114751560591817996
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Set Active Creature
+  m_EditorClassIdentifier: 
+  Name: Set Active Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4723.2, y: 64}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Expression:
+    _statement: this.TargetCreature.Trainer.ActiveCreature = null;
+--- !u!114 &114766944311336990
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fb0c34c465c8146aac0b30f629636c, type: 3}
+  m_Name: Fade In
+  m_EditorClassIdentifier: 
+  Name: Fade In
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 128, y: -320}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Transition:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6, type: 2}
+  Phase: 2
+  AutoFinish: 1
+--- !u!114 &114770257384528820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Has Next Creature
+  m_EditorClassIdentifier: 
+  Name: Has Next Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1792, y: -704}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114061131837997028}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.NextCreature != null
+--- !u!114 &114798355389123012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Send Out Creatures
+  m_EditorClassIdentifier: 
+  Name: Send Out Creatures
+  This:
+    _variable:
+    - this
+    - Trainers
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 1472, y: -512}
+  IsBreakpoint: 0
+  Loop: {fileID: 114770257384528820}
+--- !u!114 &114800159223136148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c308a521b3df54d8a0872dfbb74d20, type: 3}
+  m_Name: Sent Out Creature
+  m_EditorClassIdentifier: 
+  Name: Sent Out Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2880, y: -819.2}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+  Clip:
+    WaitForCompletion: 1
+    AnimationTarget: 0
+    AnimationSource: 0
+    Animation: Send Out
+    Parameter: 
+--- !u!114 &114804824513282096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Has Available Creature
+  m_EditorClassIdentifier: 
+  Name: Has Available Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2368, y: 908.8}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114896199634944468}
+  OnFalse: {fileID: 114137357830261022}
+  Condition:
+    _statement: this.HasAvailableCreature
+--- !u!114 &114813833192916090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcbf36d44c8307646ae6b4c67ca8b89d, type: 3}
+  m_Name: Break
+  m_EditorClassIdentifier: 
+  Name: Break
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1088, y: -128}
+  IsBreakpoint: 0
+--- !u!114 &114831856860073960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Player Withdraw
+  m_EditorClassIdentifier: 
+  Name: Player Withdraw
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3200, y: 320}
+  IsBreakpoint: 0
+  Next: {fileID: 114699381813970178}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{this.ActiveCreature.Name}, come back!'
+--- !u!114 &114848640186191646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30486005d150e474796e78730fa8712c, type: 3}
+  m_Name: Sequence
+  m_EditorClassIdentifier: 
+  Name: Sequence
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3379.2, y: 102.4}
+  IsBreakpoint: 0
+  Sequence:
+    _items:
+    - {fileID: 114142074886537698}
+    - {fileID: 114023823275721658}
+--- !u!114 &114848692793746698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30486005d150e474796e78730fa8712c, type: 3}
+  m_Name: Target Died Sequence
+  m_EditorClassIdentifier: 
+  Name: Target Died Sequence
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4300.8003, y: -12.8}
+  IsBreakpoint: 0
+  Sequence:
+    _items:
+    - {fileID: 114280756573236716}
+    - {fileID: 114568556898975128}
+    - {fileID: 114945587425034752}
+    - {fileID: 114751560591817996}
+--- !u!114 &114852811739278050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Select Item Message
+  m_EditorClassIdentifier: 
+  Name: Select Item Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3801.6, y: -640}
+  IsBreakpoint: 0
+  Next: {fileID: 114342738731921276}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 3
+  IsLast: 1
+  Message:
+    Text: Select an item to use.
+--- !u!114 &114855611879727088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802f6208c5d734e4c96b38cb30f96e71, type: 3}
+  m_Name: Iterate Creatures
+  m_EditorClassIdentifier: 
+  Name: Iterate Creatures
+  This:
+    _variable:
+    - this
+    - Creatures
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 896, y: -512}
+  IsBreakpoint: 0
+  Loop: {fileID: 114190534155404912}
+--- !u!114 &114867879160778242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Can't Fight
+  m_EditorClassIdentifier: 
+  Name: Can't Fight
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2944, y: 1113.6}
+  IsBreakpoint: 0
+  Next: {fileID: 114426256137665952}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{this.Name} is unable to fight!'
+--- !u!114 &114888313183601060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Enemy Sent Out
+  m_EditorClassIdentifier: 
+  Name: Enemy Sent Out
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2432, y: -819.2}
+  IsBreakpoint: 0
+  Next: {fileID: 114674506966240668}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Enemy {this.Name} sent out {this.NextCreature.Name}.
+--- !u!114 &114892667621305320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Trainer Alive
+  m_EditorClassIdentifier: 
+  Name: Is Trainer Alive
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 896, y: 217.6}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114279324891371970}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.ActiveCreature != null
+--- !u!114 &114896199634944468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is AI
+  m_EditorClassIdentifier: 
+  Name: Is AI
+  This:
+    _variable:
+    - this
+    - Trainer
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 2688, y: 908.8}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114974330824695642}
+  OnFalse: {fileID: 114426256137665952}
+  Condition:
+    _statement: this.Ai != null
+--- !u!114 &114911522552775344
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Select Move
+  m_EditorClassIdentifier: 
+  Name: Select Move
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3776, y: -1267.2001}
+  IsBreakpoint: 0
+  OnCanceled: {fileID: 114016556308747488}
+  Control:
+    InterfaceName: Battle
+    ControlName: Moves
+  IsSelectionRequired: 0
+  Items:
+    _items:
+    - Variables:
+        _variable:
+        - this
+        - Moves
+        _lookups:
+        - 
+        - 
+      Source: 1
+      Name: 
+      Template: {fileID: 6944190550149406736, guid: af57e3e3e3785b144aaf13a053168068,
+        type: 3}
+      Label: Moves
+      Expand: 1
+      OnSelected: {fileID: 114244479572887880}
+    - Variables:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Name: 
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Label: Back
+      Expand: 0
+      OnSelected: {fileID: 114016556308747488}
+--- !u!114 &114912184840711462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Find Avalible Creature
+  m_EditorClassIdentifier: 
+  Name: Find Avalible Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 2368, y: 768}
+  IsBreakpoint: 0
+  Next: {fileID: 114019027102165310}
+  Expression:
+    _statement: this.HasAvailableCreature = false;
+--- !u!114 &114927974655149798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408dd5d67693c3545bbddb6cfc900c4a, type: 3}
+  m_Name: Hide Control
+  m_EditorClassIdentifier: 
+  Name: Hide Control
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: -64, y: 268.80002}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+--- !u!114 &114941383718499058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f4d81fd0fb166040bb15d8dfa03f82d, type: 3}
+  m_Name: Use Move
+  m_EditorClassIdentifier: 
+  Name: Use Move
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4198.4, y: -1216}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Expression:
+    _statement: 'local.CurrentTrainer.ActionPriority = 1;
+
+      local.CurrentTrainer.CurrentAction = "Fight";
+
+      local.CurrentTrainer.CurrentMove = this'
+--- !u!114 &114944163688463656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2641b6832ae40b46afef24dadde8072, type: 3}
+  m_Name: Turn Loop
+  m_EditorClassIdentifier: 
+  Name: Turn Loop
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1024, y: 0}
+  IsBreakpoint: 0
+  Condition:
+    _statement: local.TrainerCount > 1
+  Loop: {fileID: 114057163971679230}
+--- !u!114 &114945587425034752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Player
+  m_EditorClassIdentifier: 
+  Name: Is Player
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 5043.2, y: 12.8}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 0}
+  OnFalse: {fileID: 0}
+  Condition:
+    _statement: this.Creature.Trainer[Player] != null
+--- !u!114 &114955217654272724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fb0c34c465c8146aac0b30f629636c, type: 3}
+  m_Name: Fade Out
+  m_EditorClassIdentifier: 
+  Name: Fade Out
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: -128, y: 192}
+  IsBreakpoint: 0
+  Next: {fileID: 114927974655149798}
+  Transition:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6, type: 2}
+  Phase: 0
+  AutoFinish: 0
+--- !u!114 &114965613325835804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Player
+  m_EditorClassIdentifier: 
+  Name: Is Player
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 4160, y: 358.4}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114713356923117662}
+  OnFalse: {fileID: 114585158703605784}
+  Condition:
+    _statement: this[Player] != null
+--- !u!114 &114974330824695642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f760e6b2ec3db4478ffb115593842cd, type: 3}
+  m_Name: Ai Selection
+  m_EditorClassIdentifier: 
+  Name: Ai Selection
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3008, y: 908.8}
+  IsBreakpoint: 0
+  Tag: Creature
+  Items:
+    _items:
+    - OnSelected: {fileID: 114349698342421466}
+      Label: Creatures
+      Variables:
+        _variable:
+        - this
+        - Creatures
+        _lookups:
+        - 
+        - 
+--- !u!114 &114981942771267468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30486005d150e474796e78730fa8712c, type: 3}
+  m_Name: Withdraw Sequence
+  m_EditorClassIdentifier: 
+  Name: Withdraw Sequence
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 3827.2, y: 345.6}
+  IsBreakpoint: 0
+  Sequence:
+    _items:
+    - {fileID: 114442395115021704}
+    - {fileID: 114965613325835804}

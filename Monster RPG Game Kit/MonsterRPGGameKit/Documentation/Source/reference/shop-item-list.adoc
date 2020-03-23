@@ -1,0 +1,11 @@
+[#reference/shop-item-list]
+
+## ShopItemList
+
+PiRhoSoft.MonsterRpgEngine.ShopItemList : link:/projects/unity-composition/documentation/#/v10/reference/indexed-variable-store-1[IndexedVariableStore^]<<<reference/shop-item.html,ShopItem>>>
+
+### Description
+
+### Constructors
+
+ShopItemList()::

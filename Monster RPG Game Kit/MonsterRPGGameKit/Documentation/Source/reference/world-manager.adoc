@@ -1,0 +1,87 @@
+[#reference/world-manager]
+
+## WorldManager
+
+PiRhoSoft.MonsterRpgEngine.WorldManager : link:/projects/unity-utilities/documentation/#/v10/reference/singleton-behaviour-1[SingletonBehaviour^]<<<reference/world-manager.html,WorldManager>>>, link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^], link:/projects/unity-composition/documentation/#/v10/reference/i-variable-listener[IVariableListener^]
+
+### Description
+
+### Constructors
+
+WorldManager()::
+
+### Public Fields
+
+<<reference/world.html,World>> _World_::
+
+### Public Properties
+
+link:/projects/unity-composition/documentation/#/v10/reference/interface[Interface^] _Interface_ _(read only)_::
+
+<<reference/zone-data.html,ZoneData>>[] _Zones_ _(read only)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/zone-data.html,ZoneData>>> _LoadedZones_ _(read only)_::
+
+string _SaveFilename_ _(read only)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/mapped-variable-store[MappedVariableStore^] _Variables_ _(read only)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-context[InstructionContext^] _Context_ _(read only)_::
+
+bool _IsFrozen_ _(read only)_::
+
+bool _IsTransitioning_ _(read only)_::
+
+### Public Methods
+
+<<reference/zone-data.html,ZoneData>> GetZone(<<reference/zone.html,Zone>> _zone_)::
+
+<<reference/zone-data.html,ZoneData>> GetZone(https://docs.unity3d.com/ScriptReference/Object.html[Object^] _o_)::
+
+void Load(string _filename_, <<reference/world-save-data.html,WorldSaveData>> _saveData_) _(virtual)_::
+
+string Save(<<reference/world-save-data.html,WorldSaveData>> _saveData_) _(virtual)_::
+
+void Freeze()::
+
+void Thaw()::
+
+<<reference/tile-info.html,TileInfo>> FindTile(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_)::
+
+bool IsOccupied(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_, <<reference/collision-layer.html,CollisionLayer>> _layer_)::
+
+void SetOccupied(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_, <<reference/collision-layer.html,CollisionLayer>> _layer_)::
+
+void SetUnoccupied(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_, <<reference/collision-layer.html,CollisionLayer>> _layer_)::
+
+<<reference/i-interactable.html,IInteractable>> GetInteraction(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_)::
+
+void AddInteraction(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_, <<reference/interaction.html,Interaction>> _interaction_)::
+
+void RemoveInteraction(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_, <<reference/interaction.html,Interaction>> _interaction_)::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] LoadUi()::
+
+void ChangeZone(<<reference/zone.html,Zone>> _zone_)::
+
+void TransitionZone(<<reference/zone.html,Zone>> _zone_, <<reference/spawn-point.html,SpawnPoint>> _spawnPoint_, link:/projects/unity-composition/documentation/#/v10/reference/transition[Transition^] _transition_)::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] GetVariable(string _name_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/set-variable-result[SetVariableResult^] SetVariable(string _name_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1[IEnumerable^]<string> GetVariableNames() _(virtual)_::
+
+void VariableChanged(int _index_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+### Protected Methods
+
+void Awake() _(virtual)_::
+
+void OnDestroy() _(virtual)_::
+
+void AddPropertiesToMap<WorldManagerType>(link:/projects/unity-composition/documentation/#/v10/reference/property-map-1[PropertyMap^]<WorldManagerType> _map_)::
+
+void SetupVariables() _(virtual)_::
+
+void TeardownVariables() _(virtual)_::

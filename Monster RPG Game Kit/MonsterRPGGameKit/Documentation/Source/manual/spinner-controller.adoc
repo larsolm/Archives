@@ -1,0 +1,13 @@
+[#manual/spinner-controller]
+
+## Spinner Controller
+
+### Fields
+
+<<manual/spinner-controller-spin-type.html,Spin Type>> _Type_::
+
+float _Spin Delay_::
+
+ifdef::backend-multipage_html5[]
+link:reference/spinner-controller.html[Reference]
+endif::[]

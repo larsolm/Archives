@@ -1,0 +1,21 @@
+[#reference/static-collider]
+
+## StaticCollider
+
+PiRhoSoft.MonsterRpgEngine.StaticCollider : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+StaticCollider()::
+
+### Public Fields
+
+<<reference/collision-layer.html,CollisionLayer>> _CollisionLayer_::
+
+### Public Methods
+
+void OccupyCurrentTiles()::
+
+void UnoccupyCurrentTiles()::

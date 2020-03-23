@@ -1,0 +1,15 @@
+[#manual/encounter]
+
+## Encounter
+
+### Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _Instructions_::
+
+float _Encounter Chance_::
+
+<<manual/encounter-table.html,Encounter Table>> _Encounters_::
+
+ifdef::backend-multipage_html5[]
+link:reference/encounter.html[Reference]
+endif::[]

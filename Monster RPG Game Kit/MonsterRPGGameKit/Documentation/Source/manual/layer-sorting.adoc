@@ -1,0 +1,13 @@
+[#manual/layer-sorting]
+
+## Layer Sorting
+
+### Fields
+
+<<manual/collision-layer.html,Collision Layer>> _Layer_::
+
+bool _Force To Bottom_::
+
+ifdef::backend-multipage_html5[]
+link:reference/layer-sorting.html[Reference]
+endif::[]

@@ -1,0 +1,9 @@
+[#manual/reset-creature-availability]
+
+## Reset Creature Availability
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/reset-creature-availability.html[Reference]
+endif::[]

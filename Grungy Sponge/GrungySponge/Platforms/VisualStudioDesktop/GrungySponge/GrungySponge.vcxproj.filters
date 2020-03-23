@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\GrungySponge\GrungySponge.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Include.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Apis\Win32\Main.Win32.cpp">
+      <Filter>Apis\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\World\ClearField.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\World\ClearFieldManager.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\World\DirtRenderer.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\World\FinishLine.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\World\Pit.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Sponge\SpongeCamera.cpp">
+      <Filter>Sponge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Sponge\SpongeData.cpp">
+      <Filter>Sponge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Sponge\SpongeMover.cpp">
+      <Filter>Sponge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Game\DirtManager.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Game\GameManager.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Game\LevelDescription.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Game\WorldDescription.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Ui\GameScreen.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Ui\IndexComponent.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Ui\LevelList.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Ui\ScrollContainer.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Ui\Timer.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Ui\UiBackground.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Ui\WorldList.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Sponge\SpongeInclude.cpp">
+      <Filter>Sponge</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Game\GameInclude.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\World\WorldInclude.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GrungySponge\Ui\UiInclude.cpp">
+      <Filter>Ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\GrungySponge\GrungySponge.h" />
+    <ClInclude Include="..\..\..\GrungySponge\World\ClearField.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\World\ClearFieldManager.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\World\DirtRenderer.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\World\FinishLine.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\World\Pit.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\World\World.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Sponge\Sponge.h">
+      <Filter>Sponge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Sponge\SpongeCamera.h">
+      <Filter>Sponge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Sponge\SpongeData.h">
+      <Filter>Sponge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Sponge\SpongeMover.h">
+      <Filter>Sponge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Game\DirtManager.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Game\GameManager.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Game\LevelDescription.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Game\WorldDescription.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Ui\GameScreen.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Ui\IndexComponent.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Ui\LevelList.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Ui\ScrollContainer.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Ui\Timer.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Ui\Ui.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Ui\UiBackground.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GrungySponge\Ui\WorldList.h">
+      <Filter>Ui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Apis">
+      <UniqueIdentifier>{4f156fd6-e349-447d-92a0-b6366c89cc25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Apis\Win32">
+      <UniqueIdentifier>{475483c4-e206-46b4-86b5-94fef10e4c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{87eb7be5-d714-432d-8df2-9a11b2dfa5e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui">
+      <UniqueIdentifier>{5d2b37bc-58b5-4096-a9d4-b6479985a491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{4dc8314c-d1a1-4768-a805-0fd6e7bd199d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sponge">
+      <UniqueIdentifier>{7f4eeb74-36e8-4b24-b98e-f93d5d27e5e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

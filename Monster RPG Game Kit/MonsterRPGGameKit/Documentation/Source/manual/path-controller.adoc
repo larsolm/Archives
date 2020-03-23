@@ -1,0 +1,13 @@
+[#manual/path-controller]
+
+## Path Controller
+
+### Fields
+
+bool _Begin On Awake_::
+
+<<manual/path.html,Path>> _Path_::
+
+ifdef::backend-multipage_html5[]
+link:reference/path-controller.html[Reference]
+endif::[]

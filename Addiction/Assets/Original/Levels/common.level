@@ -1,0 +1,22 @@
+{
+	AndyBFont {
+        #Type = "Pargon::Text::Font"
+        #Behavior = "Object"
+        Filename = "Fonts/AndyB.ttf"
+    }
+    ButtonSound {
+        #Type = "Pargon::SoundObject"
+        #Behavior = "Object"
+        Filename = "Sounds/buttonClick.wav"
+    }
+    ShuffleSound {
+        #Type = "Pargon::SoundObject"
+        #Behavior = "Object"
+        Filename = "Sounds/shuffle.wav"
+    }
+    CardMoveSound {
+        #Type = "Pargon::SoundObject"
+        #Behavior = "Object"
+        Filename = "Sounds/cardMove.wav"
+    }
+}

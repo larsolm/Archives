@@ -1,0 +1,13 @@
+[#manual/has-item]
+
+## Has Item
+
+### Fields
+
+<<manual/item-variable-source.html,Item Variable Source>> _Item_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/integer-variable-source[IntegerVariableSource^] _Amount_::
+
+ifdef::backend-multipage_html5[]
+link:reference/has-item.html[Reference]
+endif::[]

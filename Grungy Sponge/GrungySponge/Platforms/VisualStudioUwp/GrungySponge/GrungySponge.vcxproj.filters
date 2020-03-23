@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\GrungySponge\Include.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\GrungySponge.cpp" />
+    <ClCompile Include="..\..\..\GrungySponge\Apis\WinRt\App.cpp">
+      <Filter>Apis\WinRt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\GrungySponge\GrungySponge.h" />
+    <ClInclude Include="..\..\..\GrungySponge\Apis\WinRt\App.h">
+      <Filter>Apis\WinRt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Logo.scale-100.png">
+      <Filter>Store</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.scale-100.png">
+      <Filter>Store</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-100.png">
+      <Filter>Store</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-100.png">
+      <Filter>Store</Filter>
+    </Image>
+    <Image Include="Assets\WideLogo.scale-100.png">
+      <Filter>Store</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Assets\Original\GrungySponge.game" />
+    <None Include="..\..\..\Assets\Original\Images\dirt.png" />
+    <None Include="..\..\..\Assets\Original\Images\dust.png" />
+    <None Include="..\..\..\Assets\Original\Images\mold.png" />
+    <None Include="..\..\..\Assets\Original\Images\oil.png" />
+    <None Include="..\..\..\Assets\Original\Images\uiBackgroundDirt.png" />
+    <None Include="..\..\..\Assets\Original\Levels\common.level" />
+    <None Include="..\..\..\Assets\Original\Levels\dirt.level" />
+    <None Include="..\..\..\Assets\Original\Levels\Sponge.level" />
+    <None Include="..\..\..\Assets\Original\Materials\Dirt\dirt.fsh.glessl" />
+    <None Include="..\..\..\Assets\Original\Materials\Dirt\dirt.fsh.glsl" />
+    <None Include="..\..\..\Assets\Original\Materials\Dirt\dirt.fsh.hlsl" />
+    <None Include="..\..\..\Assets\Original\Materials\Dirt\dirt.vsh.glessl" />
+    <None Include="..\..\..\Assets\Original\Materials\Dirt\dirt.vsh.glsl" />
+    <None Include="..\..\..\Assets\Original\Materials\Dirt\dirt.vsh.hlsl" />
+    <None Include="..\..\..\Assets\Original\Shapes\sponge.fla" />
+    <None Include="..\..\..\Assets\Original\Shapes\uis.fla" />
+    <None Include="..\..\..\Assets\Original\Uis\gameScreen.level" />
+    <None Include="..\..\..\Assets\Original\Uis\levelList.level" />
+    <None Include="..\..\..\Assets\Original\Uis\levelOverview.level" />
+    <None Include="..\..\..\Assets\Original\Uis\mainMenu.level" />
+    <None Include="..\..\..\Assets\Original\Uis\pauseMenu.level" />
+    <None Include="..\..\..\Assets\Original\Uis\postGame.level" />
+    <None Include="..\..\..\Assets\Original\Uis\uiBackground.level" />
+    <None Include="..\..\..\Assets\Original\Uis\uiCommon.level" />
+    <None Include="..\..\..\Assets\Original\Uis\worldList.level" />
+    <None Include="..\..\..\Assets\Original\Uis\worldListOld.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Boot Damp\01 Intromucktion.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Boot Damp\01 Intromucktion.png" />
+    <None Include="..\..\..\Assets\Original\Worlds\Boot Damp\02 Advanced Geom-wetry.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Boot Damp\02 Advanced Geom-wetry.png" />
+    <None Include="..\..\..\Assets\Original\Worlds\Boot Damp\world.data" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\01 Movement Test.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\01 Movement Test_1.png" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\02 Collectables Test.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\02 Collectables Test_1.png" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\03 Bucket Test.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\03 Bucket Test_1.png" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\04 Race Test.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\05 Uncoverable Test.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\05 Uncoverable Test_1.png" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\05 Uncoverable Test_2.png" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\06 Pit Test.level" />
+    <None Include="..\..\..\Assets\Original\Worlds\Debug World\world.data" />
+    <None Include="..\..\..\Assets\Original\Worlds\worlds.data" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="..\..\..\Assets\Original\**\*" />
+    <None Include="GrungySponge_TemporaryKey.pfx">
+      <Filter>Store</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Apis">
+      <UniqueIdentifier>{f54100c5-bae9-49ec-92c8-d245e55b6eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Apis\WinRt">
+      <UniqueIdentifier>{b758851c-d7b7-49c3-bc64-08c7885af5b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Store">
+      <UniqueIdentifier>{0397858f-6907-4af7-9d45-e4c72edf4492}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <Filter>Store</Filter>
+    </AppxManifest>
+  </ItemGroup>
+</Project>

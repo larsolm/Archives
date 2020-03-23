@@ -1,0 +1,19 @@
+{
+	"DataType": "Character",
+	"Bones":
+	{
+		"Name": "Root",
+		"Position": "0.0 0.0 0.0",
+		"Size": "1.0 1.0 1.0",
+		"Offset": "0.5 0.0 0.5",
+		"Children": [
+			{
+				"Name": "Arm",
+				"AttachmentType": "Weapon",
+				"Position": "0.0 0.0 0.0",
+				"Size": "1.0 1.0 1.0",
+				"Offset": "0.0 0.0 0.0"
+			}
+		]
+	}
+}

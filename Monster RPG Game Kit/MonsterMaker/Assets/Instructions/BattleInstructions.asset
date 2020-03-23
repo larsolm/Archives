@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af497cf6814f10648b388dfe84dbe07e, type: 3}
+  m_Name: BattleInstructions
+  m_EditorClassIdentifier: 
+  Instructions:
+  - {fileID: 114308566606964772}
+  - {fileID: 114329439306250458}
+  - {fileID: 114740582587295646}
+  - {fileID: 114571076678852950}
+  - {fileID: 114115122857250264}
+  - {fileID: 114684899157388112}
+  - {fileID: 114440545950645290}
+  - {fileID: 114612004608633730}
+  - {fileID: 114166290194980214}
+  - {fileID: 114774398005224964}
+  - {fileID: 114733888365245600}
+  - {fileID: 114792118279716376}
+  - {fileID: 114102317939414136}
+--- !u!114 &114102317939414136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad97a030241b0447b71fdb36fd8dbbf, type: 3}
+  m_Name: LossMessage
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Category: WorldDialog
+  Message:
+    Message: Ha ha you suck
+    Input: []
+--- !u!114 &114115122857250264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b983fac233c1fbf49b2d4dd0af38e0d9, type: 3}
+  m_Name: RepeatEncounterSelection
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Category: WorldDialog
+  Message:
+    Message: Back for more?
+    Input: []
+  Variable:
+    Location: 5
+    CustomSource: 
+    CustomIndex: 0
+    Name: 
+  CancelInstruction: {fileID: 0}
+  StringOptions:
+  - Instruction: {fileID: 114684899157388112}
+    Selection: Yes
+  - Instruction: {fileID: 114612004608633730}
+    Selection: No
+--- !u!114 &114166290194980214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad97a030241b0447b71fdb36fd8dbbf, type: 3}
+  m_Name: DefeatedMessage
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Category: WorldDialog
+  Message:
+    Message: You already beat me, {0}
+    Input:
+    - Location: 3
+      CustomSource: 
+      CustomIndex: 0
+      Name: Name
+--- !u!114 &114308566606964772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cade5ddaa6b11a43b972b92a2e222d4, type: 3}
+  m_Name: DefeatedBranch
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Variable:
+    Location: 3
+    CustomSource: 
+    CustomIndex: 0
+    Name: Defeated
+  Default: {fileID: 0}
+  Unset: {fileID: 114329439306250458}
+  OnTrue: {fileID: 114166290194980214}
+  OnFalse: {fileID: 114115122857250264}
+--- !u!114 &114329439306250458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f9ea2aa4122414eb8e8562be13eb90, type: 3}
+  m_Name: FirstEncounterSequence
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Instructions:
+  - {fileID: 114740582587295646}
+  - {fileID: 114571076678852950}
+--- !u!114 &114440545950645290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad97a030241b0447b71fdb36fd8dbbf, type: 3}
+  m_Name: AcceptChallengeMessage
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Category: WorldDialog
+  Message:
+    Message: Alright, let's battle!
+    Input: []
+--- !u!114 &114571076678852950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f9ea2aa4122414eb8e8562be13eb90, type: 3}
+  m_Name: DoBattleSequence
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Instructions:
+  - {fileID: 114774398005224964}
+  - {fileID: 114733888365245600}
+--- !u!114 &114612004608633730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad97a030241b0447b71fdb36fd8dbbf, type: 3}
+  m_Name: DeclineChallengeMessage
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Category: WorldDialog
+  Message:
+    Message: Yeah, I'm too good
+    Input: []
+--- !u!114 &114684899157388112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f9ea2aa4122414eb8e8562be13eb90, type: 3}
+  m_Name: AcceptChallengeSequence
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Instructions:
+  - {fileID: 114440545950645290}
+  - {fileID: 114571076678852950}
+--- !u!114 &114733888365245600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cade5ddaa6b11a43b972b92a2e222d4, type: 3}
+  m_Name: CompletedBranch
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Variable:
+    Location: 3
+    CustomSource: 
+    CustomIndex: 0
+    Name: Defeated
+  Default: {fileID: 0}
+  Unset: {fileID: 0}
+  OnTrue: {fileID: 114792118279716376}
+  OnFalse: {fileID: 114102317939414136}
+--- !u!114 &114740582587295646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad97a030241b0447b71fdb36fd8dbbf, type: 3}
+  m_Name: FirstEncounterMessage
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Category: WorldDialog
+  Message:
+    Message: Hello, my name is {0}
+    Input:
+    - Location: 3
+      CustomSource: 
+      CustomIndex: 0
+      Name: Name
+--- !u!114 &114774398005224964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d4d58925cd1540429364a47eaba46ad, type: 3}
+  m_Name: StartBattle
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Battle: {fileID: 0}
+  Result:
+    Location: 3
+    CustomSource: 
+    CustomIndex: 0
+    Name: Defeated
+--- !u!114 &114792118279716376
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ad97a030241b0447b71fdb36fd8dbbf, type: 3}
+  m_Name: WinMessage
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Category: WorldDialog
+  Message:
+    Message: How did you win?
+    Input: []

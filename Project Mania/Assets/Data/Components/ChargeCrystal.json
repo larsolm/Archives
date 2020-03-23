@@ -1,0 +1,9 @@
+{
+	"EquipmentUpgrades": {
+	},
+	"ItemUpgrades": {
+	},
+	"WeaponUpgrades": {
+		"BasicWeapon": "ChargeShot"
+	}
+}

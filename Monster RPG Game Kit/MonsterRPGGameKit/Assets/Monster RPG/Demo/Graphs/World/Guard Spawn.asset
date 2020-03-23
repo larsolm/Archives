@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864204cda72169a4a8d5e021c47bc66f, type: 3}
+  m_Name: Guard Spawn
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114993630053606800}
+    - {fileID: 114564957779337384}
+    - {fileID: 114543118016381812}
+  StartPosition: {x: 38.4, y: 0}
+  Process: {fileID: 114993630053606800}
+--- !u!114 &114543118016381812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d7ec44b8cfc8e4ebf8f4b43daaba03, type: 3}
+  m_Name: Warp Mover
+  m_EditorClassIdentifier: 
+  Name: Warp Mover
+  This:
+    _variable:
+    - this
+    _lookups:
+    - Mover
+  GraphPosition: {x: 742.4, y: 51.2}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Position: {x: 52, y: 67}
+  Direction: 3
+  Layer: 1
+--- !u!114 &114564957779337384
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d7ec44b8cfc8e4ebf8f4b43daaba03, type: 3}
+  m_Name: Warp Mover
+  m_EditorClassIdentifier: 
+  Name: Warp Mover
+  This:
+    _variable:
+    - this
+    _lookups:
+    - Mover
+  GraphPosition: {x: 742.4, y: -12.8}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Position: {x: 51, y: 67}
+  Direction: 3
+  Layer: 1
+--- !u!114 &114993630053606800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Conditional
+  m_EditorClassIdentifier: 
+  Name: Conditional
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 371.2, y: -12.8}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114564957779337384}
+  OnFalse: {fileID: 114543118016381812}
+  Condition:
+    _statement: Zone.Moved

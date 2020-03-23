@@ -1,0 +1,11 @@
+[#reference/item-variable-source]
+
+## ItemVariableSource
+
+PiRhoSoft.MonsterRpgEngine.ItemVariableSource : link:/projects/unity-composition/documentation/#/v10/reference/object-variable-source-1[ObjectVariableSource^]<<<reference/item.html,Item>>>
+
+### Description
+
+### Constructors
+
+ItemVariableSource()::

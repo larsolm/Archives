@@ -1,0 +1,17 @@
+{	
+	"CollisionLines": [
+		{ "Start": "0.0 -24.14", "End": "40.0 -24.14" },
+		{ "Start": "0.0 0.0", "End": "0.0 -24.14" },
+		{ "Start": "40.0 -24.14", "End": "40.0 0.0" }
+	],
+	"SpindleTriggers": [
+		{
+			"Connection": "Left",
+			"X": 0.0, "Y": -24.14, "Width": 2.0, "Height": 2.0
+		},
+		{
+			"Connection": "LeftBack",
+			"X": 38.0, "Y": -24.14, "Width": 2.0, "Height": 2.0
+		}
+	]
+}

@@ -1,0 +1,23 @@
+[#manual/species]
+
+## Species
+
+### Fields
+
+<<manual/ecosystem.html,Ecosystem>> _Ecosystem_::
+
+string _Name_::
+
+https://docs.unity3d.com/ScriptReference/Sprite.html[Sprite^] _Icon_::
+
+https://docs.unity3d.com/ScriptReference/AnimatorOverrideController.html[AnimatorOverrideController^] _Animations_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::
+
+<<manual/skill-list.html,Skill List>> _Skills_::
+
+<<manual/mount-point-dictionary.html,Mount Point Dictionary>> _Mount Points_::
+
+ifdef::backend-multipage_html5[]
+link:reference/species.html[Reference]
+endif::[]

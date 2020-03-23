@@ -1,0 +1,216 @@
+{
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 100"
+				Size = "50 800"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "150 900"
+				Rotation = -90
+				Size = "50 3500"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "150 150"
+				Rotation = -90
+				Size = "50 3500"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "3650 100"
+				Size = "50 800"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "3500 475"
+				Size = "50 50"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "255 255 255 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Collectable"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1000 150"
+				Size = "200 700"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 10
+				Color = "255 255 255 255"
+			}
+			{
+				#Type = "GrungySponge::Pit"
+				Tag = "Pit"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+				LeftSpawnOffset = "-50 0"
+				RightSpawnOffset = "50 0"
+				TopSpawnOffset = "0 50"
+				BottomSpawnOffset = "0 -50"
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "2000 150"
+				Size = "200 700"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 10
+				Color = "255 255 255 255"
+			}
+			{
+				#Type = "GrungySponge::Pit"
+				Tag = "Pit"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+				LeftSpawnOffset = "-50 0"
+				RightSpawnOffset = "50 0"
+				TopSpawnOffset = "0 50"
+				BottomSpawnOffset = "0 -50"
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "3000 150"
+				Size = "200 700"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 10
+				Color = "255 255 255 255"
+			}
+			{
+				#Type = "GrungySponge::Pit"
+				Tag = "Pit"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+				LeftSpawnOffset = "-50 0"
+				RightSpawnOffset = "50 0"
+				TopSpawnOffset = "0 50"
+				BottomSpawnOffset = "0 -50"
+			}
+		]
+	}
+}

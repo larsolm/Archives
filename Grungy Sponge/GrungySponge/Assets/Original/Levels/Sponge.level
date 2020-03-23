@@ -1,0 +1,63 @@
+{	
+	SpongeCamera {
+		#Type = "GrungySponge::SpongeCamera"
+        #Behavior = "Object"
+		Position = "0 0"
+		MinimumSize = "1280 720"
+		Viewport = "0 0 1 1"
+		Blending = "StandardBlending"
+		Rasterization = "StandardRasterization"
+		Material = "CopyPostProcessMaterial"
+		Geometry = "CopyPostProcessGeometry"
+		Renderables [ "Game" ]
+		XBounds = 210
+		YBounds = 120
+	}
+	SpongeShape {
+		#Type = "Pargon::Shapes::Shape"
+		#Behavior = "Object"
+		Filename = "Shapes/sponge.fla"
+	}
+	Sponge {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "Yellow"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 0"
+				Size = "60 100"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "GrungySponge::SpongeData"
+				Acceleration = 65
+				Friction = 0.995
+				AngularFriction = 0.96
+				Maneuverability = 180
+				MaxSpeed = 750
+				MaxAngularVelocity = 150
+				JumpScale = 10
+				JumpHeight = 140
+				Gravity = 490
+				MinimumSize = "60 100"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	SpongeMover {
+		#Type = "GrungySponge::SpongeMover"
+		#Behavior = "Object"
+	}
+}

@@ -1,0 +1,82 @@
+{
+	BackgroundTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/table.png"
+	}
+	CardTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/card.png"
+	}
+    HighlightTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/highlight.png"
+	}
+    OutlineTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/outline.png"
+	}
+	SpadesTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/spades.png"
+	}
+	DiamondsTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/diamonds.png"
+	}
+	ClubsTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/clubs.png"
+	}
+	HeartsTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/hearts.png"
+	}
+	NewTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+        Filename = "Images/new.png"
+	}
+    NewDownTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/newDown.png"
+	}
+    ShuffleTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/shuffle.png"
+	}
+    ShuffleDownTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/shuffleDown.png"
+	}
+    UndoTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/undo.png"
+	}
+    UndoDownTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/undoDown.png"
+	}
+    SoundTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/sound.png"
+	}
+    SoundDownTexture {
+		#Type = "Pargon::TextureObject"
+        #Behavior = "Object"
+		Filename = "Images/soundDown.png"
+	}
+}

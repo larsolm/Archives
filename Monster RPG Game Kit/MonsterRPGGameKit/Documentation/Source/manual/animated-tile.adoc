@@ -1,0 +1,19 @@
+[#manual/animated-tile]
+
+## Animated Tile
+
+### Fields
+
+bool _Randomize Start_::
+
+float _Animation Start Time_::
+
+float _Animation Speed_::
+
+float _Animation Speed Maximum_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<manual/tile-transform-info.html,Tile Transform Info>>> _Tiles_::
+
+ifdef::backend-multipage_html5[]
+link:reference/animated-tile.html[Reference]
+endif::[]

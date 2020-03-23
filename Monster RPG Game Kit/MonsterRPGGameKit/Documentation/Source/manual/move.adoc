@@ -1,0 +1,17 @@
+[#manual/move]
+
+## Move
+
+### Fields
+
+<<manual/ability.html,Ability>> _Ability_::
+
+<<manual/creature.html,Creature>> _Creature_::
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::
+
+ifdef::backend-multipage_html5[]
+link:reference/move.html[Reference]
+endif::[]

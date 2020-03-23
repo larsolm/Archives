@@ -1,0 +1,29 @@
+[#reference/warp-mover]
+
+## WarpMover
+
+PiRhoSoft.MonsterRpgEngine.WarpMover : link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^]
+
+### Description
+
+### Constructors
+
+WarpMover()::
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Next_::
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _Position_::
+
+<<reference/movement-direction.html,MovementDirection>> _Direction_::
+
+<<reference/collision-layer.html,CollisionLayer>> _Layer_::
+
+### Public Properties
+
+https://docs.unity3d.com/ScriptReference/Color.html[Color^] _NodeColor_ _(read only)_ _(virtual)_::
+
+### Protected Methods
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Run_(link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph[InstructionGraph^] _graph_, link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_, int _iteration_) _(virtual)_::

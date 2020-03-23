@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\..\..\Source\Pch.cpp" />
+    <ClCompile Include="..\..\..\Source\Rendering\Rendering.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Gui\GuiManager.cpp">
+      <Filter>Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\World.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\Settings.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\WorldGraph.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\WorldNode.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\DataManager.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\PartData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\ChassisData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\ComponentData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\EquipmentData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\ItemData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\SkeletonData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\UpgradeData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\WeaponData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\AugmentData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\Data.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Parts\Part.cpp">
+      <Filter>Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Bone.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Character.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Chassis.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Controller.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Processor.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Skeleton.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Duration.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Parts\Item.cpp">
+      <Filter>Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Parts\Weapon.cpp">
+      <Filter>Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Parts\Equipment.cpp">
+      <Filter>Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Rendering\PlayerCamera.cpp">
+      <Filter>Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Controllers\PlayerController.cpp">
+      <Filter>Character\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Processors\PlayerProcessor.cpp">
+      <Filter>Character\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\CharacterData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Characters\Player.cpp">
+      <Filter>Character\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\GameObject.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Skeletons\PlayerSkeleton.cpp">
+      <Filter>Character\Skeletons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\Interaction.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\CollisionLine.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\Projectile.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Parts\Upgrade.cpp">
+      <Filter>Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Parts\Upgrades\WeaponUpgrade.cpp">
+      <Filter>Parts\Upgrades</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\Profile.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Collision\LinearCollision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Collision\DynamicCollision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Collision\CharacterCollision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Collision\ProjectileCollision.cpp">
+      <Filter>Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Controllers\EnemyController.cpp">
+      <Filter>Character\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Processors\EnemyProcessor.cpp">
+      <Filter>Character\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Processors\GroundProcessor.cpp">
+      <Filter>Character\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Character\Characters\GroundCharacter.cpp">
+      <Filter>Character\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Data\BoneData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\DepthTrigger.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\SpindleTrigger.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\Trigger.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\Storages\StorageId.cpp">
+      <Filter>World\Storages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\StaticGameObject.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\World\DynamicGameObject.cpp">
+      <Filter>World</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Pch.h" />
+    <ClInclude Include="..\..\..\Source\Rendering\Rendering.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Gui\GuiManager.h">
+      <Filter>Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\World.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\Settings.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\WorldGraph.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\WorldNode.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\DataManager.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\PartData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\ChassisData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\ComponentData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\EquipmentData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\ItemData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\SkeletonData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\UpgradeData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\AugmentData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\Data.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Parts\Part.h">
+      <Filter>Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Bone.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Character.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Chassis.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Controller.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Processor.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Skeleton.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Abilities.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Duration.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Parts\Equipment.h">
+      <Filter>Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Parts\Item.h">
+      <Filter>Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Parts\Weapon.h">
+      <Filter>Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Rendering\PlayerCamera.h">
+      <Filter>Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Controllers\PlayerController.h">
+      <Filter>Character\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Processors\PlayerProcessor.h">
+      <Filter>Character\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\CharacterData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Characters\Player.h">
+      <Filter>Character\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\GameObject.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Skeletons\PlayerSkeleton.h">
+      <Filter>Character\Skeletons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Interaction.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\CollisionLine.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Projectile.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Parts\Upgrade.h">
+      <Filter>Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\EquipmentAttributes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\UpgradeAttributes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\WeaponAttributes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\Attributes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\ItemAttributes.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Parts\Upgrades\WeaponUpgrade.h">
+      <Filter>Parts\Upgrades</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\Profile.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\ItemAbilities.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\WeaponAbilities.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Game\EquipmentAbilities.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Collision\LinearCollision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Collision\DynamicCollision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Collision\CharacterCollision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Collision\ProjectileCollision.h">
+      <Filter>Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Controllers\EnemyController.h">
+      <Filter>Character\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Processors\EnemyProcessor.h">
+      <Filter>Character\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Processors\GroundProcessor.h">
+      <Filter>Character\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Character\Characters\GroundCharacter.h">
+      <Filter>Character\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\BoneData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\DepthTrigger.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\SpindleTrigger.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Trigger.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Storages\PermanentStaticallyTypedStorage.h">
+      <Filter>World\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Storages\PermanentDynamicallyTypedStorage.h">
+      <Filter>World\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Databases\Partition.h">
+      <Filter>World\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Databases\BruteForce.h">
+      <Filter>World\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Databases\Database.h">
+      <Filter>World\Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Storages\StorageId.h">
+      <Filter>World\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Storages\RemovableDynamicallyTypedStorage.h">
+      <Filter>World\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\Storages\RemovableStaticallyTypedStorage.h">
+      <Filter>World\Storages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Data\WeaponData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\StaticGameObject.h">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\World\DynamicGameObject.h">
+      <Filter>World</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="World">
+      <UniqueIdentifier>{a50448fc-70ae-4cb8-8824-30ed1228366b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gui">
+      <UniqueIdentifier>{4b17db36-7de6-48cb-9270-a2d7ef09ec31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{03af6469-0be7-4d46-9c02-1b64e676cb43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{cb42bc68-9f4c-43e9-8709-cd4893518083}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts">
+      <UniqueIdentifier>{c6178537-70f0-421c-92eb-7146d33c561e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character">
+      <UniqueIdentifier>{1874754d-4f3c-462a-9b7a-242edbe2d2bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{39a27d2a-539d-4c57-b8d7-664e05b1a24a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Controllers">
+      <UniqueIdentifier>{ec5e5187-2042-4ced-ba01-a83e82fa6872}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Processors">
+      <UniqueIdentifier>{ed83a1f1-7df8-4589-90c8-b2f52e6438fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Skeletons">
+      <UniqueIdentifier>{1c071dbc-639d-4ea7-98b7-cbcdbd0fc255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Character\Characters">
+      <UniqueIdentifier>{cd82382d-8674-47bb-82f0-479cce15c9cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parts\Upgrades">
+      <UniqueIdentifier>{e83b19ca-a0e9-469c-b0a4-f457c985a394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Collision">
+      <UniqueIdentifier>{90b95738-231f-40df-afcd-ecb44031162a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Storages">
+      <UniqueIdentifier>{dcc2c402-c4d4-4e6f-80d5-e824efd7378b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Databases">
+      <UniqueIdentifier>{af6a660c-a5e5-48e6-a2e2-fef876070f32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

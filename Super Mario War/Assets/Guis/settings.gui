@@ -1,0 +1,57 @@
+{
+	CharacterSelectMenu
+	{
+		#Type = "Pargon::Gui::Menu"
+		#Category = "Menu"
+	}
+	CharacterSelectBackground {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "BackgroundLayout"
+		ForegroundTexture = "Assets/Images/Gui/Background.png"
+	}
+	HeaderLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "TopAndToContent"
+	}
+	HeaderTextLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		VerticalAlignment = "Middle"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		Height = 30
+	}
+	HeaderTextStyle {
+		#Type = "Pargon::Gui::Style"
+		#Category = "Style"
+		Font = "Assets/AndyB.ttf"
+		TextColor = "White"
+		StrokeColor = "Black"
+		StrokeWidth = 0.5
+	}
+	CharacterSelectFrameLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "TopAndToContent"
+		Top = 200
+	}
+	CharacterBackground {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "HeaderLayout"
+		ForegroundTexture = "Assets/Images/Gui/MenuTitleFrame.png"
+		Children [
+			{
+				Layout = "HeaderTextLayout"
+				Style = "HeaderTextStyle"
+				Text = "Change settings."
+			}
+		]
+	}
+}

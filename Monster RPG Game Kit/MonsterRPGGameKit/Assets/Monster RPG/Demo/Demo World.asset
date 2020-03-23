@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8497a66f31a4b6c4bb7c2f666ada6967, type: 3}
+  m_Name: Demo World
+  m_EditorClassIdentifier: 
+  MainScene:
+    Path: Assets/Monster RPG/Demo/Scenes/Demo Main.unity
+  UiScenes:
+  - Path: Assets/Monster RPG/Demo/Scenes/Ui/World Ui.unity
+  - Path: Assets/Monster RPG/Demo/Scenes/Ui/Shop Ui.unity
+  DefaultZoneTransition: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6,
+    type: 2}
+  DefaultSpawnTransition: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6,
+    type: 2}
+  BackgroundMusic: {fileID: 0}
+  WorldSchema:
+    _definitions: []
+    _version: 0
+  PlayerSchema:
+    _definitions:
+    - _name: HasStarter
+      _type: 1
+      _availability: Always (saved)
+      _initializer:
+        _statement: false
+      _useRangeConstraint: 0
+      _minimumConstraint: 0
+      _maximumConstraint: 0
+      _typeConstraint: 
+    _version: 21
+  NpcSchema:
+    _definitions:
+    - _name: Completed
+      _type: 1
+      _availability: Always (saved)
+      _initializer:
+        _statement: false
+      _useRangeConstraint: 0
+      _minimumConstraint: 0
+      _maximumConstraint: 0
+      _typeConstraint: 
+    _version: 7
+  MapLayers:
+    _items:
+    - Outdoor
+    - First Floor
+    - Second Floor
+  Zones:
+  - {fileID: 11400000, guid: 03db17808f225e942b2cb910bf8ff683, type: 2}
+  - {fileID: 11400000, guid: 76989ff3534d708449c8ccf94ca229aa, type: 2}
+  - {fileID: 11400000, guid: 164c24b2d0c903f41981aa8112acc503, type: 2}
+  - {fileID: 11400000, guid: fe27b26d9ec8e6844baf1fd5d80398fa, type: 2}
+  - {fileID: 11400000, guid: 073273186410fae4a8a44956d0081ab7, type: 2}
+  - {fileID: 11400000, guid: 733cfd25453e10b42b4b5274cd5b1b63, type: 2}
+  - {fileID: 11400000, guid: d3dca0d9326d7234c9c0a2487d6bb9bd, type: 2}
+  - {fileID: 11400000, guid: bb3e8ca0f3ac1be40b56cd465c28eb89, type: 2}
+  - {fileID: 11400000, guid: 4659a0a417e8e764382700ff2f185cdf, type: 2}
+  - {fileID: 11400000, guid: 58cb7ad2a7dcdb8418310bf262fb9dbf, type: 2}
+  - {fileID: 11400000, guid: 344ca71ed8ace1548b2052eff758f51a, type: 2}
+  - {fileID: 11400000, guid: 647199a92d8eaa74caf2996662211792, type: 2}
+  - {fileID: 11400000, guid: 8e21c1dc821cc884caf025d2cf8c23b1, type: 2}

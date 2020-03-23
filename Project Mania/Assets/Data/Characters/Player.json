@@ -1,0 +1,23 @@
+{
+	"DataType": "Player",
+	"Controller": "Player",
+	"Processor": "Player",
+	"Chassis": "Player",
+	"Health": 100.0,
+	"Weight": 5.0,
+	"Aerodynamics": 0.5,
+	"Hops": 5.0,
+	"HangAmount": 0.5,
+	"HangTime": 0.5,
+	"Agility": 1.5,
+	"Maneuverability": 50.0,
+	"FallSpeed": 25.0,
+	"ForwardSpeed": 15.0,
+	"BackwardSpeed": 15.0,
+	"GroundHeight": 0.75,
+	"StandUpSpeed": 5.0,
+	"GravityDampening": 20.0,
+	"MaxCeilingAngle": "45_degrees",
+	"MaxSlopeAngle": "45_degrees",
+	"CollisionPolygon": [ "0.0 0.0", "-0.25 0.25", "-0.25 1.0f", "0.25 1.0f", "0.25 0.25" ]
+}

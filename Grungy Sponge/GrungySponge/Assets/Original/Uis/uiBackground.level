@@ -1,0 +1,102 @@
+{
+	UiBackground
+	{
+		#Type = "GrungySponge::UiBackground"
+		#Behavior = "Object"
+		ClearPercentage = 80
+	}
+	BackgroundBottomBounds {
+    	#Type = "Pargon::Entity"
+    	#Behavior = "Object"
+    	Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 -365"
+				Offset = "0.5 0.5"
+				Rotation = 0
+				Size = "1280 10"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+				Tag = "Static"
+			}
+    	]
+    }
+    BackgroundRightBounds {
+    	#Type = "Pargon::Entity"
+    	#Behavior = "Object"
+    	Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "645 0"
+				Offset = "0.5 0.5"
+				Rotation = 0
+				Size = "10 720"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+				Tag = "Static"
+			}
+    	]
+    }
+    BackgroundTopBounds {
+    	#Type = "Pargon::Entity"
+    	#Behavior = "Object"
+    	Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 365"
+				Offset = "0.5 0.5"
+				Rotation = 0
+				Size = "1200 10"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+				Tag = "Static"
+			}
+    	]
+    } 
+    BackgroundLeftBounds {
+    	#Type = "Pargon::Entity"
+    	#Behavior = "Object"
+    	Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "-645 0"
+				Offset = "0.5 0.5"
+				Rotation = 0
+				Size = "10 720"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+				Tag = "Static"
+			}
+    	]
+    }
+    BackgroundDirt {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Renderable"
+				Renderer = "DirtRenderer"
+				Tag = "Game"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 0"
+				Size = "1280 720"
+				Offset = "0.5 0.5"
+			}
+			{
+				#Type = "GrungySponge::ClearField"
+				MaskFilename = "Images/uiBackgroundDirt.png"
+				Tag = "Dirt"
+			}
+		]
+	}
+}

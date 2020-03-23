@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 808d2b8bc45fbd64e890b71f5c288fc1, type: 3}
+  m_Name: HouseWall
+  m_EditorClassIdentifier: 
+  DefaultRule:
+    Neighbors: 0000000000000000000000000000000000000000000000000000000000000000
+    Tile:
+      Sprite: {fileID: 21300004, guid: e86037ffa7d25cc4991c42fcb81fe872, type: 3}
+      Rotation: 0
+      FlipHorizontal: 0
+      FlipVertical: 0
+    UseReference: 0
+    Reference: {fileID: 0}
+  NeighborTypes: []
+  Rules:
+  - Neighbors: 0000000002000000000000000000000000000000000000000100000000000000
+    Tile:
+      Sprite: {fileID: 0}
+      Rotation: 0
+      FlipHorizontal: 0
+      FlipVertical: 0
+    UseReference: 1
+    Reference: {fileID: 11400000, guid: eb2d1c7bb65805844860e513e1dcda84, type: 2}
+  - Neighbors: 0000000001000000000000000000000000000000000000000200000000000000
+    Tile:
+      Sprite: {fileID: 0}
+      Rotation: 0
+      FlipHorizontal: 0
+      FlipVertical: 0
+    UseReference: 1
+    Reference: {fileID: 11400000, guid: 3c78b02907093974ba690300f68f1ae2, type: 2}

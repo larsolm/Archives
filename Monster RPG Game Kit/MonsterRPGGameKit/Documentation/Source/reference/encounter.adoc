@@ -1,0 +1,49 @@
+[#reference/encounter]
+
+## Encounter
+
+PiRhoSoft.MonsterRpgEngine.Encounter : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^], link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^], <<reference/i-trainer.html,ITrainer>>
+
+### Description
+
+### Constructors
+
+Encounter()::
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _Instructions_::
+
+float _EncounterChance_::
+
+<<reference/encounter-table.html,EncounterTable>> _Encounters_::
+
+### Public Properties
+
+<<reference/roster.html,Roster>> _Roster_ _(read only)_ _(virtual)_::
+
+<<reference/battle-ai.html,BattleAi>> _Ai_ _(read only)_ _(virtual)_::
+
+bool _IsPlayer_ _(read only)_ _(virtual)_::
+
+### Public Methods
+
+void Enter() _(virtual)_::
+
+void ResetTraits(string _availability_) _(virtual)_::
+
+void ResetTraits(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<string> _traits_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] GetVariable(string _name_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/set-variable-result[SetVariableResult^] SetVariable(string _name_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1[IEnumerable^]<string> GetVariableNames() _(virtual)_::
+
+### Protected Methods
+
+void DoEncounter() _(virtual)_::
+
+<<reference/creature.html,Creature>> PickCreature() _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] RunEncounter(<<reference/creature.html,Creature>> _creature_) _(virtual)_::

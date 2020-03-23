@@ -1,0 +1,122 @@
+{
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 100"
+				Size = "1230 670"
+			}
+			{
+				#Type = "Pargon::Renderable"
+				Tag = "Game"
+				Renderer = "DirtRenderer"
+			}
+			{
+				#Type = "GrungySponge::ClearField"
+				Tag = "Dirt"
+				MaskFilename = "Levels/Worlds/Boot Damp/01 Intromucktion.png"
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "50 50"
+				Size = "50 770"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 820"
+				Rotation = -90
+				Size = "50 1280"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1380 770"
+				Rotation = -180
+				Size = "50 720"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1330 50"
+				Rotation = 90
+				Size = "50 1230"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+}

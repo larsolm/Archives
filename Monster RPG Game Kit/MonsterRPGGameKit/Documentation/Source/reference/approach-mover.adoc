@@ -1,0 +1,23 @@
+[#reference/approach-mover]
+
+## ApproachMover
+
+PiRhoSoft.MonsterRpgEngine.ApproachMover : <<reference/approach-node.html,ApproachNode>>
+
+### Description
+
+### Constructors
+
+ApproachMover()::
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-reference[VariableReference^] _Target_::
+
+### Public Methods
+
+void GetInputs(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<link:/projects/unity-composition/documentation/#/v10/reference/variable-definition[VariableDefinition^]> _inputs_) _(virtual)_::
+
+### Protected Methods
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] GetTargetPosition(link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_) _(virtual)_::

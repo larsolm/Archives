@@ -1,0 +1,61 @@
+new GuiControl(MainGUI) {
+	profile = "GuiContentProfile";
+	horizSizing = "width";
+	vertSizing = "height";
+	position = "0 0";
+	extent = "640 480";
+	minExtent = "8 8";
+	visible = "1";
+   noCursor = "1";
+
+	new fxSceneWindow2D(SceneWindowGUI) {
+		profile = "GuiDefaultProfile";
+		horizSizing = "width";
+		vertSizing = "height";
+		position = "0 0";
+		extent = "640 480";
+		minExtent = "8 8";
+		visible = "1";
+		lockMouse = "1";
+	};
+
+   new GuiTextCtrl() {
+      profile = "GuiTextProfile";
+      position = "25 0";
+      text = "Illinois James";
+   };
+
+   new GuiBitmapCtrl(LifeBar) {
+      profile = "GuiDefaultProfile";
+      position = "100 20";
+      extent = "100 25";
+      bitmap = "./lifeBar";
+   };
+
+   new GuiBitmapCtrl() {
+      profile = "GuiDefaultProfile";
+      position = "100 20";
+      extent = "100 25";
+      bitmap = "./lifeBarFrame";
+   };
+
+   new GuiTextCtrl(EnemyName) {
+      profile = "GuiTextProfile";
+      position = "715 0";
+      text = "Enemy";
+   };
+
+   new GuiBitmapCtrl(EnemyLifeBar) {
+      profile = "GuiDefaultProfile";
+      position = "600 20";
+      extent = "100 25";
+      bitmap = "./lifeBar";
+   };
+
+   new GuiBitmapCtrl() {
+      profile = "GuiDefaultProfile";
+      position = "600 20";
+      extent = "100 25";
+      bitmap = "./lifeBarFrame";
+   };
+};

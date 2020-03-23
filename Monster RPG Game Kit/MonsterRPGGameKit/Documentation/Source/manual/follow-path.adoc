@@ -1,0 +1,11 @@
+[#manual/follow-path]
+
+## Follow Path
+
+### Fields
+
+<<manual/path.html,Path>> _Path_::
+
+ifdef::backend-multipage_html5[]
+link:reference/follow-path.html[Reference]
+endif::[]

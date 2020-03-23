@@ -1,0 +1,59 @@
+[#reference/map-properties]
+
+## MapProperties
+
+PiRhoSoft.MonsterRpgEngine.MapProperties : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+MapProperties()::
+
+### Public Fields
+
+bool _ClampLeftBounds_::
+
+bool _ClampRightBounds_::
+
+bool _ClampBottomBounds_::
+
+bool _ClampTopBounds_::
+
+float _LeftBounds_::
+
+float _RightBounds_::
+
+float _BottomBounds_::
+
+float _TopBounds_::
+
+### Public Properties
+
+bool _ClampBounds_ _(read only)_::
+
+<<reference/tile-dictionary.html,TileDictionary>> _Tiles_ _(read only)_::
+
+### Public Methods
+
+<<reference/tile-info.html,TileInfo>> AddOrGetTile(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_)::
+
+<<reference/tile-info.html,TileInfo>> GetTile(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_)::
+
+<<reference/tile-info.html,TileInfo>> AddTile(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_)::
+
+void AddConnections(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<int> _connections_)::
+
+void AddSpawnPoints(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2[Dictionary^]<string, string> _spawnPoints_)::
+
+void RefreshTiles()::
+
+https://docs.unity3d.com/ScriptReference/RectInt.html[RectInt^] GetBounds()::
+
+float CalculateLeft()::
+
+float CalculateRight()::
+
+float CalculateTop()::
+
+float CalculateBottom()::

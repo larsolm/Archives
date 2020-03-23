@@ -1,0 +1,9 @@
+[#manual/can-toss-item]
+
+## Can Toss Item
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/can-toss-item.html[Reference]
+endif::[]

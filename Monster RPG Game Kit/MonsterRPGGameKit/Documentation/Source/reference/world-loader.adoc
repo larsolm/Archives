@@ -1,0 +1,21 @@
+[#reference/world-loader]
+
+## WorldLoader
+
+PiRhoSoft.MonsterRpgEngine.WorldLoader : link:/projects/unity-utilities/documentation/#/v10/reference/global-behaviour-1[GlobalBehaviour^]<<<reference/world-loader.html,WorldLoader>>>
+
+### Description
+
+### Static Methods
+
+<<reference/load-information.html,LoadInformation>> New(string _startingZone_, string _playerSpawn_)::
+
+<<reference/load-information.html,LoadInformation>> Load(string _filename_)::
+
+<<reference/load-information.html,LoadInformation>> Load(<<reference/game-save-data.html,GameSaveData>> _game_, string _filename_)::
+
+<<reference/save-information.html,SaveInformation>> Save(<<reference/world-manager.html,WorldManager>> _world_)::
+
+### Constructors
+
+WorldLoader()::

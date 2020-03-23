@@ -1,0 +1,9 @@
+[#manual/reset-creature]
+
+## Reset Creature
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/reset-creature.html[Reference]
+endif::[]

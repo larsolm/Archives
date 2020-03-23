@@ -1,0 +1,17 @@
+[#manual/deal-damage]
+
+## Deal Damage
+
+### Fields
+
+string _Variable Name_::
+
+string _Hp Trait_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Base Damage_::
+
+<<manual/damage-modifier-list.html,Damage Modifier List>> _Modifiers_::
+
+ifdef::backend-multipage_html5[]
+link:reference/deal-damage.html[Reference]
+endif::[]

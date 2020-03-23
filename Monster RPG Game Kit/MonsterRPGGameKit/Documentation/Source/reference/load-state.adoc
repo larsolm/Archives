@@ -1,0 +1,21 @@
+[#reference/load-state]
+
+## LoadState
+
+PiRhoSoft.MonsterRpgEngine.LoadState
+
+### Description
+
+### Values
+
+<<reference/load-state.html,LoadState>> _ReadingData_::
+
+<<reference/load-state.html,LoadState>> _LoadingWorld_::
+
+<<reference/load-state.html,LoadState>> _LoadingZones_::
+
+<<reference/load-state.html,LoadState>> _LoadingUi_::
+
+<<reference/load-state.html,LoadState>> _Error_::
+
+<<reference/load-state.html,LoadState>> _Complete_::

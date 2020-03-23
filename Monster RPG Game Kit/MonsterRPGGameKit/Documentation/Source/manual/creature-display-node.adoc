@@ -1,0 +1,13 @@
+[#manual/creature-display-node]
+
+## Creature Display Node
+
+### Fields
+
+string _Interface Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-reference[VariableReference^] _Index Variable_::
+
+ifdef::backend-multipage_html5[]
+link:reference/creature-display-node.html[Reference]
+endif::[]

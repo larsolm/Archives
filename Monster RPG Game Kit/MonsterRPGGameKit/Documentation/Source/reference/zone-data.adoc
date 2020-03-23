@@ -1,0 +1,65 @@
+[#reference/zone-data]
+
+## ZoneData
+
+PiRhoSoft.MonsterRpgEngine.ZoneData : https://docs.unity3d.com/ScriptReference/ScriptableObject.html[ScriptableObject^], link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^], link:/projects/unity-composition/documentation/#/v10/reference/i-variable-listener[IVariableListener^]
+
+### Description
+
+### Constructors
+
+ZoneData()::
+
+### Public Fields
+
+<<reference/zone.html,Zone>> _Zone_::
+
+int _SceneIndex_::
+
+### Public Properties
+
+<<reference/zone-state.html,ZoneState>> _State_ _(read only)_::
+
+bool _IsActive_ _(read only)_::
+
+bool _IsEnabled_ _(read only)_::
+
+<<reference/world-manager.html,WorldManager>> _World_ _(read only)_::
+
+<<reference/map-properties.html,MapProperties>> _Properties_ _(read only)_::
+
+<<reference/pathfinding.html,Pathfinding>> _Pathfinding_ _(read only)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<int> _Connections_ _(read only)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.Dictionary-2[Dictionary^]<string, string> _SpawnPoints_ _(read only)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/world-listener.html,WorldListener>>> _Listeners_ _(read only)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/npc.html,Npc>>> _Npcs_ _(read only)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/mapped-variable-store[MappedVariableStore^] _Variables_ _(read only)_::
+
+### Public Methods
+
+<<reference/spawn-point.html,SpawnPoint>> GetSpawnPoint(string _name_)::
+
+void Load(<<reference/zone-save-data.html,ZoneSaveData>> _saveData_) _(virtual)_::
+
+void Save(<<reference/zone-save-data.html,ZoneSaveData>> _saveData_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] GetVariable(string _name_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/set-variable-result[SetVariableResult^] SetVariable(string _name_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IEnumerable-1[IEnumerable^]<string> GetVariableNames() _(virtual)_::
+
+void VariableChanged(int _index_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::
+
+void VariableChanged(<<reference/world-listener-source.html,WorldListenerSource>> _source_, string _variable_)::
+
+### Protected Methods
+
+void AddPropertiesToMap<ZoneDataType>(link:/projects/unity-composition/documentation/#/v10/reference/property-map-1[PropertyMap^]<ZoneDataType> _map_)::
+
+void SetupVariables() _(virtual)_::

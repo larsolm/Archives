@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847bc6b77a88dcc40b42539ad4f85e07, type: 3}
+  m_Name: NPC Dialog
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114646361414816418}
+    - {fileID: 114750084259313076}
+    - {fileID: 114406970979195074}
+  StartPosition: {x: -0, y: 0}
+  Enter: {fileID: 114646361414816418}
+  Process: {fileID: 114406970979195074}
+  Exit: {fileID: 114750084259313076}
+--- !u!114 &114406970979195074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Message
+  m_EditorClassIdentifier: 
+  Name: Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: 0}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{input.Message}'
+--- !u!114 &114646361414816418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132614e6593af784cb60d06a151290ed, type: 3}
+  m_Name: Freeze Interaction
+  m_EditorClassIdentifier: 
+  Name: Freeze Interaction
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: -115.200005}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+--- !u!114 &114750084259313076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1acfd94b978e9df45bb4cedb5adc848b, type: 3}
+  m_Name: Thaw Interaction
+  m_EditorClassIdentifier: 
+  Name: Thaw Interaction
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: 128}
+  IsBreakpoint: 0
+  Next: {fileID: 0}

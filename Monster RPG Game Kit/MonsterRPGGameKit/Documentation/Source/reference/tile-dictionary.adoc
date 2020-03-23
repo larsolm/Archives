@@ -1,0 +1,11 @@
+[#reference/tile-dictionary]
+
+## TileDictionary
+
+PiRhoSoft.MonsterRpgEngine.TileDictionary : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-dictionary-2[SerializedDictionary^]<https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^], https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^]>
+
+### Description
+
+### Constructors
+
+TileDictionary()::

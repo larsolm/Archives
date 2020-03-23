@@ -1,0 +1,15 @@
+[#reference/zone-load-status]
+
+## ZoneLoadStatus
+
+PiRhoSoft.MonsterRpgEngine.ZoneLoadStatus
+
+### Description
+
+### Constructors
+
+ZoneLoadStatus()::
+
+### Public Fields
+
+bool _IsDone_::

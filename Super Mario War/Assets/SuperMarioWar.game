@@ -1,0 +1,29 @@
+{
+	FirstLevel = "Menu"
+	Levels {
+		Game {
+			Sections [
+				"Common"
+				"Game"
+			]
+		}
+		Menu {
+			Sections [
+				"Common"
+			]
+		}
+	}
+	Sections {
+		Common {
+			Files [
+				"Assets/common.level"
+			]
+		}
+		Game {
+			Files [
+				"Assets/player.level"
+				"Assets/game.level"
+			]
+		}
+	}
+}

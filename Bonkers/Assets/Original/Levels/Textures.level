@@ -1,0 +1,57 @@
+{
+	MoveForwardTexture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/move_forward.png"
+	}
+	MoveBackTexture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/move_back.png"
+	}
+	RollAgainTexture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/roll_again.png"
+	}
+	ScoreTexture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/score.png"
+	}
+	StartTexture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/start.png"
+	}
+	Dice1Texture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/dice_1.png"
+	}	
+	Dice2Texture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/dice_2.png"
+	}	
+	Dice3Texture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/dice_3.png"
+	}	
+	Dice4Texture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/dice_4.png"
+	}	
+	Dice5Texture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/dice_5.png"
+	}	
+	Dice6Texture {
+		#Type = "Pargon::TextureObject"
+		#Behavior = "Object"
+		Filename = "Images/dice_6.png"
+	}
+}

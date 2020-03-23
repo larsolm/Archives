@@ -1,0 +1,201 @@
+{
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "100 100"
+				Size = "2000 2000"
+			}
+			{
+				#Type = "Pargon::Renderable"
+				Tag = "Game"
+				Renderer = "DirtRenderer"
+			}
+			{
+				#Type = "GrungySponge::ClearField"
+				Tag = "Dirt"
+				MaskFilename = "Worlds/Debug World/05 Uncoverable Test_1.png"
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "25 25"
+				Size = "50 2150"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "75 2175"
+				Rotation = -90
+				Size = "50 2100"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "2175 2125"
+				Rotation = -180
+				Size = "50 2100"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "2125 25"
+				Rotation = -270
+				Size = "50 2050"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 5
+				Color = "0 0 0 255"
+			}
+			{
+				#Type = "Pargon::CollisionComponent"
+				Tag = "Static"
+				Polygon [ "0 0" "0 1" "1 1" "1 0" ]
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "270 1656"
+				Size = "250 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "UncoverableRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 10
+				Color = "255 255 0 255"
+			}
+			{
+				#Type = "GrungySponge::ClearField"
+				Tag = "Uncoverable"
+				MaskFilename = "Worlds/Debug World/05 Uncoverable Test_2.png"
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "842 264"
+				Size = "250 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "UncoverableRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 10
+				Color = "255 255 0 255"
+			}
+			{
+				#Type = "GrungySponge::ClearField"
+				Tag = "Uncoverable"
+				MaskFilename = "Worlds/Debug World/05 Uncoverable Test_2.png"
+			}
+		]
+	}
+	 {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "1736 1330"
+				Size = "250 250"
+			}
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Tag = "Game"
+				Renderer = "UncoverableRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Depth = 10
+				Color = "255 255 0 255"
+			}
+			{
+				#Type = "GrungySponge::ClearField"
+				Tag = "Uncoverable"
+				MaskFilename = "Worlds/Debug World/05 Uncoverable Test_2.png"
+			}
+		]
+	}
+}

@@ -1,0 +1,21 @@
+[#reference/i-trainer]
+
+## ITrainer
+
+PiRhoSoft.MonsterRpgEngine.ITrainer : link:/projects/unity-composition/documentation/#/v10/reference/i-variable-store[IVariableStore^]
+
+### Description
+
+### Public Properties
+
+<<reference/roster.html,Roster>> _Roster_ _(read only)_ _(abstract)_::
+
+<<reference/battle-ai.html,BattleAi>> _Ai_ _(read only)_ _(abstract)_::
+
+bool _IsPlayer_ _(read only)_ _(abstract)_::
+
+### Public Methods
+
+void ResetTraits(string _availability_) _(abstract)_::
+
+void ResetTraits(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<string> _traits_) _(abstract)_::

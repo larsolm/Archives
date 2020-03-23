@@ -1,0 +1,27 @@
+[#reference/path-node]
+
+## PathNode
+
+PiRhoSoft.MonsterRpgEngine.PathNode : link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^]
+
+### Description
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Next_::
+
+bool _WaitForCompletion_::
+
+### Public Properties
+
+https://docs.unity3d.com/ScriptReference/Color.html[Color^] _NodeColor_ _(read only)_ _(virtual)_::
+
+### Protected Constructors
+
+PathNode()::
+
+### Protected Methods
+
+<<reference/path.html,Path>> GetPath(<<reference/mover.html,Mover>> _mover_) _(abstract)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Run_(link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph[InstructionGraph^] _graph_, link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_, int _iteration_) _(virtual)_::

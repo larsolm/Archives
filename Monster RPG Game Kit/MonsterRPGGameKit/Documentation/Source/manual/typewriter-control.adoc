@@ -1,0 +1,11 @@
+[#manual/typewriter-control]
+
+## Typewriter Control
+
+### Fields
+
+float _Characters Per Second_::
+
+ifdef::backend-multipage_html5[]
+link:reference/typewriter-control.html[Reference]
+endif::[]

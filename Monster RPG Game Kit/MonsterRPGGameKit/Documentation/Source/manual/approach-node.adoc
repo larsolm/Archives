@@ -1,0 +1,13 @@
+[#manual/approach-node]
+
+## Approach Node
+
+### Fields
+
+bool _Wait For Completion_::
+
+bool _Use Pathfinding_::
+
+ifdef::backend-multipage_html5[]
+link:reference/approach-node.html[Reference]
+endif::[]

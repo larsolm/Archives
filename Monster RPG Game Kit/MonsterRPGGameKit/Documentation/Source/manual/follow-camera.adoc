@@ -1,0 +1,15 @@
+[#manual/follow-camera]
+
+## Follow Camera
+
+### Fields
+
+float _Move Speed_::
+
+float _Zoom Speed_::
+
+https://docs.unity3d.com/ScriptReference/GameObject.html[GameObject^] _Target Object_::
+
+ifdef::backend-multipage_html5[]
+link:reference/follow-camera.html[Reference]
+endif::[]

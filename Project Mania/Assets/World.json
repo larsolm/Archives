@@ -1,0 +1,225 @@
+[
+	{
+		"Bottom":
+		{
+			"IsSpindle": false,
+			"InvertCamera": false,
+			"WorldAngle": "0_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 0.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "BottomLeft", "BottomRight", "BottomSpindle" ]
+		},
+		"BottomRight":
+		{
+			"IsSpindle": false,
+			"InvertCamera": false,
+			"WorldAngle": "45_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 0.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "Bottom", "Right" ]
+		},
+		"Right":
+		{
+			"IsSpindle": false,
+			"InvertCamera": false,
+			"WorldAngle": "90_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 0.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "BottomRight", "TopRight", "RightSpindle" ]
+		},
+		"TopRight":
+		{
+			"IsSpindle": false,
+			"InvertCamera": false,
+			"WorldAngle": "135_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 0.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "Right", "Top" ]
+		},
+		"Top":
+		{
+			"IsSpindle": false,
+			"InvertCamera": false,
+			"WorldAngle": "180_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 0.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "TopRight", "TopLeft", "TopSpindle" ]
+		},
+		"TopLeft":
+		{
+			"IsSpindle": false,
+			"InvertCamera": false,
+			"WorldAngle": "225_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 0.0,
+			"Connections": [ "Top", "Left" ],
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ]
+		},
+		"Left":
+		{
+			"IsSpindle": false,
+			"InvertCamera": false,
+			"WorldAngle": "270_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 0.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "TopLeft", "BottomLeft", "LeftSpindle" ]
+		},
+		"BottomLeft":
+		{
+			"IsSpindle": false,
+			"InvertCamera": false,
+			"WorldAngle": "315_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 0.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "10 -30", "-10 -30", "-10 -24.14" ],
+			"Connections": [ "Left", "Bottom" ]
+		}
+	},
+	{
+		"BottomSpindle":
+		{
+			"IsSpindle": true,
+			"InvertCamera": true,
+			"WorldAngle": "0_degrees",
+			"GravityStrength": -10.0,
+			"MapHeight": 0,
+			"Polygon": [ "-10.0 -25.0", "-10.0 0.0", "50.0 0.0", "50.0 -25.0" ],
+			"Connections": [ "Bottom", "BottomBack" ]
+		},
+		"RightSpindle":
+		{
+			"IsSpindle": true,
+			"InvertCamera": false,
+			"WorldAngle": "90_degrees",
+			"GravityStrength": -10.0,
+			"MapHeight": 0,
+			"Polygon": [ "-10.0 -25.0", "-10.0 0.0", "50.0 0.0", "50.0 -25.0" ],
+			"Connections": [ "Right", "RightBack" ]
+		},
+		"TopSpindle":
+		{
+			"IsSpindle": true,
+			"InvertCamera": false,
+			"WorldAngle": "180_degrees",
+			"GravityStrength": -10.0,
+			"MapHeight": 0,
+			"Polygon": [ "-10.0 -25.0", "-10.0 0.0", "50.0 0.0", "50.0 -25.0" ],
+			"Connections": [ "Top", "TopBack" ]
+		},
+		"LeftSpindle":
+		{
+			"IsSpindle": true,
+			"InvertCamera": true,
+			"WorldAngle": "270_degrees",
+			"GravityStrength": -10.0,
+			"MapHeight": 0,
+			"Polygon": [ "-10.0 -25.0", "-10.0 0.0", "50.0 0.0", "50.0 -25.0" ],
+			"Connections": [ "Left", "LeftBack" ]
+		}
+	},
+	{
+		"BottomBack":
+		{
+			"IsSpindle": false,
+			"InvertCamera": true,
+			"WorldAngle": "0_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 40.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "BottomLeftBack", "BottomRightBack", "BottomSpindle" ]
+		},
+		"BottomRightBack":
+		{
+			"IsSpindle": false,
+			"InvertCamera": true,
+			"WorldAngle": "45_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 40.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "BottomBack", "RightBack" ]
+		},
+		"RightBack":
+		{
+			"IsSpindle": false,
+			"InvertCamera": true,
+			"WorldAngle": "90_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 40.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "BottomRightBack", "TopRightBack", "RightSpindle" ]
+		},
+		"TopRightBack":
+		{
+			"IsSpindle": false,
+			"InvertCamera": true,
+			"WorldAngle": "135_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 40.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "RightBack", "TopBack" ]
+		},
+		"TopBack":
+		{
+			"IsSpindle": false,
+			"InvertCamera": true,
+			"WorldAngle": "180_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 40.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "TopRightBack", "TopLeftBack", "TopSpindle" ]
+		},
+		"TopLeftBack":
+		{
+			"IsSpindle": false,
+			"InvertCamera": true,
+			"WorldAngle": "225_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 40.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "TopBack", "LeftBack" ]
+		},
+		"LeftBack":
+		{
+			"IsSpindle": false,
+			"InvertCamera": true,
+			"WorldAngle": "270_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 40.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "TopLeftBack", "BottomLeftBack", "LeftSpindle" ]
+		},
+		"BottomLeftBack":
+		{
+			"IsSpindle": false,
+			"InvertCamera": true,
+			"WorldAngle": "315_degrees",
+			"GravityStrength": -10.0,
+			"ZPosition": 40.0,
+			"MapHeight": 0,
+			"Polygon": [ "0 0", "10 -24.14", "-10 -24.14" ],
+			"Connections": [ "LeftBack", "BottomBack" ]
+		}
+	}
+	
+]

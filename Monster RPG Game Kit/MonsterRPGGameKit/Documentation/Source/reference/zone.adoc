@@ -1,0 +1,35 @@
+[#reference/zone]
+
+## Zone
+
+PiRhoSoft.MonsterRpgEngine.Zone : https://docs.unity3d.com/ScriptReference/ScriptableObject.html[ScriptableObject^]
+
+### Description
+
+### Static Fields
+
+string _ZoneLoadedAvailability_::
+
+string _ZoneActiveAvailability_::
+
+### Constructors
+
+Zone()::
+
+### Public Fields
+
+<<reference/world.html,World>> _World_::
+
+string _Name_::
+
+link:/projects/unity-utilities/documentation/#/v10/reference/scene-reference[SceneReference^] _Scene_::
+
+string _MapLayer_::
+
+https://docs.unity3d.com/ScriptReference/AudioClip.html[AudioClip^] _BackgroundMusic_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Schema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _EnterInstructions_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _ExitInstructions_::

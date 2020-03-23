@@ -1,0 +1,281 @@
+{
+	WorldListHeader {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Font = "AndyBFont"
+				StrokeWidth = 5
+				Depth = 5
+				Tag = "Ui"
+				Align = "Center"
+				Text = "Select World"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0 1"
+				Size = "-1 80"
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Anchor = "Top"
+				Camera = "UiCamera"
+			}
+		]
+	}
+	WorldTemplate {
+		#Type = "Pargon::Ensemble"
+		#Behavior = "Template"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0.5 0.5"
+				Size = "512 450"
+				Tag = "ScrollContainer"
+			}
+			{
+				#Type = "GrungySponge::IndexComponent"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "WorldList"
+				OnSelect = "
+					WorldList.SetWorld(this.GrungySponge::IndexComponent.Index);
+					UiStack.Push('LevelList', false);
+				"
+			}
+		]
+		Entities [
+			{
+				#Type = "Pargon::Entity"
+				Components [
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Font = "AndyBFont"
+						StrokeWidth = 5
+						Depth = 3
+						Tag = "Ui"
+						Align = "Center"
+					}
+					{
+						#Type = "Pargon::Spatial2D"
+						FollowOnly = true
+						Offset = "0 1"
+						Position = "0 220"
+						Size = "-1 50"
+					}
+				]
+			}
+			{
+				#Type = "Pargon::Entity"
+			}
+			{
+				#Type = "Pargon::Entity"
+				Components [
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Font = "AndyBFont"
+						StrokeWidth = 5
+						Depth = 3
+						Tag = "Ui"
+						Align = "Left"
+						Text = "Cleared-"
+					}
+					{
+						#Type = "Pargon::Spatial2D"
+						FollowOnly = true
+						Offset = "0 1"
+						Position = "-245 -85"
+						Size = "-1 50"
+					}
+				]
+			}
+			{
+				#Type = "Pargon::Entity"
+				Components [
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Font = "AndyBFont"
+						StrokeWidth = 5
+						Depth = 3
+						Tag = "Ui"
+						Align = "Left"
+						Text = "Medals-"
+					}
+					{
+						#Type = "Pargon::Spatial2D"
+						FollowOnly = true
+						Offset = "0 1"
+						Position = "-245 -145"
+						Size = "-1 50"
+					}
+				]
+			}
+			{
+				#Type = "Pargon::Entity"
+				Components [
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Font = "AndyBFont"
+						StrokeWidth = 5
+						Depth = 3
+						Tag = "Ui"
+						Align = "Right"
+					}
+					{
+						#Type = "Pargon::Spatial2D"
+						FollowOnly = true
+						Offset = "1 1"
+						Position = "245 -85"
+						Size = "-1 50"
+					}
+				]
+			}
+			{
+				#Type = "Pargon::Entity"
+				Components [
+					{
+						#Type = "Pargon::Text::TextObject"
+						Renderer = "FontRenderer"
+						Font = "AndyBFont"
+						StrokeWidth = 5
+						Depth = 3
+						Tag = "Ui"
+						Align = "Right"
+					}
+					{
+						#Type = "Pargon::Spatial2D"
+						FollowOnly = true
+						Offset = "1 1"
+						Position = "245 -145"
+						Size = "-1 50"
+					}
+				]
+			}
+		]
+	}
+	BackButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "WorldList"
+				OnSelect = "UiStack.Pop();"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0 0"
+				Size = "125 125"
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Anchor = "BottomLeft"
+				Offset = "15 15"
+				Camera = "UiCamera"
+			}
+		]
+	}
+	CalibrateButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "WorldList"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0.5 0"
+				Size = "400 60"
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Anchor = "Bottom"
+				Offset = "0 35"
+				Camera = "UiCamera"
+			}
+		]
+	}
+	LeaderboardButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "WorldList"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "1 0"
+				Size = "125 125"
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Anchor = "BottomRight"
+				Offset = "-15 15"
+				Camera = "UiCamera"
+			}
+		]
+	}
+	WorldList {
+		#Type = "GrungySponge::WorldList"
+		#Behavior = "Object"
+		Buttons = "WorldList"
+		WorldTemplate = "WorldTemplate"
+		Position = "0 25"
+		Spacing = 200
+	}
+	ScrollContainer
+	{
+		#Type = "GrungySponge::ScrollContainer"
+		#Behavior = "Object"
+		ContainerName = "ScrollContainer"
+		LeftBounds = 0
+		PositionY = 25
+		Spacing = 700
+		ScrollSpeed = 3000
+	}
+}

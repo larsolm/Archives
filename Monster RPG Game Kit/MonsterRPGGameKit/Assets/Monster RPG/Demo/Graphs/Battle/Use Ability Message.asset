@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864204cda72169a4a8d5e021c47bc66f, type: 3}
+  m_Name: Use Ability Message
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114413108178468912}
+    - {fileID: 114924955086356878}
+    - {fileID: 114165947318204008}
+  StartPosition: {x: 0, y: 0}
+  Process: {fileID: 114413108178468912}
+--- !u!114 &114165947318204008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Enemy Creature Used
+  m_EditorClassIdentifier: 
+  Name: Enemy Creature Used
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 704, y: 64}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Enemy {this.Creature.Name} used {this.Name}!
+--- !u!114 &114413108178468912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Is Player
+  m_EditorClassIdentifier: 
+  Name: Is Player
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 345.6, y: -12.8}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114924955086356878}
+  OnFalse: {fileID: 114165947318204008}
+  Condition:
+    _statement: this.Creature.Trainer[Player] != null
+--- !u!114 &114924955086356878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Creature Used
+  m_EditorClassIdentifier: 
+  Name: Creature Used
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 704, y: -64}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: '{this.Creature.Name} used {this.Name}!'

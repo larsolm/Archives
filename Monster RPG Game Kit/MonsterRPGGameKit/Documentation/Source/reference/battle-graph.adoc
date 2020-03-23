@@ -1,0 +1,49 @@
+[#reference/battle-graph]
+
+## BattleGraph
+
+PiRhoSoft.MonsterRpgEngine.BattleGraph : link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph[InstructionGraph^]
+
+### Description
+
+### Constructors
+
+BattleGraph()::
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Enter_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Start_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Process_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Finish_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Exit_::
+
+link:/projects/unity-utilities/documentation/#/v10/reference/scene-reference[SceneReference^] _UiScene_::
+
+<<reference/trainer-reference-list.html,TrainerReferenceList>> _Trainers_::
+
+### Public Methods
+
+void GetInputs(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<link:/projects/unity-composition/documentation/#/v10/reference/variable-definition[VariableDefinition^]> _inputs_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Setup(link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_, https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<<<reference/i-trainer.html,ITrainer>>> _trainers_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Teardown() _(virtual)_::
+
+### Protected Methods
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Run(link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_) _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Run(link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_, https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<<<reference/i-trainer.html,ITrainer>>> _trainers_) _(virtual)_::
+
+void OnEnable() _(virtual)_::
+
+void OnDisable() _(virtual)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] LoadScenes()::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] UnloadScenes()::

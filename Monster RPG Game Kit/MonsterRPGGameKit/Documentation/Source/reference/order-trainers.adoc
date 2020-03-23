@@ -1,0 +1,25 @@
+[#reference/order-trainers]
+
+## OrderTrainers
+
+PiRhoSoft.MonsterRpgEngine.OrderTrainers : link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^]
+
+### Description
+
+### Constructors
+
+OrderTrainers()::
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Next_::
+
+<<reference/sort-condition-list.html,SortConditionList>> _SortConditions_::
+
+### Public Properties
+
+https://docs.unity3d.com/ScriptReference/Color.html[Color^] _NodeColor_ _(read only)_ _(virtual)_::
+
+### Protected Methods
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Run_(link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph[InstructionGraph^] _graph_, link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_, int _iteration_) _(virtual)_::

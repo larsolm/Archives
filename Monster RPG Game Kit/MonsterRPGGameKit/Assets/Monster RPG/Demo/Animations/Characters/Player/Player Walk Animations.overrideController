@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Player Walk Animations
+  m_Controller: {fileID: 9100000, guid: 0d064a1a8de9b154bab4c590e3dbbb76, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 9d3c52c89c7e24c429134ca73deda05f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b7cb7d540b9c6e6459caf26240150062, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1f4ef783651d8554691e7d37347a0e9c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6f454fc613286e84eb224e20ebeafda7, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3759aca597ee20c43b4613b18948bcef, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 799529492617f9441b4a7f1bf35f0829, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f8b09cfb1ef69d54fb9eeb89a1948c11, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2cc872d1c7b8ac549beb708c156481c5, type: 2}

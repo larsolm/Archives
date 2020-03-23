@@ -1,0 +1,149 @@
+{
+	LevelOverviewBackground {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0.5 0.5"
+				Position = "0 0"
+				Size = "725 270"
+			}
+		]
+	}
+	LevelNameDisplay {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Font = "AndyBFont"
+				StrokeWidth = 5
+				Depth = 3
+				Tag = "Ui"
+				Align = "Center"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "0 130"
+				Offset = "0 1"
+				Size = "-1 75"
+			}
+		]
+	}
+	LevelDescriptionDisplay {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Font = "AndyBFont"
+				StrokeWidth = 5
+				Depth = 3
+				Tag = "Ui"
+				Align = "Left"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0 1"
+				Position = "-350 50"
+				Size = "-1 50"
+			}
+		]
+	}
+	BestTimeDisplay {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Text::TextObject"
+				Renderer = "FontRenderer"
+				Font = "AndyBFont"
+				StrokeWidth = 5
+				Depth = 3
+				Tag = "Ui"
+				Align = "Right"
+				Text = "Best Time:"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Position = "350 -130"
+				Size = "-1 35"
+			}
+		]
+	}
+	PlayButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Circle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "LevelOverview"
+				OnSelect = "UiStack.Pop();"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0 1"
+				Size = "125 125"
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Anchor = "TopLeft"
+				Offset = "15 -15"
+				Camera = "UiCamera"
+			}
+		]
+	}
+	CalibrateButton {
+		#Type = "Pargon::Entity"
+		#Behavior = "Object"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Tag = "Ui"
+				Depth = 5
+				Color = "White"
+			}
+			{
+				#Type = "Pargon::TouchButton"
+				Tag = "LevelOverview"
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+				Offset = "0.5 0"
+				Size = "400 60"
+			}
+			{
+				#Type = "Pargon::Anchor"
+				Anchor = "Bottom"
+				Offset = "0 35"
+				Camera = "UiCamera"
+			}
+		]
+	}
+	LevelOverview {
+		#Type = "Pargon::TouchMenu"
+		#Behavior = "Object"
+		Buttons = "LevelOverview"
+		OnActivate = "
+			LevelNameDisplay.Pargon::Text::TextObject.Text = GameManager.CurrentLevel.Name;
+			LevelDescriptionDisplay.Pargon::Text::TextObject.Text = GameManager.CurrentLevel.Description;
+			GameManager.Paused = true;
+		"
+		OnDeactivate = "GameManager.Paused = false;"
+	}
+}

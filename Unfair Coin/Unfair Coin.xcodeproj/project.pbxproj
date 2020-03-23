@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		665C1D8914A1A38800D93B6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665C1D8814A1A38800D93B6D /* UIKit.framework */; };
+		665C1D8B14A1A38900D93B6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665C1D8A14A1A38800D93B6D /* Foundation.framework */; };
+		665C1D8D14A1A38900D93B6D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665C1D8C14A1A38900D93B6D /* CoreGraphics.framework */; };
+		665C1D8F14A1A38900D93B6D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665C1D8E14A1A38900D93B6D /* QuartzCore.framework */; };
+		665C1D9114A1A38900D93B6D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665C1D9014A1A38900D93B6D /* OpenGLES.framework */; };
+		665C1D9714A1A38900D93B6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 665C1D9514A1A38900D93B6D /* InfoPlist.strings */; };
+		665C1D9914A1A38900D93B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 665C1D9814A1A38900D93B6D /* main.m */; };
+		665C1D9D14A1A38900D93B6D /* Unfair_CoinAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 665C1D9C14A1A38900D93B6D /* Unfair_CoinAppDelegate.mm */; };
+		665C1DA014A1A38900D93B6D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665C1D9E14A1A38900D93B6D /* MainWindow.xib */; };
+		665C1DA214A1A38900D93B6D /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 665C1DA114A1A38900D93B6D /* Shader.fsh */; };
+		665C1DA414A1A38900D93B6D /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 665C1DA314A1A38900D93B6D /* Shader.vsh */; };
+		665C1DA714A1A38900D93B6D /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 665C1DA614A1A38900D93B6D /* EAGLView.m */; };
+		665C1DAA14A1A38900D93B6D /* Unfair_CoinViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 665C1DA914A1A38900D93B6D /* Unfair_CoinViewController.mm */; };
+		665C1DAD14A1A38900D93B6D /* Unfair_CoinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 665C1DAB14A1A38900D93B6D /* Unfair_CoinViewController.xib */; };
+		665C1DEE14A1C04B00D93B6D /* quarter.png in Resources */ = {isa = PBXBuildFile; fileRef = 665C1DED14A1C04B00D93B6D /* quarter.png */; };
+		665C1DF014A25FA200D93B6D /* Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 665C1DEF14A25FA200D93B6D /* Model.cpp */; };
+		665C1DF314A27F6B00D93B6D /* quarterSide.png in Resources */ = {isa = PBXBuildFile; fileRef = 665C1DF214A27F6B00D93B6D /* quarterSide.png */; };
+		66B597E814A3CC5F0086C655 /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = 66B597E714A3CC5F0086C655 /* cmu07a.dic */; };
+		66B597F214A3CC790086C655 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = 66B597EA14A3CC790086C655 /* feat.params */; };
+		66B597F314A3CC790086C655 /* feat.params.bak in Resources */ = {isa = PBXBuildFile; fileRef = 66B597EB14A3CC790086C655 /* feat.params.bak */; };
+		66B597F414A3CC790086C655 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = 66B597EC14A3CC790086C655 /* mdef */; };
+		66B597F514A3CC790086C655 /* means in Resources */ = {isa = PBXBuildFile; fileRef = 66B597ED14A3CC790086C655 /* means */; };
+		66B597F614A3CC790086C655 /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = 66B597EE14A3CC790086C655 /* noisedict */; };
+		66B597F714A3CC790086C655 /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = 66B597EF14A3CC790086C655 /* sendump */; };
+		66B597F814A3CC790086C655 /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 66B597F014A3CC790086C655 /* transition_matrices */; };
+		66B597F914A3CC790086C655 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = 66B597F114A3CC790086C655 /* variances */; };
+		66B597FC14A3CCB10086C655 /* libOpenEarsLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B597E314A3CC160086C655 /* libOpenEarsLibrary.a */; };
+		66B5980014A3CCC60086C655 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B597FD14A3CCC60086C655 /* AudioToolbox.framework */; };
+		66B5980114A3CCC60086C655 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B597FE14A3CCC60086C655 /* AVFoundation.framework */; };
+		66B5980214A3CCC60086C655 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B597FF14A3CCC60086C655 /* libiconv.dylib */; };
+		66B5980514A4E6650086C655 /* unfair.dic in Resources */ = {isa = PBXBuildFile; fileRef = 66B5980314A4E6650086C655 /* unfair.dic */; };
+		66B5980614A4E6650086C655 /* unfair.languagemodel in Resources */ = {isa = PBXBuildFile; fileRef = 66B5980414A4E6650086C655 /* unfair.languagemodel */; };
+		66B5980D14A7BB100086C655 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 66B5980C14A7BB100086C655 /* background.png */; };
+		66B5981014A7BE050086C655 /* ShaderBG.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 66B5980E14A7BE050086C655 /* ShaderBG.fsh */; };
+		66B5981114A7BE050086C655 /* ShaderBG.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 66B5980F14A7BE050086C655 /* ShaderBG.vsh */; };
+		66B5981214A7BF9C0086C655 /* ShaderBG.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 66B5980E14A7BE050086C655 /* ShaderBG.fsh */; };
+		66B5981314A7BF9C0086C655 /* ShaderBG.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 66B5980F14A7BE050086C655 /* ShaderBG.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66B597E214A3CC160086C655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B597DB14A3CC160086C655 /* OpenEarsLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = OpenEars;
+		};
+		66B597FA14A3CC990086C655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66B597DB14A3CC160086C655 /* OpenEarsLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = OpenEars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		665C1D8414A1A38800D93B6D /* Unfair Coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unfair Coin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		665C1D8814A1A38800D93B6D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		665C1D8A14A1A38800D93B6D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		665C1D8C14A1A38900D93B6D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		665C1D8E14A1A38900D93B6D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		665C1D9014A1A38900D93B6D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		665C1D9414A1A38900D93B6D /* Unfair Coin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unfair Coin-Info.plist"; sourceTree = "<group>"; };
+		665C1D9614A1A38900D93B6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		665C1D9814A1A38900D93B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		665C1D9A14A1A38900D93B6D /* Unfair Coin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unfair Coin-Prefix.pch"; sourceTree = "<group>"; };
+		665C1D9B14A1A38900D93B6D /* Unfair_CoinAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unfair_CoinAppDelegate.h; sourceTree = "<group>"; };
+		665C1D9C14A1A38900D93B6D /* Unfair_CoinAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Unfair_CoinAppDelegate.mm; sourceTree = "<group>"; };
+		665C1D9F14A1A38900D93B6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		665C1DA114A1A38900D93B6D /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		665C1DA314A1A38900D93B6D /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		665C1DA514A1A38900D93B6D /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		665C1DA614A1A38900D93B6D /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		665C1DA814A1A38900D93B6D /* Unfair_CoinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unfair_CoinViewController.h; sourceTree = "<group>"; };
+		665C1DA914A1A38900D93B6D /* Unfair_CoinViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Unfair_CoinViewController.mm; sourceTree = "<group>"; };
+		665C1DAC14A1A38900D93B6D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Unfair_CoinViewController.xib; sourceTree = "<group>"; };
+		665C1DED14A1C04B00D93B6D /* quarter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quarter.png; sourceTree = "<group>"; };
+		665C1DEF14A25FA200D93B6D /* Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Model.cpp; sourceTree = "<group>"; };
+		665C1DF114A25FAB00D93B6D /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		665C1DF214A27F6B00D93B6D /* quarterSide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quarterSide.png; sourceTree = "<group>"; };
+		66B597DB14A3CC160086C655 /* OpenEarsLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenEarsLibrary.xcodeproj; path = OpenEars/OpenEarsLibrary/OpenEarsLibrary.xcodeproj; sourceTree = "<group>"; };
+		66B597E514A3CC2C0086C655 /* OpenEarsConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenEarsConfig.h; path = OpenEars/OpenEarsLibrary/Classes/include/OpenEarsConfig.h; sourceTree = "<group>"; };
+		66B597E614A3CC440086C655 /* OpenEarsVoiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenEarsVoiceConfig.h; path = "OpenEars/CMULibraries/flite-1.4-release/include/OpenEarsVoiceConfig.h"; sourceTree = "<group>"; };
+		66B597E714A3CC5F0086C655 /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cmu07a.dic; path = "OpenEars/CMULibraries/pocketsphinx-0.6.1/model/lm/en_US/cmu07a.dic"; sourceTree = "<group>"; };
+		66B597EA14A3CC790086C655 /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
+		66B597EB14A3CC790086C655 /* feat.params.bak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params.bak; sourceTree = "<group>"; };
+		66B597EC14A3CC790086C655 /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
+		66B597ED14A3CC790086C655 /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
+		66B597EE14A3CC790086C655 /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
+		66B597EF14A3CC790086C655 /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
+		66B597F014A3CC790086C655 /* transition_matrices */ = {isa = PBXFileReference; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
+		66B597F114A3CC790086C655 /* variances */ = {isa = PBXFileReference; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
+		66B597FD14A3CCC60086C655 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		66B597FE14A3CCC60086C655 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66B597FF14A3CCC60086C655 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		66B5980314A4E6650086C655 /* unfair.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = unfair.dic; path = ../../Downloads/TAR9103/unfair.dic; sourceTree = "<group>"; };
+		66B5980414A4E6650086C655 /* unfair.languagemodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = unfair.languagemodel; path = ../../Downloads/TAR9103/unfair.languagemodel; sourceTree = "<group>"; };
+		66B5980C14A7BB100086C655 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = "Unfair Coin/background.png"; sourceTree = "<group>"; };
+		66B5980E14A7BE050086C655 /* ShaderBG.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ShaderBG.fsh; path = Shaders/ShaderBG.fsh; sourceTree = "<group>"; };
+		66B5980F14A7BE050086C655 /* ShaderBG.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = ShaderBG.vsh; path = Shaders/ShaderBG.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		665C1D8114A1A38800D93B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B5980014A3CCC60086C655 /* AudioToolbox.framework in Frameworks */,
+				66B5980114A3CCC60086C655 /* AVFoundation.framework in Frameworks */,
+				66B5980214A3CCC60086C655 /* libiconv.dylib in Frameworks */,
+				66B597FC14A3CCB10086C655 /* libOpenEarsLibrary.a in Frameworks */,
+				665C1D8914A1A38800D93B6D /* UIKit.framework in Frameworks */,
+				665C1D8B14A1A38900D93B6D /* Foundation.framework in Frameworks */,
+				665C1D8D14A1A38900D93B6D /* CoreGraphics.framework in Frameworks */,
+				665C1D8F14A1A38900D93B6D /* QuartzCore.framework in Frameworks */,
+				665C1D9114A1A38900D93B6D /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		665C1D7914A1A38800D93B6D = {
+			isa = PBXGroup;
+			children = (
+				66B5980C14A7BB100086C655 /* background.png */,
+				66B5980314A4E6650086C655 /* unfair.dic */,
+				66B5980414A4E6650086C655 /* unfair.languagemodel */,
+				66B597FD14A3CCC60086C655 /* AudioToolbox.framework */,
+				66B597FE14A3CCC60086C655 /* AVFoundation.framework */,
+				66B597FF14A3CCC60086C655 /* libiconv.dylib */,
+				66B597E914A3CC790086C655 /* hub4wsj_sc_8k */,
+				66B597E714A3CC5F0086C655 /* cmu07a.dic */,
+				66B597E614A3CC440086C655 /* OpenEarsVoiceConfig.h */,
+				66B597E514A3CC2C0086C655 /* OpenEarsConfig.h */,
+				66B597DB14A3CC160086C655 /* OpenEarsLibrary.xcodeproj */,
+				665C1D9214A1A38900D93B6D /* Unfair Coin */,
+				665C1D8714A1A38800D93B6D /* Frameworks */,
+				665C1D8514A1A38800D93B6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		665C1D8514A1A38800D93B6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				665C1D8414A1A38800D93B6D /* Unfair Coin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		665C1D8714A1A38800D93B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				665C1D8814A1A38800D93B6D /* UIKit.framework */,
+				665C1D8A14A1A38800D93B6D /* Foundation.framework */,
+				665C1D8C14A1A38900D93B6D /* CoreGraphics.framework */,
+				665C1D8E14A1A38900D93B6D /* QuartzCore.framework */,
+				665C1D9014A1A38900D93B6D /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		665C1D9214A1A38900D93B6D /* Unfair Coin */ = {
+			isa = PBXGroup;
+			children = (
+				66B5980E14A7BE050086C655 /* ShaderBG.fsh */,
+				66B5980F14A7BE050086C655 /* ShaderBG.vsh */,
+				665C1DF214A27F6B00D93B6D /* quarterSide.png */,
+				665C1DED14A1C04B00D93B6D /* quarter.png */,
+				665C1D9B14A1A38900D93B6D /* Unfair_CoinAppDelegate.h */,
+				665C1D9C14A1A38900D93B6D /* Unfair_CoinAppDelegate.mm */,
+				665C1D9E14A1A38900D93B6D /* MainWindow.xib */,
+				665C1DA114A1A38900D93B6D /* Shader.fsh */,
+				665C1DA314A1A38900D93B6D /* Shader.vsh */,
+				665C1DA514A1A38900D93B6D /* EAGLView.h */,
+				665C1DA614A1A38900D93B6D /* EAGLView.m */,
+				665C1DA814A1A38900D93B6D /* Unfair_CoinViewController.h */,
+				665C1DA914A1A38900D93B6D /* Unfair_CoinViewController.mm */,
+				665C1DAB14A1A38900D93B6D /* Unfair_CoinViewController.xib */,
+				665C1D9314A1A38900D93B6D /* Supporting Files */,
+				665C1DEF14A25FA200D93B6D /* Model.cpp */,
+				665C1DF114A25FAB00D93B6D /* Model.h */,
+			);
+			path = "Unfair Coin";
+			sourceTree = "<group>";
+		};
+		665C1D9314A1A38900D93B6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				665C1D9414A1A38900D93B6D /* Unfair Coin-Info.plist */,
+				665C1D9514A1A38900D93B6D /* InfoPlist.strings */,
+				665C1D9814A1A38900D93B6D /* main.m */,
+				665C1D9A14A1A38900D93B6D /* Unfair Coin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66B597DC14A3CC160086C655 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66B597E314A3CC160086C655 /* libOpenEarsLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66B597E914A3CC790086C655 /* hub4wsj_sc_8k */ = {
+			isa = PBXGroup;
+			children = (
+				66B597EA14A3CC790086C655 /* feat.params */,
+				66B597EB14A3CC790086C655 /* feat.params.bak */,
+				66B597EC14A3CC790086C655 /* mdef */,
+				66B597ED14A3CC790086C655 /* means */,
+				66B597EE14A3CC790086C655 /* noisedict */,
+				66B597EF14A3CC790086C655 /* sendump */,
+				66B597F014A3CC790086C655 /* transition_matrices */,
+				66B597F114A3CC790086C655 /* variances */,
+			);
+			name = hub4wsj_sc_8k;
+			path = "OpenEars/CMULibraries/pocketsphinx-0.6.1/model/hmm/en_US/hub4wsj_sc_8k";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		665C1D8314A1A38800D93B6D /* Unfair Coin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 665C1DB014A1A38900D93B6D /* Build configuration list for PBXNativeTarget "Unfair Coin" */;
+			buildPhases = (
+				665C1D8014A1A38800D93B6D /* Sources */,
+				665C1D8114A1A38800D93B6D /* Frameworks */,
+				665C1D8214A1A38800D93B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66B597FB14A3CC990086C655 /* PBXTargetDependency */,
+			);
+			name = "Unfair Coin";
+			productName = "Unfair Coin";
+			productReference = 665C1D8414A1A38800D93B6D /* Unfair Coin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		665C1D7B14A1A38800D93B6D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 665C1D7E14A1A38800D93B6D /* Build configuration list for PBXProject "Unfair Coin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 665C1D7914A1A38800D93B6D;
+			productRefGroup = 665C1D8514A1A38800D93B6D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 66B597DC14A3CC160086C655 /* Products */;
+					ProjectRef = 66B597DB14A3CC160086C655 /* OpenEarsLibrary.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				665C1D8314A1A38800D93B6D /* Unfair Coin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		66B597E314A3CC160086C655 /* libOpenEarsLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOpenEarsLibrary.a;
+			remoteRef = 66B597E214A3CC160086C655 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		665C1D8214A1A38800D93B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66B5981214A7BF9C0086C655 /* ShaderBG.fsh in Resources */,
+				66B5981314A7BF9C0086C655 /* ShaderBG.vsh in Resources */,
+				665C1D9714A1A38900D93B6D /* InfoPlist.strings in Resources */,
+				665C1DA014A1A38900D93B6D /* MainWindow.xib in Resources */,
+				665C1DA214A1A38900D93B6D /* Shader.fsh in Resources */,
+				665C1DA414A1A38900D93B6D /* Shader.vsh in Resources */,
+				665C1DAD14A1A38900D93B6D /* Unfair_CoinViewController.xib in Resources */,
+				665C1DEE14A1C04B00D93B6D /* quarter.png in Resources */,
+				665C1DF314A27F6B00D93B6D /* quarterSide.png in Resources */,
+				66B597E814A3CC5F0086C655 /* cmu07a.dic in Resources */,
+				66B597F214A3CC790086C655 /* feat.params in Resources */,
+				66B597F314A3CC790086C655 /* feat.params.bak in Resources */,
+				66B597F414A3CC790086C655 /* mdef in Resources */,
+				66B597F514A3CC790086C655 /* means in Resources */,
+				66B597F614A3CC790086C655 /* noisedict in Resources */,
+				66B597F714A3CC790086C655 /* sendump in Resources */,
+				66B597F814A3CC790086C655 /* transition_matrices in Resources */,
+				66B597F914A3CC790086C655 /* variances in Resources */,
+				66B5980514A4E6650086C655 /* unfair.dic in Resources */,
+				66B5980614A4E6650086C655 /* unfair.languagemodel in Resources */,
+				66B5980D14A7BB100086C655 /* background.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		665C1D8014A1A38800D93B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665C1D9914A1A38900D93B6D /* main.m in Sources */,
+				665C1D9D14A1A38900D93B6D /* Unfair_CoinAppDelegate.mm in Sources */,
+				665C1DA714A1A38900D93B6D /* EAGLView.m in Sources */,
+				665C1DAA14A1A38900D93B6D /* Unfair_CoinViewController.mm in Sources */,
+				665C1DF014A25FA200D93B6D /* Model.cpp in Sources */,
+				66B5981014A7BE050086C655 /* ShaderBG.fsh in Sources */,
+				66B5981114A7BE050086C655 /* ShaderBG.vsh in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66B597FB14A3CC990086C655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenEars;
+			targetProxy = 66B597FA14A3CC990086C655 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		665C1D9514A1A38900D93B6D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665C1D9614A1A38900D93B6D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		665C1D9E14A1A38900D93B6D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665C1D9F14A1A38900D93B6D /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		665C1DAB14A1A38900D93B6D /* Unfair_CoinViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665C1DAC14A1A38900D93B6D /* en */,
+			);
+			name = Unfair_CoinViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		665C1DAE14A1A38900D93B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		665C1DAF14A1A38900D93B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		665C1DB114A1A38900D93B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unfair Coin/Unfair Coin-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = (
+					"OpenEars/CMULibraries/flite-1.4-release/include",
+					"OpenEars/CMULibraries/pocketsphinx-0.6.1/include",
+					"OpenEars/CMULibraries/sphinxbase-0.6.1/include",
+					OpenEars/OpenEarsLibrary/Classes/include,
+				);
+				INFOPLIST_FILE = "Unfair Coin/Unfair Coin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		665C1DB214A1A38900D93B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unfair Coin/Unfair Coin-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = (
+					"OpenEars/CMULibraries/flite-1.4-release/include",
+					"OpenEars/CMULibraries/pocketsphinx-0.6.1/include",
+					"OpenEars/CMULibraries/sphinxbase-0.6.1/include",
+					OpenEars/OpenEarsLibrary/Classes/include,
+				);
+				INFOPLIST_FILE = "Unfair Coin/Unfair Coin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		665C1D7E14A1A38800D93B6D /* Build configuration list for PBXProject "Unfair Coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665C1DAE14A1A38900D93B6D /* Debug */,
+				665C1DAF14A1A38900D93B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		665C1DB014A1A38900D93B6D /* Build configuration list for PBXNativeTarget "Unfair Coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665C1DB114A1A38900D93B6D /* Debug */,
+				665C1DB214A1A38900D93B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 665C1D7B14A1A38800D93B6D /* Project object */;
+}

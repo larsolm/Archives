@@ -1,0 +1,13 @@
+[#manual/warp-mover]
+
+## Warp Mover
+
+### Fields
+
+<<manual/movement-direction.html,Movement Direction>> _Direction_::
+
+<<manual/collision-layer.html,Collision Layer>> _Layer_::
+
+ifdef::backend-multipage_html5[]
+link:reference/warp-mover.html[Reference]
+endif::[]

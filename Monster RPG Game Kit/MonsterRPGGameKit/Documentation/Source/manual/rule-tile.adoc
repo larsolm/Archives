@@ -1,0 +1,13 @@
+[#manual/rule-tile]
+
+## Rule Tile
+
+### Fields
+
+<<manual/rule-tile-rule.html,Rule>> _Default Rule_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<manual/rule-tile-rule.html,Rule>>> _Rules_::
+
+ifdef::backend-multipage_html5[]
+link:reference/rule-tile.html[Reference]
+endif::[]

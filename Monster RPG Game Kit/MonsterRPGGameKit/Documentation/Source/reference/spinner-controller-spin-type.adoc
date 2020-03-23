@@ -1,0 +1,15 @@
+[#reference/spinner-controller-spin-type]
+
+## SpinType
+
+PiRhoSoft.MonsterRpgEngine.SpinType
+
+### Description
+
+### Values
+
+<<reference/spinner-controller-spin-type.html,SpinType>> _Clockwise_::
+
+<<reference/spinner-controller-spin-type.html,SpinType>> _CounterClockwise_::
+
+<<reference/spinner-controller-spin-type.html,SpinType>> _Random_::

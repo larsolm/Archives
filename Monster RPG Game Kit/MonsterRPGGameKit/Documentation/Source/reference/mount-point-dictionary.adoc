@@ -1,0 +1,11 @@
+[#reference/mount-point-dictionary]
+
+## MountPointDictionary
+
+PiRhoSoft.MonsterRpgEngine.MountPointDictionary : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-dictionary-2[SerializedDictionary^]<string, string>
+
+### Description
+
+### Constructors
+
+MountPointDictionary()::

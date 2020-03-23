@@ -1,0 +1,126 @@
+{
+	AndyBFont {
+		#Type = "Pargon::Game::X2d::FontObject"
+		#Behavior = "Object"
+		Filename = "Assets/AndyB.ttf"
+	}
+	QuadGeometry {
+		#Type = "Pargon::Game::Core::GeometryObject"
+		#Behavior = "Object"
+		Filename = "Assets/quad.pgf"
+	}
+	CopyMaterial {
+		#Type = "Pargon::Game::Core::MaterialObject"
+		#Behavior = "Object"
+		VertexFilename = "Assets/copy.vsh"
+		FragmentFilename = "Assets/copy.fsh"
+		VertexLayout [
+			{
+				Name = "Position"
+				Type = "Vector3"
+				Usage = "Position"
+			}
+			{
+				Name = "Texture"
+				Type = "Vector2"
+				Usage = "TextureCoordinate"
+			}
+		]
+	}
+	TextMaterial {
+		#Type = "Pargon::Game::Core::MaterialObject"
+		#Behavior = "Object"
+		EnableBlending = true
+		SourceColorBlendFactor = "SourceAlpha"
+		DestinationColorBlendFactor = "InverseSourceAlpha"
+		SourceAlphaBlendFactor = "SourceAlpha"
+		DestinationAlphaBlendFactor = "DestinationAlpha"
+		VertexFilename = "Assets/text.vsh"
+		FragmentFilename = "Assets/text.fsh"
+		VertexLayout [
+			{
+				Name = "Position"
+				Type = "Vector2"
+				Usage = "Position"
+			}
+			{
+				Name = "Texture"
+				Type = "Vector2"
+				Usage = "TextureCoordinate"
+			}
+		]
+	}
+	TextRenderer {
+		#Type = "Pargon::Game::X2d::TextRenderer"
+		#Behavior = "Object"
+		Material = "TextMaterial"
+	}
+	ShapeGeometry {
+		#Type = "Pargon::Game::Core::GeometryObject"
+		#Behavior = "Object"
+		Filename = "Assets/shape.pgf"
+	}
+	ShapeMaterial {
+		#Type = "Pargon::Game::Core::MaterialObject"
+		#Behavior = "Object"
+		VertexFilename = "Assets/shape.vsh"
+		FragmentFilename = "Assets/shape.fsh"
+		EnableBlending = true
+		SourceColorBlendFactor = "SourceAlpha"
+		DestinationColorBlendFactor = "InverseSourceAlpha"
+		VertexLayout [
+			{
+				Name = "Position"
+				Type = "Vector2"
+				Usage = "Position"
+			}
+			{
+				Name = "Texture"
+				Type = "Vector2"
+				Usage = "TextureCoordinate"
+			}
+			{
+				Name = "Color"
+				Type = "Color"
+				Usage = "Color"
+			}
+		]
+	}
+	ShapeRenderer {
+		#Type = "Pargon::Game::X2d::ShapeRenderer"
+		#Behavior = "Object"
+		Material = "ShapeMaterial"
+	}
+	TilemapMaterial {
+		#Type = "Pargon::Game::Core::MaterialObject"
+		#Behavior = "Object"
+		VertexFilename = "Assets/tilemap.vsh"
+		FragmentFilename = "Assets/tilemap.fsh"
+		VertexLayout [
+			{
+				Name = "Position"
+				Type = "Vector2"
+				Usage = "Position"
+			}
+			{
+				Name = "Texture"
+				Type = "Vector2"
+				Usage = "TextureCoordinate"
+			}
+		]
+	}
+	TilemapRenderer {
+		#Type = "SuperMarioWar::TilemapRenderer"
+		#Behavior = "Object"
+		Material = "TilemapMaterial"
+	}
+	GameManager {
+		#Type = "SuperMarioWar::GameManager"
+		#Behavior = "Object"
+	}
+	GuiCamera {
+		#Type = "Pargon::Game::Core::GuiCamera"
+		#Behavior = "Object"
+		Order = 1
+	}
+}

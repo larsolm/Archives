@@ -1,0 +1,11 @@
+[#manual/give-creature]
+
+## Give Creature
+
+### Fields
+
+<<manual/creature-reference.html,Creature Reference>> _Creature_::
+
+ifdef::backend-multipage_html5[]
+link:reference/give-creature.html[Reference]
+endif::[]

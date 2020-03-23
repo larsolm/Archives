@@ -1,0 +1,67 @@
+{
+    DirtDepthStencil {
+		#Type = "Pargon::DepthStencilOptionsObject"
+		#Behavior = "Object"
+        WriteDepth = false
+        TestDepth = false
+        TestStencil = false
+    }
+    DirtMaterial {
+		#Type = "Pargon::MaterialObject"
+		#Behavior = "Object"
+		VertexFilename = "Materials/Dirt/dirt.vsh"
+		FragmentFilename = "Materials/Dirt/dirt.fsh"
+		VertexConstants [
+            { Name = "Transform" Type = "Matrix4x4" Usage = "Constant" }
+            { Name = "TextureScale" Type = "Float" Usage = "Constant" }
+		]
+		FragmentConstants [
+            { Name = "MaskObject" Type = "Int" Usage = "Constant" }
+            { Name = "RedTexture" Type = "Int" Usage = "Constant" }
+            { Name = "GreenTexture" Type = "Int" Usage = "Constant" }
+            { Name = "BlueTexture" Type = "Int" Usage = "Constant" }
+		]
+        VertexLayout [
+            { Name = "Position" Type = "Vector2" Usage = "Position" }
+            { Name = "Mask" Type = "Vector2" Usage = "TextureCoordinate" }
+            { Name = "Red" Type = "Vector2" Usage = "TextureCoordinate" }
+            { Name = "Green" Type = "Vector2" Usage = "TextureCoordinate" }
+            { Name = "Blue" Type = "Vector2" Usage = "TextureCoordinate" }
+        ]
+    }
+	DirtRenderer {
+		#Type = "GrungySponge::DirtRenderer"
+		#Behavior = "Object"
+		Blending = "DisabledBlending"
+		DepthStencil = "DirtDepthStencil"
+		Rasterization = "StandardRasterization"
+		Material = "DirtMaterial"
+		Depth = 5
+	}
+    DirtManager {
+        #Type = "GrungySponge::DirtManager"
+        #Behavior = "Object"
+        Dirts {
+            Dust {
+                Texture = "Images/dust.png"
+                CleanContributionFactor = 0.5
+                SpongeContributionFactor = 0.5
+            }
+            Dirt {
+                Texture = "Images/dirt.png"
+                CleanContributionFactor = 1.0
+                SpongeContributionFactor = 1.0
+            }
+            Oil {
+                Texture = "Images/oil.png"
+                CleanContributionFactor = 1.0
+                SpongeContributionFactor = 2.0
+            }
+            Mold {
+                Texture = "Images/mold.png"
+                CleanContributionFactor = 2.0
+                SpongeContributionFactor = 1.0
+            }
+        }
+    }
+}

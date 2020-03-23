@@ -1,0 +1,13 @@
+[#manual/create-creature]
+
+## Create Creature
+
+### Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Schema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Initializer_::
+
+ifdef::backend-multipage_html5[]
+link:reference/create-creature.html[Reference]
+endif::[]

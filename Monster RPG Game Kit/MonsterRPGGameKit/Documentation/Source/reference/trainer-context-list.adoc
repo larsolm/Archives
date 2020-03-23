@@ -1,0 +1,11 @@
+[#reference/trainer-context-list]
+
+## TrainerContextList
+
+PiRhoSoft.MonsterRpgEngine.TrainerContextList : link:/projects/unity-composition/documentation/#/v10/reference/indexed-variable-store-1[IndexedVariableStore^]<<<reference/trainer-context.html,TrainerContext>>>
+
+### Description
+
+### Constructors
+
+TrainerContextList()::

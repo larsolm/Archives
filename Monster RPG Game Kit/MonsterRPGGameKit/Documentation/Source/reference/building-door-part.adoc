@@ -1,0 +1,19 @@
+[#reference/building-door-part]
+
+## DoorPart
+
+PiRhoSoft.MonsterRpgEngine.DoorPart : <<reference/building-part.html,Part>>
+
+### Description
+
+### Constructors
+
+DoorPart()::
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/AudioSource.html[AudioSource^] _Audio_::
+
+https://docs.unity3d.com/ScriptReference/Animator.html[Animator^] _Animator_::
+
+<<reference/door.html,Door>> _Door_::

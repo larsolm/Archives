@@ -1,0 +1,11 @@
+[#manual/use-item]
+
+## Use Item
+
+### Fields
+
+<<manual/item-use-location.html,Item Use Location>> _Location_::
+
+ifdef::backend-multipage_html5[]
+link:reference/use-item.html[Reference]
+endif::[]

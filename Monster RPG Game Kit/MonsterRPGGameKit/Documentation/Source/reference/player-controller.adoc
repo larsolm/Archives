@@ -1,0 +1,41 @@
+[#reference/player-controller]
+
+## PlayerController
+
+PiRhoSoft.MonsterRpgEngine.PlayerController : <<reference/controller.html,Controller>>
+
+### Description
+
+### Constructors
+
+PlayerController()::
+
+### Public Fields
+
+string _HorizontalAxis_::
+
+string _VerticalAxis_::
+
+string _InteractButton_::
+
+https://docs.unity3d.com/ScriptReference/KeyCode.html[KeyCode^] _InteractKey_::
+
+### Protected Fields
+
+float __horizontal_::
+
+float __vertical_::
+
+bool __interact_::
+
+### Protected Properties
+
+bool _CanMove_ _(read only)_ _(virtual)_::
+
+### Protected Methods
+
+void UpdateInput() _(virtual)_::
+
+void ClearInput() _(virtual)_::
+
+void ProcessInput() _(virtual)_::

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PfC-wf-ipG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Addiction-->
+        <scene sceneID="ybX-Xd-DtA">
+            <objects>
+                <glkViewController title="Addiction" preferredFramesPerSecond="30" id="PfC-wf-ipG" customClass="OpenGlesView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RmY-Lu-8Vj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tsl-XD-BLS"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="ieK-Rf-sRy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="PfC-wf-ipG" id="2xF-Gp-cuo"/>
+                        </connections>
+                    </glkView>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRa-FB-uQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="202" y="99"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,9 @@
+[#manual/process-creature]
+
+## Process Creature
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/process-creature.html[Reference]
+endif::[]

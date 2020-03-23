@@ -1,0 +1,11 @@
+[#manual/teach-ability]
+
+## Teach Ability
+
+### Fields
+
+<<manual/ability-variable-source.html,Ability Variable Source>> _Ability_::
+
+ifdef::backend-multipage_html5[]
+link:reference/teach-ability.html[Reference]
+endif::[]

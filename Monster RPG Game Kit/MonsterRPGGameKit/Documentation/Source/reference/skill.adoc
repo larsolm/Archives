@@ -1,0 +1,21 @@
+[#reference/skill]
+
+## Skill
+
+PiRhoSoft.MonsterRpgEngine.Skill
+
+### Description
+
+### Constructors
+
+Skill()::
+
+### Public Fields
+
+string _Name_::
+
+int _LearnLimit_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Condition_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _Instruction_::

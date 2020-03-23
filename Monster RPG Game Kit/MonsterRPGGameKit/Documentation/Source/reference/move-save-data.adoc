@@ -1,0 +1,19 @@
+[#reference/move-save-data]
+
+## MoveSaveData
+
+PiRhoSoft.MonsterRpgEngine.MoveSaveData
+
+### Description
+
+### Constructors
+
+MoveSaveData()::
+
+### Public Fields
+
+string _AbilityPath_::
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::

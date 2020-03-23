@@ -1,0 +1,16 @@
+{
+	"Skeleton": "Player",
+	"Attachments": [
+		{
+			"Bone": "Arm",
+			"Part": "BasicWeapon"
+		},
+		{
+			"Bone": "Core",
+			"Part": "BasicCore",
+			"Components": [
+				"ShieldCrystal"
+			]
+		}
+	]
+}

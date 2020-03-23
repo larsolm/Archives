@@ -1,0 +1,13 @@
+[#manual/npc]
+
+## Npc
+
+### Fields
+
+string _Name_::
+
+string _Guid_::
+
+ifdef::backend-multipage_html5[]
+link:reference/npc.html[Reference]
+endif::[]

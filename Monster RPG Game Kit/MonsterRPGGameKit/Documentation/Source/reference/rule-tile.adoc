@@ -1,0 +1,29 @@
+[#reference/rule-tile]
+
+## RuleTile
+
+PiRhoSoft.MonsterRpgEngine.RuleTile : https://docs.unity3d.com/ScriptReference/TileBase.html[TileBase^]
+
+### Description
+
+### Constructors
+
+RuleTile()::
+
+### Public Fields
+
+<<reference/rule-tile-rule.html,Rule>> _DefaultRule_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<https://docs.unity3d.com/ScriptReference/TileBase.html[TileBase^]> _NeighborTypes_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/rule-tile-rule.html,Rule>>> _Rules_::
+
+### Public Methods
+
+void GetTileData(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _position_, https://docs.unity3d.com/ScriptReference/ITilemap.html[ITilemap^] _tilemap_, https://docs.unity3d.com/ScriptReference/TileData.html[TileData^] _tileData_ _(ref)_) _(virtual)_::
+
+bool GetTileAnimationData(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _position_, https://docs.unity3d.com/ScriptReference/ITilemap.html[ITilemap^] _tilemap_, https://docs.unity3d.com/ScriptReference/TileAnimationData.html[TileAnimationData^] _tileAnimationData_ _(ref)_) _(virtual)_::
+
+void RefreshTile(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _location_, https://docs.unity3d.com/ScriptReference/ITilemap.html[ITilemap^] _tileMap_) _(virtual)_::
+
+int GetRuleIndex(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _position_, https://docs.unity3d.com/ScriptReference/ITilemap.html[ITilemap^] _tilemap_, https://docs.unity3d.com/ScriptReference/TileBase.html[TileBase^] _referenceTile_)::

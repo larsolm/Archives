@@ -1,0 +1,11 @@
+[#manual/play-battle-sound]
+
+## Play Battle Sound
+
+### Fields
+
+<<manual/battle-animation-sound.html,Battle Animation Sound>> _Sound_::
+
+ifdef::backend-multipage_html5[]
+link:reference/play-battle-sound.html[Reference]
+endif::[]

@@ -1,0 +1,11 @@
+[#reference/battle-animation-clip-dictionary]
+
+## BattleAnimationClipDictionary
+
+PiRhoSoft.MonsterRpgEngine.BattleAnimationClipDictionary : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-dictionary-2[SerializedDictionary^]<string, string>
+
+### Description
+
+### Constructors
+
+BattleAnimationClipDictionary()::

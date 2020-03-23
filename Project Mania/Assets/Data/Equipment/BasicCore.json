@@ -1,0 +1,15 @@
+{
+	"ComponentSlots": 2,
+	"Attributes":
+	{
+		"Bases": {
+			"Health": 100.0
+		},
+		"Increments": {
+			"Health": 25.0
+		},
+		"Maximums": {
+			"Health": 5
+		}
+	}
+}

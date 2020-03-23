@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6603DDD71A86CEE4009E848D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6603DDCE1A86CEE4009E848D /* AppDelegate.mm */; };
+		6603DDD81A86CEE4009E848D /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6603DDD01A86CEE4009E848D /* GLView.mm */; };
+		6603DDD91A86CEE4009E848D /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6603DDD11A86CEE4009E848D /* main.mm */; };
+		6603DDDA1A86CEE4009E848D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6603DDD21A86CEE4009E848D /* Main.storyboard */; };
+		6603DDDB1A86CEE4009E848D /* OSXCanvas.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6603DDD41A86CEE4009E848D /* OSXCanvas.mm */; };
+		6603DE0E1A86CF6D009E848D /* GrungySponge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6603DDE61A86CF6D009E848D /* GrungySponge.cpp */; };
+		6603DE0F1A86CF6D009E848D /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6603DDE81A86CF6D009E848D /* Include.cpp */; };
+		662F067E1A87309A00762E5B /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 662F067D1A87309A00762E5B /* Assets */; };
+		665CEDAB1A873E8B00F040C2 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665CEDAA1A873E8B00F040C2 /* OpenAL.framework */; };
+		667D7DDF1A86D09C001CC8E3 /* libAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DCC1A86D09B001CC8E3 /* libAudio.a */; };
+		667D7DE01A86D09C001CC8E3 /* libData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DCD1A86D09B001CC8E3 /* libData.a */; };
+		667D7DE11A86D09C001CC8E3 /* libDebugging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DCE1A86D09B001CC8E3 /* libDebugging.a */; };
+		667D7DE21A86D09C001CC8E3 /* libFileSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DCF1A86D09B001CC8E3 /* libFileSystem.a */; };
+		667D7DE31A86D09C001CC8E3 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD01A86D09B001CC8E3 /* libfreetype.a */; };
+		667D7DE41A86D09C001CC8E3 /* libGame2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD11A86D09B001CC8E3 /* libGame2d.a */; };
+		667D7DE51A86D09C001CC8E3 /* libGameCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD21A86D09B001CC8E3 /* libGameCore.a */; };
+		667D7DE61A86D09C001CC8E3 /* libGameUi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD31A86D09B001CC8E3 /* libGameUi.a */; };
+		667D7DE71A86D09C001CC8E3 /* libGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD41A86D09B001CC8E3 /* libGraphics.a */; };
+		667D7DE81A86D09C001CC8E3 /* libInput.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD51A86D09B001CC8E3 /* libInput.a */; };
+		667D7DE91A86D09C001CC8E3 /* libMath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD61A86D09B001CC8E3 /* libMath.a */; };
+		667D7DEA1A86D09C001CC8E3 /* libReflection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD71A86D09C001CC8E3 /* libReflection.a */; };
+		667D7DEB1A86D09C001CC8E3 /* libScripting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD81A86D09C001CC8E3 /* libScripting.a */; };
+		667D7DEC1A86D09C001CC8E3 /* libSerialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DD91A86D09C001CC8E3 /* libSerialization.a */; };
+		667D7DED1A86D09C001CC8E3 /* libShapes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DDA1A86D09C001CC8E3 /* libShapes.a */; };
+		667D7DEE1A86D09C001CC8E3 /* libstbimage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DDB1A86D09C001CC8E3 /* libstbimage.a */; };
+		667D7DEF1A86D09C001CC8E3 /* libText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DDC1A86D09C001CC8E3 /* libText.a */; };
+		667D7DF01A86D09C001CC8E3 /* libTypes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DDD1A86D09C001CC8E3 /* libTypes.a */; };
+		667D7DF11A86D09C001CC8E3 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7DDE1A86D09C001CC8E3 /* libzlib.a */; };
+		667D7E161A86D7ED001CC8E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7E141A86D7ED001CC8E3 /* Cocoa.framework */; };
+		667D7E171A86D7ED001CC8E3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7E151A86D7ED001CC8E3 /* OpenGL.framework */; };
+		667D7E1D1A86DC03001CC8E3 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667D7E1C1A86DC03001CC8E3 /* GameController.framework */; };
+		66F75E151A86CD7400DF7203 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F75E141A86CD7400DF7203 /* Images.xcassets */; };
+		683ABB7D1AAA8375008032D2 /* libApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 683ABB7C1AAA8375008032D2 /* libApplication.a */; };
+		68E43E981AC361DF00609E0A /* DirtManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E671AC361DF00609E0A /* DirtManager.cpp */; };
+		68E43E991AC361DF00609E0A /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E6A1AC361DF00609E0A /* GameManager.cpp */; };
+		68E43E9A1AC361DF00609E0A /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E6C1AC361DF00609E0A /* Include.cpp */; };
+		68E43E9B1AC361DF00609E0A /* LevelDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E6D1AC361DF00609E0A /* LevelDescription.cpp */; };
+		68E43E9C1AC361DF00609E0A /* WorldDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E6F1AC361DF00609E0A /* WorldDescription.cpp */; };
+		68E43E9D1AC361DF00609E0A /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E721AC361DF00609E0A /* Include.cpp */; };
+		68E43E9E1AC361DF00609E0A /* SpongeCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E741AC361DF00609E0A /* SpongeCamera.cpp */; };
+		68E43E9F1AC361DF00609E0A /* SpongeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E761AC361DF00609E0A /* SpongeData.cpp */; };
+		68E43EA01AC361DF00609E0A /* SpongeMover.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E781AC361DF00609E0A /* SpongeMover.cpp */; };
+		68E43EA11AC361DF00609E0A /* GameScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E7B1AC361DF00609E0A /* GameScreen.cpp */; };
+		68E43EA21AC361DF00609E0A /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E7D1AC361DF00609E0A /* Include.cpp */; };
+		68E43EA31AC361DF00609E0A /* IndexComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E7E1AC361DF00609E0A /* IndexComponent.cpp */; };
+		68E43EA41AC361DF00609E0A /* LevelList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E801AC361DF00609E0A /* LevelList.cpp */; };
+		68E43EA51AC361DF00609E0A /* ScrollContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E821AC361DF00609E0A /* ScrollContainer.cpp */; };
+		68E43EA61AC361DF00609E0A /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E841AC361DF00609E0A /* Timer.cpp */; };
+		68E43EA71AC361DF00609E0A /* UiBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E871AC361DF00609E0A /* UiBackground.cpp */; };
+		68E43EA81AC361DF00609E0A /* WorldList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E891AC361DF00609E0A /* WorldList.cpp */; };
+		68E43EA91AC361DF00609E0A /* ClearField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E8C1AC361DF00609E0A /* ClearField.cpp */; };
+		68E43EAA1AC361DF00609E0A /* ClearFieldManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E8E1AC361DF00609E0A /* ClearFieldManager.cpp */; };
+		68E43EAB1AC361DF00609E0A /* DirtRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E901AC361DF00609E0A /* DirtRenderer.cpp */; };
+		68E43EAC1AC361DF00609E0A /* FinishLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E921AC361DF00609E0A /* FinishLine.cpp */; };
+		68E43EAD1AC361DF00609E0A /* Include.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E941AC361DF00609E0A /* Include.cpp */; };
+		68E43EAE1AC361DF00609E0A /* Pit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68E43E951AC361DF00609E0A /* Pit.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6603DDCD1A86CEE4009E848D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6603DDCE1A86CEE4009E848D /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		6603DDCF1A86CEE4009E848D /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		6603DDD01A86CEE4009E848D /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		6603DDD11A86CEE4009E848D /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		6603DDD21A86CEE4009E848D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6603DDD31A86CEE4009E848D /* OSXCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXCanvas.h; sourceTree = "<group>"; };
+		6603DDD41A86CEE4009E848D /* OSXCanvas.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OSXCanvas.mm; sourceTree = "<group>"; };
+		6603DDE61A86CF6D009E848D /* GrungySponge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GrungySponge.cpp; path = ../../../GrungySponge/GrungySponge.cpp; sourceTree = "<group>"; };
+		6603DDE71A86CF6D009E848D /* GrungySponge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrungySponge.h; path = ../../../GrungySponge/GrungySponge.h; sourceTree = "<group>"; };
+		6603DDE81A86CF6D009E848D /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Include.cpp; path = ../../../GrungySponge/Include.cpp; sourceTree = "<group>"; };
+		662F067D1A87309A00762E5B /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../../../Assets; sourceTree = "<group>"; };
+		665CEDAA1A873E8B00F040C2 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		667D7DCC1A86D09B001CC8E3 /* libAudio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAudio.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Audio/build/Debug/libAudio.a; sourceTree = "<group>"; };
+		667D7DCD1A86D09B001CC8E3 /* libData.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libData.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Data/build/Debug/libData.a; sourceTree = "<group>"; };
+		667D7DCE1A86D09B001CC8E3 /* libDebugging.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDebugging.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Debugging/build/Debug/libDebugging.a; sourceTree = "<group>"; };
+		667D7DCF1A86D09B001CC8E3 /* libFileSystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFileSystem.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/FileSystem/build/Debug/libFileSystem.a; sourceTree = "<group>"; };
+		667D7DD01A86D09B001CC8E3 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = ../../../../Pargon/Platforms/XcodeOSX/Libraries/freetype/build/Debug/libfreetype.a; sourceTree = "<group>"; };
+		667D7DD11A86D09B001CC8E3 /* libGame2d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGame2d.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Game2d/build/Debug/libGame2d.a; sourceTree = "<group>"; };
+		667D7DD21A86D09B001CC8E3 /* libGameCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameCore.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/GameCore/build/Debug/libGameCore.a; sourceTree = "<group>"; };
+		667D7DD31A86D09B001CC8E3 /* libGameUi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGameUi.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/GameUi/build/Debug/libGameUi.a; sourceTree = "<group>"; };
+		667D7DD41A86D09B001CC8E3 /* libGraphics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGraphics.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Graphics/build/Debug/libGraphics.a; sourceTree = "<group>"; };
+		667D7DD51A86D09B001CC8E3 /* libInput.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libInput.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Input/build/Debug/libInput.a; sourceTree = "<group>"; };
+		667D7DD61A86D09B001CC8E3 /* libMath.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMath.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Math/build/Debug/libMath.a; sourceTree = "<group>"; };
+		667D7DD71A86D09C001CC8E3 /* libReflection.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReflection.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Reflection/build/Debug/libReflection.a; sourceTree = "<group>"; };
+		667D7DD81A86D09C001CC8E3 /* libScripting.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libScripting.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Scripting/build/Debug/libScripting.a; sourceTree = "<group>"; };
+		667D7DD91A86D09C001CC8E3 /* libSerialization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSerialization.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Serialization/build/Debug/libSerialization.a; sourceTree = "<group>"; };
+		667D7DDA1A86D09C001CC8E3 /* libShapes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libShapes.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Shapes/build/Debug/libShapes.a; sourceTree = "<group>"; };
+		667D7DDB1A86D09C001CC8E3 /* libstbimage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libstbimage.a; path = ../../../../Pargon/Platforms/XcodeOSX/Libraries/stbimage/build/Debug/libstbimage.a; sourceTree = "<group>"; };
+		667D7DDC1A86D09C001CC8E3 /* libText.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libText.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Text/build/Debug/libText.a; sourceTree = "<group>"; };
+		667D7DDD1A86D09C001CC8E3 /* libTypes.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTypes.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Types/build/Debug/libTypes.a; sourceTree = "<group>"; };
+		667D7DDE1A86D09C001CC8E3 /* libzlib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzlib.a; path = ../../../../Pargon/Platforms/XcodeOSX/Libraries/zlib/build/Debug/libzlib.a; sourceTree = "<group>"; };
+		667D7E141A86D7ED001CC8E3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		667D7E151A86D7ED001CC8E3 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		667D7E181A86D869001CC8E3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		667D7E191A86D869001CC8E3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		667D7E1C1A86DC03001CC8E3 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		66F75E0A1A86CD7400DF7203 /* GrungySponge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrungySponge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F75E0E1A86CD7400DF7203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GrungySponge/Info.plist; sourceTree = "<group>"; };
+		66F75E141A86CD7400DF7203 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GrungySponge/Images.xcassets; sourceTree = "<group>"; };
+		683ABB7C1AAA8375008032D2 /* libApplication.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libApplication.a; path = ../../../../Pargon/Platforms/XcodeOSX/Pargon/Application/Application/build/Debug/libApplication.a; sourceTree = "<group>"; };
+		68E43E671AC361DF00609E0A /* DirtManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirtManager.cpp; sourceTree = "<group>"; };
+		68E43E681AC361DF00609E0A /* DirtManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirtManager.h; sourceTree = "<group>"; };
+		68E43E691AC361DF00609E0A /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		68E43E6A1AC361DF00609E0A /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
+		68E43E6B1AC361DF00609E0A /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		68E43E6C1AC361DF00609E0A /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Include.cpp; sourceTree = "<group>"; };
+		68E43E6D1AC361DF00609E0A /* LevelDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelDescription.cpp; sourceTree = "<group>"; };
+		68E43E6E1AC361DF00609E0A /* LevelDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelDescription.h; sourceTree = "<group>"; };
+		68E43E6F1AC361DF00609E0A /* WorldDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldDescription.cpp; sourceTree = "<group>"; };
+		68E43E701AC361DF00609E0A /* WorldDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldDescription.h; sourceTree = "<group>"; };
+		68E43E721AC361DF00609E0A /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Include.cpp; sourceTree = "<group>"; };
+		68E43E731AC361DF00609E0A /* Sponge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sponge.h; sourceTree = "<group>"; };
+		68E43E741AC361DF00609E0A /* SpongeCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpongeCamera.cpp; sourceTree = "<group>"; };
+		68E43E751AC361DF00609E0A /* SpongeCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpongeCamera.h; sourceTree = "<group>"; };
+		68E43E761AC361DF00609E0A /* SpongeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpongeData.cpp; sourceTree = "<group>"; };
+		68E43E771AC361DF00609E0A /* SpongeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpongeData.h; sourceTree = "<group>"; };
+		68E43E781AC361DF00609E0A /* SpongeMover.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpongeMover.cpp; sourceTree = "<group>"; };
+		68E43E791AC361DF00609E0A /* SpongeMover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpongeMover.h; sourceTree = "<group>"; };
+		68E43E7B1AC361DF00609E0A /* GameScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameScreen.cpp; sourceTree = "<group>"; };
+		68E43E7C1AC361DF00609E0A /* GameScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScreen.h; sourceTree = "<group>"; };
+		68E43E7D1AC361DF00609E0A /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Include.cpp; sourceTree = "<group>"; };
+		68E43E7E1AC361DF00609E0A /* IndexComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IndexComponent.cpp; sourceTree = "<group>"; };
+		68E43E7F1AC361DF00609E0A /* IndexComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexComponent.h; sourceTree = "<group>"; };
+		68E43E801AC361DF00609E0A /* LevelList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LevelList.cpp; sourceTree = "<group>"; };
+		68E43E811AC361DF00609E0A /* LevelList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelList.h; sourceTree = "<group>"; };
+		68E43E821AC361DF00609E0A /* ScrollContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollContainer.cpp; sourceTree = "<group>"; };
+		68E43E831AC361DF00609E0A /* ScrollContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollContainer.h; sourceTree = "<group>"; };
+		68E43E841AC361DF00609E0A /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		68E43E851AC361DF00609E0A /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		68E43E861AC361DF00609E0A /* Ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ui.h; sourceTree = "<group>"; };
+		68E43E871AC361DF00609E0A /* UiBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UiBackground.cpp; sourceTree = "<group>"; };
+		68E43E881AC361DF00609E0A /* UiBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiBackground.h; sourceTree = "<group>"; };
+		68E43E891AC361DF00609E0A /* WorldList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldList.cpp; sourceTree = "<group>"; };
+		68E43E8A1AC361DF00609E0A /* WorldList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldList.h; sourceTree = "<group>"; };
+		68E43E8C1AC361DF00609E0A /* ClearField.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClearField.cpp; sourceTree = "<group>"; };
+		68E43E8D1AC361DF00609E0A /* ClearField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearField.h; sourceTree = "<group>"; };
+		68E43E8E1AC361DF00609E0A /* ClearFieldManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClearFieldManager.cpp; sourceTree = "<group>"; };
+		68E43E8F1AC361DF00609E0A /* ClearFieldManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearFieldManager.h; sourceTree = "<group>"; };
+		68E43E901AC361DF00609E0A /* DirtRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DirtRenderer.cpp; sourceTree = "<group>"; };
+		68E43E911AC361DF00609E0A /* DirtRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirtRenderer.h; sourceTree = "<group>"; };
+		68E43E921AC361DF00609E0A /* FinishLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FinishLine.cpp; sourceTree = "<group>"; };
+		68E43E931AC361DF00609E0A /* FinishLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishLine.h; sourceTree = "<group>"; };
+		68E43E941AC361DF00609E0A /* Include.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Include.cpp; sourceTree = "<group>"; };
+		68E43E951AC361DF00609E0A /* Pit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pit.cpp; sourceTree = "<group>"; };
+		68E43E961AC361DF00609E0A /* Pit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pit.h; sourceTree = "<group>"; };
+		68E43E971AC361DF00609E0A /* World.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = World.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66F75E071A86CD7400DF7203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683ABB7D1AAA8375008032D2 /* libApplication.a in Frameworks */,
+				665CEDAB1A873E8B00F040C2 /* OpenAL.framework in Frameworks */,
+				667D7E1D1A86DC03001CC8E3 /* GameController.framework in Frameworks */,
+				667D7E161A86D7ED001CC8E3 /* Cocoa.framework in Frameworks */,
+				667D7E171A86D7ED001CC8E3 /* OpenGL.framework in Frameworks */,
+				667D7DDF1A86D09C001CC8E3 /* libAudio.a in Frameworks */,
+				667D7DE01A86D09C001CC8E3 /* libData.a in Frameworks */,
+				667D7DE11A86D09C001CC8E3 /* libDebugging.a in Frameworks */,
+				667D7DE21A86D09C001CC8E3 /* libFileSystem.a in Frameworks */,
+				667D7DE31A86D09C001CC8E3 /* libfreetype.a in Frameworks */,
+				667D7DE41A86D09C001CC8E3 /* libGame2d.a in Frameworks */,
+				667D7DE51A86D09C001CC8E3 /* libGameCore.a in Frameworks */,
+				667D7DE61A86D09C001CC8E3 /* libGameUi.a in Frameworks */,
+				667D7DE71A86D09C001CC8E3 /* libGraphics.a in Frameworks */,
+				667D7DE81A86D09C001CC8E3 /* libInput.a in Frameworks */,
+				667D7DE91A86D09C001CC8E3 /* libMath.a in Frameworks */,
+				667D7DEA1A86D09C001CC8E3 /* libReflection.a in Frameworks */,
+				667D7DEB1A86D09C001CC8E3 /* libScripting.a in Frameworks */,
+				667D7DEC1A86D09C001CC8E3 /* libSerialization.a in Frameworks */,
+				667D7DED1A86D09C001CC8E3 /* libShapes.a in Frameworks */,
+				667D7DEE1A86D09C001CC8E3 /* libstbimage.a in Frameworks */,
+				667D7DEF1A86D09C001CC8E3 /* libText.a in Frameworks */,
+				667D7DF01A86D09C001CC8E3 /* libTypes.a in Frameworks */,
+				667D7DF11A86D09C001CC8E3 /* libzlib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6603DDCC1A86CEE4009E848D /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				6603DDCD1A86CEE4009E848D /* AppDelegate.h */,
+				6603DDCE1A86CEE4009E848D /* AppDelegate.mm */,
+				6603DDCF1A86CEE4009E848D /* GLView.h */,
+				6603DDD01A86CEE4009E848D /* GLView.mm */,
+				6603DDD11A86CEE4009E848D /* main.mm */,
+				6603DDD21A86CEE4009E848D /* Main.storyboard */,
+				6603DDD31A86CEE4009E848D /* OSXCanvas.h */,
+				6603DDD41A86CEE4009E848D /* OSXCanvas.mm */,
+			);
+			name = OSX;
+			path = ../../../GrungySponge/OSX;
+			sourceTree = "<group>";
+		};
+		667D7DF21A86D1E8001CC8E3 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				667D7DCC1A86D09B001CC8E3 /* libAudio.a */,
+				667D7DCD1A86D09B001CC8E3 /* libData.a */,
+				667D7DCE1A86D09B001CC8E3 /* libDebugging.a */,
+				667D7DCF1A86D09B001CC8E3 /* libFileSystem.a */,
+				667D7DD01A86D09B001CC8E3 /* libfreetype.a */,
+				667D7DD11A86D09B001CC8E3 /* libGame2d.a */,
+				667D7DD21A86D09B001CC8E3 /* libGameCore.a */,
+				667D7DD31A86D09B001CC8E3 /* libGameUi.a */,
+				667D7DD41A86D09B001CC8E3 /* libGraphics.a */,
+				667D7DD51A86D09B001CC8E3 /* libInput.a */,
+				667D7DD61A86D09B001CC8E3 /* libMath.a */,
+				667D7DD71A86D09C001CC8E3 /* libReflection.a */,
+				667D7DD81A86D09C001CC8E3 /* libScripting.a */,
+				667D7DD91A86D09C001CC8E3 /* libSerialization.a */,
+				667D7DDA1A86D09C001CC8E3 /* libShapes.a */,
+				667D7DDB1A86D09C001CC8E3 /* libstbimage.a */,
+				667D7DDC1A86D09C001CC8E3 /* libText.a */,
+				667D7DDD1A86D09C001CC8E3 /* libTypes.a */,
+				667D7DDE1A86D09C001CC8E3 /* libzlib.a */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		667D7E131A86D7CA001CC8E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				683ABB7C1AAA8375008032D2 /* libApplication.a */,
+				665CEDAA1A873E8B00F040C2 /* OpenAL.framework */,
+				667D7E1C1A86DC03001CC8E3 /* GameController.framework */,
+				667D7E181A86D869001CC8E3 /* AppKit.framework */,
+				667D7E191A86D869001CC8E3 /* CoreFoundation.framework */,
+				667D7E141A86D7ED001CC8E3 /* Cocoa.framework */,
+				667D7E151A86D7ED001CC8E3 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66F75E011A86CD7400DF7203 = {
+			isa = PBXGroup;
+			children = (
+				68E43E661AC361DF00609E0A /* Game */,
+				68E43E711AC361DF00609E0A /* Sponge */,
+				68E43E7A1AC361DF00609E0A /* Ui */,
+				68E43E8B1AC361DF00609E0A /* World */,
+				662F067D1A87309A00762E5B /* Assets */,
+				66F75E141A86CD7400DF7203 /* Images.xcassets */,
+				66F75E0E1A86CD7400DF7203 /* Info.plist */,
+				6603DDE61A86CF6D009E848D /* GrungySponge.cpp */,
+				6603DDE71A86CF6D009E848D /* GrungySponge.h */,
+				6603DDE81A86CF6D009E848D /* Include.cpp */,
+				6603DDCC1A86CEE4009E848D /* OSX */,
+				667D7E131A86D7CA001CC8E3 /* Frameworks */,
+				667D7DF21A86D1E8001CC8E3 /* Libraries */,
+				66F75E0B1A86CD7400DF7203 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		66F75E0B1A86CD7400DF7203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66F75E0A1A86CD7400DF7203 /* GrungySponge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		68E43E661AC361DF00609E0A /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				68E43E671AC361DF00609E0A /* DirtManager.cpp */,
+				68E43E681AC361DF00609E0A /* DirtManager.h */,
+				68E43E691AC361DF00609E0A /* Game.h */,
+				68E43E6A1AC361DF00609E0A /* GameManager.cpp */,
+				68E43E6B1AC361DF00609E0A /* GameManager.h */,
+				68E43E6C1AC361DF00609E0A /* Include.cpp */,
+				68E43E6D1AC361DF00609E0A /* LevelDescription.cpp */,
+				68E43E6E1AC361DF00609E0A /* LevelDescription.h */,
+				68E43E6F1AC361DF00609E0A /* WorldDescription.cpp */,
+				68E43E701AC361DF00609E0A /* WorldDescription.h */,
+			);
+			name = Game;
+			path = ../../../GrungySponge/Game;
+			sourceTree = "<group>";
+		};
+		68E43E711AC361DF00609E0A /* Sponge */ = {
+			isa = PBXGroup;
+			children = (
+				68E43E721AC361DF00609E0A /* Include.cpp */,
+				68E43E731AC361DF00609E0A /* Sponge.h */,
+				68E43E741AC361DF00609E0A /* SpongeCamera.cpp */,
+				68E43E751AC361DF00609E0A /* SpongeCamera.h */,
+				68E43E761AC361DF00609E0A /* SpongeData.cpp */,
+				68E43E771AC361DF00609E0A /* SpongeData.h */,
+				68E43E781AC361DF00609E0A /* SpongeMover.cpp */,
+				68E43E791AC361DF00609E0A /* SpongeMover.h */,
+			);
+			name = Sponge;
+			path = ../../../GrungySponge/Sponge;
+			sourceTree = "<group>";
+		};
+		68E43E7A1AC361DF00609E0A /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				68E43E7B1AC361DF00609E0A /* GameScreen.cpp */,
+				68E43E7C1AC361DF00609E0A /* GameScreen.h */,
+				68E43E7D1AC361DF00609E0A /* Include.cpp */,
+				68E43E7E1AC361DF00609E0A /* IndexComponent.cpp */,
+				68E43E7F1AC361DF00609E0A /* IndexComponent.h */,
+				68E43E801AC361DF00609E0A /* LevelList.cpp */,
+				68E43E811AC361DF00609E0A /* LevelList.h */,
+				68E43E821AC361DF00609E0A /* ScrollContainer.cpp */,
+				68E43E831AC361DF00609E0A /* ScrollContainer.h */,
+				68E43E841AC361DF00609E0A /* Timer.cpp */,
+				68E43E851AC361DF00609E0A /* Timer.h */,
+				68E43E861AC361DF00609E0A /* Ui.h */,
+				68E43E871AC361DF00609E0A /* UiBackground.cpp */,
+				68E43E881AC361DF00609E0A /* UiBackground.h */,
+				68E43E891AC361DF00609E0A /* WorldList.cpp */,
+				68E43E8A1AC361DF00609E0A /* WorldList.h */,
+			);
+			name = Ui;
+			path = ../../../GrungySponge/Ui;
+			sourceTree = "<group>";
+		};
+		68E43E8B1AC361DF00609E0A /* World */ = {
+			isa = PBXGroup;
+			children = (
+				68E43E8C1AC361DF00609E0A /* ClearField.cpp */,
+				68E43E8D1AC361DF00609E0A /* ClearField.h */,
+				68E43E8E1AC361DF00609E0A /* ClearFieldManager.cpp */,
+				68E43E8F1AC361DF00609E0A /* ClearFieldManager.h */,
+				68E43E901AC361DF00609E0A /* DirtRenderer.cpp */,
+				68E43E911AC361DF00609E0A /* DirtRenderer.h */,
+				68E43E921AC361DF00609E0A /* FinishLine.cpp */,
+				68E43E931AC361DF00609E0A /* FinishLine.h */,
+				68E43E941AC361DF00609E0A /* Include.cpp */,
+				68E43E951AC361DF00609E0A /* Pit.cpp */,
+				68E43E961AC361DF00609E0A /* Pit.h */,
+				68E43E971AC361DF00609E0A /* World.h */,
+			);
+			name = World;
+			path = ../../../GrungySponge/World;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66F75E091A86CD7400DF7203 /* GrungySponge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F75E271A86CD7400DF7203 /* Build configuration list for PBXNativeTarget "GrungySponge" */;
+			buildPhases = (
+				66F75E061A86CD7400DF7203 /* Sources */,
+				66F75E071A86CD7400DF7203 /* Frameworks */,
+				66F75E081A86CD7400DF7203 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrungySponge;
+			productName = GrungySponge;
+			productReference = 66F75E0A1A86CD7400DF7203 /* GrungySponge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66F75E021A86CD7400DF7203 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "PiRho Soft";
+				TargetAttributes = {
+					66F75E091A86CD7400DF7203 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 66F75E051A86CD7400DF7203 /* Build configuration list for PBXProject "GrungySponge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 66F75E011A86CD7400DF7203;
+			productRefGroup = 66F75E0B1A86CD7400DF7203 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66F75E091A86CD7400DF7203 /* GrungySponge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66F75E081A86CD7400DF7203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F75E151A86CD7400DF7203 /* Images.xcassets in Resources */,
+				662F067E1A87309A00762E5B /* Assets in Resources */,
+				6603DDDA1A86CEE4009E848D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66F75E061A86CD7400DF7203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E43E9D1AC361DF00609E0A /* Include.cpp in Sources */,
+				68E43EA81AC361DF00609E0A /* WorldList.cpp in Sources */,
+				68E43EA91AC361DF00609E0A /* ClearField.cpp in Sources */,
+				68E43EA21AC361DF00609E0A /* Include.cpp in Sources */,
+				68E43EA51AC361DF00609E0A /* ScrollContainer.cpp in Sources */,
+				68E43E981AC361DF00609E0A /* DirtManager.cpp in Sources */,
+				68E43EA41AC361DF00609E0A /* LevelList.cpp in Sources */,
+				6603DE0E1A86CF6D009E848D /* GrungySponge.cpp in Sources */,
+				68E43EAC1AC361DF00609E0A /* FinishLine.cpp in Sources */,
+				6603DE0F1A86CF6D009E848D /* Include.cpp in Sources */,
+				6603DDD71A86CEE4009E848D /* AppDelegate.mm in Sources */,
+				6603DDD91A86CEE4009E848D /* main.mm in Sources */,
+				68E43EAB1AC361DF00609E0A /* DirtRenderer.cpp in Sources */,
+				68E43E9C1AC361DF00609E0A /* WorldDescription.cpp in Sources */,
+				68E43EA31AC361DF00609E0A /* IndexComponent.cpp in Sources */,
+				68E43EAE1AC361DF00609E0A /* Pit.cpp in Sources */,
+				68E43EAA1AC361DF00609E0A /* ClearFieldManager.cpp in Sources */,
+				68E43EAD1AC361DF00609E0A /* Include.cpp in Sources */,
+				68E43E991AC361DF00609E0A /* GameManager.cpp in Sources */,
+				68E43EA61AC361DF00609E0A /* Timer.cpp in Sources */,
+				68E43E9E1AC361DF00609E0A /* SpongeCamera.cpp in Sources */,
+				68E43EA11AC361DF00609E0A /* GameScreen.cpp in Sources */,
+				68E43E9A1AC361DF00609E0A /* Include.cpp in Sources */,
+				68E43E9B1AC361DF00609E0A /* LevelDescription.cpp in Sources */,
+				6603DDDB1A86CEE4009E848D /* OSXCanvas.mm in Sources */,
+				6603DDD81A86CEE4009E848D /* GLView.mm in Sources */,
+				68E43E9F1AC361DF00609E0A /* SpongeData.cpp in Sources */,
+				68E43EA01AC361DF00609E0A /* SpongeMover.cpp in Sources */,
+				68E43EA71AC361DF00609E0A /* UiBackground.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		66F75E251A86CD7400DF7203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../GrungySponge/GrungySponge.cpp;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../../Pargon $(PROJECT_DIR)/../../..";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		66F75E261A86CD7400DF7203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../../../GrungySponge/GrungySponge.cpp;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../../../../Pargon $(PROJECT_DIR)/../../..";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		66F75E281A86CD7400DF7203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GrungySponge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Audio/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Data/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Debugging/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/FileSystem/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Libraries/freetype/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Game2d/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/GameCore/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/GameUi/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Graphics/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Input/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Math/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Reflection/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Scripting/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Serialization/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Shapes/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Libraries/stbimage/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Text/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Types/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Libraries/zlib/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Application/Application/build/Debug,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		66F75E291A86CD7400DF7203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GrungySponge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Audio/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Data/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Debugging/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/FileSystem/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Libraries/freetype/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Game2d/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/GameCore/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/GameUi/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Graphics/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Input/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Math/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Reflection/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Scripting/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Serialization/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Shapes/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Libraries/stbimage/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Text/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Pargon/Types/build/Debug,
+					/Users/Adam/Projects/Pargon/Platforms/XcodeOSX/Libraries/zlib/build/Debug,
+					/Users/lukelarson/Projects/Pargon/Platforms/XcodeOSX/Pargon/Application/Application/build/Debug,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66F75E051A86CD7400DF7203 /* Build configuration list for PBXProject "GrungySponge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F75E251A86CD7400DF7203 /* Debug */,
+				66F75E261A86CD7400DF7203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F75E271A86CD7400DF7203 /* Build configuration list for PBXNativeTarget "GrungySponge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F75E281A86CD7400DF7203 /* Debug */,
+				66F75E291A86CD7400DF7203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66F75E021A86CD7400DF7203 /* Project object */;
+}

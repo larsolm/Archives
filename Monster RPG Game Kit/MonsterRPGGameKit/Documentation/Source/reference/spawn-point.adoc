@@ -1,0 +1,29 @@
+[#reference/spawn-point]
+
+## SpawnPoint
+
+PiRhoSoft.MonsterRpgEngine.SpawnPoint : ValueType
+
+### Description
+
+### Static Fields
+
+<<reference/spawn-point.html,SpawnPoint>> _Default_::
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _Position_::
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/transition[Transition^] _Transition_::
+
+<<reference/movement-direction.html,MovementDirection>> _Direction_::
+
+<<reference/collision-layer.html,CollisionLayer>> _Layer_::
+
+bool _Move_::
+
+### Public Properties
+
+bool _IsNamed_ _(read only)_::

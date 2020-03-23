@@ -1,0 +1,11 @@
+{
+	"Skeleton": "Enemy",
+	"Attachments":	[
+		{
+			"Bone": "Arm",
+			"Part": "BasicWeapon",
+			"Components": [],
+			"Augments": []
+		}
+	]
+}

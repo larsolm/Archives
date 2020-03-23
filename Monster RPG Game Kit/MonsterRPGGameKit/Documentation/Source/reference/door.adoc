@@ -1,0 +1,25 @@
+[#reference/door]
+
+## Door
+
+PiRhoSoft.MonsterRpgEngine.Door : link:/projects/unity-utilities/documentation/#/v10/reference/animation-player[AnimationPlayer^]
+
+### Description
+
+### Constructors
+
+Door()::
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/AnimationClip.html[AnimationClip^] _OpenAnimation_::
+
+https://docs.unity3d.com/ScriptReference/AnimationClip.html[AnimationClip^] _CloseAnimation_::
+
+https://docs.unity3d.com/ScriptReference/AudioClip.html[AudioClip^] _OpenSound_::
+
+https://docs.unity3d.com/ScriptReference/AudioClip.html[AudioClip^] _CloseSound_::
+
+### Protected Methods
+
+void Awake() _(virtual)_::

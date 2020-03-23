@@ -1,0 +1,25 @@
+[#reference/path]
+
+## Path
+
+PiRhoSoft.MonsterRpgEngine.Path
+
+### Description
+
+### Constructors
+
+Path()::
+
+### Public Fields
+
+<<reference/path-path-type.html,PathType>> _Type_::
+
+int _RepeatCount_::
+
+bool _UseAbsolutePositioning_::
+
+bool _UsePathfinding_::
+
+bool _FindAlternateRoutes_::
+
+<<reference/path-node-data.html,NodeData>>[] _Nodes_::

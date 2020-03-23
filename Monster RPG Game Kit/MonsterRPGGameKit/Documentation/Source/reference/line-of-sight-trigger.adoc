@@ -1,0 +1,17 @@
+[#reference/line-of-sight-trigger]
+
+## LineOfSightTrigger
+
+PiRhoSoft.MonsterRpgEngine.LineOfSightTrigger : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+LineOfSightTrigger()::
+
+### Public Fields
+
+int _Distance_::
+
+bool _SeesThroughWalls_::

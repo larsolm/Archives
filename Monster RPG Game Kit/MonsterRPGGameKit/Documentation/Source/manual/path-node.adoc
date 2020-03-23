@@ -1,0 +1,11 @@
+[#manual/path-node]
+
+## Path Node
+
+### Fields
+
+bool _Wait For Completion_::
+
+ifdef::backend-multipage_html5[]
+link:reference/path-node.html[Reference]
+endif::[]

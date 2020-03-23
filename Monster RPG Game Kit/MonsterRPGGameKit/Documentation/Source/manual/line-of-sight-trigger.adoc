@@ -1,0 +1,13 @@
+[#manual/line-of-sight-trigger]
+
+## Line Of Sight Trigger
+
+### Fields
+
+int _Distance_::
+
+bool _Sees Through Walls_::
+
+ifdef::backend-multipage_html5[]
+link:reference/line-of-sight-trigger.html[Reference]
+endif::[]

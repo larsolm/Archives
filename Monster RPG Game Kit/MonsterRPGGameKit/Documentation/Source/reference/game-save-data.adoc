@@ -1,0 +1,19 @@
+[#reference/game-save-data]
+
+## GameSaveData
+
+PiRhoSoft.MonsterRpgEngine.GameSaveData
+
+### Description
+
+### Constructors
+
+GameSaveData()::
+
+### Public Fields
+
+string _MainScene_::
+
+string _StartingZone_::
+
+<<reference/spawn-point.html,SpawnPoint>> _PlayerSpawn_::

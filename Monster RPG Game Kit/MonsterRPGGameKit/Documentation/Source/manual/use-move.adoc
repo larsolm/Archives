@@ -1,0 +1,11 @@
+[#manual/use-move]
+
+## Use Move
+
+### Fields
+
+<<manual/ability-use-location.html,Ability Use Location>> _Location_::
+
+ifdef::backend-multipage_html5[]
+link:reference/use-move.html[Reference]
+endif::[]

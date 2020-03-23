@@ -1,0 +1,19 @@
+[#reference/damage-modifier]
+
+## DamageModifier
+
+PiRhoSoft.MonsterRpgEngine.DamageModifier
+
+### Description
+
+### Constructors
+
+DamageModifier()::
+
+### Public Fields
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Condition_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/expression[Expression^] _Modifier_::

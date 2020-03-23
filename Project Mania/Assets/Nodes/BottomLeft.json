@@ -1,0 +1,40 @@
+{	
+	"CollisionLines": [
+		{ "Start": "-10.0 -24.14", "End": "10.0 -24.14" },
+		{ "Start": "-5.0 -20.0", "End": "5.0 -24.14", "Depth": "Back" },
+		{ "Start": "-8.0 -24.0", "End": "-8.0 -30.0", "Depth": "Front" },
+		{ "Start": "-8.0 -30.0", "End": "-5.0 -30.0", "Depth": "Front" },
+		{ "Start": "-5.0 -30.0", "End": "5.0 -24.14", "Depth": "Front" }
+	],
+	"DepthTriggers": [
+		{
+			"CanMoveBackward": true,
+			"CanMoveMiddle": true,
+			"Polygon": [ "-5.0 -20.0", "-5.0 -10", "5.0 -10.0", "5.0 -24.14"]
+		},
+		{
+			"CanMoveMiddle": true,
+			"CanMoveForward": true,
+			"Polygon": [ "-8.0 -24.14", "-8.0 -20.0", "-5.0 -20.0", "5.0 -24.14" ]
+		},
+		{
+			"CanMoveBackward": true,
+			"CanMoveForward": true,
+			"ForceMiddle": true,
+			"Polygon": [ "5.0 -24.14", "5.0 -10.0", "7.0 -10.0", "7.0 -24.14"]
+		},
+		{
+			"ForceMiddle": true,
+			"CanMoveForward": true,
+			"Polygon": [ "-8.0 -20.0", "-8.0 -10.0", "-5.0 -10.0", "-5.0 -20.0"]
+		},
+		{
+			"ForceMiddle": true,
+			"Polygon": [ "-10.0 -24.14", "-10.0 -10.0", "-8.0 -10.0", "-8.0 -24.14"]
+		},
+		{
+			"ForceMiddle": true,
+			"Polygon": [ "7.0 -24.14", "7.0 -10.0", "9.0 -10.0", "9.0 -24.14"]
+		}
+	]
+}

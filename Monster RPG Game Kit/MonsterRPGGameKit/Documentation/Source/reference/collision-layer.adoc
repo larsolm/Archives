@@ -1,0 +1,23 @@
+[#reference/collision-layer]
+
+## CollisionLayer
+
+PiRhoSoft.MonsterRpgEngine.CollisionLayer
+
+### Description
+
+### Values
+
+<<reference/collision-layer.html,CollisionLayer>> _None_::
+
+<<reference/collision-layer.html,CollisionLayer>> _One_::
+
+<<reference/collision-layer.html,CollisionLayer>> _Two_::
+
+<<reference/collision-layer.html,CollisionLayer>> _Three_::
+
+<<reference/collision-layer.html,CollisionLayer>> _Four_::
+
+<<reference/collision-layer.html,CollisionLayer>> _Five_::
+
+<<reference/collision-layer.html,CollisionLayer>> _All_::

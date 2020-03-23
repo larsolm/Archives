@@ -1,0 +1,51 @@
+[#reference/follow-camera]
+
+## FollowCamera
+
+PiRhoSoft.MonsterRpgEngine.FollowCamera : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+FollowCamera()::
+
+### Public Fields
+
+float _MoveSpeed_::
+
+float _ZoomSpeed_::
+
+https://docs.unity3d.com/ScriptReference/GameObject.html[GameObject^] _TargetObject_::
+
+### Public Methods
+
+void SetBounds(https://docs.unity3d.com/ScriptReference/Rect.html[Rect^] _bounds_)::
+
+void ClearBounds()::
+
+void StartFollowing(https://docs.unity3d.com/ScriptReference/GameObject.html[GameObject^] _gameObject_, bool _warp_)::
+
+void StopFollowing()::
+
+void WarpToZoom(float _zoom_)::
+
+void MoveTowardZoom(float _zoom_)::
+
+void WarpToPosition(https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _position_)::
+
+void MoveTowardsPosition(https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _position_)::
+
+### Protected Methods
+
+void Awake() _(virtual)_::
+
+void Update() _(virtual)_::
+
+void LateUpdate() _(virtual)_::
+
+https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] ClampBounds(https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _position_, float _size_)::
+
+https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] ClampToBounds(https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _position_, float _size_, https://docs.unity3d.com/ScriptReference/Rect.html[Rect^] _clampArea_, bool _left_, bool _right_, bool _bottom_, bool _top_)::
+
+https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] ClampToZone(https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _position_, float _size_, <<reference/map-properties.html,MapProperties>> _map_)::

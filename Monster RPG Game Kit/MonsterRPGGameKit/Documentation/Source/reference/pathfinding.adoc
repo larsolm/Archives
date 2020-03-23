@@ -1,0 +1,17 @@
+[#reference/pathfinding]
+
+## Pathfinding
+
+PiRhoSoft.MonsterRpgEngine.Pathfinding : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+Pathfinding()::
+
+### Public Methods
+
+void RegenerateNodes()::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^]> GetPath(<<reference/collision-layer.html,CollisionLayer>> _layer_, https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _fromPosition_, https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _toPosition_, bool _respectOccupied_)::

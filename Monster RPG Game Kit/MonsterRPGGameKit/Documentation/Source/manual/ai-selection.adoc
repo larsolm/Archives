@@ -1,0 +1,13 @@
+[#manual/ai-selection]
+
+## Ai Selection
+
+### Fields
+
+string _Tag_::
+
+<<manual/ai-selection-item-list.html,Ai Selection Item List>> _Items_::
+
+ifdef::backend-multipage_html5[]
+link:reference/ai-selection.html[Reference]
+endif::[]

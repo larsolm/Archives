@@ -1,0 +1,11 @@
+[#reference/ability-variable-source]
+
+## AbilityVariableSource
+
+PiRhoSoft.MonsterRpgEngine.AbilityVariableSource : link:/projects/unity-composition/documentation/#/v10/reference/object-variable-source-1[ObjectVariableSource^]<<<reference/ability.html,Ability>>>
+
+### Description
+
+### Constructors
+
+AbilityVariableSource()::

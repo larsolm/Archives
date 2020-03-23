@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864204cda72169a4a8d5e021c47bc66f, type: 3}
+  m_Name: Healer Interact
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114960844572480458}
+    - {fileID: 114071807762439842}
+    - {fileID: 114912964476762884}
+    - {fileID: 114167790945348002}
+    - {fileID: 114566244101201670}
+    - {fileID: 114826509135172880}
+    - {fileID: 114992353184562350}
+    - {fileID: 114925099471152088}
+  StartPosition: {x: 0, y: 0}
+  Process: {fileID: 114960844572480458}
+--- !u!114 &114071807762439842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db008769965f9c741a3e4fe1b5b243f1, type: 3}
+  m_Name: Selection
+  m_EditorClassIdentifier: 
+  Name: Selection
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 652.8, y: -38.4}
+  IsBreakpoint: 0
+  OnCanceled: {fileID: 0}
+  Control:
+    InterfaceName: World
+    ControlName: Selection
+  IsSelectionRequired: 1
+  Items:
+    _items:
+    - Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Name: 
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Label: Yes
+      Expand: 0
+      OnSelected: {fileID: 114912964476762884}
+    - Item:
+        _variable:
+        - this
+        _lookups:
+        - 
+      Source: 1
+      Name: 
+      Template: {fileID: 5146065253292599653, guid: 8f8b08095eca9ef48b274e55f7c53bb0,
+        type: 3}
+      Label: No
+      Expand: 0
+      OnSelected: {fileID: 114167790945348002}
+--- !u!114 &114167790945348002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Message
+  m_EditorClassIdentifier: 
+  Name: Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 985.60004, y: 25.6}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Okay, just let me know if you want to rest.
+--- !u!114 &114566244101201670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fb0c34c465c8146aac0b30f629636c, type: 3}
+  m_Name: Play Transition
+  m_EditorClassIdentifier: 
+  Name: Play Transition
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1292.8, y: -166.40001}
+  IsBreakpoint: 0
+  Next: {fileID: 114925099471152088}
+  Transition:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6, type: 2}
+  Phase: 0
+  AutoFinish: 0
+--- !u!114 &114826509135172880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03fb0c34c465c8146aac0b30f629636c, type: 3}
+  m_Name: Play Transition
+  m_EditorClassIdentifier: 
+  Name: Play Transition
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1408, y: 12.8}
+  IsBreakpoint: 0
+  Next: {fileID: 114992353184562350}
+  Transition:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: ac068f755e0a872438142263e01b35b6, type: 2}
+  Phase: 2
+  AutoFinish: 1
+--- !u!114 &114912964476762884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Message
+  m_EditorClassIdentifier: 
+  Name: Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 972.8, y: -76.8}
+  IsBreakpoint: 0
+  Next: {fileID: 114566244101201670}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 2
+  IsLast: 1
+  Message:
+    Text: Okay wait just a second.
+--- !u!114 &114925099471152088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6689d1e5c6f155c4182dd0da101fd0cc, type: 3}
+  m_Name: Heal
+  m_EditorClassIdentifier: 
+  Name: Heal
+  This:
+    _variable:
+    - Player
+    - Roster
+    _lookups:
+    - 
+    - 
+  GraphPosition: {x: 1356.8, y: -89.6}
+  IsBreakpoint: 0
+  Next: {fileID: 114826509135172880}
+  Variables:
+    _items:
+    - CurrentHP
+    - CurrentUses
+--- !u!114 &114960844572480458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Message
+  m_EditorClassIdentifier: 
+  Name: Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: 0}
+  IsBreakpoint: 0
+  Next: {fileID: 114071807762439842}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 2
+  IsLast: 0
+  Message:
+    Text: If you're feeling weary I can heal your monsters for you.<page>Would you
+      like me to heal your monsters?
+--- !u!114 &114992353184562350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Message
+  m_EditorClassIdentifier: 
+  Name: Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1779.2001, y: 76.8}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Okay, you're all set. Let me know if you need to rest again!

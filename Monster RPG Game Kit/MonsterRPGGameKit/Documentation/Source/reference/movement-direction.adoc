@@ -1,0 +1,19 @@
+[#reference/movement-direction]
+
+## MovementDirection
+
+PiRhoSoft.MonsterRpgEngine.MovementDirection
+
+### Description
+
+### Values
+
+<<reference/movement-direction.html,MovementDirection>> _None_::
+
+<<reference/movement-direction.html,MovementDirection>> _Left_::
+
+<<reference/movement-direction.html,MovementDirection>> _Right_::
+
+<<reference/movement-direction.html,MovementDirection>> _Down_::
+
+<<reference/movement-direction.html,MovementDirection>> _Up_::

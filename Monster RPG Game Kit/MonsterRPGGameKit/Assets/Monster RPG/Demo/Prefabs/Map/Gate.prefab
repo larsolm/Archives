@@ -1,0 +1,360 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3517497714934429271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3517497714934429288}
+  - component: {fileID: 3517497714934429289}
+  - component: {fileID: 3517497714934429270}
+  - component: {fileID: 3517497714934429293}
+  - component: {fileID: 3517497714934429291}
+  - component: {fileID: 3517497714934429290}
+  - component: {fileID: 3137084550518212072}
+  m_Layer: 0
+  m_Name: Gate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3517497714934429288
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517497714934429271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 34.5, y: 8.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3517497714934429289
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517497714934429271}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: cf7034d9210421642bc0ad35a1cc7f6b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3, y: 1.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &3517497714934429270
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517497714934429271}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 5e16008519e661146b3d9d53909336d3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &3517497714934429293
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517497714934429271}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.33333334}
+    oldSize: {x: 3, y: 1.5}
+    newSize: {x: 3, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &3517497714934429291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517497714934429271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4642db6ecc07ab419adeab8b8398f38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionLayer: 1
+--- !u!114 &3517497714934429290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517497714934429271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b097376fda3094192bda64ebf9dd03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Source: 0
+  Variable: 
+  AwakeInstructions:
+    _instruction: {fileID: 11400000, guid: 7759a3bed3816e04cadc31984c451e71, type: 2}
+    _inputs:
+    - Type: 0
+      Definition:
+        _name: Open
+        _type: 1
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: 
+      Reference:
+        _variable: []
+        _lookups: []
+      _value:
+        Name: 
+        Type: 1
+        Data: False
+        Object: {fileID: 0}
+    - Type: 1
+      Definition:
+        _name: Gate Animator
+        _type: 5
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Reference:
+        _variable: []
+        _lookups: []
+      _value:
+        Name: 
+        Type: 5
+        Data: 
+        Object: {fileID: 3517497714934429270}
+    - Type: 1
+      Definition:
+        _name: Gate Animations
+        _type: 5
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: UnityEngine.RuntimeAnimatorController, UnityEngine.AnimationModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Reference:
+        _variable: []
+        _lookups: []
+      _value:
+        Name: 
+        Type: 0
+        Data: 
+        Object: {fileID: 0}
+    - Type: 1
+      Definition:
+        _name: Mover
+        _type: 5
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: PiRhoSoft.MonsterRpgEngine.StaticCollider, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Reference:
+        _variable: []
+        _lookups: []
+      _value:
+        Name: 
+        Type: 5
+        Data: 
+        Object: {fileID: 3517497714934429291}
+    _outputs: []
+  EnabledSameAsAwake: 1
+  EnabledInstructions:
+    _instruction: {fileID: 0}
+    _inputs: []
+    _outputs: []
+  ChangedSameAsAwake: 1
+  ChangedInstructions:
+    _instruction: {fileID: 11400000, guid: 7759a3bed3816e04cadc31984c451e71, type: 2}
+    _inputs:
+    - Type: 0
+      Definition:
+        _name: Open
+        _type: 1
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: 
+      Reference:
+        _variable: []
+        _lookups: []
+      _value:
+        Name: 
+        Type: 1
+        Data: False
+        Object: {fileID: 0}
+    - Type: 1
+      Definition:
+        _name: Gate Animator
+        _type: 5
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: UnityEngine.Animator, UnityEngine.AnimationModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Reference:
+        _variable: []
+        _lookups: []
+      _value:
+        Name: 
+        Type: 5
+        Data: 
+        Object: {fileID: 3517497714934429270}
+    - Type: 1
+      Definition:
+        _name: Mover
+        _type: 5
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: PiRhoSoft.MonsterRpgEngine.StaticCollider, Assembly-CSharp,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Reference:
+        _variable: []
+        _lookups: []
+      _value:
+        Name: 
+        Type: 5
+        Data: 
+        Object: {fileID: 3517497714934429291}
+    _outputs: []
+--- !u!114 &3137084550518212072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3517497714934429271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58578c18aa895924da29f43e7f278ad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Directions: 12
+  Instructions:
+    _instruction: {fileID: 11400000, guid: cfb70e4b77f2d82429b2a2575a64c6dd, type: 2}
+    _inputs:
+    - Type: 0
+      Definition:
+        _name: IsOpen
+        _type: 0
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: 
+      Reference:
+        _variable: []
+        _lookups: []
+      _value:
+        Name: 
+        Type: 0
+        Data: 
+        Object: {fileID: 0}
+    _outputs:
+    - Type: 1
+      Definition:
+        _name: Open
+        _type: 0
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: 
+      Reference:
+        _variable: []
+        _lookups: []

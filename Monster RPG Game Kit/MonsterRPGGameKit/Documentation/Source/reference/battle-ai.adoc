@@ -1,0 +1,21 @@
+[#reference/battle-ai]
+
+## BattleAi
+
+PiRhoSoft.MonsterRpgEngine.BattleAi : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+BattleAi()::
+
+### Public Methods
+
+int MakeSelection(link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_, https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^]> _values_, string _tag_)::
+
+### Protected Methods
+
+int SelectFirst(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^]> _values_, string _tag_)::
+
+int SelectRandom(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^]> _values_, string _tag_)::

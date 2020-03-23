@@ -1,0 +1,13 @@
+[#manual/checkerboard-tile]
+
+## Checkerboard Tile
+
+### Fields
+
+<<manual/tile-transform-info.html,Tile Transform Info>> _First_::
+
+<<manual/tile-transform-info.html,Tile Transform Info>> _Second_::
+
+ifdef::backend-multipage_html5[]
+link:reference/checkerboard-tile.html[Reference]
+endif::[]

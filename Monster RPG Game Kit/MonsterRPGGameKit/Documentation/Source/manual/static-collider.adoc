@@ -1,0 +1,11 @@
+[#manual/static-collider]
+
+## Static Collider
+
+### Fields
+
+<<manual/collision-layer.html,Collision Layer>> _Collision Layer_::
+
+ifdef::backend-multipage_html5[]
+link:reference/static-collider.html[Reference]
+endif::[]

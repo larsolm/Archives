@@ -1,0 +1,23 @@
+[#reference/creature-save-data]
+
+## CreatureSaveData
+
+PiRhoSoft.MonsterRpgEngine.CreatureSaveData
+
+### Description
+
+### Constructors
+
+CreatureSaveData()::
+
+### Public Fields
+
+string _SpeciesPath_::
+
+string _Name_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-list[VariableList^] _Traits_::
+
+<<reference/skills-dictionary.html,SkillsDictionary>> _LearnedSkills_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<reference/move-save-data.html,MoveSaveData>>> _Moves_::

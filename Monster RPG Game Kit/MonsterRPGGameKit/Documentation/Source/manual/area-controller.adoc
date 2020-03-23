@@ -1,0 +1,19 @@
+[#manual/area-controller]
+
+## Area Controller
+
+### Fields
+
+int _Left Distance_::
+
+int _Right Distance_::
+
+int _Up Distance_::
+
+int _Down Distance_::
+
+float _Movement Delay_::
+
+ifdef::backend-multipage_html5[]
+link:reference/area-controller.html[Reference]
+endif::[]

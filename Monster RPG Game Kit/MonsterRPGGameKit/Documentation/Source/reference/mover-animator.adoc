@@ -1,0 +1,11 @@
+[#reference/mover-animator]
+
+## MoverAnimator
+
+PiRhoSoft.MonsterRpgEngine.MoverAnimator : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+MoverAnimator()::

@@ -1,0 +1,35 @@
+[#reference/save-information]
+
+## SaveInformation
+
+PiRhoSoft.MonsterRpgEngine.SaveInformation
+
+### Description
+
+### Constructors
+
+SaveInformation()::
+
+### Public Fields
+
+Action _OnComplete_::
+
+Action<<<reference/save-state.html,SaveState>>, <<reference/save-state.html,SaveState>>> _OnProgress_::
+
+Action<string> _OnError_::
+
+### Public Properties
+
+<<reference/save-state.html,SaveState>> _State_ _(read only)_::
+
+float _Progress_ _(read only)_::
+
+string _Message_ _(read only)_::
+
+### Public Methods
+
+void UpdateProgress(<<reference/save-state.html,SaveState>> _state_, float _progress_)::
+
+void SetError(string _message_)::
+
+void SetComplete()::

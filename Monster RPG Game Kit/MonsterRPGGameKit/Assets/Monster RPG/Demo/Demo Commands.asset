@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 372b74f7a85fadc449cb0be4bb41cd43, type: 3}
+  m_Name: Demo Commands
+  m_EditorClassIdentifier: 
+  CustomCommands:
+    _items:
+    - Name: ConstantTrait
+      Expression:
+        _statement: P0 + Floor(P1 / 2) - 25
+    - Name: LeveledTrait
+      Expression:
+        _statement: Floor(ConstantTrait(P0, P1) * (P2 + 10) * 0.01)
+    - Name: ModifyTrait
+      Expression:
+        _statement: P0 * (4 + Max(0, P1) - Min(0, P2))
+    - Name: BaseDamage
+      Expression:
+        _statement: 'power = P0 / 4;
+
+          attack = ModifyTrait(P1, P2, P4);
+
+          defense = ModifyTrait(P3, P4, P2);
+
+          Floor(power * attack / defense);'
+    - Name: CheckAccuracy
+      Expression:
+        _statement: Random(0.0, 1.0) <= P0

@@ -1,0 +1,21 @@
+[#reference/building-part]
+
+## Part
+
+PiRhoSoft.MonsterRpgEngine.Part
+
+### Description
+
+### Constructors
+
+Part()::
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/GameObject.html[GameObject^] _GameObject_::
+
+int _OrderOffset_::
+
+https://docs.unity3d.com/ScriptReference/SpriteRenderer.html[SpriteRenderer^] _Renderer_::
+
+https://docs.unity3d.com/ScriptReference/Rect.html[Rect^] _Bounds_::

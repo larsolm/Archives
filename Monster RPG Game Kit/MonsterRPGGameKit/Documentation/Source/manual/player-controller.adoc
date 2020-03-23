@@ -1,0 +1,17 @@
+[#manual/player-controller]
+
+## Player Controller
+
+### Fields
+
+string _Horizontal Axis_::
+
+string _Vertical Axis_::
+
+string _Interact Button_::
+
+https://docs.unity3d.com/ScriptReference/KeyCode.html[KeyCode^] _Interact Key_::
+
+ifdef::backend-multipage_html5[]
+link:reference/player-controller.html[Reference]
+endif::[]

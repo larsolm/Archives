@@ -1,0 +1,17 @@
+[#manual/door]
+
+## Door
+
+### Fields
+
+https://docs.unity3d.com/ScriptReference/AnimationClip.html[AnimationClip^] _Open Animation_::
+
+https://docs.unity3d.com/ScriptReference/AnimationClip.html[AnimationClip^] _Close Animation_::
+
+https://docs.unity3d.com/ScriptReference/AudioClip.html[AudioClip^] _Open Sound_::
+
+https://docs.unity3d.com/ScriptReference/AudioClip.html[AudioClip^] _Close Sound_::
+
+ifdef::backend-multipage_html5[]
+link:reference/door.html[Reference]
+endif::[]

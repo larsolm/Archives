@@ -1,0 +1,15 @@
+[#reference/mount-point]
+
+## MountPoint
+
+PiRhoSoft.MonsterRpgEngine.MountPoint : ValueType
+
+### Description
+
+### Public Fields
+
+float _X_::
+
+float _Y_::
+
+float _Rotation_::

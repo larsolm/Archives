@@ -1,0 +1,17 @@
+[#reference/item-save-data]
+
+## ItemSaveData
+
+PiRhoSoft.MonsterRpgEngine.ItemSaveData
+
+### Description
+
+### Constructors
+
+ItemSaveData()::
+
+### Public Fields
+
+string _ItemPath_::
+
+int _Count_::

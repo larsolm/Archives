@@ -1,0 +1,317 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7831453c1d5ab409853342815d7e92, type: 3}
+  m_Name: Ecosystem
+  m_EditorClassIdentifier: 
+  Species:
+  - {fileID: 114035524049167856}
+  - {fileID: 114955073398160992}
+  - {fileID: 114093798316550230}
+  Abilities:
+  - {fileID: 114954658016978292}
+  - {fileID: 114384746001998108}
+  - {fileID: 114319829489593498}
+  CreatureGenerationInstructions: {fileID: 114778483603848784, guid: 974ab4a89f2ef9e4d99d026e06b346fb,
+    type: 2}
+  CreatureUpdateInstructions:
+    _keys:
+    - Level
+    - Experience
+    _values:
+    - {fileID: 114855464834919592, guid: 974ab4a89f2ef9e4d99d026e06b346fb, type: 2}
+    - {fileID: 114383154394320316, guid: 974ab4a89f2ef9e4d99d026e06b346fb, type: 2}
+--- !u!114 &114035524049167856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66a2d44a2519c546ac81feca1f32ca8, type: 3}
+  m_Name: Dragon
+  m_EditorClassIdentifier: 
+  Ecosystem: {fileID: 11400000}
+  Traits:
+    _variables:
+    - _name: Base HP
+      _type: 2
+      _boolean: 0
+      _integer: 100
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Attack
+      _type: 2
+      _boolean: 0
+      _integer: 60
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Defense
+      _type: 2
+      _boolean: 0
+      _integer: 40
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Speed
+      _type: 2
+      _boolean: 0
+      _integer: 50
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+  Skills:
+  - Name: Scratch
+    LearnLimit: 12
+    Condition:
+      _statement: Creature.Level >= 1
+    Instruction:
+      Instruction: {fileID: 114795149668766616, guid: d506b0ab71962934e88e434079ef481c,
+        type: 2}
+      Inputs:
+      - _name: Ability
+        _type: 5
+        _boolean: 0
+        _integer: 0
+        _number: 0
+        _string: 
+        _asset: {fileID: 114954658016978292}
+        _gameObject: {fileID: 0}
+    Triggers:
+    - Level
+--- !u!114 &114093798316550230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66a2d44a2519c546ac81feca1f32ca8, type: 3}
+  m_Name: Phoenix
+  m_EditorClassIdentifier: 
+  Ecosystem: {fileID: 11400000}
+  Traits:
+    _variables:
+    - _name: Base HP
+      _type: 2
+      _boolean: 0
+      _integer: 80
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Attack
+      _type: 2
+      _boolean: 0
+      _integer: 50
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Defense
+      _type: 2
+      _boolean: 0
+      _integer: 40
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Speed
+      _type: 2
+      _boolean: 0
+      _integer: 70
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+  Skills: []
+--- !u!114 &114319829489593498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1b9715198dfda48af16c8a263112a6, type: 3}
+  m_Name: Fly
+  m_EditorClassIdentifier: 
+  Ecosystem: {fileID: 11400000}
+  WorldInstructions: {fileID: 0}
+  BattleInstructions: {fileID: 0}
+  Traits:
+    _variables:
+    - _name: Total Uses
+      _type: 2
+      _boolean: 0
+      _integer: 0
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Power
+      _type: 2
+      _boolean: 0
+      _integer: 0
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Accuracy
+      _type: 2
+      _boolean: 0
+      _integer: 0
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+--- !u!114 &114384746001998108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1b9715198dfda48af16c8a263112a6, type: 3}
+  m_Name: Growl
+  m_EditorClassIdentifier: 
+  Ecosystem: {fileID: 11400000}
+  WorldInstructions: {fileID: 0}
+  BattleInstructions: {fileID: 0}
+  Traits:
+    _variables:
+    - _name: Total Uses
+      _type: 2
+      _boolean: 0
+      _integer: 25
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Modifier
+      _type: 2
+      _boolean: 0
+      _integer: -1
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Chance
+      _type: 2
+      _boolean: 0
+      _integer: 100
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Status
+      _type: 4
+      _boolean: 0
+      _integer: 0
+      _number: 0
+      _string: Attack
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+--- !u!114 &114954658016978292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca1b9715198dfda48af16c8a263112a6, type: 3}
+  m_Name: Scratch
+  m_EditorClassIdentifier: 
+  Ecosystem: {fileID: 11400000}
+  WorldInstructions: {fileID: 0}
+  BattleInstructions: {fileID: 0}
+  Traits:
+    _variables:
+    - _name: Total Uses
+      _type: 2
+      _boolean: 0
+      _integer: 20
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Power
+      _type: 2
+      _boolean: 0
+      _integer: 40
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Accuracy
+      _type: 2
+      _boolean: 0
+      _integer: 100
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+--- !u!114 &114955073398160992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66a2d44a2519c546ac81feca1f32ca8, type: 3}
+  m_Name: Unicorn
+  m_EditorClassIdentifier: 
+  Ecosystem: {fileID: 11400000}
+  Traits:
+    _variables:
+    - _name: Base HP
+      _type: 2
+      _boolean: 0
+      _integer: 120
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Attack
+      _type: 2
+      _boolean: 0
+      _integer: 40
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Defense
+      _type: 2
+      _boolean: 0
+      _integer: 60
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+    - _name: Base Speed
+      _type: 2
+      _boolean: 0
+      _integer: 55
+      _number: 0
+      _string: 
+      _asset: {fileID: 0}
+      _gameObject: {fileID: 0}
+  Skills: []

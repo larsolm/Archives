@@ -1,0 +1,10 @@
+[
+	{
+		Name = "Debug World"
+		Description = "For Debug Use"
+	}
+	{
+		Name = "Boot Damp"
+		Description = "Some Minor Spills"
+	}
+]

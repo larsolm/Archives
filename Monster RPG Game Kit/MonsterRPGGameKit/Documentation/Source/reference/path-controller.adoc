@@ -1,0 +1,21 @@
+[#reference/path-controller]
+
+## PathController
+
+PiRhoSoft.MonsterRpgEngine.PathController : <<reference/controller.html,Controller>>
+
+### Description
+
+### Constructors
+
+PathController()::
+
+### Public Fields
+
+bool _BeginOnAwake_::
+
+<<reference/path.html,Path>> _Path_::
+
+### Public Methods
+
+void StartPath()::

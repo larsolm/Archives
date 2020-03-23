@@ -1,0 +1,27 @@
+[#reference/zone-trigger]
+
+## ZoneTrigger
+
+PiRhoSoft.MonsterRpgEngine.ZoneTrigger
+
+### Description
+
+### Constructors
+
+ZoneTrigger()::
+
+### Public Fields
+
+<<reference/zone.html,Zone>> _TargetZone_::
+
+string _TargetSpawn_::
+
+bool _HasTransition_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/transition[Transition^] _Transition_::
+
+### Public Methods
+
+void Enter()::
+
+void Exit()::

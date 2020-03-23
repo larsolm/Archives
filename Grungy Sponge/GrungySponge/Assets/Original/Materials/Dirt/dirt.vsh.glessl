@@ -1,0 +1,24 @@
+#version 300 es
+
+in vec2 position;
+in vec2 mask;
+in vec2 red;
+in vec2 green;
+in vec2 blue;
+
+uniform mat4 Transform;
+uniform float TextureScale;
+
+out vec2 Mask;
+out vec2 Red;
+out vec2 Green;
+out vec2 Blue;
+
+void main()
+{
+    gl_Position = Transform * vec4(position, 1, 1);
+    Mask = mask;
+    Red = red * TextureScale;
+    Green = green * TextureScale;
+    Blue = blue * TextureScale;
+}

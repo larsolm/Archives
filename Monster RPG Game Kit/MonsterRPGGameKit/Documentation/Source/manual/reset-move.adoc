@@ -1,0 +1,9 @@
+[#manual/reset-move]
+
+## Reset Move
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/reset-move.html[Reference]
+endif::[]

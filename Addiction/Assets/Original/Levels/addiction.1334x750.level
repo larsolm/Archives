@@ -1,0 +1,334 @@
+{
+	Camera {
+		#Type = "Pargon::Camera2D"
+        #Behavior = "Object"
+		Position = "0 0"
+		MinimumSize = "1334 750"
+		Viewport = "0 0 1 1"
+		Blending = "StandardBlending"
+		Rasterization = "StandardRasterization"
+		Material = "CopyPostProcessMaterial"
+		Geometry = "CopyPostProcessGeometry"
+		Order = 100
+		Renderables [ "Game" ]
+	}
+	UiStack {
+        #Type = "Pargon::UiStack"
+        #Behavior = "Object"
+    }
+	MainMenu {
+		#Type = "Pargon::TouchMenu"
+		#Behavior = "Object"
+		Buttons = "Addiction"
+	}
+	GameManager {
+        #Type = "Addiction::GameManager" 
+        #Behavior = "Object"
+        MoveTime = 0.3
+        DeckX = 0
+        DecKY = 0
+        CardWidth = 78
+        CardHeight = 108
+        CardSpacing = 20
+        CardStartX = -588
+        CardStartY = 100
+    }
+    PropertyAnimator {
+    	#Type = "Pargon::Animation::PropertyAnimator"
+    	#Behavior = "Object"
+    }
+    Sechduler {
+    	#Type = "Pargon::Scheduler"
+    	#Behavior = "Object"
+    }
+    CardTemplate {
+		#Type = "Pargon::Ensemble"
+        #Behavior = "Template"
+		Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Texture = "CardTexture"
+				Tag = "Game"
+				Color = "White"
+			} 
+			{
+				#Type = "Pargon::Spatial2D" 
+                Offset = "0.5 0.5" 
+                Size = "128 128"
+			} 
+            {
+                #Type = "Pargon::CollisionComponent"
+                Polygon ["0.1875 0.086" "0.8125 0.086" "0.8125 0.906" "0.1875 0.906"]
+            }
+            {
+                #Type = "Addiction::Card"
+            } 
+            {
+                #Type = "Pargon::TouchButton" 
+                Tag = "Addiction"
+                OnSelect = "GameManager.CardClicked(this.Addiction::Card);"
+            }
+		] 
+        Entities [
+            {
+                Components [
+		            {
+						#Type = "Pargon::Shapes::ShapeInstance"
+						Renderer = "ShapeRenderer"
+						Shape = "Primitives"
+						Frame = "Rectangle"
+						Tag = "Game"
+                    } 
+                    {
+                        #Type = "Pargon::Spatial2D" 
+                        Position = "0 -0.15"
+                        Offset = "0.5 0.5"
+                        Size = "0.30 0.30"
+                    }
+                ]
+            }
+            {
+                Components [
+                    {
+                        #Type = "Pargon::Text::TextObject" 
+						Renderer = "FontRenderer"
+						Font = "AndyBFont"
+						FillColor = "Black"
+						Tag = "Game"
+						Align = "Center"
+                    } 
+                    {
+                        #Type = "Pargon::Spatial2D" 
+                        Position = "-0.1 0.07"
+                        Offset = "0 0"
+                        Size = "-1 0.33"
+                    }
+                ]
+            } 
+        ]
+	} 
+    HighlightTemplate {
+        #Type = "Pargon::Entity" 
+        #Behavior = "Template" 
+        Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Texture = "HighlightTexture"
+				Tag = "Game"
+				Depth = 1
+			}
+			{
+				#Type = "Pargon::Spatial2D"
+                Size = "128 128"
+                Offset = "0.5 0.5"
+			}
+        ]
+    }   
+    OutlineTemplate {
+        #Type = "Pargon::Entity"
+        #Behavior = "Template"
+        Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Texture = "OutlineTexture"
+				Tag = "Game"
+				Depth = 3
+			} 
+			{
+				#Type = "Pargon::Spatial2D"
+                Position = "0 0" 
+                Size = "128 128" 
+                Offset = "0.5 0.5"
+			}
+        ]
+    } 
+    Background {
+        #Type = "Pargon::Entity" 
+        #Behavior = "Object" 
+        Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Texture = "BackgroundTexture"
+				Tag = "Game"
+				Depth = 4
+			} 
+			{
+				#Type = "Pargon::Spatial2D" 
+                Position = "0 0" 
+                Size = "1334 750" 
+                Offset = "0.5 0.5"
+			}
+        ]
+    } 
+    NewButton {
+        #Type = "Pargon::Entity" 
+        #Behavior = "Object" 
+        Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Texture = "NewTexture"
+				Tag = "Game"
+				Depth = 5
+			} 
+			{
+				#Type = "Pargon::Spatial2D" 
+                Position = "-667 185" 
+                Size = "112 135" 
+                Offset = "0 0"
+			} 
+            {
+                #Type = "Pargon::TouchButton"
+                Tag = "Addiction"
+                OnFocus = "this.Pargon::Shapes::ShapeInstance.Texture = 'NewDownTexture';" 
+                OnBlur = "this.Pargon::Shapes::ShapeInstance.Texture = 'NewTexture';" 
+                OnSelect = "GameManager.New();"
+            }
+        ]
+    }
+    UndoButton {
+        #Type = "Pargon::Entity" 
+        #Behavior = "Object" 
+        Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Texture = "UndoTexture"
+				Tag = "Game"
+				Depth = 5
+			} 
+			{
+				#Type = "Pargon::Spatial2D" 
+                Position = "-83 226" 
+                Size = "293 109" 
+                Offset = "0 0"
+			}
+            {
+                #Type = "Pargon::TouchButton"
+                Tag = "Addiction"
+                OnFocus = "this.Pargon::Shapes::ShapeInstance.Texture = 'UndoDownTexture';" 
+                OnBlur = "this.Pargon::Shapes::ShapeInstance.Texture = 'UndoTexture';" 
+                OnSelect = "GameManager.Undo();"
+            }
+        ]
+    } 
+    ShuffleButton {
+        #Type = "Pargon::Entity" 
+        #Behavior = "Object" 
+        Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Texture = "ShuffleTexture"
+				Tag = "Game"
+				Depth = 5
+			} 
+			{
+				#Type = "Pargon::Spatial2D" 
+                Position = "275 226" 
+                Size = "341 109" 
+                Offset = "0 0"
+			} 
+            {
+                #Type = "Pargon::TouchButton"
+                Tag = "Addiction"
+                OnFocus = "this.Pargon::Shapes::ShapeInstance.Texture = 'ShuffleDownTexture';" 
+                OnBlur = "this.Pargon::Shapes::ShapeInstance.Texture = 'ShuffleTexture';" 
+                OnSelect = "GameManager.Shuffle();"
+            }
+        ]
+    } 
+    SoundButton {
+        #Type = "Pargon::Entity" 
+        #Behavior = "Object" 
+        Components [
+			{
+				#Type = "Pargon::Shapes::ShapeInstance"
+				Renderer = "ShapeRenderer"
+				Shape = "Primitives"
+				Frame = "Rectangle"
+				Texture = "SoundTexture"
+				Tag = "Game"
+				Depth = 1
+			} 
+			{
+				#Type = "Pargon::Spatial2D" 
+                Position = "220 220" 
+                Size = "80 80" 
+                Offset = "0 0"
+			} 
+            {
+                #Type = "Pargon::TouchButton"
+                Tag = "Addiction"
+                OnFocus = "this.Pargon::Shapes::ShapeInstance.Texture = 'SoundDownTexture';" 
+                OnBlur = "this.Pargon::Shapes::ShapeInstance.Texture = 'SoundTexture';" 
+                OnSelect = "this.Pargon::Shapes::ShapeInstance.Texture = 'SoundTexture'; GameManager.ToggleSound();"
+            }
+        ]
+    } 
+    Score {
+        #Type = "Pargon::Entity" 
+        #Behavior = "Object" 
+        Components [
+			{
+                #Type = "Pargon::Text::TextObject"
+                Renderer = "FontRenderer"
+                Tag = "Game"
+                Depth = 1 
+                Font = "AndyBFont"
+                StrokeWidth = 0
+                FillColor = "51 51 51 255" 
+				Text = "Score: {GameManager.Score}"
+                Align = "Left"
+			} 
+			{
+				#Type = "Pargon::Spatial2D" 
+                Position = "-460 235" 
+                Size = "-1 65" 
+                Offset = "0 0"
+			}
+        ]
+    } 
+    Winner {
+        #Type = "Pargon::Entity" 
+        #Behavior = "Object" 
+        Components [
+			{
+                #Type = "Pargon::Text::TextObject" 
+				Renderer = "FontRenderer"
+				Font = "AndyBFont"
+				StrokeWidth = 0
+           		FillColor = "51 51 51 255" 
+				Depth = 1
+				Tag = "Game"
+				Align = "Center"
+                Text = "You Win!" 
+                Visible = false
+			} 
+			{
+				#Type = "Pargon::Spatial2D" 
+                Position = "0 0" 
+                Size = "-1 150" 
+                Offset = "0 0"
+			}
+        ]
+    }
+}

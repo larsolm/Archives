@@ -1,0 +1,214 @@
+{
+	MainMenu {
+		#Type = "Pargon::Gui::Menu"
+		#Category = "Menu"
+		FirstFoci [ "StartGameButton" ]
+	}
+	BackgroundLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalLayoutMode = "LeftAndPercentage"
+		VerticalLayoutMode = "BottomAndPercentage"
+		Left = 0
+		Bottom = 0
+		Width = 1
+		Height = 1
+	}
+	TitleLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "TopAndToContent"
+		Top = 40
+		Left = 0
+	}
+	MenuLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalLayoutMode = "LeftAndPercentage"
+		VerticalLayoutMode = "BottomAndPercentage"
+		Flow = "TopToBottom"
+		Left = 0
+		Bottom = 80
+		Height = 1
+		Width = 1
+	}
+	MenuItemLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "BottomAndToContent"
+		Margin = 10
+	}
+	MenuTextLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		VerticalAlignment = "Middle"
+		HorizontalLayoutMode = "LeftAndToContent"
+		Height = 40
+		Left = 65
+	}
+	MenuTextStyle {
+		#Type = "Pargon::Gui::Style"
+		#Category = "Style"
+		Font = "Assets/AndyB.ttf"
+		TextColor = "Yellow"
+		StrokeColor = "Black"
+		StrokeWidth = 0.5
+	}
+	MenuPlayersLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		HorizontalAlignment = "Center"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "BottomAndToContent"
+		Flow = "LeftToRight"
+		Margin = 10
+	}
+	MenuPlayersTextLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		VerticalAlignment = "Middle"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "BottomAndToContent"
+		Left = -95
+		Height = 40
+		Margin = 160
+	}
+	MenuPlayersDisplayLayout {
+		#Type = "Pargon::Gui::Layout"
+		#Category = "Layout"
+		VerticalAlignment = "Middle"
+		HorizontalLayoutMode = "LeftAndToContent"
+		VerticalLayoutMode = "BottomAndToContent"
+		Margin = 20
+	}
+	Background {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "BackgroundLayout"
+		ForegroundTexture = "Assets/Images/Gui/Background.png"
+	}
+	Title {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "TitleLayout"
+		ForegroundTexture = "Assets/Images/Gui/Title.png"
+	}
+	Menu {
+		#Type = "Pargon::Gui::Element"
+		#Category = "Element"
+		Layout = "MenuLayout"
+		Children [
+			{
+				#Type = "Pargon::Gui::Button"
+				Name = "StartGameButton"
+				Layout = "MenuItemLayout"
+				ForegroundTexture = "Assets/Images/Gui/MainMenu/menuItemBlur.png"
+				DownFocusable = "PlayersButton"
+				OnFocus = "this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/menuItemFocus.png\""
+				OnBlur = "this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/menuItemBlur.png\""
+				OnSelect = "::Gui.PushGui(\"Assets/Guis/characterSelect.gui\");"
+				OnBack = "::GameManager.Exit();"
+				Children [
+					{
+						Layout = "MenuTextLayout"
+						Style = "MenuTextStyle"
+						Text = "Start"
+					}
+				]
+			}
+			{
+				#Type = "Pargon::Gui::Button"
+				Name = "PlayersButton"
+				Layout = "MenuPlayersLayout"
+				ForegroundTexture = "Assets/Images/Gui/MainMenu/menuPlayersBlur.png"
+				UpFocusable = "StartGameButton"
+				DownFocusable = "SettingsButton"
+				OnFocus = "this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/menuPlayersFocus.png\""
+				OnBlur = "this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/menuPlayersBlur.png\""
+				OnSelect = "::Gui.PushGui(\"Assets/Guis/playerTypeSelect.gui\");"
+				OnBack = "::GameManager.Exit();"
+				Children [
+					{
+						Layout = "MenuPlayersTextLayout"
+						Style = "MenuTextStyle"
+						Text = "Players"
+					}
+					{
+						Name = "Player1Display"
+						Layout = "MenuPlayersDisplayLayout"
+						OnActivate = "
+							local type = ::GameSettings.GetPlayerType(0);
+							this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+						"
+					}
+					{
+						Name = "Player2Display"
+						Layout = "MenuPlayersDisplayLayout"
+						OnActivate = "
+							local type = ::GameSettings.GetPlayerType(1);
+							this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+						"
+					}
+					{
+						Name = "Player3Display"
+						Layout = "MenuPlayersDisplayLayout"
+						OnActivate = "
+							local type = ::GameSettings.GetPlayerType(2);
+							this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+						"
+					}
+					{
+						Name = "Player4Display"
+						Layout = "MenuPlayersDisplayLayout"
+						OnActivate = "
+							local type = ::GameSettings	.GetPlayerType(3);
+							this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/\" + type + \"Player.png\";
+						"
+					}
+				]
+			}
+			{
+				#Type = "Pargon::Gui::Button"
+				Name = "SettingsButton"
+				Layout = "MenuItemLayout"
+				ForegroundTexture = "Assets/Images/Gui/MainMenu/menuItemBlur.png"
+				UpFocusable = "PlayersButton"
+				DownFocusable = "ExitButton"
+				OnFocus = "this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/menuItemFocus.png\""
+				OnBlur = "this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/menuItemBlur.png\""
+				OnSelect = "::Gui.PushGui(\"Assets/Guis/settings.gui\");"
+				OnBack = "::GameManager.Exit();"
+				Children [
+					{
+						Layout = "MenuTextLayout"
+						Style = "MenuTextStyle"
+						Text = "Settings"
+					}
+				]
+			}
+			{
+				#Type = "Pargon::Gui::Button"
+				Name = "ExitButton"
+				Layout = "MenuItemLayout"
+				Style = "MenuItemStyle"
+				ForegroundTexture = "Assets/Images/Gui/MainMenu/menuItemBlur.png"
+				UpFocusable = "SettingsButton"
+				OnFocus = "this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/menuItemFocus.png\""
+				OnBlur = "this.ForegroundTexture = \"Assets/Images/Gui/MainMenu/menuItemBlur.png\""
+				OnSelect = "::GameManager.Exit();"
+				OnBack = "::GameManager.Exit();"
+				Children [
+					{
+						Layout = "MenuTextLayout"
+						Style = "MenuTextStyle"
+						Text = "Exit"
+					}
+				]
+			}
+		]
+	}
+}

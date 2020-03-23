@@ -1,0 +1,11 @@
+[#manual/play-battle-effect]
+
+## Play Battle Effect
+
+### Fields
+
+<<manual/battle-animation-effect.html,Battle Animation Effect>> _Effect_::
+
+ifdef::backend-multipage_html5[]
+link:reference/play-battle-effect.html[Reference]
+endif::[]

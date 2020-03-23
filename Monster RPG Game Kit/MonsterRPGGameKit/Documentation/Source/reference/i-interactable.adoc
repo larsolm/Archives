@@ -1,0 +1,15 @@
+[#reference/i-interactable]
+
+## IInteractable
+
+PiRhoSoft.MonsterRpgEngine.IInteractable
+
+### Description
+
+### Public Methods
+
+bool IsInteracting() _(abstract)_::
+
+bool CanInteract(<<reference/movement-direction.html,MovementDirection>> _direction_) _(abstract)_::
+
+void Interact() _(abstract)_::

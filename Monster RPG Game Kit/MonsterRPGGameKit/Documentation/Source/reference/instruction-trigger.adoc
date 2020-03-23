@@ -1,0 +1,53 @@
+[#reference/instruction-trigger]
+
+## InstructionTrigger
+
+PiRhoSoft.MonsterRpgEngine.InstructionTrigger : <<reference/i-interactable.html,IInteractable>>
+
+### Description
+
+### Constructors
+
+InstructionTrigger()::
+
+### Public Fields
+
+<<reference/interaction-direction.html,InteractionDirection>> _InteractionDirections_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _EnteringDirections_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _EnterDirections_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _ExitingDirections_::
+
+<<reference/interaction-direction.html,InteractionDirection>> _ExitDirections_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _InteractionInstructions_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _EnteringInstructions_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _EnterInstructions_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _ExitingInstructions_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-caller[InstructionCaller^] _ExitInstructions_::
+
+### Public Methods
+
+bool Equals(Object _obj_) _(virtual)_::
+
+int GetHashCode() _(virtual)_::
+
+bool IsInteracting() _(virtual)_::
+
+bool CanInteract(<<reference/movement-direction.html,MovementDirection>> _direction_) _(virtual)_::
+
+void Interact() _(virtual)_::
+
+void Entering(<<reference/movement-direction.html,MovementDirection>> _direction_)::
+
+void Enter(<<reference/movement-direction.html,MovementDirection>> _direction_)::
+
+void Exiting(<<reference/movement-direction.html,MovementDirection>> _direction_)::
+
+void Exit(<<reference/movement-direction.html,MovementDirection>> _direction_)::

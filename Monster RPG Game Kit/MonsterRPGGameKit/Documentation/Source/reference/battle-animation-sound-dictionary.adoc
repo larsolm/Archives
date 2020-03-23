@@ -1,0 +1,11 @@
+[#reference/battle-animation-sound-dictionary]
+
+## BattleAnimationSoundDictionary
+
+PiRhoSoft.MonsterRpgEngine.BattleAnimationSoundDictionary : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-dictionary-2[SerializedDictionary^]<string, string>
+
+### Description
+
+### Constructors
+
+BattleAnimationSoundDictionary()::

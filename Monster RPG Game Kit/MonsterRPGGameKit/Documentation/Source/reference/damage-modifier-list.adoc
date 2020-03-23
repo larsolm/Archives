@@ -1,0 +1,11 @@
+[#reference/damage-modifier-list]
+
+## DamageModifierList
+
+PiRhoSoft.MonsterRpgEngine.DamageModifierList : link:/projects/unity-utilities/documentation/#/v10/reference/serialized-list-1[SerializedList^]<<<reference/damage-modifier.html,DamageModifier>>>
+
+### Description
+
+### Constructors
+
+DamageModifierList()::

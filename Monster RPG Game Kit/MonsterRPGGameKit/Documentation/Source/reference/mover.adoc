@@ -1,0 +1,71 @@
+[#reference/mover]
+
+## Mover
+
+PiRhoSoft.MonsterRpgEngine.Mover : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Static Fields
+
+https://docs.unity3d.com/ScriptReference/Vector2.html[Vector2^] _PositionOffset_::
+
+### Constructors
+
+Mover()::
+
+### Public Fields
+
+<<reference/collision-layer.html,CollisionLayer>> _MovementLayer_::
+
+int _DirectionDelayFrames_::
+
+float _MoveSpeed_::
+
+https://docs.unity3d.com/ScriptReference/Renderer.html[Renderer^] _Shadow_::
+
+https://docs.unity3d.com/ScriptReference/UnityAction.html[UnityAction^]<https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^], https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^]> _OnTileChanged_::
+
+https://docs.unity3d.com/ScriptReference/UnityAction.html[UnityAction^]<https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^]> _OnTileEntering_::
+
+https://docs.unity3d.com/ScriptReference/UnityAction.html[UnityAction^]<https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^]> _OnTileExiting_::
+
+https://docs.unity3d.com/ScriptReference/UnityAction.html[UnityAction^]<https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^]> _OnWarp_::
+
+https://docs.unity3d.com/ScriptReference/UnityAction.html[UnityAction^]<<<reference/movement-direction.html,MovementDirection>>, <<reference/movement-direction.html,MovementDirection>>> _OnDirectionChanged_::
+
+### Public Properties
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _TargetGridPosition_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _PreviousGridPosition_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _CurrentGridPosition_ _(read only)_::
+
+<<reference/movement-direction.html,MovementDirection>> _MovementDirection_ _(read only)_::
+
+bool _Moving_ _(read only)_::
+
+bool _DidWarp_ _(read only)_::
+
+bool _CanInteract_ _(read only)_::
+
+float _Speed_ _(read only)_::
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _DirectionVector_ _(read only)_::
+
+### Public Methods
+
+void SkipNextUpdate()::
+
+void FaceDirection(<<reference/movement-direction.html,MovementDirection>> _direction_)::
+
+void UpdateMove(float _horizontal_, float _vertical_)::
+
+void OccupyCurrentTiles()::
+
+void UnoccupyCurrentTiles()::
+
+void WarpToPosition(https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] _position_, <<reference/movement-direction.html,MovementDirection>> _direction_, <<reference/collision-layer.html,CollisionLayer>> _layer_)::
+
+void Move(<<reference/movement-direction.html,MovementDirection>> _direction_)::

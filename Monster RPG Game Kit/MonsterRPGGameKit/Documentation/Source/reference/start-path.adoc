@@ -1,0 +1,15 @@
+[#reference/start-path]
+
+## StartPath
+
+PiRhoSoft.MonsterRpgEngine.StartPath : <<reference/path-node.html,PathNode>>
+
+### Description
+
+### Constructors
+
+StartPath()::
+
+### Protected Methods
+
+<<reference/path.html,Path>> GetPath(<<reference/mover.html,Mover>> _mover_) _(virtual)_::

@@ -1,0 +1,9 @@
+[#manual/reset-trainer]
+
+## Reset Trainer
+
+
+
+ifdef::backend-multipage_html5[]
+link:reference/reset-trainer.html[Reference]
+endif::[]

@@ -1,0 +1,29 @@
+[#reference/battle-context]
+
+## BattleContext
+
+PiRhoSoft.MonsterRpgEngine.BattleContext : link:/projects/unity-composition/documentation/#/v10/reference/variable-store[VariableStore^]
+
+### Description
+
+### Constructors
+
+BattleContext(https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.IList-1[IList^]<<<reference/i-trainer.html,ITrainer>>> _trainers_)::
+
+### Public Properties
+
+<<reference/trainer-context-list.html,TrainerContextList>> _Trainers_ _(read only)_::
+
+<<reference/trainer-context-list.html,TrainerContextList>> _ActiveTrainers_ _(read only)_::
+
+### Public Methods
+
+<<reference/trainer-context.html,TrainerContext>> CreateTrainer(<<reference/i-trainer.html,ITrainer>> _trainer_) _(virtual)_::
+
+<<reference/creature-context.html,CreatureContext>> CreateCreature(<<reference/trainer-context.html,TrainerContext>> _trainer_, <<reference/creature.html,Creature>> _creature_) _(virtual)_::
+
+<<reference/move-context.html,MoveContext>> CreateMove(<<reference/creature-context.html,CreatureContext>> _creature_, <<reference/move.html,Move>> _move_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] GetVariable(string _name_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/set-variable-result[SetVariableResult^] SetVariable(string _name_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::

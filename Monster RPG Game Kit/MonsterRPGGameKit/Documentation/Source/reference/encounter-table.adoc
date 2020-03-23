@@ -1,0 +1,11 @@
+[#reference/encounter-table]
+
+## EncounterTable
+
+PiRhoSoft.MonsterRpgEngine.EncounterTable : link:/projects/unity-utilities/documentation/#/v10/reference/drop-table-1[DropTable^]<<<reference/creature-reference.html,CreatureReference>>>
+
+### Description
+
+### Constructors
+
+EncounterTable()::

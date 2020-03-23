@@ -1,0 +1,23 @@
+[#reference/checkerboard-tile]
+
+## CheckerboardTile
+
+PiRhoSoft.MonsterRpgEngine.CheckerboardTile : https://docs.unity3d.com/ScriptReference/TileBase.html[TileBase^]
+
+### Description
+
+### Constructors
+
+CheckerboardTile()::
+
+### Public Fields
+
+<<reference/tile-transform-info.html,TileTransformInfo>> _First_::
+
+<<reference/tile-transform-info.html,TileTransformInfo>> _Second_::
+
+### Public Methods
+
+void GetTileData(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _position_, https://docs.unity3d.com/ScriptReference/ITilemap.html[ITilemap^] _tileMap_, https://docs.unity3d.com/ScriptReference/TileData.html[TileData^] _tileData_ _(ref)_) _(virtual)_::
+
+<<reference/tile-transform-info.html,TileTransformInfo>> GetInfo(https://docs.unity3d.com/ScriptReference/Vector3Int.html[Vector3Int^] _position_)::

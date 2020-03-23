@@ -1,0 +1,17 @@
+[#reference/rule-tile-neighbor-type]
+
+## NeighborType
+
+PiRhoSoft.MonsterRpgEngine.NeighborType
+
+### Description
+
+### Values
+
+<<reference/rule-tile-neighbor-type.html,NeighborType>> _Any_::
+
+<<reference/rule-tile-neighbor-type.html,NeighborType>> _This_::
+
+<<reference/rule-tile-neighbor-type.html,NeighborType>> _NotThis_::
+
+<<reference/rule-tile-neighbor-type.html,NeighborType>> _Count_::

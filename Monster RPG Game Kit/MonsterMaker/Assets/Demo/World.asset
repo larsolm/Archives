@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32a41c5f3861eb74d97defc294ea335a, type: 3}
+  m_Name: World
+  m_EditorClassIdentifier: 
+  UIScene:
+    Path: 
+  BackgroundMusic: {fileID: 8300000, guid: 6fabb388a6a0d3149ab3dc1a56af0f93, type: 3}
+  TrainerTraits:
+    _serializedVariables: []
+  MapLayers:
+  - Indoor
+  - Outdoor
+  StaticState:
+    Access: 31
+    _schema:
+      _serializedVariables: []
+    _serializedVariables: []
+  DefaultState:
+    Access: 31
+    _schema:
+      _serializedVariables: []
+    _serializedVariables: []
+  Zones:
+  - {fileID: 114812181517514284}
+--- !u!114 &114812181517514284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6adfb7f4c76f71c44afdbf095a3487b6, type: 3}
+  m_Name: StartZone
+  m_EditorClassIdentifier: 
+  World: {fileID: 11400000}
+  MapLayer: Outdoor
+  Scene:
+    Path: Assets/Demo/Scenes/DemoStart.unity
+  BackgroundMusic: {fileID: 0}
+  ClampBounds: 0
+  StaticState:
+    Access: 31
+    _schema:
+      _serializedVariables: []
+    _serializedVariables: []
+  DefaultState:
+    Access: 31
+    _schema:
+      _serializedVariables: []
+    _serializedVariables: []

@@ -1,0 +1,25 @@
+[#reference/creature-context]
+
+## CreatureContext
+
+PiRhoSoft.MonsterRpgEngine.CreatureContext : link:/projects/unity-composition/documentation/#/v10/reference/local-variable-store-1[LocalVariableStore^]<<<reference/creature.html,Creature>>>
+
+### Description
+
+### Constructors
+
+CreatureContext(<<reference/battle-context.html,BattleContext>> _battle_, <<reference/trainer-context.html,TrainerContext>> _trainer_, <<reference/creature.html,Creature>> _creature_)::
+
+### Public Properties
+
+<<reference/creature.html,Creature>> _Creature_ _(read only)_::
+
+<<reference/move-context-list.html,MoveContextList>> _Moves_ _(read only)_::
+
+<<reference/trainer-context.html,TrainerContext>> _Trainer_ _(read only)_::
+
+### Public Methods
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] GetVariable(string _name_) _(virtual)_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/set-variable-result[SetVariableResult^] SetVariable(string _name_, link:/projects/unity-composition/documentation/#/v10/reference/variable-value[VariableValue^] _value_) _(virtual)_::

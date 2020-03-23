@@ -1,0 +1,13 @@
+[#manual/battle-interface]
+
+## Battle Interface
+
+### Fields
+
+bool _Hide World_::
+
+<<manual/creature-display-list.html,Creature Display List>> _Creature Displays_::
+
+ifdef::backend-multipage_html5[]
+link:reference/battle-interface.html[Reference]
+endif::[]

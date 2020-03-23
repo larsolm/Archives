@@ -1,0 +1,53 @@
+{
+	FirstLevel = "MainMenu"
+	ClearColor = "0 128 128 255"
+	Levels {
+		MainMenu {
+			Sections [
+				"Common"
+				"MainMenu"
+			]
+		}
+		BoardUi {
+			Sections [
+				"Common"
+				"Board"
+			]
+		}
+		PlayerSelect {
+			Sections [
+				"Common"
+				"PlayerSelect"
+			]
+		}
+	}
+	Sections {
+		Common {
+			Files [
+				"Graphics.level"
+				"Text.level"
+				"Shapes.level"
+				"Levels/Common.level"
+				"Levels/UiCommon.level"
+				"Levels/Textures.level"
+			]
+		}
+		MainMenu {
+			Files [
+				"Levels/MainMenu.level"
+			]
+		}
+		PlayerSelect {
+			Files [
+				"Levels/PlayerSelect.level"
+			]
+		}
+		Board {
+			Files [
+				"Levels/Player.level"
+				"Levels/Board.level"
+				"Levels/BoardUi.level"
+			]
+		}
+	}
+}

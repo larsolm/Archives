@@ -1,0 +1,29 @@
+[#reference/approach-node]
+
+## ApproachNode
+
+PiRhoSoft.MonsterRpgEngine.ApproachNode : link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^]
+
+### Description
+
+### Public Fields
+
+link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph-node[InstructionGraphNode^] _Next_::
+
+bool _WaitForCompletion_::
+
+bool _UsePathfinding_::
+
+### Public Properties
+
+https://docs.unity3d.com/ScriptReference/Color.html[Color^] _NodeColor_ _(read only)_ _(virtual)_::
+
+### Protected Constructors
+
+ApproachNode()::
+
+### Protected Methods
+
+https://docs.unity3d.com/ScriptReference/Vector2Int.html[Vector2Int^] GetTargetPosition(link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_) _(abstract)_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.IEnumerator[IEnumerator^] Run_(link:/projects/unity-composition/documentation/#/v10/reference/instruction-graph[InstructionGraph^] _graph_, link:/projects/unity-composition/documentation/#/v10/reference/instruction-store[InstructionStore^] _variables_, int _iteration_) _(virtual)_::

@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Character\Bone.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Character.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Characters\GroundCharacter.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Characters\Player.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Chassis.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Controller.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Controllers\EnemyController.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Controllers\PlayerController.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Processor.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Processors\EnemyProcessor.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Processors\GroundProcessor.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Processors\PlayerProcessor.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Skeleton.cpp" />
+    <ClCompile Include="..\..\..\Source\Character\Skeletons\PlayerSkeleton.cpp" />
+    <ClCompile Include="..\..\..\Source\Collision\DynamicCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Collision\LinearCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Collision\CharacterCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Collision\ProjectileCollision.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\AugmentData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\BoneData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\CharacterData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\ChassisData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\ComponentData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\Data.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\DataManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\EquipmentData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\ItemData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\PartData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\Profile.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\Settings.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\SkeletonData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\UpgradeData.cpp" />
+    <ClCompile Include="..\..\..\Source\Data\WeaponData.cpp" />
+    <ClCompile Include="..\..\..\Source\Game\Duration.cpp" />
+    <ClCompile Include="..\..\..\Source\Game\Game.cpp" />
+    <ClCompile Include="..\..\..\Source\Gui\GuiManager.cpp" />
+    <ClCompile Include="..\..\..\Source\Parts\Equipment.cpp" />
+    <ClCompile Include="..\..\..\Source\Parts\Item.cpp" />
+    <ClCompile Include="..\..\..\Source\Parts\Part.cpp" />
+    <ClCompile Include="..\..\..\Source\Parts\Upgrade.cpp" />
+    <ClCompile Include="..\..\..\Source\Parts\Upgrades\WeaponUpgrade.cpp" />
+    <ClCompile Include="..\..\..\Source\Parts\Weapon.cpp" />
+    <ClCompile Include="..\..\..\Source\Pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Rendering\PlayerCamera.cpp" />
+    <ClCompile Include="..\..\..\Source\Rendering\Rendering.cpp" />
+    <ClCompile Include="..\..\..\Source\World\CollisionLine.cpp" />
+    <ClCompile Include="..\..\..\Source\World\DepthTrigger.cpp" />
+    <ClCompile Include="..\..\..\Source\World\DynamicGameObject.cpp" />
+    <ClCompile Include="..\..\..\Source\World\GameObject.cpp" />
+    <ClCompile Include="..\..\..\Source\World\Interaction.cpp" />
+    <ClCompile Include="..\..\..\Source\World\Projectile.cpp" />
+    <ClCompile Include="..\..\..\Source\World\StaticGameObject.cpp" />
+    <ClCompile Include="..\..\..\Source\World\Storages\StorageId.cpp" />
+    <ClCompile Include="..\..\..\Source\World\Trigger.cpp" />
+    <ClCompile Include="..\..\..\Source\World\World.cpp" />
+    <ClCompile Include="..\..\..\Source\World\WorldGraph.cpp" />
+    <ClCompile Include="..\..\..\Source\World\WorldNode.cpp" />
+    <ClCompile Include="..\..\..\Source\World\SpindleTrigger.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Character\Bone.h" />
+    <ClInclude Include="..\..\..\Source\Character\Character.h" />
+    <ClInclude Include="..\..\..\Source\Character\Characters\GroundCharacter.h" />
+    <ClInclude Include="..\..\..\Source\Character\Characters\Player.h" />
+    <ClInclude Include="..\..\..\Source\Character\Chassis.h" />
+    <ClInclude Include="..\..\..\Source\Character\Controller.h" />
+    <ClInclude Include="..\..\..\Source\Character\Controllers\EnemyController.h" />
+    <ClInclude Include="..\..\..\Source\Character\Controllers\PlayerController.h" />
+    <ClInclude Include="..\..\..\Source\Character\Processor.h" />
+    <ClInclude Include="..\..\..\Source\Character\Processors\EnemyProcessor.h" />
+    <ClInclude Include="..\..\..\Source\Character\Processors\GroundProcessor.h" />
+    <ClInclude Include="..\..\..\Source\Character\Processors\PlayerProcessor.h" />
+    <ClInclude Include="..\..\..\Source\Character\Skeleton.h" />
+    <ClInclude Include="..\..\..\Source\Character\Skeletons\PlayerSkeleton.h" />
+    <ClInclude Include="..\..\..\Source\Collision\DynamicCollision.h" />
+    <ClInclude Include="..\..\..\Source\Collision\LinearCollision.h" />
+    <ClInclude Include="..\..\..\Source\Collision\CharacterCollision.h" />
+    <ClInclude Include="..\..\..\Source\Collision\ProjectileCollision.h" />
+    <ClInclude Include="..\..\..\Source\Data\AugmentData.h" />
+    <ClInclude Include="..\..\..\Source\Data\BoneData.h" />
+    <ClInclude Include="..\..\..\Source\Data\CharacterData.h" />
+    <ClInclude Include="..\..\..\Source\Data\ChassisData.h" />
+    <ClInclude Include="..\..\..\Source\Data\ComponentData.h" />
+    <ClInclude Include="..\..\..\Source\Data\Data.h" />
+    <ClInclude Include="..\..\..\Source\Data\DataManager.h" />
+    <ClInclude Include="..\..\..\Source\Data\EquipmentData.h" />
+    <ClInclude Include="..\..\..\Source\Data\ItemData.h" />
+    <ClInclude Include="..\..\..\Source\Data\PartData.h" />
+    <ClInclude Include="..\..\..\Source\Data\Profile.h" />
+    <ClInclude Include="..\..\..\Source\Data\Settings.h" />
+    <ClInclude Include="..\..\..\Source\Data\SkeletonData.h" />
+    <ClInclude Include="..\..\..\Source\Data\UpgradeData.h" />
+    <ClInclude Include="..\..\..\Source\Data\WeaponData.h" />
+    <ClInclude Include="..\..\..\Source\Game\Abilities.h" />
+    <ClInclude Include="..\..\..\Source\Game\Attributes.h" />
+    <ClInclude Include="..\..\..\Source\Game\Duration.h" />
+    <ClInclude Include="..\..\..\Source\Game\EquipmentAbilities.h" />
+    <ClInclude Include="..\..\..\Source\Game\EquipmentAttributes.h" />
+    <ClInclude Include="..\..\..\Source\Game\Game.h" />
+    <ClInclude Include="..\..\..\Source\Game\ItemAbilities.h" />
+    <ClInclude Include="..\..\..\Source\Game\ItemAttributes.h" />
+    <ClInclude Include="..\..\..\Source\Game\UpgradeAttributes.h" />
+    <ClInclude Include="..\..\..\Source\Game\WeaponAbilities.h" />
+    <ClInclude Include="..\..\..\Source\Game\WeaponAttributes.h" />
+    <ClInclude Include="..\..\..\Source\Gui\GuiManager.h" />
+    <ClInclude Include="..\..\..\Source\Parts\Equipment.h" />
+    <ClInclude Include="..\..\..\Source\Parts\Item.h" />
+    <ClInclude Include="..\..\..\Source\Parts\Part.h" />
+    <ClInclude Include="..\..\..\Source\Parts\Upgrade.h" />
+    <ClInclude Include="..\..\..\Source\Parts\Upgrades\WeaponUpgrade.h" />
+    <ClInclude Include="..\..\..\Source\Parts\Weapon.h" />
+    <ClInclude Include="..\..\..\Source\Pch.h" />
+    <ClInclude Include="..\..\..\Source\Rendering\PlayerCamera.h" />
+    <ClInclude Include="..\..\..\Source\Rendering\Rendering.h" />
+    <ClInclude Include="..\..\..\Source\World\CollisionLine.h" />
+    <ClInclude Include="..\..\..\Source\World\Databases\BruteForce.h" />
+    <ClInclude Include="..\..\..\Source\World\Databases\Database.h" />
+    <ClInclude Include="..\..\..\Source\World\Databases\Partition.h" />
+    <ClInclude Include="..\..\..\Source\World\DepthTrigger.h" />
+    <ClInclude Include="..\..\..\Source\World\DynamicGameObject.h" />
+    <ClInclude Include="..\..\..\Source\World\GameObject.h" />
+    <ClInclude Include="..\..\..\Source\World\Interaction.h" />
+    <ClInclude Include="..\..\..\Source\World\Projectile.h" />
+    <ClInclude Include="..\..\..\Source\World\StaticGameObject.h" />
+    <ClInclude Include="..\..\..\Source\World\Storages\RemovableDynamicallyTypedStorage.h" />
+    <ClInclude Include="..\..\..\Source\World\Storages\RemovableStaticallyTypedStorage.h" />
+    <ClInclude Include="..\..\..\Source\World\Storages\StorageId.h" />
+    <ClInclude Include="..\..\..\Source\World\Storages\PermanentDynamicallyTypedStorage.h" />
+    <ClInclude Include="..\..\..\Source\World\Storages\PermanentStaticallyTypedStorage.h" />
+    <ClInclude Include="..\..\..\Source\World\Trigger.h" />
+    <ClInclude Include="..\..\..\Source\World\World.h" />
+    <ClInclude Include="..\..\..\Source\World\WorldGraph.h" />
+    <ClInclude Include="..\..\..\Source\World\WorldNode.h" />
+    <ClInclude Include="..\..\..\Source\World\SpindleTrigger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Pargon\Build\Win32\Pargon\Pargon.vcxproj">
+      <Project>{554c66f7-211f-4cf6-9632-82ce681e4d9b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9DD1E0A1-67F7-4632-9C53-6CFA6EE18298}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ProjectMania</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../Source;$(ProjectDir)../../../../Pargon/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Xinput.lib;Xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../Source;$(ProjectDir)../../../../Pargon/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Xinput.lib;Xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../Source;$(ProjectDir)../../../../Pargon/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Xinput.lib;Xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../Source;$(ProjectDir)../../../../Pargon/Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Xinput.lib;Xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

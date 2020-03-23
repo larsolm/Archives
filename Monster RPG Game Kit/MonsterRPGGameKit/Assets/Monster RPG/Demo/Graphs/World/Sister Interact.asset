@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864204cda72169a4a8d5e021c47bc66f, type: 3}
+  m_Name: Sister Interact
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114249910812098226}
+    - {fileID: 114962422255792620}
+    - {fileID: 114054836353136168}
+    - {fileID: 114674275253057770}
+    - {fileID: 114771110850390296}
+    - {fileID: 114078251367167246}
+    - {fileID: 114973552865771692}
+  StartPosition: {x: 0, y: 0}
+  Process: {fileID: 114249910812098226}
+--- !u!114 &114054836353136168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2dae9361166044eace3dc920c54958, type: 3}
+  m_Name: Face Sister
+  m_EditorClassIdentifier: 
+  Name: Face Sister
+  This:
+    _variable:
+    - Player
+    _lookups:
+    - Mover
+  GraphPosition: {x: 332.80002, y: 64}
+  IsBreakpoint: 0
+  Next: {fileID: 114674275253057770}
+  Target:
+    _variable:
+    - scene
+    - Sister
+    _lookups:
+    - 
+    - Mover
+--- !u!114 &114078251367167246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Received
+  m_EditorClassIdentifier: 
+  Name: Received
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1459.2001, y: -12.8}
+  IsBreakpoint: 0
+  Next: {fileID: 114771110850390296}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: You got a <color="blue">Monster Catching Net</color>!
+--- !u!114 &114249910812098226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca2dae9361166044eace3dc920c54958, type: 3}
+  m_Name: Face Player
+  m_EditorClassIdentifier: 
+  Name: Face Player
+  This:
+    _variable:
+    - this
+    _lookups:
+    - Mover
+  GraphPosition: {x: 332.80002, y: -38.4}
+  IsBreakpoint: 0
+  Next: {fileID: 114054836353136168}
+  Target:
+    _variable:
+    - Player
+    _lookups:
+    - Mover
+--- !u!114 &114674275253057770
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a701a243963188543bb492e5e8c21c96, type: 3}
+  m_Name: Has Item
+  m_EditorClassIdentifier: 
+  Name: Has Item
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 678.4, y: 0}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114771110850390296}
+  OnFalse: {fileID: 114962422255792620}
+  Item:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: 5b0e90ffd3fc0ac48bef44d7b9b6148e, type: 2}
+  Amount:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: 1
+--- !u!114 &114771110850390296
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Good Luck
+  m_EditorClassIdentifier: 
+  Name: Good Luck
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1702.4, y: -115.200005}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Good luck out there!
+--- !u!114 &114962422255792620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: 
+  Name: Intro
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 998.4, y: 51.2}
+  IsBreakpoint: 0
+  Next: {fileID: 114973552865771692}
+  Control:
+    InterfaceName: World
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: If you're going to venture out into the world you'll need a monster to protect
+      you.<page>Here, take this.
+--- !u!114 &114973552865771692
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe49e81dc65f384eb9673bc2606078f, type: 3}
+  m_Name: Give Item
+  m_EditorClassIdentifier: 
+  Name: Give Item
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1318.4, y: 102.4}
+  IsBreakpoint: 0
+  Next: {fileID: 114078251367167246}
+  Item:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: {fileID: 11400000, guid: 5b0e90ffd3fc0ac48bef44d7b9b6148e, type: 2}
+  Amount:
+    Type: 0
+    Reference:
+      _variable: []
+      _lookups: []
+    Value: 1

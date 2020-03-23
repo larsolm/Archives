@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af497cf6814f10648b388dfe84dbe07e, type: 3}
+  m_Name: SkillInstructions
+  m_EditorClassIdentifier: 
+  Instructions:
+  - {fileID: 114795149668766616}
+--- !u!114 &114795149668766616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a8043dd153b6e4a8c365d224c42aab, type: 3}
+  m_Name: TeachAbilityToCreature
+  m_EditorClassIdentifier: 
+  Set: {fileID: 11400000}
+  Creature:
+    Location: 1
+    CustomSource: 
+    CustomIndex: 0
+    Name: 
+  Ability:
+    Location: 3
+    CustomSource: 
+    CustomIndex: 0
+    Name: Ability

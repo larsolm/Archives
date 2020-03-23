@@ -1,0 +1,216 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864204cda72169a4a8d5e021c47bc66f, type: 3}
+  m_Name: Standard Attack
+  m_EditorClassIdentifier: 
+  _nodes:
+    _items:
+    - {fileID: 114451046092513844}
+    - {fileID: 114363681223344366}
+    - {fileID: 114502926945806084}
+    - {fileID: 114373313916867120}
+    - {fileID: 114703648791156668}
+    - {fileID: 114173711380111774}
+  StartPosition: {x: 0, y: 0}
+  Process: {fileID: 114173711380111774}
+--- !u!114 &114173711380111774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e22a1cb544f534ab3d5863df979746, type: 3}
+  m_Name: Use Ability Message
+  m_EditorClassIdentifier: 
+  Name: Use Ability Message
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 320, y: -0}
+  IsBreakpoint: 0
+  Instruction:
+    _instruction: {fileID: 11400000, guid: b0b1150a4056c8d4c8b4097ca529d084, type: 2}
+    _inputs: []
+    _outputs: []
+  Next: {fileID: 114451046092513844}
+  WaitForCompletion: 1
+--- !u!114 &114363681223344366
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a102ce8b6467da479f0568f1e120259, type: 3}
+  m_Name: Missed
+  m_EditorClassIdentifier: 
+  Name: Missed
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: 64}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  Control:
+    InterfaceName: Battle
+    ControlName: Message
+  Interaction: 0
+  IsLast: 1
+  Message:
+    Text: Missed!
+--- !u!114 &114373313916867120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860f5b4b64c3d9a40a0a5c67a2b618af, type: 3}
+  m_Name: Update Creature
+  m_EditorClassIdentifier: 
+  Name: Update Creature
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1600, y: -25.6}
+  IsBreakpoint: 0
+  Next: {fileID: 0}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - TargetCreature
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+    - 
+  Group: 
+  WaitForCompletion: 1
+--- !u!114 &114451046092513844
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01c20495f7161488d070ded27f0651, type: 3}
+  m_Name: Check Accuracy
+  m_EditorClassIdentifier: 
+  Name: Check Accuracy
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 640, y: -0}
+  IsBreakpoint: 0
+  OnTrue: {fileID: 114502926945806084}
+  OnFalse: {fileID: 114363681223344366}
+  Condition:
+    _statement: CheckAccuracy(this.Ability.Accuracy)
+--- !u!114 &114502926945806084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e22a1cb544f534ab3d5863df979746, type: 3}
+  m_Name: Deal Damage
+  m_EditorClassIdentifier: 
+  Name: Deal Damage
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 960, y: -25.6}
+  IsBreakpoint: 0
+  Instruction:
+    _instruction: {fileID: 11400000, guid: f33831509b301a140ad7d8cd041eb14d, type: 2}
+    _inputs: []
+    _outputs:
+    - Type: 0
+      Definition:
+        _name: Damage
+        _type: 0
+        _availability: 
+        _initializer:
+          _statement: 
+        _useRangeConstraint: 0
+        _minimumConstraint: 0
+        _maximumConstraint: 0
+        _typeConstraint: 
+      Reference:
+        _variable: []
+        _lookups: []
+  Next: {fileID: 114703648791156668}
+  WaitForCompletion: 1
+--- !u!114 &114703648791156668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c308a521b3df54d8a0872dfbb74d20, type: 3}
+  m_Name: Play Attack Animation
+  m_EditorClassIdentifier: 
+  Name: Play Attack Animation
+  This:
+    _variable:
+    - this
+    _lookups:
+    - 
+  GraphPosition: {x: 1280, y: -64}
+  IsBreakpoint: 0
+  Next: {fileID: 114373313916867120}
+  InterfaceName: Battle
+  IndexVariable:
+    _variable:
+    - this
+    - Creature
+    - Trainer
+    - Index
+    _lookups:
+    - 
+    - 
+    - 
+    - 
+  Clip:
+    WaitForCompletion: 1
+    AnimationTarget: 1
+    AnimationSource: 0
+    Animation: Attack
+    Parameter: Attack

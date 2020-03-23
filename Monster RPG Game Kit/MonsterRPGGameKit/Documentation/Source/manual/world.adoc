@@ -1,0 +1,25 @@
+[#manual/world]
+
+## World
+
+### Fields
+
+link:/projects/unity-utilities/documentation/#/v10/reference/scene-reference[SceneReference^] _Main Scene_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<link:/projects/unity-utilities/documentation/#/v10/reference/scene-reference[SceneReference^]> _Ui Scenes_::
+
+https://docs.unity3d.com/ScriptReference/AudioClip.html[AudioClip^] _Background Music_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _World Schema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Player Schema_::
+
+link:/projects/unity-composition/documentation/#/v10/reference/variable-schema[VariableSchema^] _Npc Schema_::
+
+<<manual/map-layer-list.html,Map Layer List>> _Map Layers_::
+
+https://docs.microsoft.com/en-us/dotnet/api/System.Collections.Generic.List-1[List^]<<<manual/zone.html,Zone>>> _Zones_::
+
+ifdef::backend-multipage_html5[]
+link:reference/world.html[Reference]
+endif::[]

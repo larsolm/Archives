@@ -1,0 +1,39 @@
+[#reference/battle-animation-events]
+
+## BattleAnimationEvents
+
+PiRhoSoft.MonsterRpgEngine.BattleAnimationEvents : https://docs.unity3d.com/ScriptReference/MonoBehaviour.html[MonoBehaviour^]
+
+### Description
+
+### Constructors
+
+BattleAnimationEvents()::
+
+### Public Fields
+
+<<reference/battle-animation-clip-dictionary.html,BattleAnimationClipDictionary>> _Clips_::
+
+<<reference/battle-animation-sound-dictionary.html,BattleAnimationSoundDictionary>> _Sounds_::
+
+<<reference/battle-animation-effect-dictionary.html,BattleAnimationEffectDictionary>> _Effects_::
+
+### Public Methods
+
+void StartClip(string _name_)::
+
+void PlayClip(string _name_)::
+
+void StartSound(string _name_)::
+
+void PlaySound(string _name_)::
+
+void StartEffect(string _name_)::
+
+void PlayEffect(string _name_)::
+
+### Protected Methods
+
+void Pause(bool _dummy1_, bool _dummy2_)::
+
+void Unpause(bool _dummy1_, bool _dummy2_)::

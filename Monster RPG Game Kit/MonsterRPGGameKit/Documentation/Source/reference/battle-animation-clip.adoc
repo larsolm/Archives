@@ -1,0 +1,23 @@
+[#reference/battle-animation-clip]
+
+## BattleAnimationClip
+
+PiRhoSoft.MonsterRpgEngine.BattleAnimationClip
+
+### Description
+
+### Constructors
+
+BattleAnimationClip()::
+
+### Public Fields
+
+bool _WaitForCompletion_::
+
+<<reference/creature-display-target.html,CreatureDisplayTarget>> _AnimationTarget_::
+
+<<reference/battle-animation-source.html,BattleAnimationSource>> _AnimationSource_::
+
+string _Animation_::
+
+string _Parameter_::

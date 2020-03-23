@@ -1,0 +1,11 @@
+{
+	VertexCount = 4
+	VertexSize = 20
+	Strip = true
+	Vertices [
+		{ X = 0 Y = 0 U = 0 V = 1 Color = "White" }
+		{ X = 1 Y = 0 U = 1 V = 1 Color = "White" }
+		{ X = 0 Y = 1 U = 0 V = 0 Color = "White" }
+		{ X = 1 Y = 1 U = 1 V = 0 Color = "White" }
+	]
+}

@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Creatures
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 0
+    platformSettings:
+    - serializedVersion: 2
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 0
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: e82aaa19f39e7ff49add460738a9867d, type: 3}
+    totalSpriteSurfaceArea: 140544
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300002, guid: b8a4f55058b58ff45a3d286c116d3d77, type: 3}
+  - {fileID: 21300000, guid: b8a4f55058b58ff45a3d286c116d3d77, type: 3}
+  - {fileID: 21300006, guid: b8a4f55058b58ff45a3d286c116d3d77, type: 3}
+  - {fileID: 21300004, guid: b8a4f55058b58ff45a3d286c116d3d77, type: 3}
+  - {fileID: 21300000, guid: a98d65529e2bb6d4689458f2ac90b0e5, type: 3}
+  - {fileID: 21300002, guid: a98d65529e2bb6d4689458f2ac90b0e5, type: 3}
+  - {fileID: 21300004, guid: a98d65529e2bb6d4689458f2ac90b0e5, type: 3}
+  - {fileID: 21300006, guid: a98d65529e2bb6d4689458f2ac90b0e5, type: 3}
+  - {fileID: 21300006, guid: c8f6c603eb90132468f27f4d19095cce, type: 3}
+  - {fileID: 21300004, guid: c8f6c603eb90132468f27f4d19095cce, type: 3}
+  - {fileID: 21300002, guid: c8f6c603eb90132468f27f4d19095cce, type: 3}
+  - {fileID: 21300000, guid: c8f6c603eb90132468f27f4d19095cce, type: 3}
+  - {fileID: 21300002, guid: 955743346db7ceb41affb4f3cfe45724, type: 3}
+  - {fileID: 21300000, guid: 955743346db7ceb41affb4f3cfe45724, type: 3}
+  - {fileID: 21300006, guid: 955743346db7ceb41affb4f3cfe45724, type: 3}
+  - {fileID: 21300004, guid: 955743346db7ceb41affb4f3cfe45724, type: 3}
+  - {fileID: 21300004, guid: 17f61be49039b2948aa73e21b34a994d, type: 3}
+  - {fileID: 21300006, guid: 17f61be49039b2948aa73e21b34a994d, type: 3}
+  - {fileID: 21300000, guid: 17f61be49039b2948aa73e21b34a994d, type: 3}
+  - {fileID: 21300002, guid: 17f61be49039b2948aa73e21b34a994d, type: 3}
+  - {fileID: 21300004, guid: eb2eae59254534d4baa7710f0e271251, type: 3}
+  - {fileID: 21300006, guid: eb2eae59254534d4baa7710f0e271251, type: 3}
+  - {fileID: 21300000, guid: eb2eae59254534d4baa7710f0e271251, type: 3}
+  - {fileID: 21300002, guid: eb2eae59254534d4baa7710f0e271251, type: 3}
+  - {fileID: 21300000, guid: a15302c96918a2240919f540203f38c6, type: 3}
+  - {fileID: 21300002, guid: a15302c96918a2240919f540203f38c6, type: 3}
+  - {fileID: 21300004, guid: a15302c96918a2240919f540203f38c6, type: 3}
+  - {fileID: 21300006, guid: a15302c96918a2240919f540203f38c6, type: 3}
+  - {fileID: 21300006, guid: 8aabfcd95757c0147b6e60c6a216b607, type: 3}
+  - {fileID: 21300004, guid: 8aabfcd95757c0147b6e60c6a216b607, type: 3}
+  - {fileID: 21300002, guid: 8aabfcd95757c0147b6e60c6a216b607, type: 3}
+  - {fileID: 21300000, guid: 8aabfcd95757c0147b6e60c6a216b607, type: 3}
+  - {fileID: 21300006, guid: 161c260db6f91cb42822445cc7a45c1a, type: 3}
+  - {fileID: 21300004, guid: 161c260db6f91cb42822445cc7a45c1a, type: 3}
+  - {fileID: 21300002, guid: 161c260db6f91cb42822445cc7a45c1a, type: 3}
+  - {fileID: 21300000, guid: 161c260db6f91cb42822445cc7a45c1a, type: 3}
+  - {fileID: 21300006, guid: c4be193d6f669504a97ea3824e389698, type: 3}
+  - {fileID: 21300004, guid: c4be193d6f669504a97ea3824e389698, type: 3}
+  - {fileID: 21300002, guid: c4be193d6f669504a97ea3824e389698, type: 3}
+  - {fileID: 21300000, guid: c4be193d6f669504a97ea3824e389698, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Phoenix_1
+  - Phoenix_0
+  - Phoenix_3
+  - Phoenix_2
+  - Gnome_0
+  - Gnome_1
+  - Gnome_2
+  - Gnome_3
+  - Fairy_3
+  - Fairy_2
+  - Fairy_1
+  - Fairy_0
+  - Ghost_1
+  - Ghost_0
+  - Ghost_3
+  - Ghost_2
+  - Cockatrice_2
+  - Cockatrice_3
+  - Cockatrice_0
+  - Cockatrice_1
+  - Basilisk_2
+  - Basilisk_3
+  - Basilisk_0
+  - Basilisk_1
+  - Unicorn_0
+  - Unicorn_1
+  - Unicorn_2
+  - Unicorn_3
+  - Ogre_3
+  - Ogre_2
+  - Ogre_1
+  - Ogre_0
+  - Cerberus_3
+  - Cerberus_2
+  - Cerberus_1
+  - Cerberus_0
+  - Dragon_3
+  - Dragon_2
+  - Dragon_1
+  - Dragon_0
+  m_Tag: Creatures
+  m_IsVariant: 0

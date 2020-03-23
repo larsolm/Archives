@@ -1,0 +1,11 @@
+[#reference/monster-rpg]
+
+## MonsterRpg
+
+PiRhoSoft.MonsterRpgEngine.MonsterRpg
+
+### Description
+
+### Static Fields
+
+string _DocumentationUrl_::

@@ -1,0 +1,13 @@
+[#reference/creature-display-target]
+
+## CreatureDisplayTarget
+
+PiRhoSoft.MonsterRpgEngine.CreatureDisplayTarget
+
+### Description
+
+### Values
+
+<<reference/creature-display-target.html,CreatureDisplayTarget>> _Battler_::
+
+<<reference/creature-display-target.html,CreatureDisplayTarget>> _Creature_::

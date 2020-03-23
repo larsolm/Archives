@@ -1,0 +1,25 @@
+[#reference/tile-transform-info]
+
+## TileTransformInfo
+
+PiRhoSoft.MonsterRpgEngine.TileTransformInfo : ValueType
+
+### Description
+
+### Static Fields
+
+int[] _Rotations_::
+
+### Public Fields
+
+https://docs.unity3d.com/ScriptReference/Sprite.html[Sprite^] _Sprite_::
+
+int _Rotation_::
+
+bool _FlipHorizontal_::
+
+bool _FlipVertical_::
+
+### Public Methods
+
+https://docs.unity3d.com/ScriptReference/Matrix4x4.html[Matrix4x4^] GetTransform()::
